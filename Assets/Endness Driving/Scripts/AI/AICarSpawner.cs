@@ -1,130 +1,163 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AICarSpawner : MonoBehaviour
 {
-    [Header("🎯 SMART 核心输入")]
-    [Range(0, 100)] public float playerCopJitter = 50f;
-    [Tooltip("灵敏度：决定难度跟随摇晃度变化的快慢")]
+    [Header("🧠 AI 后端控制输入")]
+    [Tooltip("接收来自 Python 后端的难度等级 (1:最简单 -> 5:最困难)")]
+    [Range(1, 5)] public int currentDifficultyLevel = 1; 
+
+    [Header("🎯 SMART 核心输入 (发给后端)")]
+    [Range(0, 100)] public float playerCopJitter = 0f;
     public float transitionSpeed = 3f;
 
-    [Header("⌨️ WASD 体感模拟算法 (真实单位时间抖动)")]
-    public bool enableKeyboardTest = true;
-    [Tooltip("键盘灵敏度：按键切换时的抖动增加量")]
-    public float wobbleSensitivity = 80f;
-    [Tooltip("抖动衰减率：如果不晃了，每秒钟下降的数值")]
-    public float wobbleDecayRate = 40f;
+    [Header("🚶‍♂️ 真实躲避 vs 摇晃判定 (核心算法)")]
+    public float unstableDistanceThreshold = 0.9f; 
+    public float unstablePenaltyMultiplier = 40f;
+    public float normalDodgePenalty = 2f;
+    public float wobbleDecayRate = 20f;
 
-    // 内部算法变量
-    private float lastInput = 0f;
     private float rawAccumulatedJitter = 0f;
+    private float lastPlayerX = 0f;
+    private float currentStrokeDistance = 0f;
+    private float lastMoveDirection = 0f;
+    private float stopTimer = 0f;
 
-    [Header("🛡️ 保护期 (秒)")]
-    public float warmUpDuration = 5f;
-    private bool isWarmUp = true;
-    private float gameStartTime;
-
-    [Header("⏱️ 动态频率 (控制有多密)")]
-    public float minCooldown = 0.4f; // 极稳时：疯狗模式
-    public float maxCooldown = 3.5f; // 极晃时：散步模式
+    [Header("⏱️ 动态频率（单次波次的冷却时间）")]
+    public float minCooldown = 0.8f; 
+    public float maxCooldown = 3.5f; 
     [SerializeField] private float currentSpawnCooldown = 1.5f;
 
-    [Header("🏎️ 动态车速 (已整体调慢)")]
-    [Tooltip("极稳(困难)时的最快车速")]
-    public float maxTrafficSpeed = 20f; // 【修改点】从35降到了20
-    [Tooltip("极晃(简单)时的最慢车速")]
-    public float minTrafficSpeed = 5f;  // 【修改点】从10降到了5
+    [Header("🏎️ 动态车速")]
+    public float maxTrafficSpeed = 18f; 
+    public float minTrafficSpeed = 6f;  
     [SerializeField] private float currentTrafficSpeed = 10f;
 
-    [Header("🛣️ 车道坐标 (确保面板里填了4个不一样的数)")]
+    [Header("路况视觉缩短")]
+    public float spawnAheadDistance = 20f; 
+
+    [Header("🛣️ 车道坐标 (4个独立车道)")]
     public float[] lanePositionsX = new float[] { -1.5f, -0.5f, 0.5f, 1.5f };
 
     [Header("🚗 对象池与物理设置")]
+    [Tooltip("初始车辆数。如果不够用会自动造新车扩容！")]
     public int maxCarsInPool = 40;
+    [SerializeField] private int maxActiveCars = 15;
+    [SerializeField] private float minSpawnZSpacing = 24f;
     [SerializeField] GameObject[] carAIPrefabs;
     [SerializeField] LayerMask otherCarsLayerMask;
 
-    private GameObject[] carAIPool;
+    // 【核心修复 1：把定长数组变成可无限扩容的动态列表 List】
+    private List<GameObject> carAIPool = new List<GameObject>();
     private Transform playerCarTransform;
     private float timeLastCarSpawned = 0;
 
     void Start()
     {
         playerCarTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        gameStartTime = Time.time;
+        lastPlayerX = playerCarTransform.position.x;
+
+        currentDifficultyLevel = 1;
+        currentSpawnCooldown = maxCooldown;  
+        currentTrafficSpeed = minTrafficSpeed; 
+        timeLastCarSpawned = Time.time + 3f; 
+
+        // 【防御性检测】：防止 Inspector 面板里的车道数据不对
+        if (lanePositionsX.Length < 3)
+        {
+            Debug.LogError("🚨 严重警告：Inspector 面板里的 Lane Positions X 数组长度少于3！无法生成并排车墙！");
+        }
+
         InitPool();
         StartCoroutine(SpawnLoop());
     }
 
     void InitPool()
     {
-        carAIPool = new GameObject[maxCarsInPool];
         for (int i = 0; i < maxCarsInPool; i++)
         {
-            carAIPool[i] = Instantiate(carAIPrefabs[i % carAIPrefabs.Length]);
-            carAIPool[i].SetActive(false);
+            AddCarToPool(i);
         }
+    }
+
+    // 【核心修复 2：造车工厂方法】
+    GameObject AddCarToPool(int index)
+    {
+        GameObject car = Instantiate(carAIPrefabs[index % carAIPrefabs.Length]);
+        car.SetActive(false);
+        carAIPool.Add(car);
+        return car;
+    }
+
+    public void SetDifficultyFromBackend(int backendDifficulty)
+    {
+        currentDifficultyLevel = Mathf.Clamp(backendDifficulty, 1, 5);
     }
 
     void Update()
     {
-        // ==========================================
-        // 0. 体感抖动积分算法 (仅计算单位时间的"变化量")
-        // ==========================================
-        if (enableKeyboardTest)
+        float currentPlayerX = playerCarTransform.position.x;
+        float deltaX = currentPlayerX - lastPlayerX;
+
+        if (Mathf.Abs(deltaX) > 0.001f)
         {
-            float currentInput = Input.GetAxis("Horizontal");
+            stopTimer = 0f; 
+            float currentDir = Mathf.Sign(deltaX);
 
-            // 核心算法：只计算“输入差值”。长按不动差值为0，疯狂按A和D差值极大
-            float inputDelta = Mathf.Abs(currentInput - lastInput);
-            lastInput = currentInput;
-
-            // 每侦累加抖动值
-            rawAccumulatedJitter += inputDelta * wobbleSensitivity;
-
-            // 随时间自然衰减（模拟人慢慢站稳的过程）
-            rawAccumulatedJitter -= wobbleDecayRate * Time.deltaTime;
-
-            // 严格限制在 0 - 100 之间
-            rawAccumulatedJitter = Mathf.Clamp(rawAccumulatedJitter, 0f, 100f);
-
-            // 平滑赋值给面板上的最终摇晃度
-            playerCopJitter = Mathf.Lerp(playerCopJitter, rawAccumulatedJitter, Time.deltaTime * 5f);
-        }
-
-        // ==========================================
-        // 1. 无级变速核心逻辑
-        // ==========================================
-        float targetCooldown;
-        float targetSpeed;
-
-        if (isWarmUp && Time.time - gameStartTime < warmUpDuration)
-        {
-            targetCooldown = 1.5f;
-            targetSpeed = minTrafficSpeed;
+            if (currentDir == lastMoveDirection || lastMoveDirection == 0f)
+                currentStrokeDistance += Mathf.Abs(deltaX);
+            else
+            {
+                EvaluateMovementStroke(currentStrokeDistance);
+                currentStrokeDistance = Mathf.Abs(deltaX); 
+            }
+            lastMoveDirection = currentDir;
         }
         else
         {
-            isWarmUp = false;
-
-            float t = playerCopJitter / 100f;
-            targetCooldown = Mathf.Lerp(minCooldown, maxCooldown, t);
-            targetSpeed = Mathf.Lerp(maxTrafficSpeed, minTrafficSpeed, t);
+            stopTimer += Time.deltaTime;
+            if (stopTimer > 0.1f && currentStrokeDistance > 0f)
+            {
+                EvaluateMovementStroke(currentStrokeDistance);
+                currentStrokeDistance = 0f;
+                lastMoveDirection = 0f; 
+            }
         }
+        lastPlayerX = currentPlayerX;
 
-        // ==========================================
-        // 2. 平滑追赶目标数值
-        // ==========================================
+        rawAccumulatedJitter -= wobbleDecayRate * Time.deltaTime;
+        rawAccumulatedJitter = Mathf.Clamp(rawAccumulatedJitter, 0f, 100f);
+        playerCopJitter = Mathf.Lerp(playerCopJitter, rawAccumulatedJitter, Time.deltaTime * 5f);
+
+        float t = (currentDifficultyLevel - 1f) / 4f; 
+        float targetCooldown = Mathf.Lerp(maxCooldown, minCooldown, t);
+        float targetSpeed = Mathf.Lerp(minTrafficSpeed, maxTrafficSpeed, t);
+
         currentSpawnCooldown = Mathf.Lerp(currentSpawnCooldown, targetCooldown, Time.deltaTime * transitionSpeed);
         currentTrafficSpeed = Mathf.Lerp(currentTrafficSpeed, targetSpeed, Time.deltaTime * transitionSpeed);
 
-        // ==========================================
-        // 3. 驱动存活车辆向前开
-        // ==========================================
         foreach (GameObject aiCar in carAIPool)
         {
             if (aiCar.activeInHierarchy)
                 aiCar.transform.Translate(Vector3.forward * currentTrafficSpeed * Time.deltaTime);
+        }
+    }
+
+    void EvaluateMovementStroke(float distance)
+    {
+        if (distance < 0.1f) return; 
+
+        if (distance > unstableDistanceThreshold)
+        {
+            float excess = distance - unstableDistanceThreshold;
+            float penalty = excess * unstablePenaltyMultiplier; 
+            rawAccumulatedJitter += penalty;
+            Debug.Log($"<color=orange>🚨 Movement destabilized! Crossed {distance:F2}. (Jitter +{penalty:F1})</color>");
+        }
+        else
+        {
+            rawAccumulatedJitter += normalDodgePenalty;
         }
     }
 
@@ -134,30 +167,92 @@ public class AICarSpawner : MonoBehaviour
         {
             if (Time.time - timeLastCarSpawned > currentSpawnCooldown)
             {
-                SpawnCar();
+                SpawnCarWaveBasedOnDifficulty();
                 timeLastCarSpawned = Time.time;
             }
             CleanUp();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
-    void SpawnCar()
+    void SpawnCarWaveBasedOnDifficulty()
     {
-        GameObject car = GetPooledCar();
-        if (car == null) return;
-
         if (lanePositionsX.Length == 0) return;
-        float spawnX = lanePositionsX[Random.Range(0, lanePositionsX.Length)];
 
-        Vector3 pos = new Vector3(spawnX, 0, playerCarTransform.position.z + 100);
+        int carsToSpawn = GetCarsToSpawnForCurrentDifficulty();
+        int remainingActiveSlots = maxActiveCars - GetActiveCarCount();
+        if (remainingActiveSlots <= 0) return;
 
-        if (Physics.OverlapBox(pos, new Vector3(0.8f, 1f, 4f), Quaternion.identity, otherCarsLayerMask).Length > 0) return;
+        carsToSpawn = Mathf.Min(carsToSpawn, remainingActiveSlots);
+        List<float> availableLanes = new List<float>(lanePositionsX);
 
-        ResetCarPhysics(car);
-        car.transform.position = pos;
-        car.transform.rotation = Quaternion.identity;
-        car.SetActive(true);
+        for (int i = 0; i < carsToSpawn; i++)
+        {
+            if (availableLanes.Count == 0) break;
+
+            GameObject car = GetPooledCar();
+            if (car == null) break;
+            
+            int randIndex = Random.Range(0, availableLanes.Count);
+            float spawnX = availableLanes[randIndex];
+            availableLanes.RemoveAt(randIndex); 
+
+            float zOffset = carsToSpawn > 1 ? (((carsToSpawn - 1) * 0.5f) - i) * minSpawnZSpacing : 0f;
+            float spawnZ = playerCarTransform.position.z + spawnAheadDistance + zOffset;
+            if (!CanSpawnAtPosition(spawnX, spawnZ))
+            {
+                car.SetActive(false);
+                continue;
+            }
+
+            Vector3 spawnPos = new Vector3(spawnX, 0, spawnZ);
+
+            ResetCarPhysics(car);
+            car.transform.position = spawnPos;
+            car.transform.rotation = Quaternion.identity;
+            car.SetActive(true);
+        }
+    }
+
+    int GetCarsToSpawnForCurrentDifficulty()
+    {
+        switch (currentDifficultyLevel)
+        {
+            case 3:
+                return Random.value < 0.3f ? 2 : 1;
+            case 4:
+                return Random.value < 0.4f ? 2 : 1;
+            case 5:
+                return Random.value < 0.25f ? 2 : 1;
+            default:
+                return 1;
+        }
+    }
+
+    bool CanSpawnAtPosition(float spawnX, float spawnZ)
+    {
+        foreach (var c in carAIPool)
+        {
+            if (!c.activeInHierarchy) continue;
+            if (!Mathf.Approximately(c.transform.position.x, spawnX)) continue;
+            if (Mathf.Abs(c.transform.position.z - spawnZ) < minSpawnZSpacing)
+                return false;
+        }
+
+        return true;
+    }
+
+    int GetActiveCarCount()
+    {
+        int activeCount = 0;
+
+        foreach (var c in carAIPool)
+        {
+            if (c.activeInHierarchy)
+                activeCount++;
+        }
+
+        return activeCount;
     }
 
     void ResetCarPhysics(GameObject car)
@@ -166,9 +261,15 @@ public class AICarSpawner : MonoBehaviour
         if (rb) { rb.linearVelocity = Vector3.zero; rb.angularVelocity = Vector3.zero; }
     }
 
+    // 【核心修复 3：智能对象池获取机制】
     GameObject GetPooledCar()
     {
-        foreach (var c in carAIPool) if (!c.activeInHierarchy) return c;
+        foreach (var c in carAIPool) 
+        {
+            if (!c.activeInHierarchy) return c;
+        }
+
+        Debug.LogWarning($"<color=yellow>🚗 对象池已满 ({carAIPool.Count} / {maxCarsInPool})，本波跳过生成。</color>");
         return null;
     }
 
@@ -176,7 +277,7 @@ public class AICarSpawner : MonoBehaviour
     {
         foreach (var c in carAIPool)
         {
-            if (c.activeInHierarchy && (c.transform.position.z - playerCarTransform.position.z > 200 || c.transform.position.z - playerCarTransform.position.z < -20))
+            if (c.activeInHierarchy && (c.transform.position.z - playerCarTransform.position.z > 120 || c.transform.position.z - playerCarTransform.position.z < -15))
                 c.SetActive(false);
         }
     }

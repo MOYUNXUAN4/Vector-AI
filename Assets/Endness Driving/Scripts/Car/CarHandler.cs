@@ -32,13 +32,19 @@ public class CarHandler : MonoBehaviour
 
     //Max values
     float maxSteerVelocity = 2;
-    float maxForwardVelocity = 30;
+    float maxForwardVelocity = 34f;
     float carMaxSpeedPercentage = 0;
+    float playerCruiseSpeed = 10f;
+    float playerBoostSpeed = 18f;
+    float playerSlowSpeed = 5.5f;
+    float playerAccelerationRate = 14f;
+    float playerDecelerationRate = 18f;
 
     //Multipliers
-    float accelerationMultiplier = 3;
+    float accelerationMultiplier = 4.5f;
     float breaksMultiplier = 15;
-    float steeringMultiplier = 5;
+    [SerializeField]
+    float steeringMultiplier = 5f;
 
     //Input
     Vector2 input = Vector2.zero;
@@ -64,8 +70,13 @@ public class CarHandler : MonoBehaviour
     {
         isPlayer = CompareTag("Player");
 
-        if (isPlayer && carEngineAS != null)
-            carEngineAS.Play();
+        if (isPlayer)
+        {
+            steeringMultiplier = GameSensitivitySettings.GetDriver();
+            rb.constraints |= RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            if (carEngineAS != null)
+                carEngineAS.Play();
+        }
         
         carStartPositionZ = transform.position.z;
     }
@@ -77,14 +88,6 @@ public class CarHandler : MonoBehaviour
         {
             FadeOutCarAudio();
             return;
-        }
-
-        // --- 核心修改：如果是玩家，自动读取键盘/手柄输入 ---
-        if (isPlayer)
-        {
-            float h = Input.GetAxis("Horizontal"); // A/D 或 左右方向键
-            float v = Input.GetAxis("Vertical");   // W/S 或 上下方向键
-            SetInput(new Vector2(h, v));
         }
 
         //Rotate car model when "turning"
@@ -126,21 +129,34 @@ public class CarHandler : MonoBehaviour
             return;
         }
 
-        //Apply Acceleration
-        if (input.y > 0)
-            Accelerate();
+        if (isPlayer)
+        {
+            ApplyPlayerForwardSpeed();
+        }
         else
-            rb.linearDamping = 0.2f;
-
-        //Apply Brakes
-        if (input.y < 0)
-            Brake();
+        {
+            //Apply Acceleration
+            if (input.y > 0)
+                Accelerate();
+            else
+                rb.linearDamping = 0.2f;
+        }
 
         Steer();
 
         //Force the car not to go backwards
         if (rb.linearVelocity.z <= 0)
             rb.linearVelocity = Vector3.zero;
+    }
+
+    void ApplyPlayerForwardSpeed()
+    {
+        float targetSpeed = input.y >= 0.9f ? playerBoostSpeed : (input.y <= 0.2f ? playerSlowSpeed : playerCruiseSpeed);
+        float speedRate = rb.linearVelocity.z < targetSpeed ? playerAccelerationRate : playerDecelerationRate;
+        Vector3 velocity = rb.linearVelocity;
+        velocity.z = Mathf.MoveTowards(velocity.z, targetSpeed, speedRate * Time.fixedDeltaTime);
+        rb.linearVelocity = velocity;
+        rb.linearDamping = 0f;
     }
 
     void Accelerate()
@@ -222,8 +238,7 @@ public class CarHandler : MonoBehaviour
 
     public void SetInput(Vector2 inputVector)
     {
-        inputVector.Normalize();
-        input = inputVector;
+        input = new Vector2(Mathf.Clamp(inputVector.x, -1f, 1f), Mathf.Clamp(inputVector.y, -1f, 1f));
     }
 
     public void SetMaxSpeed(float newMaxSpeed)

@@ -272,6 +272,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   carSkidAS: {fileID: 2308167191968047533}
   carCrashAS: {fileID: 5551390442316714089}
+  steeringMultiplier: 5
 --- !u!114 &5377323414913336059
 MonoBehaviour:
   m_ObjectHideFlags: 0

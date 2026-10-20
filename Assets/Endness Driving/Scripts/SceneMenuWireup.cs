@@ -2,21 +2,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[System.Serializable]
+public struct SceneMenuButtonBinding
+{
+    public Button button;
+    public string targetSceneName;
+}
+
 /// <summary>
-/// Attach to Canvas. Assign the Button and scene name in the Inspector (or scene YAML).
-/// Avoids putting custom scripts on the Button (fewer missing-script issues).
+/// Attach to Canvas and assign one or more buttons with target scenes.
 /// </summary>
 public class SceneMenuWireup : MonoBehaviour
 {
-    [SerializeField] Button loadSceneButton;
-    [SerializeField] string targetSceneName;
+    [SerializeField] SceneMenuButtonBinding[] buttonBindings;
 
     void Awake()
     {
-        if (loadSceneButton == null || string.IsNullOrEmpty(targetSceneName))
+        if (buttonBindings == null)
             return;
-        loadSceneButton.onClick.RemoveAllListeners();
-        loadSceneButton.onClick.AddListener(() =>
-            SceneManager.LoadScene(targetSceneName, LoadSceneMode.Single));
+
+        for (int i = 0; i < buttonBindings.Length; i++)
+        {
+            var binding = buttonBindings[i];
+            if (binding.button == null || string.IsNullOrWhiteSpace(binding.targetSceneName))
+                continue;
+
+            string targetSceneName = binding.targetSceneName;
+            binding.button.onClick.RemoveAllListeners();
+            binding.button.onClick.AddListener(() =>
+                SceneManager.LoadScene(targetSceneName, LoadSceneMode.Single));
+        }
     }
 }

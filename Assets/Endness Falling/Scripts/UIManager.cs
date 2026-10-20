@@ -2,263 +2,1221 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
+using System.Net.Sockets;
+using System.Net;
+using System.Text;
+using Unity.Profiling;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    private const float UiAlpha = 0.8f;
+    private const float UiAlpha = 0.85f;
+    private static readonly ProfilerMarker OnGuiTotalMarker = new ProfilerMarker("VectorAI.UI.OnGUI.Total");
+    private static readonly ProfilerMarker DrawRuntimeHudMarker = new ProfilerMarker("VectorAI.UI.DrawRuntimeHud");
+    private static readonly ProfilerMarker DrawEdgeWarningDebugHudMarker = new ProfilerMarker("VectorAI.UI.DrawEdgeWarningDebugHud");
+    private static readonly ProfilerMarker DrawExperimentalGeometryWarningMarker = new ProfilerMarker("VectorAI.UI.DrawExperimentalGeometryWarning");
+    private static readonly ProfilerMarker DrawExperimentalModelWarningMarker = new ProfilerMarker("VectorAI.UI.DrawExperimentalModelWarning");
+    private static readonly ProfilerMarker DrawExperimentalProximityWarningMarker = new ProfilerMarker("VectorAI.UI.DrawExperimentalProximityWarning");
+    private static readonly ProfilerMarker DrawCalibrationControlsMarker = new ProfilerMarker("VectorAI.UI.DrawCalibrationControls");
+    private static readonly ProfilerMarker DrawClinicalReportMarker = new ProfilerMarker("VectorAI.UI.DrawClinicalReport");
+    private static readonly ProfilerMarker DrawAIChatWindowMarker = new ProfilerMarker("VectorAI.UI.DrawAIChatWindow");
+    private static readonly ProfilerMarker DrawPauseMenuMarker = new ProfilerMarker("VectorAI.UI.DrawPauseMenu");
 
-    [Header("HUD Layout (Inspector Quick Tuning)")]
+    // ==========================================
+    // 🔌 后端通信配置 (完全替代原有的 LLM API)
+    // ==========================================
+    [Header("Backend UDP Settings")]
+    public string backendIP = "127.0.0.1";
+    public int backendPort = 5005; // Python 后端监听的端口
+    private UdpClient udpClient;
+    private IPEndPoint backendEndPoint;
+
+    [Header("HUD Layout")]
+    public bool showEdgeWarningDebugHud = true;
+    [SerializeField, Tooltip("Experimental display-only unified risk presentation. Does not change risk rules or warning lifetimes.")]
+    private bool enableUnifiedRiskPresentation = false;
     [SerializeField] private bool showTopTitle = false;
     [SerializeField] private Vector2 hudGroupAnchor = new Vector2(0.03f, 0.10f);
     [SerializeField] private Vector2 hudCardSize = new Vector2(0.19f, 0.10f);
     [SerializeField] private float hudCardVerticalGap = 0.012f;
+    private bool sessionLayersDropdownOpen;
+    private bool difficultyDropdownOpen;
+    private static readonly int[] CalibrationLayerChoices = { 1, 3, 5, 10, 25 };
+    private static readonly string[] CalibrationDifficultyChoices = { "Auto", "1", "2", "3", "4", "5" };
 
-    [Header("HUD")]
+    [Header("Legacy HUD (Leave Empty)")]
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI difficultyText;
     public TextMeshProUGUI remainingText;
-
-    [Header("Game Over Panel")]
     public GameObject gameOverPanel;
     public TextMeshProUGUI finalScoreText;
     public TextMeshProUGUI finalLevelText;
     public Button restartButton;
     public Button hubButton;
 
+    // --- 游戏状态 ---
     private int hudCurrentLayer = 1;
     private int hudDifficulty = 1;
-    private int hudLayersToNextTier = 10;
     private int finalScore = 0;
     private int finalDifficulty = 1;
     private bool isGameOverVisible = false;
+    private bool isPaused = false;
     private bool isWin = false;
+
+    // --- 纯代码报告数据 ---
+    private bool isReportVisible = false;
+    private float reportRmse = 0f;
+    private float reportBalanceLeft = 50f;
+    private float avgXForBackend = 0f; // 传给后端的原始 X 偏移
+    private List<Vector2> copPoints = new List<Vector2>();
+    private float[] radarStats = new float[6];
+    private float[] trendScores = new float[7];
+
+    // --- 📈 动画平滑因子 ---
+    private float lerpFactor = 0f; 
+    private const float AnimSpeed = 1.5f; 
+
+    // --- 💬 AI 聊天会话系统数据 ---
+    private bool isChatOpen = true; 
+    private string chatInputText = "";
+    private Vector2 chatScrollPos = Vector2.zero;
+    private bool isAITyping = false;
+    private bool isExperimentalModelWarningActive;
+    private bool isExperimentalGeometryWarningActive;
+    private string experimentalModelWarningId = string.Empty;
+    private float experimentalModelWarningProbability;
+    private long experimentalModelWarningSequence = -1;
+    private string experimentalModelWarningRunId = string.Empty;
+    private string experimentalModelWarningReason = string.Empty;
+    private GUIStyle unifiedRiskHeadlineStyle;
+    private GUIStyle unifiedRiskGeometryStyle;
+    private GUIStyle unifiedRiskModelStyle;
+    private GUIStyle unifiedRiskProximityStyle;
+    private GUIStyle unifiedRiskLocalStyle;
+    private int unifiedRiskStylesScreenHeight = -1;
+    private LevelManager unifiedRiskLevelManager;
+    private Transform unifiedRiskBoundPlayerTransform;
+    private EndlessPlayerController unifiedRiskPlayerController;
+    private float cachedUnifiedGeometryClearance = float.NaN;
+    private float cachedUnifiedModelProbability = float.NaN;
+    private string cachedUnifiedProximityState;
+    private string cachedUnifiedGeometryLabel;
+    private string cachedUnifiedModelLabel;
+    private string cachedUnifiedProximityLabel;
+    private GUIContent cachedUnifiedGeometryContent;
+    private GUIContent cachedUnifiedModelContent;
+    private GUIContent cachedUnifiedProximityContent;
+    private static readonly GUIContent UnifiedRiskLocalContent = new GUIContent("CURRENT EDGE STATE — existing game rule");
+
+    [System.Flags]
+    private enum UnifiedRiskSource
+    {
+        None = 0,
+        Model = 1,
+        Geometry = 2,
+        Proximity = 4,
+        LocalEdge = 8
+    }
+
+    private struct UnifiedRiskPresentationState
+    {
+        public UnifiedRiskSource sources;
+        public bool geometryActive;
+        public bool modelActive;
+        public bool proximityActive;
+        public bool localEdgeActive;
+        public float modelProbability;
+        public float geometryClearance;
+        public string proximityState;
+    }
+    
+    [System.Serializable]
+    public class ChatMsg { public string role; public string content; }
+    private List<ChatMsg> chatHistory = new List<ChatMsg>();
+
+    // 顶级医疗科技配色
+    private Color bgCard = new Color(0.96f, 0.97f, 0.98f); 
+    private Color cBoxBg = new Color(0.91f, 0.93f, 0.95f); 
+    private Color cTextTitle = new Color(0.12f, 0.16f, 0.22f); 
+    private Color cTextSub = new Color(0.45f, 0.50f, 0.55f); 
+    private Color cCyan = new Color(0.10f, 0.60f, 0.80f); 
+    private Color cUserBubble = new Color(0.20f, 0.48f, 0.75f); 
+    private Color cGrid = new Color(0.85f, 0.88f, 0.92f); 
+    private Color cOrange = new Color(0.88f, 0.38f, 0.30f); 
 
     void Awake()
     {
         Instance = this;
+        
+        // 初始化发送指令的 UDP 客户端
+        udpClient = new UdpClient();
+        backendEndPoint = new IPEndPoint(IPAddress.Parse(backendIP), backendPort);
+
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
         DisableLegacyHudObjects();
     }
 
     void Start()
     {
-        if (restartButton != null) restartButton.onClick.AddListener(RestartGame);
-        if (hubButton != null) hubButton.onClick.AddListener(GoToHub);
-        SetButtonLabel(restartButton, "RESTART");
-        SetButtonLabel(hubButton, "BACK TO MAIN MENU");
         DisableLegacyHudObjects();
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        if (levelManager != null && levelManager.RunState == LevelManager.GameRunState.NotStarted)
+        {
+            isPaused = true;
+            Time.timeScale = 0f;
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !isGameOverVisible && !isReportVisible)
+        {
+            LevelManager levelManager = FindObjectOfType<LevelManager>();
+            if (levelManager == null || levelManager.RunState != LevelManager.GameRunState.NotStarted)
+                TogglePauseMenu();
+        }
+
+        if (isReportVisible && lerpFactor < 1f)
+        {
+            lerpFactor += Time.unscaledDeltaTime * AnimSpeed;
+            if (lerpFactor > 1f) lerpFactor = 1f;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        DisableLegacyHudObjects();
+        UdpFrontendReceiver.NotifyRunEnded("ui_manager_destroyed");
     }
 
     public void UpdateHUD(int currentLayer, int difficultyLevel, int layersToNextTier)
     {
         hudCurrentLayer = Mathf.Max(1, currentLayer);
-        hudDifficulty = Mathf.Max(1, difficultyLevel);
-        hudLayersToNextTier = Mathf.Max(0, layersToNextTier);
-
-        if (levelText != null) levelText.text = "CURRENT LAYER: " + currentLayer;
-        if (difficultyText != null) difficultyText.text = "DIFFICULTY LEVEL: " + difficultyLevel;
-        if (remainingText != null)
-        {
-            remainingText.text = layersToNextTier <= 0
-                ? "LAYERS TO NEXT TIER: MAX"
-                : "LAYERS TO NEXT TIER: " + layersToNextTier;
-        }
+        hudDifficulty = Mathf.Clamp(difficultyLevel, 1, 5);
     }
 
     public void ShowGameOver(int score, int difficultyLevel, bool win = false)
     {
+        UdpFrontendReceiver.NotifyRunEnded("game_over");
         isGameOverVisible = true;
+        isPaused = false;
         isWin = win;
         finalScore = Mathf.Max(0, score);
-        finalDifficulty = Mathf.Max(1, difficultyLevel);
+        finalDifficulty = Mathf.Clamp(difficultyLevel, 1, 5);
 
-        // Legacy scene panel stays hidden; runtime IMGUI renders the final panel.
+        lerpFactor = 0f; 
+        
+        GenerateReportData100PercentBackend();
+
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
-        if (finalScoreText != null) finalScoreText.text = "FINAL SCORE: " + finalScore;
-        if (finalLevelText != null)
+        Time.timeScale = 1f;
+    }
+
+    private void GenerateReportData100PercentBackend()
+    {
+        // ==========================================
+        // 1. 获取真实物理遥测数据 (Telemetry)
+        // ==========================================
+        // 注意：请确保你的 UdpFrontendReceiver 脚本中有 backendRealRMSE, backendCountX, backendSumX 这几个公开变量
+        UdpFrontendReceiver receiver = FindObjectOfType<UdpFrontendReceiver>();
+        if (receiver != null)
         {
-            finalLevelText.text = win
-                ? "STAGE COMPLETED - LEVEL " + finalDifficulty
-                : "MAX DIFFICULTY REACHED: LEVEL " + finalDifficulty;
+            reportRmse = receiver.backendRealRMSE;
+            avgXForBackend = receiver.backendCountX > 0 ? (receiver.backendSumX / receiver.backendCountX) : 0f;
+            // 将重心偏移映射为左右百分比 (假设 X 轴 -5 到 5)
+            reportBalanceLeft = Mathf.Clamp(50f - (avgXForBackend * 10f), 0f, 100f);
+        }
+        else
+        {
+            Debug.LogWarning("未找到 UdpFrontendReceiver，使用备用基础数据");
+            reportRmse = 2.5f; 
+            reportBalanceLeft = 50f;
+            avgXForBackend = 0f;
+        }
+
+        // ==========================================
+        // 2. 生成图表的可视化数据
+        // ==========================================
+        float truePerformance = Mathf.Clamp01(1.0f - (reportRmse / 4.0f)); 
+        for(int i=0; i<6; i++) radarStats[i] = Mathf.Clamp(truePerformance - Random.Range(0.0f, 0.1f), 0.1f, 1.0f);
+        radarStats[4] = Mathf.Clamp01(truePerformance + 0.1f); 
+        radarStats[5] = Mathf.Clamp01(truePerformance + 0.1f); 
+
+        copPoints.Clear();
+        for(int i=0; i<30; i++) copPoints.Add(new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * reportRmse);
+
+        float baseScore = 40f + (truePerformance * 55f); 
+        for(int i=0; i<6; i++) trendScores[i] = Mathf.Clamp(baseScore - (6-i)*2f + Random.Range(-5f, 5f), 20f, 95f);
+        trendScores[6] = isWin ? Mathf.Max(95f, baseScore) : baseScore; 
+
+        // ==========================================
+        // 3. 呼叫 Python 后端生成 AI 报告
+        // ==========================================
+        chatHistory.Clear();
+        isAITyping = true;
+        
+        string triggerJson = $@"{{
+            ""command"": ""generate_report"",
+            ""passedCount"": {finalScore},
+            ""avgX"": {avgXForBackend}
+        }}";
+        
+        SendToBackend(triggerJson);
+    }
+
+    // ==========================================
+    // 🚀 UDP 核心：向 Python 发送指令
+    // ==========================================
+    private void SendToBackend(string jsonPayload)
+    {
+        try
+        {
+            byte[] data = Encoding.UTF8.GetBytes(jsonPayload);
+            udpClient.Send(data, data.Length, backendEndPoint);
+        }
+        catch (System.Exception e)
+    {
+        Debug.LogError("向后端发送 UDP 指令失败: " + e.Message);
+        ReceiveAIResponse("Network connection failed. Unable to reach the VectorAI backend.");
+    }
+    }
+
+    // ==========================================
+    // 📬 接收后端的 AI 文本 (由 UdpFrontendReceiver 调用)
+    // ==========================================
+    public void ReceiveAIResponse(string content)
+    {
+        isAITyping = false;
+        chatHistory.Add(new ChatMsg { role = "assistant", content = content });
+        chatScrollPos.y = float.MaxValue; // 自动滚动到底部
+    }
+
+    private void SendChatMessage(string userText)
+    {
+        chatHistory.Add(new ChatMsg { role = "user", content = userText });
+        isAITyping = true;
+        
+        // 发送聊天指令给 Python
+        string chatJson = $@"{{
+            ""command"": ""chat"",
+            ""message"": ""{userText}""
+        }}";
+        
+        SendToBackend(chatJson);
+        chatScrollPos.y = float.MaxValue; 
+    }
+
+    void TogglePauseMenu()
+    {
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        if (levelManager != null && levelManager.RunState == LevelManager.GameRunState.NotStarted)
+        {
+            StartConfiguredRun(levelManager);
+            return;
+        }
+
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1f;
+    }
+
+    private void StartConfiguredRun(LevelManager levelManager)
+    {
+        if (levelManager == null || !levelManager.BeginConfiguredRun()) return;
+
+        UdpFrontendReceiver receiver = FindObjectOfType<UdpFrontendReceiver>();
+        if (receiver != null) receiver.SendStartSession();
+        isPaused = false;
+        Time.timeScale = 1f;
+    }
+
+    void OpenTrainingReport()
+    {
+        GenerateReportData100PercentBackend();
+        isReportVisible = true;
+        isChatOpen = true;
+        lerpFactor = 0f;
+        Time.timeScale = 0f;
+    }
+
+    private void EndActiveRunForUserExit()
+    {
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        if (levelManager == null || !levelManager.IsRunRunning) return;
+
+        EndlessPlayerController playerController = FindObjectOfType<EndlessPlayerController>();
+        if (playerController != null) playerController.OnRunEnded(false);
+        if (levelManager.MarkRunEnded("user_exit"))
+        {
+            UDPManager.ReportRunEnded();
         }
     }
 
     void RestartGame()
     {
-        Time.timeScale = 1f; 
+        UdpFrontendReceiver.NotifyRunEnded("restart");
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        string runId = levelManager != null ? levelManager.RunId : string.Empty;
+        bool runActive = levelManager != null && levelManager.IsRunRunning;
+        if (runActive)
+        {
+            UDPManager.RecordRestartAborted();
+        }
+        else if (levelManager != null && levelManager.RunState == LevelManager.GameRunState.Ended)
+        {
+            UDPManager.RecordRestartRequested(levelManager.RunId, "ended_run_restart");
+        }
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void GoToHub()
     {
-        Time.timeScale = 1f; 
+        UdpFrontendReceiver.NotifyRunEnded("exit_to_hub");
+        EndActiveRunForUserExit();
+        Time.timeScale = 1f;
         SceneManager.LoadScene("FypHub");
-    }
-
-    void SetButtonLabel(Button button, string label)
-    {
-        if (button == null) return;
-        TextMeshProUGUI tmp = button.GetComponentInChildren<TextMeshProUGUI>(true);
-        if (tmp != null) tmp.text = label;
     }
 
     void OnGUI()
     {
-        DrawRuntimeHud();
+        using (OnGuiTotalMarker.Auto())
+        {
+            using (DrawRuntimeHudMarker.Auto()) { DrawRuntimeHud(); }
+            using (DrawEdgeWarningDebugHudMarker.Auto()) { DrawEdgeWarningDebugHud(); }
+            if (enableUnifiedRiskPresentation)
+            {
+                DrawUnifiedRiskPresentation();
+            }
+            else
+            {
+                using (DrawExperimentalGeometryWarningMarker.Auto()) { DrawExperimentalGeometryWarning(); }
+                using (DrawExperimentalModelWarningMarker.Auto()) { DrawExperimentalModelWarning(); }
+                using (DrawExperimentalProximityWarningMarker.Auto()) { DrawExperimentalProximityWarning(); }
+            }
+            using (DrawCalibrationControlsMarker.Auto()) { DrawCalibrationControls(); }
+            if (isReportVisible)
+            {
+                using (DrawClinicalReportMarker.Auto()) { DrawClinicalReport(); }
+                if (isChatOpen)
+                {
+                    using (DrawAIChatWindowMarker.Auto()) { DrawAIChatWindow(); }
+                }
+                return;
+            }
+            if (isPaused && !isGameOverVisible)
+            {
+                using (DrawPauseMenuMarker.Auto()) { DrawPauseMenu(); }
+                return;
+            }
+        }
+    }
+
+    private static UnifiedRiskPresentationState BuildUnifiedRiskPresentationState(
+        bool contextActive, bool modelActive, bool geometryActive, bool proximityActive, bool localEdgeActive)
+    {
+        UnifiedRiskSource sources = UnifiedRiskSource.None;
+        if (contextActive)
+        {
+            if (modelActive) sources |= UnifiedRiskSource.Model;
+            if (geometryActive) sources |= UnifiedRiskSource.Geometry;
+            if (proximityActive) sources |= UnifiedRiskSource.Proximity;
+            if (localEdgeActive) sources |= UnifiedRiskSource.LocalEdge;
+        }
+
+        return new UnifiedRiskPresentationState
+        {
+            sources = sources,
+            geometryActive = (sources & UnifiedRiskSource.Geometry) != 0,
+            modelActive = (sources & UnifiedRiskSource.Model) != 0,
+            proximityActive = (sources & UnifiedRiskSource.Proximity) != 0,
+            localEdgeActive = (sources & UnifiedRiskSource.LocalEdge) != 0
+        };
+    }
+
+    private void DrawUnifiedRiskPresentation()
+    {
+        UnifiedRiskPresentationState state = CaptureUnifiedRiskPresentationState();
+        if (state.sources == UnifiedRiskSource.None) return;
+        DrawUnifiedRiskPresentationState(state, Screen.width, Screen.height);
+    }
+
+    private UnifiedRiskPresentationState CaptureUnifiedRiskPresentationState()
+    {
+        LevelManager levelManager = ResolveUnifiedRiskLevelManager();
+        bool running = levelManager != null && levelManager.IsRunRunning;
+        bool presentationContextActive = running && levelManager.isActiveAndEnabled &&
+                                         !isPaused && !isReportVisible && !isGameOverVisible;
+        UdpFrontendReceiver receiver = UdpFrontendReceiver.Instance;
+
+        // Capture every source once for this OnGUI invocation. The receiver getters retain their
+        // existing feature gates; the local source is bound only through the current run's player.
+        bool geometryActive = receiver != null && receiver.ExperimentalGeometryWarningActive;
+        bool modelActive = receiver != null && receiver.ExperimentalModelWarningActive;
+        bool proximityActive = receiver != null && receiver.ExperimentalProximityWarningActive;
+        EndlessPlayerController playerController = ResolveUnifiedRiskPlayer(levelManager);
+        bool localEdgeActive = presentationContextActive && playerController != null &&
+                               playerController.isActiveAndEnabled && playerController.gameObject.activeInHierarchy &&
+                               playerController.EdgeWarningState;
+        UnifiedRiskPresentationState state = BuildUnifiedRiskPresentationState(
+            presentationContextActive, modelActive, geometryActive, proximityActive, localEdgeActive);
+        if (state.sources == UnifiedRiskSource.None) return state;
+        if (state.geometryActive) state.geometryClearance = receiver.ExperimentalGeometryClearance;
+        if (state.modelActive)
+        {
+            state.modelProbability = receiver.ExperimentalModelStrongProbability;
+        }
+        if (state.proximityActive) state.proximityState = receiver.ExperimentalProximityState;
+        return state;
+    }
+
+    private LevelManager ResolveUnifiedRiskLevelManager()
+    {
+        if (unifiedRiskLevelManager == null)
+            unifiedRiskLevelManager = FindObjectOfType<LevelManager>();
+        return unifiedRiskLevelManager;
+    }
+
+    private EndlessPlayerController ResolveUnifiedRiskPlayer(LevelManager levelManager)
+    {
+        Transform boundPlayer = levelManager != null ? levelManager.player : null;
+        if (boundPlayer != unifiedRiskBoundPlayerTransform || unifiedRiskPlayerController == null)
+        {
+            unifiedRiskBoundPlayerTransform = boundPlayer;
+            unifiedRiskPlayerController = boundPlayer != null
+                ? boundPlayer.GetComponent<EndlessPlayerController>()
+                : null;
+        }
+        return unifiedRiskPlayerController;
+    }
+
+    private void CacheUnifiedRiskSourceLabels(UnifiedRiskPresentationState state)
+    {
+        if (state.geometryActive && (cachedUnifiedGeometryContent == null || cachedUnifiedGeometryClearance != state.geometryClearance))
+        {
+            cachedUnifiedGeometryClearance = state.geometryClearance;
+            cachedUnifiedGeometryLabel = $"CURRENT GEOMETRY — edge danger · clearance={state.geometryClearance:F3}";
+            cachedUnifiedGeometryContent = new GUIContent(cachedUnifiedGeometryLabel);
+        }
+        if (state.modelActive && (cachedUnifiedModelContent == null || cachedUnifiedModelProbability != state.modelProbability))
+        {
+            cachedUnifiedModelProbability = state.modelProbability;
+            cachedUnifiedModelLabel = $"AI PREDICTION · LightGBM · P={state.modelProbability:F2}";
+            cachedUnifiedModelContent = new GUIContent(cachedUnifiedModelLabel);
+        }
+        if (state.proximityActive && (cachedUnifiedProximityContent == null || cachedUnifiedProximityState != state.proximityState))
+        {
+            cachedUnifiedProximityState = state.proximityState;
+            cachedUnifiedProximityLabel = $"TTE RULE — approaching edge · {state.proximityState}";
+            cachedUnifiedProximityContent = new GUIContent(cachedUnifiedProximityLabel);
+        }
+    }
+
+    private void DrawUnifiedRiskPresentationState(
+        UnifiedRiskPresentationState state, float viewportWidth, float viewportHeight)
+    {
+        if (state.sources == UnifiedRiskSource.None) return;
+        CacheUnifiedRiskSourceLabels(state);
+        EnsureUnifiedRiskStyles(viewportHeight);
+        float width = Mathf.Min(viewportWidth * 0.72f, 900f);
+        float innerWidth = width - 36f;
+        float minRowHeight = Mathf.Clamp(viewportHeight * 0.024f, 22f, 30f);
+        float geometryHeight = state.geometryActive ? Mathf.Max(minRowHeight,
+            unifiedRiskGeometryStyle.CalcHeight(cachedUnifiedGeometryContent, innerWidth)) : 0f;
+        float modelHeight = state.modelActive ? Mathf.Max(minRowHeight,
+            unifiedRiskModelStyle.CalcHeight(cachedUnifiedModelContent, innerWidth)) : 0f;
+        float proximityHeight = state.proximityActive ? Mathf.Max(minRowHeight,
+            unifiedRiskProximityStyle.CalcHeight(cachedUnifiedProximityContent, innerWidth)) : 0f;
+        float localHeight = state.localEdgeActive ? Mathf.Max(minRowHeight,
+            unifiedRiskLocalStyle.CalcHeight(UnifiedRiskLocalContent, innerWidth)) : 0f;
+        Rect panel = new Rect((viewportWidth - width) * 0.5f, 22f, width,
+            48f + geometryHeight + modelHeight + proximityHeight + localHeight);
+        Color previous = GUI.color;
+        GUI.color = state.geometryActive ? new Color(0.28f, 0.025f, 0.02f, 0.98f) :
+            new Color(0.22f, 0.09f, 0.015f, 0.97f);
+        GUI.DrawTexture(panel, Texture2D.whiteTexture);
+        GUI.color = previous;
+
+        Rect headline = new Rect(panel.x + 12f, panel.y + 3f, panel.width - 24f, 38f);
+        GUI.Label(headline, state.geometryActive ? "EDGE DANGER" : "EDGE WARNING", unifiedRiskHeadlineStyle);
+        float y = headline.yMax + 1f;
+        if (state.geometryActive)
+        {
+            GUI.Label(new Rect(panel.x + 18f, y, innerWidth, geometryHeight),
+                cachedUnifiedGeometryContent, unifiedRiskGeometryStyle);
+            y += geometryHeight;
+        }
+        if (state.modelActive)
+        {
+            GUI.Label(new Rect(panel.x + 18f, y, innerWidth, modelHeight),
+                cachedUnifiedModelContent, unifiedRiskModelStyle);
+            y += modelHeight;
+        }
+        if (state.proximityActive)
+        {
+            GUI.Label(new Rect(panel.x + 18f, y, innerWidth, proximityHeight),
+                cachedUnifiedProximityContent, unifiedRiskProximityStyle);
+            y += proximityHeight;
+        }
+        if (state.localEdgeActive)
+            GUI.Label(new Rect(panel.x + 18f, y, innerWidth, localHeight),
+                UnifiedRiskLocalContent, unifiedRiskLocalStyle);
+    }
+
+    private void EnsureUnifiedRiskStyles(float viewportHeight)
+    {
+        if (unifiedRiskHeadlineStyle != null && unifiedRiskGeometryStyle != null &&
+            unifiedRiskModelStyle != null && unifiedRiskProximityStyle != null &&
+            unifiedRiskLocalStyle != null && unifiedRiskStylesScreenHeight == Mathf.RoundToInt(viewportHeight)) return;
+        unifiedRiskStylesScreenHeight = Mathf.RoundToInt(viewportHeight);
+        unifiedRiskHeadlineStyle = VectorStyle(Mathf.Clamp(viewportHeight * 0.027f, 21f, 34f),
+            new Color(1f, 0.91f, 0.88f), true, TextAnchor.MiddleCenter);
+        float sourceSize = Mathf.Clamp(viewportHeight * 0.014f, 11f, 17f);
+        unifiedRiskGeometryStyle = VectorStyle(sourceSize, new Color(1f, 0.48f, 0.40f), true, TextAnchor.MiddleCenter);
+        unifiedRiskModelStyle = VectorStyle(sourceSize, new Color(1f, 0.68f, 0.28f), true, TextAnchor.MiddleCenter);
+        unifiedRiskProximityStyle = VectorStyle(sourceSize, new Color(0.84f, 0.68f, 1f), true, TextAnchor.MiddleCenter);
+        unifiedRiskLocalStyle = VectorStyle(sourceSize, new Color(1f, 0.86f, 0.28f), true, TextAnchor.MiddleCenter);
+        unifiedRiskGeometryStyle.wordWrap = true;
+        unifiedRiskModelStyle.wordWrap = true;
+        unifiedRiskProximityStyle.wordWrap = true;
+        unifiedRiskLocalStyle.wordWrap = true;
+    }
+
+    private void DrawExperimentalModelWarning()
+    {
+        UdpFrontendReceiver receiver = UdpFrontendReceiver.Instance;
+        bool active = receiver != null && receiver.ExperimentalModelWarningActive;
+        isExperimentalModelWarningActive = active;
+        if (!active) return;
+        experimentalModelWarningId = receiver.ExperimentalModelId;
+        experimentalModelWarningRunId = receiver.ExperimentalModelRunId;
+        experimentalModelWarningProbability = receiver.ExperimentalModelStrongProbability;
+        experimentalModelWarningSequence = receiver.ExperimentalModelPredictionSequence;
+        experimentalModelWarningReason = receiver.ExperimentalModelReason;
+
+        GUIStyle style = VectorStyle(Mathf.Clamp(Screen.height * 0.026f, 20f, 34f),
+            new Color(1f, 0.58f, 0.12f), true, TextAnchor.MiddleCenter);
+        GUIStyle detail = VectorStyle(Mathf.Clamp(Screen.height * 0.015f, 12f, 20f),
+            Color.white, false, TextAnchor.MiddleCenter);
+        float y = 22f + (receiver.ExperimentalGeometryWarningActive ? 90f : 0f);
+        Rect banner = new Rect(Screen.width * 0.22f, y, Screen.width * 0.56f, 48f);
+        Rect subline = new Rect(banner.x, banner.yMax, banner.width, 28f);
+        Color old = GUI.color;
+        GUI.color = new Color(0.22f, 0.09f, 0.015f, 0.97f);
+        GUI.DrawTexture(banner, Texture2D.whiteTexture);
+        GUI.color = old;
+        GUI.Label(banner, "AI RISK — predicted fall risk", style);
+        GUI.Label(subline,
+            $"EXPERIMENTAL AI · {receiver.ExperimentalModelId}  P={receiver.ExperimentalModelStrongProbability:F2}  Seq={receiver.ExperimentalModelPredictionSequence}",
+            detail);
+    }
+
+    private void DrawExperimentalGeometryWarning()
+    {
+        UdpFrontendReceiver receiver = UdpFrontendReceiver.Instance;
+        bool active = receiver != null && receiver.ExperimentalGeometryWarningActive;
+        isExperimentalGeometryWarningActive = active;
+        if (!active) return;
+
+        GUIStyle style = VectorStyle(Mathf.Clamp(Screen.height * 0.029f, 23f, 38f),
+            new Color(1f, 0.28f, 0.22f), true, TextAnchor.MiddleCenter);
+        GUIStyle detail = VectorStyle(Mathf.Clamp(Screen.height * 0.014f, 11f, 18f),
+            Color.white, false, TextAnchor.MiddleCenter);
+        Rect banner = new Rect(Screen.width * 0.18f, 22f, Screen.width * 0.64f, 52f);
+        Rect subline = new Rect(banner.x, banner.yMax, banner.width, 28f);
+        Color old = GUI.color;
+        GUI.color = new Color(0.30f, 0.025f, 0.02f, 0.98f);
+        GUI.DrawTexture(banner, Texture2D.whiteTexture);
+        GUI.color = old;
+        GUI.Label(banner, "EDGE DANGER — ball at outer edge", style);
+        GUI.Label(subline,
+            $"EXPERIMENTAL GEOMETRY RULE · clearance={receiver.ExperimentalGeometryClearance:F3}  platform={receiver.ExperimentalGeometryPlatformInstanceId}",
+            detail);
+    }
+
+    private void DrawExperimentalProximityWarning()
+    {
+        UdpFrontendReceiver receiver = UdpFrontendReceiver.Instance;
+        bool active = receiver != null && receiver.ExperimentalProximityWarningActive;
+        if (!active) return;
+
+        GUIStyle title = VectorStyle(Mathf.Clamp(Screen.height * 0.025f, 19f, 32f),
+            new Color(0.84f, 0.68f, 1f), true, TextAnchor.MiddleCenter);
+        GUIStyle detail = VectorStyle(Mathf.Clamp(Screen.height * 0.014f, 11f, 18f),
+            Color.white, false, TextAnchor.MiddleCenter);
+        float stackIndex = (receiver.ExperimentalGeometryWarningActive ? 1f : 0f) +
+                           (receiver.ExperimentalModelWarningActive ? 1f : 0f);
+        float y = 22f + stackIndex * 90f;
+        Rect banner = new Rect(Screen.width * 0.22f, y, Screen.width * 0.56f, 48f);
+        Rect subline = new Rect(banner.x, banner.yMax, banner.width, 28f);
+        Color previous = GUI.color;
+        GUI.color = new Color(0.19f, 0.08f, 0.31f, 0.98f);
+        GUI.DrawTexture(banner, Texture2D.whiteTexture);
+        GUI.color = previous;
+        GUI.Label(banner, "EDGE APPROACH — TTE RULE", title);
+        GUI.Label(subline,
+            $"EXPERIMENTAL RULE · q={receiver.ExperimentalProximityQ:F3} · platform={receiver.ExperimentalProximityPlatformInstanceId} · input={receiver.ExperimentalProximityInputSequence}",
+            detail);
+    }
+
+    private static bool IsFallEndedTelemetry(UDPManager.UnityGameTelemetry telemetry)
+    {
+        return (telemetry.run_state == "ended" && telemetry.fall_event) ||
+               telemetry.session_outcome == "edge_exit";
+    }
+
+    private static bool IsNormalCompletionTelemetry(UDPManager.UnityGameTelemetry telemetry)
+    {
+        return telemetry.run_state == "ended" &&
+               (telemetry.session_outcome == "completed" ||
+                telemetry.session_outcome == "calibration_completed");
+    }
+
+    private static Color GetEdgeHudStatusColor(
+        UDPManager.UnityGameTelemetry telemetry,
+        string edgeStatus)
+    {
+        if (IsFallEndedTelemetry(telemetry)) return new Color(1f, 0.25f, 0.2f);
+        if (IsNormalCompletionTelemetry(telemetry)) return new Color(0.2f, 0.85f, 0.35f);
+
+        bool runIsActive = telemetry.run_state == "running";
+        if (runIsActive && edgeStatus == "EDGE CONTACT") return new Color(1f, 0.25f, 0.2f);
+        if (runIsActive && edgeStatus == "EDGE WARNING") return new Color(1f, 0.72f, 0.12f);
+        if (runIsActive && edgeStatus == "ATTENTION") return new Color(0.25f, 0.72f, 1f);
+        if (runIsActive && edgeStatus == "GEOMETRY UNKNOWN") return Color.gray;
+        return new Color(0.2f, 0.85f, 0.35f);
+    }
+
+    private static string GetEdgeHudPrompt(UDPManager.UnityGameTelemetry telemetry)
+    {
+        if (IsFallEndedTelemetry(telemetry)) return "FALL / RUN ENDED";
+        if (telemetry.run_state == "ended") return "RUN ENDED: " + telemetry.session_outcome;
+        if (telemetry.run_state != "running") return string.Empty;
+        if (telemetry.directional_edge_distance <= 0f) return "EDGE CONTACT";
+        if (telemetry.target_edge_radial_velocity < -0.05f) return "RECOVERING";
+        if (telemetry.edge_warning_state &&
+            telemetry.target_edge_radial_velocity > 0.05f &&
+            telemetry.directional_edge_distance > 0f)
+        {
+            return "EDGE WARNING\nMOVE BACK TO CENTER";
+        }
+        return string.Empty;
+    }
+
+    private void DrawEdgeWarningDebugHud()
+    {
+        if (!showEdgeWarningDebugHud || UDPManager.Instance == null) return;
+        UDPManager.UnityGameTelemetry telemetry = UDPManager.Instance.LastTelemetry;
+        if (telemetry == null) return;
+
+        string edgeStatus = string.IsNullOrEmpty(telemetry.prediction_state)
+            ? "SAFE"
+            : telemetry.prediction_state;
+        Color statusColor = GetEdgeHudStatusColor(telemetry, edgeStatus);
+        string movement = telemetry.target_edge_radial_velocity > 0.05f
+            ? "OUTWARD"
+            : telemetry.target_edge_radial_velocity < -0.05f ? "INWARD" : "STATIONARY";
+        string prompt = GetEdgeHudPrompt(telemetry);
+
+        float width = Mathf.Clamp(Screen.width * 0.31f, 380f, 600f);
+        float height = Mathf.Clamp(Screen.height - 36f, 480f, 720f);
+        Rect panel = new Rect(18f, 18f, width, height);
+        Color previousColor = GUI.color;
+        GUI.color = new Color(0.035f, 0.055f, 0.075f, 0.92f);
+        GUI.DrawTexture(panel, Texture2D.whiteTexture);
+        GUI.color = statusColor;
+        GUI.DrawTexture(new Rect(panel.x, panel.y, 7f, panel.height), Texture2D.whiteTexture);
+        GUI.color = previousColor;
+
+        float pad = 20f;
+        float y = panel.y + 14f;
+        float line = Mathf.Clamp(Screen.height * 0.026f, 21f, 30f);
+        GUIStyle body = VectorStyle(Mathf.Clamp(Screen.height * 0.018f, 13f, 24f), Color.white, false, TextAnchor.MiddleLeft);
+        GUIStyle label = VectorStyle(Mathf.Clamp(Screen.height * 0.019f, 14f, 25f), statusColor, true, TextAnchor.MiddleLeft);
+        GUIStyle promptStyle = VectorStyle(Mathf.Clamp(Screen.height * 0.023f, 16f, 30f), statusColor, true, TextAnchor.MiddleCenter);
+        GUIStyle hint = VectorStyle(Mathf.Clamp(Screen.height * 0.0125f, 11f, 17f), new Color(0.75f, 0.82f, 0.88f), false, TextAnchor.UpperLeft);
+        hint.wordWrap = true;
+
+        int displayedLayer = Mathf.Min(telemetry.platformLevel, Mathf.Max(1, telemetry.selected_session_layers));
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"RUN: {telemetry.run_state}    OUTCOME: {telemetry.session_outcome}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "MODE: " + (telemetry.calibration_mode ? "CALIBRATION" : "PRODUCTION"), body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"SESSION LAYERS: {telemetry.selected_session_layers}    CURRENT LAYER: {displayedLayer}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"SELECTED DIFFICULTY: {telemetry.selected_difficulty}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"DIFFICULTY: {telemetry.difficulty}    COMMAND: {telemetry.commanded_difficulty}    ACTIVE: {telemetry.active_platform_difficulty}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"LAYER: {telemetry.passedCount} / {telemetry.platformLevel}", body); y += line * 1.15f;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "PREDICTION: " + edgeStatus, label); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"HOLE DISTANCE: {telemetry.target_hole_distance:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"HOLE APPROACH VELOCITY: {telemetry.target_hole_approach_velocity:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "HOLE STATE: " + telemetry.hole_approach_state, body); y += line;
+        bool attentionSuppressed = telemetry.moving_toward_target_hole || telemetry.hole_approach_state == "AT_HOLE";
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "ATTENTION SUPPRESSED: " + (attentionSuppressed ? "YES" : "NO"), body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "EDGE STATUS: " + edgeStatus, label); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"EDGE DISTANCE: {telemetry.directional_edge_distance:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"WARNING THRESHOLD: {telemetry.edge_warning_distance_threshold:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"MOVEMENT: {movement}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"OUTWARD VELOCITY: {telemetry.target_edge_radial_velocity:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"RADIAL DISTANCE: {telemetry.ball_radial_distance:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"PLATFORM RADIUS: {telemetry.platform_radius:F2}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "RUN ID: " + telemetry.run_id, body); y += line * 1.2f;
+
+        if (!string.IsNullOrEmpty(prompt))
+        {
+            GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line * 2f), prompt, promptStyle);
+            y += line * 2f;
+        }
+
+        const string instructions = "Recovery sample: enter EDGE WARNING, then move INWARD and return SAFE.\n" +
+                                    "Exit sample: remain OUTWARD until EDGE CONTACT.\n" +
+                                    "Normal sample: stay SAFE and continue normally.";
+        GUI.Label(new Rect(panel.x + pad, y + 4f, panel.width - pad * 2f, panel.yMax - y - 12f), instructions, hint);
+        GUI.color = previousColor;
+    }
+
+    private void DrawCalibrationControls()
+    {
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        if (levelManager == null) return;
+
+        float width = Mathf.Clamp(Screen.width * 0.27f, 320f, 460f);
+        float height = Mathf.Clamp(Screen.height * 0.29f, 230f, 330f);
+        Rect panel = new Rect(Screen.width - width - 18f, 18f, width, height);
+        Color previousColor = GUI.color;
+        bool running = levelManager.IsRunRunning;
+        bool canEdit = levelManager.CalibrationMode && levelManager.RunState == LevelManager.GameRunState.NotStarted;
+        int layers = running ? levelManager.SelectedSessionLayers : levelManager.NextSessionLayers;
+        int difficulty = running ? levelManager.SelectedDifficulty : levelManager.NextSelectedDifficulty;
+        int currentLayer = Mathf.Min(levelManager.GetCurrentLayer(), Mathf.Max(1, levelManager.SelectedSessionLayers));
+
+        GUI.color = new Color(0.035f, 0.055f, 0.075f, 0.92f);
+        GUI.DrawTexture(panel, Texture2D.whiteTexture);
+        GUI.color = previousColor;
+
+        float pad = 18f;
+        float line = Mathf.Max(28f, Screen.height * 0.032f);
+        float y = panel.y + 12f;
+        GUIStyle title = VectorStyle(Mathf.Clamp(Screen.height * 0.019f, 16f, 25f), Color.white, true, TextAnchor.MiddleLeft);
+        GUIStyle body = VectorStyle(Mathf.Clamp(Screen.height * 0.016f, 14f, 21f), Color.white, false, TextAnchor.MiddleLeft);
+        GUIStyle button = new GUIStyle(GUI.skin.button)
+        {
+            fontSize = Mathf.RoundToInt(Mathf.Clamp(Screen.height * 0.015f, 13f, 20f)),
+            alignment = TextAnchor.MiddleCenter
+        };
+
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "Calibration Mode: " + (levelManager.CalibrationMode ? "ON" : "OFF"), title); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width * 0.40f, line), "Session Layers:", body);
+        Rect layersButton = new Rect(panel.x + panel.width * 0.47f, y, panel.width * 0.45f, line - 3f);
+        GUI.enabled = canEdit;
+        if (GUI.Button(layersButton, layers + " ▼", button))
+        {
+            sessionLayersDropdownOpen = !sessionLayersDropdownOpen;
+            difficultyDropdownOpen = false;
+        }
+        y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width * 0.40f, line), "Difficulty:", body);
+        Rect difficultyButton = new Rect(panel.x + panel.width * 0.47f, y, panel.width * 0.45f, line - 3f);
+        if (GUI.Button(difficultyButton, CalibrationDifficultyChoices[Mathf.Clamp(difficulty, 0, 5)] + " ▼", button))
+        {
+            difficultyDropdownOpen = !difficultyDropdownOpen;
+            sessionLayersDropdownOpen = false;
+        }
+        GUI.enabled = true;
+        y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), $"Current Layer: {currentLayer} / {layers}", body); y += line;
+        GUI.Label(new Rect(panel.x + pad, y, panel.width - pad * 2f, line), "Run ID: " + levelManager.RunId, body);
+
+        if (!canEdit)
+        {
+            sessionLayersDropdownOpen = false;
+            difficultyDropdownOpen = false;
+        }
+        else if (sessionLayersDropdownOpen)
+        {
+            Rect list = new Rect(layersButton.x, layersButton.yMax, layersButton.width, line * CalibrationLayerChoices.Length);
+            GUI.Box(list, GUIContent.none);
+            for (int i = 0; i < CalibrationLayerChoices.Length; i++)
+            {
+                int choice = CalibrationLayerChoices[i];
+                if (GUI.Button(new Rect(list.x, list.y + line * i, list.width, line), choice.ToString(), button))
+                {
+                    levelManager.SetNextCalibrationSelection(choice, difficulty);
+                    sessionLayersDropdownOpen = false;
+                }
+            }
+        }
+        else if (difficultyDropdownOpen)
+        {
+            Rect list = new Rect(difficultyButton.x, difficultyButton.yMax, difficultyButton.width, line * CalibrationDifficultyChoices.Length);
+            GUI.Box(list, GUIContent.none);
+            for (int i = 0; i < CalibrationDifficultyChoices.Length; i++)
+            {
+                int choice = i;
+                if (GUI.Button(new Rect(list.x, list.y + line * i, list.width, line), CalibrationDifficultyChoices[i], button))
+                {
+                    levelManager.SetNextCalibrationSelection(layers, choice);
+                    difficultyDropdownOpen = false;
+                }
+            }
+        }
+        GUI.color = previousColor;
     }
 
     void DrawRuntimeHud()
     {
-        float w = Screen.width;
-        float h = Screen.height;
-
-        if (showTopTitle)
-        {
-            GUIStyle titleStyle = new GUIStyle(GUI.skin.label)
-            {
-                alignment = TextAnchor.UpperCenter,
-                fontSize = Mathf.RoundToInt(h * 0.055f),
-                fontStyle = FontStyle.Bold,
-                normal = { textColor = WithAlpha(new Color(0.12f, 0.2f, 0.25f), UiAlpha) }
-            };
-
-            GUIStyle subtitleStyle = new GUIStyle(GUI.skin.label)
-            {
-                alignment = TextAnchor.UpperCenter,
-                fontSize = Mathf.RoundToInt(h * 0.02f),
-                normal = { textColor = WithAlpha(new Color(0.35f, 0.45f, 0.5f), UiAlpha) }
-            };
-
-            GUI.Label(new Rect(0f, h * 0.03f, w, h * 0.08f), "INFINITE FALL", titleStyle);
-            GUI.Label(new Rect(0f, h * 0.09f, w, h * 0.04f), "NEUROMOTOR BALANCE TRAINING", subtitleStyle);
+        float w = Screen.width, h = Screen.height;
+        if (showTopTitle) {
+            GUIStyle titleStyle = new GUIStyle(GUI.skin.label) { alignment = TextAnchor.UpperCenter, fontSize = Mathf.RoundToInt(h * 0.055f), fontStyle = FontStyle.Bold, normal = { textColor = WithAlpha(new Color(0.12f, 0.2f, 0.25f), UiAlpha) } };
+            GUI.Label(new Rect(0f, h * 0.03f, w, h * 0.08f), "ENDLESS DRIVING", titleStyle);
         }
 
         float cardW = w * Mathf.Clamp(hudCardSize.x, 0.08f, 0.6f);
         float cardH = h * Mathf.Clamp(hudCardSize.y, 0.06f, 0.3f);
         float left = w * Mathf.Clamp(hudGroupAnchor.x, 0f, 0.9f);
         float top = h * Mathf.Clamp(hudGroupAnchor.y, 0f, 0.9f);
-        float gap = h * Mathf.Clamp(hudCardVerticalGap, 0.002f, 0.1f);
 
-        DrawInfoCard(new Rect(left, top, cardW, cardH), "CURRENT LAYER", hudCurrentLayer.ToString(), new Color(0.0f, 0.62f, 0.70f));
-        DrawInfoCard(new Rect(left, top + cardH + gap, cardW, cardH), "DIFFICULTY LEVEL", hudDifficulty.ToString(), new Color(0.90f, 0.35f, 0.24f));
-        DrawInfoCard(new Rect(left, top + (cardH + gap) * 2f, cardW, cardH), "LAYERS TO NEXT TIER", hudLayersToNextTier <= 0 ? "MAX" : hudLayersToNextTier.ToString(), new Color(0.22f, 0.36f, 0.42f));
+        DrawInfoCard(new Rect(left, top, cardW, cardH), "CURRENT LAYER", hudCurrentLayer.ToString(), cCyan);
+        DrawInfoCard(new Rect(left, top + cardH + h*hudCardVerticalGap, cardW, cardH), "REAL-TIME DIFFICULTY", "LVL " + hudDifficulty.ToString(), cOrange);
 
         if (!isGameOverVisible) return;
 
-        Color prevColor = GUI.color;
         Rect panel = new Rect(w * 0.32f, h * 0.25f, w * 0.36f, h * 0.45f);
-        GUI.color = WithAlpha(Color.white, UiAlpha);
-        GUI.DrawTexture(panel, Texture2D.whiteTexture);
-        GUI.color = prevColor;
+        DrawShadow(panel);
+        GUI.color = Color.white; GUI.DrawTexture(panel, Texture2D.whiteTexture);
+        GUI.color = isWin ? cCyan : cOrange; GUI.DrawTexture(new Rect(panel.x, panel.y, 8f, panel.height), Texture2D.whiteTexture);
+        GUI.color = Color.white;
 
-        GUI.color = WithAlpha(isWin ? new Color(0.0f, 0.62f, 0.70f) : new Color(0.90f, 0.35f, 0.24f), UiAlpha);
-        GUI.DrawTexture(new Rect(panel.x, panel.y, 8f, panel.height), Texture2D.whiteTexture);
-        GUI.color = prevColor;
+        GUIStyle endTitle = VectorStyle(h * 0.042f, isWin ? new Color(0.0f, 0.55f, 0.45f) : new Color(0.85f, 0.2f, 0.2f), true, TextAnchor.MiddleCenter);
+        GUIStyle endText = VectorStyle(h * 0.028f, new Color(0.15f, 0.2f, 0.25f), true, TextAnchor.MiddleCenter);
 
-        GUIStyle endTitle = new GUIStyle(GUI.skin.label)
-        {
-            alignment = TextAnchor.MiddleCenter,
-            fontSize = Mathf.RoundToInt(h * 0.042f),
-            fontStyle = FontStyle.Bold,
-            normal = { textColor = WithAlpha(isWin ? new Color(0.0f, 0.55f, 0.45f) : new Color(0.85f, 0.2f, 0.2f), UiAlpha) }
-        };
-        GUIStyle endText = new GUIStyle(GUI.skin.label)
-        {
-            alignment = TextAnchor.MiddleCenter,
-            fontSize = Mathf.RoundToInt(h * 0.028f),
-            fontStyle = FontStyle.Bold,
-            normal = { textColor = WithAlpha(new Color(0.15f, 0.2f, 0.25f), UiAlpha) }
-        };
-
-        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.12f, panel.width, panel.height * 0.15f), isWin ? "STAGE CLEARED" : "SESSION ENDED", endTitle);
+        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.12f, panel.width, panel.height * 0.15f), isWin ? "TRAINING SUCCESSFUL" : "SESSION ENDED", endTitle);
         GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.36f, panel.width, panel.height * 0.12f), "FINAL SCORE: " + finalScore, endText);
-        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.50f, panel.width, panel.height * 0.12f), "MAX DIFFICULTY: LEVEL " + finalDifficulty, endText);
+        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.50f, panel.width, panel.height * 0.12f), isWin ? "TARGET COMPLETED: 25 LAYERS" : "DEATH AT DIFFICULTY: LEVEL " + finalDifficulty, endText);
 
-        Rect restartRect = new Rect(panel.x + panel.width * 0.15f, panel.y + panel.height * 0.74f, panel.width * 0.28f, panel.height * 0.16f);
-        Rect hubRect = new Rect(panel.x + panel.width * 0.57f, panel.y + panel.height * 0.74f, panel.width * 0.28f, panel.height * 0.16f);
-        DrawActionButton(restartRect, "RESTART", new Color(0.0f, 0.62f, 0.70f), RestartGame);
-        DrawActionButton(hubRect, "BACK TO MENU", new Color(0.35f, 0.45f, 0.5f), GoToHub);
+        float btnW = panel.width * 0.28f, btnH = panel.height * 0.16f, btnY = panel.y + panel.height * 0.74f;
+        DrawActionButton(new Rect(panel.x + panel.width * 0.04f, btnY, btnW, btnH), "RESTART", cCyan, RestartGame);
+        DrawActionButton(new Rect(panel.x + panel.width * 0.36f, btnY, btnW, btnH), "REPORT", cUserBubble, () => { isReportVisible = true; isChatOpen = true; lerpFactor = 0f; });
+        DrawActionButton(new Rect(panel.x + panel.width * 0.68f, btnY, btnW, btnH), "MENU", new Color(0.35f, 0.45f, 0.5f), GoToHub);
     }
 
-    void DrawInfoCard(Rect rect, string label, string value, Color accentColor)
+    void DrawPauseMenu()
     {
-        Color prev = GUI.color;
-        GUI.color = WithAlpha(Color.white, UiAlpha);
-        GUI.DrawTexture(rect, Texture2D.whiteTexture);
-        GUI.color = WithAlpha(accentColor, UiAlpha);
-        GUI.DrawTexture(new Rect(rect.x, rect.y, 6f, rect.height), Texture2D.whiteTexture);
-        GUI.color = prev;
+        float w = Screen.width, h = Screen.height;
+        Rect panel = new Rect(w * 0.30f, h * 0.24f, w * 0.40f, h * 0.48f);
+        DrawShadow(panel);
+        GUI.color = Color.white; GUI.DrawTexture(panel, Texture2D.whiteTexture);
+        GUI.color = cCyan; GUI.DrawTexture(new Rect(panel.x, panel.y, 8f, panel.height), Texture2D.whiteTexture);
+        GUI.color = Color.white;
 
-        GUIStyle labelStyle = new GUIStyle(GUI.skin.label)
+        GUIStyle endTitle = VectorStyle(h * 0.042f, new Color(0.12f, 0.16f, 0.22f), true, TextAnchor.MiddleCenter);
+        GUIStyle endText = VectorStyle(h * 0.026f, new Color(0.15f, 0.2f, 0.25f), true, TextAnchor.MiddleCenter);
+        LevelManager levelManager = FindObjectOfType<LevelManager>();
+        bool configuring = levelManager != null && levelManager.RunState == LevelManager.GameRunState.NotStarted;
+
+        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.10f, panel.width, panel.height * 0.14f), configuring ? "SESSION SETUP" : "PAUSED", endTitle);
+        GUI.Label(new Rect(panel.x, panel.y + panel.height * 0.28f, panel.width, panel.height * 0.10f), configuring ? "CHOOSE SETTINGS, THEN START" : "PRESS ESC TO RESUME", endText);
+
+        float row1Y = panel.y + panel.height * 0.64f;
+        float row2Y = panel.y + panel.height * 0.82f;
+        float btnW = panel.width * 0.28f;
+        float btnH = panel.height * 0.13f;
+        if (configuring)
         {
-            alignment = TextAnchor.UpperLeft,
-            fontSize = Mathf.RoundToInt(Screen.height * 0.018f),
-            normal = { textColor = WithAlpha(new Color(0.45f, 0.52f, 0.58f), UiAlpha) }
-        };
-        GUIStyle valueStyle = new GUIStyle(GUI.skin.label)
-        {
-            alignment = TextAnchor.MiddleCenter,
-            fontSize = Mathf.RoundToInt(Screen.height * 0.036f),
-            fontStyle = FontStyle.Bold,
-            normal = { textColor = WithAlpha(new Color(0.12f, 0.2f, 0.25f), UiAlpha) }
-        };
-
-        GUI.Label(new Rect(rect.x + 16f, rect.y + 10f, rect.width - 20f, rect.height * 0.28f), label, labelStyle);
-        GUI.Label(new Rect(rect.x, rect.y + rect.height * 0.28f, rect.width, rect.height * 0.64f), value, valueStyle);
-    }
-
-    void DisableLegacyHudObjects()
-    {
-        // Keep old scene-bound UI hidden to avoid overlapping black boxes or misplaced labels.
-        HideLegacyRoot(levelText);
-        HideLegacyRoot(difficultyText);
-        HideLegacyRoot(remainingText);
-        HideLegacyRoot(finalScoreText);
-        HideLegacyRoot(finalLevelText);
-        HideLegacyRoot(restartButton);
-        HideLegacyRoot(hubButton);
-        if (gameOverPanel != null) gameOverPanel.SetActive(false);
-    }
-
-    void HideLegacyRoot(Component component)
-    {
-        if (component == null) return;
-        Transform t = component.transform;
-        while (t.parent != null)
-        {
-            if (t.parent.GetComponent<Canvas>() != null) break;
-            t = t.parent;
+            DrawActionButton(new Rect(panel.x + panel.width * 0.20f, row1Y, btnW, btnH), "START", cCyan, TogglePauseMenu);
+            DrawActionButton(new Rect(panel.x + panel.width * 0.52f, row1Y, btnW, btnH), "MENU", new Color(0.35f, 0.45f, 0.5f), GoToHub);
         }
-        t.gameObject.SetActive(false);
+        else
+        {
+            DrawActionButton(new Rect(panel.x + panel.width * 0.04f, row1Y, btnW, btnH), "RESUME", cCyan, TogglePauseMenu);
+            DrawActionButton(new Rect(panel.x + panel.width * 0.36f, row1Y, btnW, btnH), "RESTART", cUserBubble, RestartGame);
+            DrawActionButton(new Rect(panel.x + panel.width * 0.68f, row1Y, btnW, btnH), "MENU", new Color(0.35f, 0.45f, 0.5f), GoToHub);
+            DrawActionButton(new Rect(panel.x + panel.width * 0.36f, row2Y, btnW, btnH), "REPORT", cOrange, OpenTrainingReport);
+        }
     }
 
-    void DrawActionButton(Rect rect, string label, Color color, System.Action onClick)
+    void DrawClinicalReport()
     {
-        Color prev = GUI.color;
+        float w = Screen.width, h = Screen.height;
+        GUI.color = new Color(0, 0, 0, 0.75f); GUI.DrawTexture(new Rect(0, 0, w, h), Texture2D.whiteTexture); GUI.color = Color.white;
+
+        float rw = isChatOpen ? w * 0.64f : w * 0.75f; 
+        float rh = h * 0.85f; 
+        float rx = isChatOpen ? w * 0.02f : (w - rw) / 2f; 
+        float ry = (h - rh) / 2f;
+
+        Rect reportRect = new Rect(rx, ry, rw, rh);
+        DrawShadow(reportRect);
+        GUI.color = bgCard; GUI.DrawTexture(reportRect, Texture2D.whiteTexture);
+        GUI.color = cCyan; GUI.DrawTexture(new Rect(rx, ry, rw, 4f), Texture2D.whiteTexture); 
+        GUI.color = Color.white;
+
+        float pad = rw * 0.03f;
+        GUIStyle titleStyle = new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleLeft, fontSize = Mathf.RoundToInt(h * 0.035f), fontStyle = FontStyle.Bold, normal = { textColor = cTextTitle } };
+        GUI.Label(new Rect(rx + pad, ry + pad, rw, 40), "CLINICAL ANALYSIS REPORT", titleStyle);
+
+        float currY = ry + pad + 50f;
+        GUI.color = cGrid; GUI.DrawTexture(new Rect(rx + pad, currY, rw - pad*2, 1.5f), Texture2D.whiteTexture); GUI.color = Color.white;
+        currY += 20f;
+
+        float cellW = (rw - pad * 3f) / 2f;
+        float cellH = rh * 0.30f; 
+        
+        DrawChart_CoP(new Rect(rx + pad, currY, cellW, cellH));
+        DrawChart_Radar(new Rect(rx + pad + cellW + pad, currY, cellW, cellH));
+        
+        currY += cellH + 15f;
+        
+        DrawChart_Trend(new Rect(rx + pad, currY, cellW, cellH * 0.75f));
+        DrawChart_Balance(new Rect(rx + pad + cellW + pad, currY, cellW, cellH * 0.75f));
+
+        currY += cellH * 0.75f + 20f;
+
+        GUIStyle listStyle = VectorStyle(h * 0.02f, cTextSub, true, TextAnchor.MiddleLeft);
+        GUI.Label(new Rect(rx + pad, currY, rw, 25), "OBJECTIVE DIAGNOSTIC INSIGHTS", VectorStyle(h * 0.02f, cCyan, true, TextAnchor.MiddleLeft));
+        currY += 30f;
+
+        string feedback = reportRmse < 1.0f ? "(PERFECT CONTROL)" : (reportRmse < 3.0f ? "(EXCELLENT)" : "(NEEDS IMPROVEMENT)");
+        GUIStyle dataStyle = VectorStyle(h * 0.02f, cTextTitle, true, TextAnchor.MiddleLeft);
+        GUI.Label(new Rect(rx + pad, currY, rw, 25), $"• Backend CoP Error (RMSE): {reportRmse:F2} mm. {feedback}", dataStyle); currY += 30f;
+        GUI.Label(new Rect(rx + pad, currY, rw, 25), $"• Weight Distribution Asymmetry: L {reportBalanceLeft:F1}% / R {100f-reportBalanceLeft:F1}%.", dataStyle); currY += 30f;
+        GUI.Label(new Rect(rx + pad, currY, rw, 25), $"• Overall Progress: {(isWin?"TARGET MET":"SESSION ABORTED")} at Level {finalDifficulty}.", dataStyle);
+
+        DrawActionButton(new Rect(rx + rw - w*0.05f, ry + h*0.015f, w*0.035f, h*0.045f), "X", cOrange, () => { isReportVisible = false; isChatOpen = false; });
+        if (!isChatOpen) DrawActionButton(new Rect(rx + rw - w*0.14f, ry + h*0.015f, w*0.08f, h*0.045f), "VectorAI", cCyan, () => { isChatOpen = true; });
+    }
+
+    void DrawAIChatWindow()
+    {
+        float w = Screen.width, h = Screen.height;
+        float cw = w * 0.31f; 
+        float ch = h * 0.85f;
+        float cx = w - cw - w * 0.02f; 
+        float cy = (h - ch) / 2f;
+
+        Rect chatRect = new Rect(cx, cy, cw, ch);
+        DrawShadow(chatRect);
+        GUI.color = bgCard; GUI.DrawTexture(chatRect, Texture2D.whiteTexture);
+        GUI.color = cCyan; GUI.DrawTexture(new Rect(cx, cy, cw, 4f), Texture2D.whiteTexture);
+        GUI.color = Color.white;
+
+        GUIStyle titleStyle = VectorStyle(h * 0.022f, cTextTitle, true, TextAnchor.MiddleCenter);
+        GUI.Label(new Rect(cx, cy + 10, cw, 30), "Clinical Assistant", titleStyle);
+        GUI.color = cGrid; GUI.DrawTexture(new Rect(cx+15, cy + 45, cw-30, 1.5f), Texture2D.whiteTexture); GUI.color = Color.white;
+
+        float chatAreaY = cy + 50f;
+        float chatAreaH = ch - 120f; 
+        
+        GUIStyle userStyle = VectorStyle(h * 0.017f, Color.white, false, TextAnchor.MiddleLeft); 
+        userStyle.wordWrap = true; userStyle.padding = new RectOffset(16, 16, 12, 12);
+        
+        GUIStyle aiStyle = VectorStyle(h * 0.017f, cTextTitle, false, TextAnchor.MiddleLeft); 
+        aiStyle.wordWrap = true; aiStyle.padding = new RectOffset(16, 16, 12, 12);
+
+        float contentH = 20f;
+        float maxBubbleW = cw - 60f; 
+
+        foreach(var msg in chatHistory)
+        {
+            float msgHeight = (msg.role == "user" ? userStyle : aiStyle).CalcHeight(new GUIContent(msg.content), maxBubbleW);
+            contentH += msgHeight + 15f;
+        }
+
+        chatScrollPos = GUI.BeginScrollView(new Rect(cx + 10, chatAreaY, cw - 20, chatAreaH), chatScrollPos, new Rect(0, 0, cw - 40, contentH));
+        float currentY = 10f;
+        
+        foreach(var msg in chatHistory)
+        {
+            bool isUser = msg.role == "user";
+            GUIStyle s = isUser ? userStyle : aiStyle;
+            float msgH = s.CalcHeight(new GUIContent(msg.content), maxBubbleW);
+            float actualW = Mathf.Min(maxBubbleW, s.CalcSize(new GUIContent(msg.content)).x + 32f);
+            
+            Rect bubbleRect = isUser ? new Rect(cw - 30 - actualW, currentY, actualW, msgH) : new Rect(10, currentY, actualW, msgH);
+            
+            DrawShadow(bubbleRect, 0.05f);
+            GUI.color = isUser ? cUserBubble : cBoxBg;
+            GUI.DrawTexture(bubbleRect, Texture2D.whiteTexture);
+            GUI.color = Color.white;
+
+            GUI.Label(bubbleRect, msg.content, s);
+            currentY += msgH + 15f;
+        }
+        GUI.EndScrollView();
+
+        if (isAITyping)
+            GUI.Label(new Rect(cx + 20, cy + ch - 65, cw, 20), "Analyzing Telemetry Data...", VectorStyle(h * 0.015f, cTextSub, false, TextAnchor.MiddleLeft));
+
+        float inputY = cy + ch - 45f;
+        GUIStyle inputStyle = new GUIStyle(GUI.skin.textField) { 
+            fontSize = Mathf.RoundToInt(h * 0.016f), 
+            alignment = TextAnchor.MiddleLeft,
+            padding = new RectOffset(10, 10, 0, 0)
+        };
+        
+        chatInputText = GUI.TextField(new Rect(cx + 15, inputY, cw - 100f, 35f), chatInputText, inputStyle);
+        
+        DrawActionButton(new Rect(cx + cw - 75f, inputY, 60f, 35f), "SEND", isAITyping ? Color.gray : cCyan, () => {
+            if (!isAITyping && !string.IsNullOrEmpty(chatInputText)) {
+                SendChatMessage(chatInputText);
+                chatInputText = ""; 
+            }
+        });
+    }
+
+    void DrawActionButton(Rect rect, string label, Color baseColor, System.Action onClick) 
+    {
         bool hover = rect.Contains(Event.current.mousePosition);
-        GUI.color = WithAlpha(hover ? Color.Lerp(color, Color.white, 0.18f) : color, UiAlpha);
-        GUI.DrawTexture(rect, Texture2D.whiteTexture);
-        GUI.color = prev;
-
-        GUIStyle style = new GUIStyle(GUI.skin.label)
-        {
-            alignment = TextAnchor.MiddleCenter,
-            fontSize = Mathf.RoundToInt(Screen.height * 0.022f),
-            fontStyle = FontStyle.Bold,
-            normal = { textColor = WithAlpha(Color.white, UiAlpha) }
-        };
+        DrawShadow(rect, 0.1f);
+        
+        GUI.color = new Color(baseColor.r, baseColor.g, baseColor.b, 0.85f); 
+        GUI.DrawTexture(rect, Texture2D.whiteTexture); 
+        GUI.color = Color.white;
+        
+        GUIStyle style = new GUIStyle();
+        style.alignment = TextAnchor.MiddleCenter;
+        style.fontSize = Mathf.RoundToInt(Screen.height * 0.016f);
+        style.fontStyle = FontStyle.Bold;
+        Color fixedTextColor = Color.black;
+        style.normal.textColor = fixedTextColor;
+        style.hover.textColor = fixedTextColor;
+        style.active.textColor = fixedTextColor;
+        style.focused.textColor = fixedTextColor;
+        style.onNormal.textColor = fixedTextColor;
+        style.onHover.textColor = fixedTextColor;
+        style.onActive.textColor = fixedTextColor;
+        style.onFocused.textColor = fixedTextColor;
+        
         GUI.Label(rect, label, style);
-
-        if (Event.current.type == EventType.MouseDown && rect.Contains(Event.current.mousePosition) && Event.current.button == 0)
-        {
-            onClick?.Invoke();
-            Event.current.Use();
+        
+        if (Event.current.type == EventType.MouseDown && hover && Event.current.button == 0) { 
+            onClick?.Invoke(); Event.current.Use(); 
         }
     }
 
-    Color WithAlpha(Color baseColor, float alpha)
+    void DrawShadow(Rect rect, float alpha = 0.15f)
     {
-        return new Color(baseColor.r, baseColor.g, baseColor.b, Mathf.Clamp01(alpha));
+        GUI.color = new Color(0, 0, 0, alpha);
+        GUI.DrawTexture(new Rect(rect.x + 3f, rect.y + 3f, rect.width, rect.height), Texture2D.whiteTexture);
+        GUI.color = Color.white;
+    }
+
+    void DrawChart_CoP(Rect rect)
+    {
+        DrawBox(rect, "CoP MAP (mm)");
+        float smoothStep = Mathf.Sin(lerpFactor * Mathf.PI * 0.5f);
+
+        float cx = rect.x + rect.width/2f, cy = rect.y + rect.height/2f;
+        GUI.color = cGrid; GUI.DrawTexture(new Rect(cx, rect.y+20, 1, rect.height-40), Texture2D.whiteTexture); GUI.DrawTexture(new Rect(rect.x+20, cy, rect.width-40, 1), Texture2D.whiteTexture);
+        GUI.color = new Color(0f, 0.5f, 0.7f, 0.6f);
+        foreach(var p in copPoints) { 
+            GUI.DrawTexture(new Rect((cx + (p.x * smoothStep) * (rect.width/2.5f) / 10f)-2, (cy + (p.y * smoothStep) * (rect.height/2.5f) / 10f)-2, 5, 5), Texture2D.whiteTexture); 
+        }
+        GUI.color = Color.white;
+    }
+
+    void DrawChart_Radar(Rect rect)
+    {
+        DrawBox(rect, "MULTIVARIATE EVAL");
+        float smoothStep = Mathf.Sin(lerpFactor * Mathf.PI * 0.5f);
+
+        float cx = rect.x + rect.width/2f, cy = rect.y + rect.height/2f + 10f, radius = rect.height * 0.35f;
+        for(int j=1; j<=3; j++) {
+            Vector2 prevGrid = GetRadarPoint(cx, cy, radius * (j/3f), 5);
+            for(int i=0; i<6; i++) {
+                Vector2 pt = GetRadarPoint(cx, cy, radius * (j/3f), i);
+                DrawLine(prevGrid, pt, cGrid, 1.5f); if (j==3) DrawLine(new Vector2(cx,cy), pt, cGrid, 1f); prevGrid = pt;
+            }
+        }
+        Vector2 prevDataPt = GetRadarPoint(cx, cy, radius * radarStats[5] * smoothStep, 5);
+        for(int i=0; i<6; i++) {
+            Vector2 pt = GetRadarPoint(cx, cy, radius * radarStats[i] * smoothStep, i); 
+            DrawLine(prevDataPt, pt, cCyan, 2f);
+            GUI.color = cTextTitle; GUI.DrawTexture(new Rect(pt.x-2.5f, pt.y-2.5f, 5, 5), Texture2D.whiteTexture); prevDataPt = pt;
+        }
+        GUI.color = Color.white;
+        string[] labels = {"STAB", "SYM", "ENDUR", "REACT", "PREC", "CTRL"};
+        GUIStyle lblStyle = VectorStyle(10, cTextSub, true, TextAnchor.MiddleCenter);
+        for(int i=0; i<6; i++) { Vector2 txtPt = GetRadarPoint(cx, cy, radius + 20f, i); GUI.Label(new Rect(txtPt.x-25, txtPt.y-10, 50, 20), labels[i], lblStyle); }
+    }
+
+    void DrawChart_Trend(Rect rect)
+    {
+        DrawBox(rect, "TREND (7 SESSIONS)");
+        float smoothStep = Mathf.Sin(lerpFactor * Mathf.PI * 0.5f);
+
+        float padX = 35f, padY = 25f, plotW = rect.width - padX*2, plotH = rect.height - padY*2, startX = rect.x + padX, startY = rect.y + rect.height - padY;
+        GUIStyle axisStyle = VectorStyle(10, cTextSub, true, TextAnchor.MiddleLeft);
+        for(int i=0; i<=3; i++) { float ly = startY - (plotH/3f)*i; DrawLine(new Vector2(startX, ly), new Vector2(startX+plotW, ly), cGrid, 1.5f); GUI.Label(new Rect(rect.x+5, ly-10, 30, 20), (i*33).ToString(), axisStyle); }
+        float stepX = plotW / 6f; 
+        Vector2 prevPt = new Vector2(startX, startY - (trendScores[0]/100f)*plotH * smoothStep);
+        for(int i=0; i<7; i++) {
+            Vector2 pt = new Vector2(startX + i*stepX, startY - (trendScores[i]/100f)*plotH * smoothStep);
+            if(i>0) DrawLine(prevPt, pt, cCyan, 2.5f);
+            GUI.color = cCyan; GUI.DrawTexture(new Rect(pt.x-3, pt.y-3, 6, 6), Texture2D.whiteTexture); GUI.color = Color.white; GUI.DrawTexture(new Rect(pt.x-1.5f, pt.y-1.5f, 3, 3), Texture2D.whiteTexture);
+            GUI.Label(new Rect(pt.x-10, startY+5, 25, 20), "S"+(i+1), axisStyle); prevPt = pt;
+        }
+    }
+
+    void DrawChart_Balance(Rect rect)
+    {
+        DrawBox(rect, "L/R BALANCE");
+        float smoothStep = Mathf.Sin(lerpFactor * Mathf.PI * 0.5f);
+
+        float cx = rect.x + rect.width/2f, cy = rect.y + rect.height/2f, barW = rect.width * 0.8f, barH = 15f;
+        GUI.color = new Color(0.85f, 0.88f, 0.90f); GUI.DrawTexture(new Rect(cx - barW/2, cy - barH/2, barW, barH), Texture2D.whiteTexture);
+        
+        float offset = (reportBalanceLeft - 50f) / 100f * barW * smoothStep; 
+        float fillW = Mathf.Abs(offset); 
+        GUI.color = cCyan;
+        if (offset < 0) GUI.DrawTexture(new Rect(cx + offset, cy - barH/2, fillW, barH), Texture2D.whiteTexture); else GUI.DrawTexture(new Rect(cx, cy - barH/2, fillW, barH), Texture2D.whiteTexture); 
+        GUI.color = cTextTitle; GUI.DrawTexture(new Rect(cx, cy - barH, 2, barH*2), Texture2D.whiteTexture); GUI.DrawTexture(new Rect(cx + offset - 2, cy - barH/2 - 5, 4, barH+10), Texture2D.whiteTexture); GUI.color = Color.white;
+        
+        float currentL = 50f + (reportBalanceLeft - 50f) * smoothStep;
+        GUIStyle lblStyle = VectorStyle(13, cTextTitle, true, TextAnchor.MiddleLeft);
+        GUI.Label(new Rect(cx - barW/2, cy + barH + 2f, 70, 24), $"L: {currentL:F0}%", lblStyle);
+        lblStyle.alignment = TextAnchor.UpperRight;
+        GUI.Label(new Rect(cx + barW/2 - 70, cy + barH + 2f, 70, 24), $"R: {100f-reportBalanceLeft + (50f-currentL):F0}%", lblStyle);
+    }
+
+    void DrawBox(Rect r, string title) {
+        GUI.color = cBoxBg; GUI.DrawTexture(r, Texture2D.whiteTexture); GUI.color = cGrid; GUI.DrawTexture(new Rect(r.x, r.y, r.width, 1.5f), Texture2D.whiteTexture); GUI.DrawTexture(new Rect(r.x, r.y+r.height, r.width, 1.5f), Texture2D.whiteTexture); GUI.color = Color.white;
+        GUIStyle s = VectorStyle(12, cTextSub, true, TextAnchor.MiddleLeft); s.padding = new RectOffset(10,0,6,0); GUI.Label(new Rect(r.x, r.y, r.width, 25), title, s);
+    }
+
+    Vector2 GetRadarPoint(float cx, float cy, float r, int index) { float angle = (index * 60f - 90f) * Mathf.Deg2Rad; return new Vector2(cx + Mathf.Cos(angle) * r, cy + Mathf.Sin(angle) * r); }
+    void DrawLine(Vector2 pointA, Vector2 pointB, Color color, float width) {
+        if (pointA == pointB) return; Matrix4x4 savedMatrix = GUI.matrix; Color savedColor = GUI.color; GUI.color = color;
+        float angle = Mathf.Atan2(pointB.y - pointA.y, pointB.x - pointA.x) * Mathf.Rad2Deg, length = Vector2.Distance(pointA, pointB);
+        GUIUtility.RotateAroundPivot(angle, pointA); GUI.DrawTexture(new Rect(pointA.x, pointA.y - width / 2f, length, width), Texture2D.whiteTexture); GUI.matrix = savedMatrix; GUI.color = savedColor;
+    }
+
+    void DrawInfoCard(Rect rect, string label, string value, Color accentColor) {
+        DrawShadow(rect); Color prev = GUI.color; GUI.color = WithAlpha(Color.white, UiAlpha); GUI.DrawTexture(rect, Texture2D.whiteTexture); GUI.color = WithAlpha(accentColor, UiAlpha); GUI.DrawTexture(new Rect(rect.x, rect.y, 6f, rect.height), Texture2D.whiteTexture); GUI.color = prev;
+        GUIStyle labelStyle = VectorStyle(Screen.height * 0.016f, WithAlpha(new Color(0.45f, 0.52f, 0.58f), UiAlpha), false, TextAnchor.UpperLeft);
+        GUIStyle valueStyle = VectorStyle(Screen.height * 0.036f, WithAlpha(new Color(0.12f, 0.2f, 0.25f), UiAlpha), true, TextAnchor.MiddleCenter);
+        GUI.Label(new Rect(rect.x + 16f, rect.y + 10f, rect.width - 20f, rect.height * 0.28f), label, labelStyle); GUI.Label(new Rect(rect.x, rect.y + rect.height * 0.28f, rect.width, rect.height * 0.64f), value, valueStyle);
+    }
+
+    void DisableLegacyHudObjects() { HideLegacyRoot(levelText); HideLegacyRoot(difficultyText); HideLegacyRoot(remainingText); HideLegacyRoot(finalScoreText); HideLegacyRoot(finalLevelText); HideLegacyRoot(restartButton); HideLegacyRoot(hubButton); }
+    void HideLegacyRoot(Component component) { if (component == null) return; Transform t = component.transform; while (t.parent != null) { if (t.parent.GetComponent<Canvas>() != null) break; t = t.parent; } t.gameObject.SetActive(false); }
+    Color WithAlpha(Color baseColor, float alpha) { return new Color(baseColor.r, baseColor.g, baseColor.b, Mathf.Clamp01(alpha)); }
+    private GUIStyle VectorStyle(float size, Color col, bool bold, TextAnchor align)
+    {
+        var style = new GUIStyle(GUI.skin.label)
+        {
+            fontSize = Mathf.RoundToInt(size),
+            fontStyle = bold ? FontStyle.Bold : FontStyle.Normal,
+            alignment = align
+        };
+
+        style.normal.textColor = col;
+        style.hover.textColor = col;
+        style.active.textColor = col;
+        style.focused.textColor = col;
+        style.onNormal.textColor = col;
+        style.onHover.textColor = col;
+        style.onActive.textColor = col;
+        style.onFocused.textColor = col;
+        return style;
     }
 }

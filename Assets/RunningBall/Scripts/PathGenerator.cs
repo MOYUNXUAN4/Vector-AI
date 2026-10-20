@@ -5,136 +5,279 @@ using UnityEngine;
 public class PathGenerator : MonoBehaviour
 {
     [Header("实时速度控制")]
-    public float currentSpeed = 10f;  
-    public float minSpeed = 5f;       
-    public float maxSpeed = 30f;      
-    private float targetSpeed = 10f;
+    public float currentSpeed = 15f;
+    public float minSpeed = 11f;
+    public float maxSpeed = 34f;
+    private float targetSpeed = 15f;
 
-    [Header("动态难度参数 (平滑高速公路)")]
-    public float pathWidth = 12f;      
-    public float turnAmplitude = 25f;  // 【当前】默认弯道幅度更大、更明显
-    public float noiseStep = 0.015f;   
+    [Header("动态难度参数 (平滑过渡)")]
+    public float pathWidth = 12f;
+    public float turnAmplitude = 25f;
+    public float noiseStep = 0.015f;
 
     [Header("难度视觉反馈 (颜色)")]
-    public Color easyColor = new Color(0.2f, 0.9f, 0.4f);  
-    public Color normalColor = new Color(0.2f, 0.6f, 1f);  
-    public Color hardColor = new Color(1f, 0.2f, 0.2f);    
+    public Color easyColor = new Color(0.12f, 0.28f, 0.16f);
+    public Color normalColor = new Color(0.12f, 0.20f, 0.30f);
+    public Color hardColor = new Color(0.32f, 0.12f, 0.12f);
     private Color targetColor;
 
     [Header("路径基础设置")]
-    public int segmentCount = 60;     
-    public float segmentLength = 2f;  
+    public int segmentCount = 60;
+    public float segmentLength = 2f;
 
     private LineRenderer lineRenderer;
-    private List<Vector3> pathPoints = new List<Vector3>();
-    
-    // 生成新路点的连续游标
-    private float pathCursorZ = 0f;   
+    private Material roadMaterial;
+    private Mesh roadMesh;
+    private MeshFilter roadMeshFilter;
+    private MeshRenderer roadMeshRenderer;
+    private readonly List<Vector3> pathPoints = new List<Vector3>();
+    private readonly List<Vector3> meshVertices = new List<Vector3>(256);
+    private readonly List<int> meshTriangles = new List<int>(512);
+    private readonly List<Vector2> meshUvs = new List<Vector2>(256);
+    private float pathDistanceCursor = 0f;
 
     private float targetWidth;
     private float targetAmplitude;
     private float targetNoiseStep;
+    private int currentDifficultyLevel = 1;
+    private const float Level1InitialStraightDistance = 160f;
+    private const float Level1CurveRampDistance = 120f;
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.positionCount = segmentCount;
-        lineRenderer.alignment = LineAlignment.TransformZ;
+        lineRenderer.enabled = false;
 
         targetWidth = pathWidth;
         targetAmplitude = turnAmplitude;
         targetNoiseStep = noiseStep;
         targetColor = normalColor;
 
-        if (lineRenderer.material.HasProperty("_Color"))
-            lineRenderer.material.color = targetColor;
+        EnsureRoadMeshRenderer();
+        ApplyRoadColor(targetColor);
 
         float currentZ = 0f;
+        pathDistanceCursor = 0f;
+        float previousPathX = 0f;
         for (int i = 0; i < segmentCount; i++)
         {
-            float noiseX = (Mathf.PerlinNoise(pathCursorZ, 0) - 0.5f) * turnAmplitude;
-            pathPoints.Add(new Vector3(noiseX, 0, currentZ));
+            float pathX = EvaluateSmoothedPathX(previousPathX, pathDistanceCursor);
+            pathPoints.Add(new Vector3(pathX, 0f, currentZ));
+            previousPathX = pathX;
             currentZ += segmentLength;
-            pathCursorZ += noiseStep;
+            pathDistanceCursor += segmentLength;
         }
+
+        UpdateRoadMesh();
     }
 
     void Update()
     {
-        // 平滑过渡数值
-        pathWidth = Mathf.Lerp(pathWidth, targetWidth, Time.deltaTime * 1.5f); 
+        pathWidth = Mathf.Lerp(pathWidth, targetWidth, Time.deltaTime * 1.5f);
         turnAmplitude = Mathf.Lerp(turnAmplitude, targetAmplitude, Time.deltaTime * 0.8f);
         noiseStep = Mathf.Lerp(noiseStep, targetNoiseStep, Time.deltaTime * 0.8f);
         currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * 2f);
+        ApplyRoadColor(Color.Lerp(GetRoadColor(), targetColor, Time.deltaTime * 1.5f));
 
-        if (lineRenderer.material.HasProperty("_Color"))
-            lineRenderer.material.color = Color.Lerp(lineRenderer.material.color, targetColor, Time.deltaTime * 1.5f);
-
-        lineRenderer.startWidth = pathWidth;
-        lineRenderer.endWidth = pathWidth;
-
-        // 移动路点
         for (int i = 0; i < pathPoints.Count; i++)
         {
             Vector3 p = pathPoints[i];
-            p.z -= currentSpeed * Time.deltaTime; 
+            p.z -= currentSpeed * Time.deltaTime;
             pathPoints[i] = p;
         }
 
-        // 当最近的点跑到了身后，移除它，并在最前方生成一个新点
         while (pathPoints.Count > 0 && pathPoints[0].z < -10f)
         {
             pathPoints.RemoveAt(0);
             Vector3 lastPoint = pathPoints[pathPoints.Count - 1];
 
-            // 只对“即将生成的新路面”应用弯道扭曲，脚下的路绝对不动！
-            float noiseX = (Mathf.PerlinNoise(pathCursorZ, 0) - 0.5f) * turnAmplitude;
-            pathPoints.Add(new Vector3(noiseX, 0, lastPoint.z + segmentLength));
-            
-            pathCursorZ += noiseStep;
+            float pathX = EvaluateSmoothedPathX(lastPoint.x, pathDistanceCursor);
+            pathPoints.Add(new Vector3(pathX, 0f, lastPoint.z + segmentLength));
+            pathDistanceCursor += segmentLength;
         }
 
-        lineRenderer.SetPositions(pathPoints.ToArray());
+        UpdateRoadMesh();
     }
 
-    public void SetTargetSpeed(float speedRatio) 
+    void EnsureRoadMeshRenderer()
     {
-        if (speedRatio > 0) targetSpeed = Mathf.Lerp(10f, maxSpeed, speedRatio);
-        else if (speedRatio < 0) targetSpeed = Mathf.Lerp(10f, minSpeed, -speedRatio);
-        else targetSpeed = 10f; 
+        GameObject go = GameObject.Find("_PathGeneratorRoadMesh");
+        if (go == null) go = new GameObject("_PathGeneratorRoadMesh");
+
+        go.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
+        go.transform.localScale = Vector3.one;
+
+        roadMeshFilter = go.GetComponent<MeshFilter>();
+        if (roadMeshFilter == null) roadMeshFilter = go.AddComponent<MeshFilter>();
+
+        roadMeshRenderer = go.GetComponent<MeshRenderer>();
+        if (roadMeshRenderer == null) roadMeshRenderer = go.AddComponent<MeshRenderer>();
+        roadMeshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        roadMeshRenderer.receiveShadows = false;
+
+        roadMesh = roadMeshFilter.sharedMesh;
+        if (roadMesh == null)
+        {
+            roadMesh = new Mesh { name = "PathGeneratorRoadMesh" };
+            roadMesh.MarkDynamic();
+            roadMeshFilter.sharedMesh = roadMesh;
+        }
+
+        Material sourceMaterial = lineRenderer != null ? lineRenderer.sharedMaterial : null;
+        if (sourceMaterial != null)
+        {
+            roadMaterial = new Material(sourceMaterial);
+        }
+        else
+        {
+            Shader shader = Shader.Find("Universal Render Pipeline/Unlit");
+            if (shader == null) shader = Shader.Find("Universal Render Pipeline/Particles/Unlit");
+            if (shader == null) shader = Shader.Find("Particles/Standard Unlit");
+            if (shader == null) shader = Shader.Find("Unlit/Color");
+            roadMaterial = new Material(shader);
+        }
+
+        roadMeshRenderer.sharedMaterial = roadMaterial;
     }
 
-    // 接收重心转移幅度来进行难度调整
-    public void UpdateDifficulty(float movementAmplitude)
+    void UpdateRoadMesh()
     {
-        // 降低灵敏度：玩家必须晃动非常剧烈才会降低难度
-        if (movementAmplitude > 1.2f) 
+        if (roadMesh == null || pathPoints.Count < 2) return;
+
+        meshVertices.Clear();
+        meshTriangles.Clear();
+        meshUvs.Clear();
+
+        float surfaceY = transform.position.y;
+        int pointCount = pathPoints.Count;
+        float halfWidth = pathWidth * 0.5f;
+
+        for (int i = 0; i < pointCount; i++)
         {
-            targetWidth = 16f;          
-            targetAmplitude = 8f;       
-            targetNoiseStep = 0.01f;    
-            targetColor = easyColor;    
-            Debug.Log("难度下降：玩家运动量达标，路面变宽平缓！");
+            Vector3 current = pathPoints[i];
+            Vector3 forward;
+
+            if (i == 0)
+                forward = pathPoints[i + 1] - current;
+            else if (i == pointCount - 1)
+                forward = current - pathPoints[i - 1];
+            else
+                forward = pathPoints[i + 1] - pathPoints[i - 1];
+
+            forward.y = 0f;
+            if (forward.sqrMagnitude <= 0.0001f)
+                forward = Vector3.forward;
+            else
+                forward.Normalize();
+
+            Vector3 right = Vector3.Cross(Vector3.up, forward) * halfWidth;
+            meshVertices.Add(new Vector3(current.x - right.x, surfaceY, current.z - right.z));
+            meshVertices.Add(new Vector3(current.x + right.x, surfaceY, current.z + right.z));
+
+            float v = i / (float)(pointCount - 1);
+            meshUvs.Add(new Vector2(0f, v));
+            meshUvs.Add(new Vector2(1f, v));
         }
-        // 降低灵敏度：玩家必须站得像木头一样死板才会触发困难模式
-        else if (movementAmplitude < 0.1f) 
+
+        for (int i = 0; i < pointCount - 1; i++)
         {
-            targetWidth = 8f;           
-            targetAmplitude = 35f;      // 困难模式的弯道极其夸张明显！
-            targetNoiseStep = 0.02f;    
-            targetColor = hardColor;    
-            Debug.Log("难度上升：玩家太闲了，极限大弯道开启！");
+            int baseIndex = i * 2;
+            meshTriangles.Add(baseIndex + 0);
+            meshTriangles.Add(baseIndex + 2);
+            meshTriangles.Add(baseIndex + 1);
+            meshTriangles.Add(baseIndex + 1);
+            meshTriangles.Add(baseIndex + 2);
+            meshTriangles.Add(baseIndex + 3);
         }
-        else // 良好状态
+
+        roadMesh.Clear();
+        roadMesh.SetVertices(meshVertices);
+        roadMesh.SetTriangles(meshTriangles, 0);
+        roadMesh.SetUVs(0, meshUvs);
+        roadMesh.RecalculateNormals();
+        roadMesh.RecalculateBounds();
+    }
+
+    void ApplyRoadColor(Color color)
+    {
+        if (roadMaterial == null) return;
+
+        roadMaterial.color = color;
+        if (roadMaterial.HasProperty("_BaseColor")) roadMaterial.SetColor("_BaseColor", color);
+        if (roadMaterial.HasProperty("_Color")) roadMaterial.SetColor("_Color", color);
+    }
+
+    Color GetRoadColor()
+    {
+        if (roadMaterial == null) return targetColor;
+        if (roadMaterial.HasProperty("_BaseColor")) return roadMaterial.GetColor("_BaseColor");
+        if (roadMaterial.HasProperty("_Color")) return roadMaterial.GetColor("_Color");
+        return roadMaterial.color;
+    }
+
+    float EvaluatePathX(float distance)
+    {
+        if (currentDifficultyLevel == 1)
+            return 0f;
+
+        float longCurve = Mathf.Sin(distance * noiseStep) * turnAmplitude;
+        float detailNoise = (Mathf.PerlinNoise(distance * noiseStep * 0.30f, 0f) - 0.5f) * turnAmplitude * 0.04f;
+        return longCurve + detailNoise;
+    }
+
+    float EvaluateSmoothedPathX(float previousX, float distance)
+    {
+        float targetX = EvaluatePathX(distance);
+        return Mathf.Lerp(previousX, targetX, 0.18f);
+    }
+
+    public void SetTargetSpeed(float speedRatio)
+    {
+        if (speedRatio > 0f) targetSpeed = Mathf.Lerp(15f, maxSpeed, speedRatio);
+        else if (speedRatio < 0f) targetSpeed = Mathf.Lerp(15f, minSpeed, -speedRatio);
+        else targetSpeed = 15f;
+    }
+
+    public void ApplyAIDifficulty(int level)
+    {
+        level = Mathf.Clamp(level, 1, 5);
+        currentDifficultyLevel = level;
+
+        switch (level)
         {
-            targetWidth = 12f;          
-            targetAmplitude = 25f;      // 正常模式也保持明显的弯道
-            targetNoiseStep = 0.015f;   
-            targetColor = normalColor;  
+            case 1:
+                targetWidth = 16f;
+                targetAmplitude = 10f;
+                targetNoiseStep = 0.0045f;
+                targetColor = easyColor;
+                break;
+            case 2:
+                targetWidth = 14f;
+                targetAmplitude = 11f;
+                targetNoiseStep = 0.0055f;
+                targetColor = easyColor;
+                break;
+            case 3:
+                targetWidth = 12f;
+                targetAmplitude = 14f;
+                targetNoiseStep = 0.0068f;
+                targetColor = normalColor;
+                break;
+            case 4:
+                targetWidth = 10f;
+                targetAmplitude = 24f;
+                targetNoiseStep = 0.0092f;
+                targetColor = hardColor;
+                break;
+            default:
+                targetWidth = 8f;
+                targetAmplitude = 34f;
+                targetNoiseStep = 0.0110f;
+                targetColor = hardColor;
+                break;
         }
     }
 
-    // 只用于判断是否掉落的安全查找法
     public float GetPathCenterX(float zPosition)
     {
         if (pathPoints.Count < 2) return 0f;
@@ -148,6 +291,6 @@ public class PathGenerator : MonoBehaviour
                 return Mathf.Lerp(p1.x, p2.x, t);
             }
         }
-        return pathPoints[0].x; 
+        return pathPoints[0].x;
     }
 }

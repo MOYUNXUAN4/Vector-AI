@@ -1,10 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 复刻 Processing 版「路径跟随」：噪声弯道、Catmull 插值、鼠标左右控制、出界判定、相机跟随。
-/// 挂到空物体上，指定 <see cref="ball"/> 与 <see cref="gameCamera"/> 即可在任意场景（如 Untitled）运行。
-/// </summary>
 public class PathFollowingGame : MonoBehaviour
 {
     public enum PathState
@@ -19,20 +15,25 @@ public class PathFollowingGame : MonoBehaviour
     [SerializeField] Camera gameCamera;
 
     [Header("可选")]
-    [Tooltip("点击 EXIT 后加载的场景名；留空则仅打印日志")]
     [SerializeField] string menuSceneName = "";
 
-    [Header("配色 (Processing 近似)")]
+    [Header("配色")]
     [SerializeField] Color pathColor = new Color(1f, 1f, 1f, 1f);
     [SerializeField] Color accentColor = new Color(0f, 120f / 255f, 210f / 255f, 190f / 255f);
     [SerializeField] Color hudAccent = new Color(0f, 120f / 255f, 210f / 255f, 1f);
     [SerializeField] Color hudText = new Color(20f / 255f, 30f / 255f, 40f / 255f, 1f);
     [SerializeField] Color hudWarn = new Color(1f, 60f / 255f, 60f / 255f, 1f);
 
-    [Header("游戏参数 (与 Processing 比例一致，单位为 Unity 世界坐标)")]
+    [Header("游戏参数")]
     [SerializeField] float baseSpeed = 24f;
     [SerializeField] float speedLerp = 0.06f;
+    
+    // AI 动态控制的目标参数，用来做平滑过渡
     [SerializeField] float pathWidth = 4.3f;
+    private float targetPathWidth = 4.3f;
+    [SerializeField] float turnAmplitude = 26f;
+    private float targetTurnAmplitude = 26f;
+
     [SerializeField] float ballRadius = 0.25f;
     [SerializeField] float ballFixedZ = -2.6f;
     [SerializeField] float steerLerp = 0.14f;
@@ -41,7 +42,6 @@ public class PathFollowingGame : MonoBehaviour
     [SerializeField] float offTrackExtra = 0.18f;
 
     [Header("路径生成")]
-    [SerializeField] float turnAmplitude = 26f;
     [SerializeField] float turnNoiseStep = 0.012f;
     [SerializeField] float turnLerp = 0.26f;
     [SerializeField] float turnBaseStrength = 0.85f;
@@ -49,20 +49,19 @@ public class PathFollowingGame : MonoBehaviour
     [SerializeField] float frontZ = 75f;
     [SerializeField] float backZTarget = -280f;
 
-    [Header("相机 (相对球的偏移，球在 X 由玩家控制)")]
+    [Header("相机")]
     [SerializeField] Vector3 cameraLocalOffset = new Vector3(0f, 2.8f, -5.2f);
     [SerializeField] Vector3 lookLocalOffset = new Vector3(0f, 0.6f, 17f);
     [SerializeField] float camFollowLerpWaiting = 0.08f;
     [SerializeField] float camFollowLerpPlaying = 0.10f;
 
-    [Header("路径网格 LOD / 淡出")]
+    [Header("路径网格")]
     [SerializeField] int subNear = 6;
     [SerializeField] int subMid = 2;
     [SerializeField] int subFar = 1;
     [SerializeField] float hideBehindBallZ = 3.8f;
     [SerializeField] float fadeStartDist = 26f;
     [SerializeField] float fadeEndDist = 110f;
-    [Tooltip("路径点列队头 z 大于「相机 z + 该值」时从队头丢弃（Processing 里相机在 +Z 一侧；此处用「相机前方」阈值，勿用 camZ - offset 否则会裁掉整条前方路面）")]
     [SerializeField] float zCullAheadOfCamera = 60f;
     [SerializeField] float roadSurfaceY = 0.02f;
 
@@ -100,7 +99,16 @@ public class PathFollowingGame : MonoBehaviour
     void Awake()
     {
         if (gameCamera == null) gameCamera = Camera.main;
+
+        if (!enabled)
+        {
+            DisableGeneratedRoadVisuals();
+            return;
+        }
+
         EnsureRoadRenderer();
+        targetPathWidth = pathWidth;
+        targetTurnAmplitude = turnAmplitude;
     }
 
     void Start()
@@ -111,6 +119,10 @@ public class PathFollowingGame : MonoBehaviour
 
     void Update()
     {
+        // 平滑插值难度参数，防止画面突变
+        pathWidth = Mathf.Lerp(pathWidth, targetPathWidth, Time.deltaTime * 2f);
+        turnAmplitude = Mathf.Lerp(turnAmplitude, targetTurnAmplitude, Time.deltaTime * 1.5f);
+
         UpdatePathGameLogic();
         UpdateRoadMesh();
         UpdateCenterLine();
@@ -131,6 +143,7 @@ public class PathFollowingGame : MonoBehaviour
         go.transform.localPosition = Vector3.zero;
         go.transform.localRotation = Quaternion.identity;
         go.transform.localScale = Vector3.one;
+        go.SetActive(true);
 
         roadMeshFilter = go.GetComponent<MeshFilter>();
         if (roadMeshFilter == null) roadMeshFilter = go.AddComponent<MeshFilter>();
@@ -154,6 +167,7 @@ public class PathFollowingGame : MonoBehaviour
             ? transform.Find("_PathCenterLine").gameObject
             : new GameObject("_PathCenterLine");
         lineGo.transform.SetParent(transform, false);
+        lineGo.SetActive(true);
         centerLine = lineGo.GetComponent<LineRenderer>();
         if (centerLine == null) centerLine = lineGo.AddComponent<LineRenderer>();
         centerLine.loop = false;
@@ -164,6 +178,15 @@ public class PathFollowingGame : MonoBehaviour
         lineMaterial.color = accentColor;
         if (lineMaterial.HasProperty("_BaseColor")) lineMaterial.SetColor("_BaseColor", accentColor);
         centerLine.sharedMaterial = lineMaterial;
+    }
+
+    void DisableGeneratedRoadVisuals()
+    {
+        Transform roadMeshTransform = transform.Find("_PathRoadMesh");
+        if (roadMeshTransform != null) roadMeshTransform.gameObject.SetActive(false);
+
+        Transform centerLineTransform = transform.Find("_PathCenterLine");
+        if (centerLineTransform != null) centerLineTransform.gameObject.SetActive(false);
     }
 
     static Shader PickRoadShader()
@@ -373,9 +396,7 @@ public class PathFollowingGame : MonoBehaviour
         if (roadMesh == null || pathSegments.Count < 2) return;
 
         float camZ = gameCamera != null ? gameCamera.transform.position.z : 0f;
-        // Processing：跳过「两端 z 仍远大于裁切高度」的段；Unity 坐标下勿用 camZ - 常量，否则会误判并裁掉全部前方路面。
         float zSkipBothVeryHigh = camZ + (gameCamera != null ? gameCamera.farClipPlane : 500f);
-        // 与 Processing 中 BALL_Z+380≈120 对应：仅当整段仍在「极远超高 z」时才隐藏；当前 frontZ≤75 时该条件恒为假，不会误伤可见路面。
         float zHideBothAbove = Mathf.Max(120f, ballFixedZ + hideBehindBallZ + frontZ);
 
         meshVerts.Clear();
@@ -567,5 +588,24 @@ public class PathFollowingGame : MonoBehaviour
         GUI.Label(new Rect(0f, Screen.height * 0.5f + 60f, Screen.width, 36f), "Click to Retry", smallStyle);
         GUI.contentColor = Color.white;
         GUI.color = Color.white;
+    }
+
+    // ==============================================================
+    // [新增] 专门给网络层暴露的接口，让 Python 后端能拿到数据并修改游戏
+    // ==============================================================
+    public float GetPlayerX() { return playerX; }
+    
+    public float GetTargetX() { return GetPathXAt(ballFixedZ); }
+    
+    public int GetDistance() { return distanceTravelled; }
+
+    public void ApplyAIDifficulty(int level)
+    {
+        level = Mathf.Clamp(level, 1, 5);
+        
+        // Level 1 最简单: 宽路面(8f)，极缓的弯道(10f)
+        // Level 5 最困难: 窄路面(2.5f)，极急的弯道(45f)
+        targetPathWidth = Mathf.Lerp(8f, 2.5f, (level - 1) / 4f);
+        targetTurnAmplitude = Mathf.Lerp(10f, 45f, (level - 1) / 4f);
     }
 }

@@ -22,7 +22,8 @@ public class InputHandler : MonoBehaviour
         Vector2 input = Vector2.zero;
 
         input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        float rawV = Input.GetAxisRaw("Vertical");
+        input.y = rawV > 0f ? 1f : (rawV < 0f ? 0.18f : 0.45f);
 
         carHandler.SetInput(input);
 

@@ -204,7 +204,7 @@ public class InfiniteFallStageRuntime : MonoBehaviour
     {
         if (ballVisual == null)
         {
-            Debug.LogError($"[InfiniteFallStageRuntime] 没找到场景球。请将你的球命名为 '{requiredBallName}' 或手动拖到 ballVisual。");
+            Debug.LogError($"[InfiniteFallStageRuntime] Scene ball not found. Rename your ball to '{requiredBallName}' or assign ballVisual manually.");
             return false;
         }
 

@@ -119,7 +119,7 @@ public class InfiniteFallGameController : MonoBehaviour
                 ball = fallbackBall.transform;
                 ball.SetParent(transform, false);
                 ball.localPosition = new Vector3(1.8f, 2f, 0f);
-                Debug.LogWarning("[InfiniteFallGameController] 未找到 PF_Ball，已创建临时球体。");
+                Debug.LogWarning("[InfiniteFallGameController] PF_Ball not found. Created a temporary sphere.");
             }
         }
 
@@ -139,7 +139,7 @@ public class InfiniteFallGameController : MonoBehaviour
                 fallbackPlatform.transform.localScale = new Vector3(config.platformRadius * 2f, config.layerThickness * 0.5f, config.platformRadius * 2f);
                 platformPrefab = fallbackPlatform.transform;
                 fallbackPlatform.SetActive(false);
-                Debug.LogWarning("[InfiniteFallGameController] 未找到 PF_PlatformRing，已创建临时圆柱平台模板。");
+                Debug.LogWarning("[InfiniteFallGameController] PF_PlatformRing not found. Created a temporary cylinder platform template.");
             }
         }
 
@@ -169,7 +169,7 @@ public class InfiniteFallGameController : MonoBehaviour
 
         _ready = ball != null && platformPrefab != null && gameplayCamera != null;
         if (!_ready)
-            Debug.LogError("[InfiniteFallGameController] 缺少关键引用：ball/platformPrefab/camera。");
+            Debug.LogError("[InfiniteFallGameController] Missing critical references: ball/platformPrefab/camera.");
     }
 
     private static T GetOrAdd<T>(GameObject go) where T : Component
