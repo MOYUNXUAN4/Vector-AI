@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "deployment_id": "wii-control-20261014-symbols-reconciled-20261019",
+  "verified_date_local": "2026-10-19",
+  "timezone": "Asia/Singapore",
+  "entry_executable": "WiiBalanceWalker.exe",
+  "runtime_files": [
+    {"path":"WiiBalanceWalker.exe","size":78336,"sha256":"470d411abddec8d0124a59461a35b86a491709a108f2365df322fc029dd93fac"},
+    {"path":"WiiBalanceWalker.pdb","size":103936,"sha256":"b0e3002f5d2c1e074eea5df123c40530a1d0d707939238e2861a16f71c51ee5d"},
+    {"path":"WiiBalanceWalker.exe.config","size":4387,"sha256":"83819fb52ab413b1046575cf3921219030519a1b05559f122f90ad41b79a0161"},
+    {"path":"InTheHand.Net.Personal.dll","size":431616,"sha256":"e06795b4337771504bfa6a3b5d7cb8307bba00c7baa2b061d4cd224207e0d3ba"},
+    {"path":"vJoyInterface.dll","size":147456,"sha256":"e4a777b03203edcc8a0b61c6c739df30d5b7576218328be37d7aa9f677af8700"},
+    {"path":"vJoyInterfaceWrap.dll","size":13824,"sha256":"7b83f85e8d15dbf2e19573b5ee071aa3cdc278e273e90161b1bd595bf57bd00e"},
+    {"path":"WiimoteLib.dll","size":33792,"sha256":"7508dc3567e6d35eafbf0e052c7e10e25e1d6147c2d4b06522382d306414e5cb"}
+  ],
+  "symbols": {
+    "exe_codeview_guid": "725ee573-4908-4e80-b2c6-5530a0d3e433",
+    "exe_codeview_age": 1,
+    "pdb_guid": "725ee573-4908-4e80-b2c6-5530a0d3e433",
+    "pdb_age": 1,
+    "matching_pdb_source": "backend/parallel_20261014/control_telemetry_sender_luna/bin/WiiBalanceWalker.pdb",
+    "identity_method": "PE CodeView RSDS GUID/age versus Windows PDB MSF stream 1 GUID/age"
+  },
+  "provenance": {
+    "exe_preserved_byte_for_byte": true,
+    "exe_equal_copies": ["WiiBalanceWalker-src/WiiBalanceWalker/obj/x86/Release/WiiBalanceWalker.exe", "backend/parallel_20261014/control_telemetry_sender_luna/bin/WiiBalanceWalker.exe"],
+    "source_snapshot_sha256": {
+      "WiiBalanceWalker-src/WiiBalanceWalker/FormMain.cs": "2cc92a4b08412e99af5fefa0f63920f985280a4f5fef692b00704c701fefbacb",
+      "WiiBalanceWalker-src/WiiBalanceWalker/WiiBalanceWalker.csproj": "e18afd45d6d77502d29df316ecbbfce44e8e7458b41020944082a9e2e04629b8"
+    },
+    "reproducible_build_verified": false,
+    "loaded_process_verified": false,
+    "note": "Current file inventory and matching symbols; source snapshots are not proof of the historical executed build. No compilation or runtime change was performed."
+  }
+}

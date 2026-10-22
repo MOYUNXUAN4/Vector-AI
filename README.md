@@ -4,6 +4,7 @@
 [![Unity](https://img.shields.io/badge/Unity-6000.3.9f1%20LTS-black?logo=unity)](https://unity.com/)
 [![Python](https://img.shields.io/badge/Python-3.10%20--%203.14-blue?logo=python)](https://www.python.org/)
 [![Machine Learning](https://img.shields.io/badge/ML-LightGBM%20%7C%20RandomForest%20%7C%20GRU-orange)]()
+[![Hardware](https://img.shields.io/badge/Hardware-Wii%20Balance%20Board%20(Direct%20UDP)-red)]()
 [![Render Pipeline](https://img.shields.io/badge/Pipeline-URP%20(Universal%20RP)-blue)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(Standalone)-lightgrey)]()
 [![License](https://img.shields.io/badge/License-Academic%20Research-green)]()
@@ -14,9 +15,9 @@
 
 **Vector AI** is an advanced closed-loop biofeedback rehabilitation and gaming system designed for real-time balance impairment intervention, postural stability training, and fall risk mitigation. 
 
-By integrating a **Nintendo Wii Balance Board (WBB)** with a custom **Unity 6 physics simulation engine** and an ultra-low-latency **Python machine learning backend (LightGBM/GRU/TTE)**, Vector AI tracks participant Center of Pressure (CoP) at 110 Hz, simulates continuous postural destabilization across dynamically dropping platforms, and delivers proactive, multi-tier biofeedback cues (Visual, Kinematic, and Spatial) before a loss of balance or edge fall occurs.
+By integrating a **Nintendo Wii Balance Board (WBB)** via a custom **high-frequency UDP hardware bridge (`WiiBalanceWalker/`)** with an ultra-low-latency **Python machine learning backend (`Backend/`)** and an immersive **Unity 6 physics simulation engine (`Assets/`)**, Vector AI tracks participant Center of Pressure (CoP) at 110 Hz, simulates continuous postural destabilization across dynamically dropping platforms, and delivers proactive, multi-tier biofeedback cues (Visual, Kinematic, and Spatial) before a loss of balance or edge fall occurs.
 
-This repository is organized as a unified full-stack monorepo containing both the **Unity 6 client** and the **Python AI backend & verification engine**.
+This repository is organized as a unified full-stack monorepo containing the **Unity 6 client**, the **Python AI backend**, and the **Wii Balance Board Direct UDP hardware bridge**.
 
 ```
 +-----------------------------------------------------------------------------------------+
@@ -28,6 +29,13 @@ This repository is organized as a unified full-stack monorepo containing both th
 |       |       4-Corner Load Sensors (TL, TR, BL, BR) @ 110 Hz     |                     |
 |       +-----------------------------+-----------------------------+                     |
 |                                     | Bluetooth HID                                     |
+|                                     v                                                   |
+|       +-----------------------------------------------------------+                     |
+|       |       WiiBalanceWalker Bridge (WiiBalanceWalker/)         |                     |
+|       |   - Direct UDP 100 Hz Thread (10 ms Sampling)             |                     |
+|       |   - Raw 4-Corner Force & Offset Streaming                 |                     |
+|       +-----------------------------+-----------------------------+                     |
+|                                     | Direct UDP Port 5005                              |
 |                                     v                                                   |
 |       +-----------------------------------------------------------+                     |
 |       |             Python Real-Time Server Engine (Backend/)     |                     |
@@ -104,6 +112,16 @@ This repository is organized as a unified full-stack monorepo containing both th
 │   ├── requirements-telemetry.txt      # Python runtime dependencies
 │   └── DATA_COLLECTION_PROTOCOL.md     # Clinical experimental protocol & participant guidelines
 │
+├── WiiBalanceWalker/                   # Hardware Bridge: Wii Balance Board Direct UDP Fork
+│   ├── Start_WiiBalanceWalker_Verified.cmd # Verified one-click launch script
+│   ├── Check_WiiInstance.ps1           # Heuristic process guardian for ghost process prevention
+│   ├── Verify_Deployment.ps1           # SHA-256 manifest and PDB symbol integrity verification
+│   ├── deployment_manifest.json        # Deployment manifest pinning trusted binaries and PDB symbols
+│   ├── WiiBalanceWalker.exe            # Modified high-frequency Direct UDP streaming executable
+│   ├── WiiBalanceWalker-src/           # C# source code with independent 100 Hz UDP telemetry thread
+│   ├── WiimoteLib-src/                 # Modified WiimoteLib library source code
+│   └── README.md                       # Hardware bridge architecture and open-source acknowledgments
+│
 ├── Packages/                           # Unity Package Manager manifest & package locks
 ├── ProjectSettings/                    # Unity project settings & physics configurations
 ├── README.md                           # Monorepo documentation
@@ -150,7 +168,13 @@ Vector AI features a multi-tiered biofeedback warning framework (`UIManager.cs`)
 
 ## 🚀 Quickstart & Setup Guide
 
-### 1. Python Backend Setup
+### 1. Launch Hardware Bridge (Wii Balance Board)
+1. Turn on PC Bluetooth.
+2. Press the red **SYNC** button in the Wii Balance Board battery compartment.
+3. In `WiiBalanceWalker/`, double-click **`Start_WiiBalanceWalker_Verified.cmd`**.
+4. Click **Bluetooth Search** $\rightarrow$ **Connect**. Real-time UDP streaming will commence on port 5005.
+
+### 2. Launch Python Backend
 ```bash
 # Navigate to the backend directory
 cd Backend
@@ -170,12 +194,11 @@ python master_server.py
 # Or double-click: Start_Master_With_Model.cmd
 ```
 
-### 2. Unity Client Setup
+### 3. Launch Unity Client
 1. **Launch Unity Hub** $\rightarrow$ Click **Add** $\rightarrow$ Select this project repository root folder.
 2. Ensure editor version is set to **Unity 6 LTS (6000.3.9f1)**.
 3. Open `Assets/Endness Falling/Scenes/Stage/EndlessFalling.unity`.
-4. In the Inspector, verify `backendIP = 127.0.0.1` and `backendPort = 5005`.
-5. Enter Play Mode or build the Standalone Player:
+4. Enter Play Mode or build the Standalone Player:
    - Go to **File** $\rightarrow$ **Build Profiles** $\rightarrow$ Select **VectorAi** $\rightarrow$ Click **Build and Run**.
 
 ---
@@ -212,3 +235,7 @@ The repository includes a scientific quality assurance pipeline in `Backend/para
 - **Author & Principal Investigator**: QI YUXUAN (QI YUXAUN)
 - **Academic Context**: Final Year Project (FYP) - Biofeedback & Machine Learning Driven Neurorehabilitation System
 - **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)
+
+### Open-Source Acknowledgments
+- **WiiBalanceWalker Base Project**: Shachar Liberman (v0.5) / Richard Perry (v0.1-v0.4, GreyCube.com) under Microsoft Public License (MS-PL).
+- **WiimoteLib**: Brian Peek / Shachar Liberman.
