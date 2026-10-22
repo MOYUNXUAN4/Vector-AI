@@ -1,0 +1,45 @@
+# Credentials and Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python Virtual Environments & Dependencies
+.codex_pydeps/
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Large Binary Data & Telemetry Logs (>50MB)
+telemetry_logs/
+database/
+databse/
+reports/
+ProfilerCaptures/
+*.data
+*.raw
+*.bin
+*.dll
+*.so
+*.dylib
+
+# Historical local experiment scratch directories (>200MB)
+parallel_20261013/
+parallel_20261014/
+parallel_20261015/
+parallel_20261016/
+parallel_20261017/
+parallel_20261018/
+parallel_20261019/
+
+# OS and Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

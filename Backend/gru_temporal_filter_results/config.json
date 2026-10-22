@@ -1,0 +1,1542 @@
+{
+  "task": "offline_gru_temporal_filters",
+  "threshold_fixed": 0.75,
+  "horizon_seconds": 0.5,
+  "window_seconds": 1.0,
+  "stride_seconds": 0.25,
+  "sequence_length": 60,
+  "hidden_size": 32,
+  "epochs": 8,
+  "batch_size": 256,
+  "seed": 20261001,
+  "development_datasets": [
+    "TEST9282",
+    "TEST930",
+    "TEST931"
+  ],
+  "frozen_dataset": "TEST929",
+  "development_sessions": 117,
+  "frozen_TEST929_sessions": 30,
+  "development_windows": 12209,
+  "frozen_TEST929_windows": 3788,
+  "features": [
+    "ball_pos_x",
+    "ball_pos_z",
+    "ball_velocity_x",
+    "ball_velocity_z",
+    "ball_radial_distance",
+    "ball_radial_velocity",
+    "target_edge_distance",
+    "target_edge_radial_velocity",
+    "directional_edge_distance",
+    "target_hole_distance",
+    "target_hole_approach_velocity",
+    "platform_tilt",
+    "platform_level",
+    "difficulty",
+    "platform_radius",
+    "ball_radius",
+    "edge_warning_margin",
+    "edge_warning_radius"
+  ],
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "consecutive_k_values": [
+    2,
+    3,
+    4
+  ],
+  "cancellation_durations_seconds": [
+    0.2,
+    0.25,
+    0.3,
+    0.5,
+    0.75
+  ],
+  "cancellation_velocity_rule": "continuous finite preferred velocity < 0; target_edge_radial_velocity preferred with ball_radial_velocity row-level fallback",
+  "cancellation_missing_field_policy": "review_required; leave predictions unchanged for that session",
+  "velocity_inventory_summary": {
+    "sessions_total": 147,
+    "sessions_with_preferred_velocity": 147,
+    "sessions_missing_preferred_velocity": 0,
+    "source_counts": {
+      "target_edge_radial_velocity_preferred_with_ball_fallback": 147
+    }
+  },
+  "velocity_inventory": {
+    "session_20260928_134104_345522": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1240,
+      "ball_radial_velocity_finite_rows": 1240,
+      "preferred_velocity_finite_rows": 1240,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_134537_379414": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1168,
+      "ball_radial_velocity_finite_rows": 1168,
+      "preferred_velocity_finite_rows": 1168,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_134646_656900": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1134,
+      "ball_radial_velocity_finite_rows": 1134,
+      "preferred_velocity_finite_rows": 1134,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_135454_490052": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2669,
+      "ball_radial_velocity_finite_rows": 2669,
+      "preferred_velocity_finite_rows": 2669,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_135659_769315": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1697,
+      "ball_radial_velocity_finite_rows": 1697,
+      "preferred_velocity_finite_rows": 1697,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140509_009985": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1495,
+      "ball_radial_velocity_finite_rows": 1495,
+      "preferred_velocity_finite_rows": 1495,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140648_772754": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2045,
+      "ball_radial_velocity_finite_rows": 2045,
+      "preferred_velocity_finite_rows": 2045,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_135849_098547": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 3046,
+      "ball_radial_velocity_finite_rows": 3046,
+      "preferred_velocity_finite_rows": 3046,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140125_051536": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 3203,
+      "ball_radial_velocity_finite_rows": 3203,
+      "preferred_velocity_finite_rows": 3203,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140825_439095": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1434,
+      "ball_radial_velocity_finite_rows": 1434,
+      "preferred_velocity_finite_rows": 1434,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140911_718528": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1173,
+      "ball_radial_velocity_finite_rows": 1173,
+      "preferred_velocity_finite_rows": 1173,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_140953_347731": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1153,
+      "ball_radial_velocity_finite_rows": 1153,
+      "preferred_velocity_finite_rows": 1153,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_142852_078394": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2505,
+      "ball_radial_velocity_finite_rows": 2505,
+      "preferred_velocity_finite_rows": 2505,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_143150_010391": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2285,
+      "ball_radial_velocity_finite_rows": 2285,
+      "preferred_velocity_finite_rows": 2285,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_143639_168164": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2994,
+      "ball_radial_velocity_finite_rows": 2994,
+      "preferred_velocity_finite_rows": 2994,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_143840_587649": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1316,
+      "ball_radial_velocity_finite_rows": 1316,
+      "preferred_velocity_finite_rows": 1316,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_144512_044772": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1247,
+      "ball_radial_velocity_finite_rows": 1247,
+      "preferred_velocity_finite_rows": 1247,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_144816_540448": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1172,
+      "ball_radial_velocity_finite_rows": 1172,
+      "preferred_velocity_finite_rows": 1172,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_144900_986438": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1228,
+      "ball_radial_velocity_finite_rows": 1228,
+      "preferred_velocity_finite_rows": 1228,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_145007_311156": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1250,
+      "ball_radial_velocity_finite_rows": 1250,
+      "preferred_velocity_finite_rows": 1250,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_145852_738277": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2468,
+      "ball_radial_velocity_finite_rows": 2468,
+      "preferred_velocity_finite_rows": 2468,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_150015_818982": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1313,
+      "ball_radial_velocity_finite_rows": 1313,
+      "preferred_velocity_finite_rows": 1313,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_150203_196343": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1178,
+      "ball_radial_velocity_finite_rows": 1178,
+      "preferred_velocity_finite_rows": 1178,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_150540_823073": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1177,
+      "ball_radial_velocity_finite_rows": 1177,
+      "preferred_velocity_finite_rows": 1177,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_150629_577604": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1148,
+      "ball_radial_velocity_finite_rows": 1148,
+      "preferred_velocity_finite_rows": 1148,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_152021_999147": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 3786,
+      "ball_radial_velocity_finite_rows": 3786,
+      "preferred_velocity_finite_rows": 3786,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_152440_263160": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 3864,
+      "ball_radial_velocity_finite_rows": 3864,
+      "preferred_velocity_finite_rows": 3864,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_152813_957678": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1289,
+      "ball_radial_velocity_finite_rows": 1289,
+      "preferred_velocity_finite_rows": 1289,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_152940_601750": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1480,
+      "ball_radial_velocity_finite_rows": 1480,
+      "preferred_velocity_finite_rows": 1480,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_153046_342926": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1124,
+      "ball_radial_velocity_finite_rows": 1124,
+      "preferred_velocity_finite_rows": 1124,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_154250_809302": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1204,
+      "ball_radial_velocity_finite_rows": 1204,
+      "preferred_velocity_finite_rows": 1204,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_154330_443769": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1376,
+      "ball_radial_velocity_finite_rows": 1376,
+      "preferred_velocity_finite_rows": 1376,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_154418_596450": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1073,
+      "ball_radial_velocity_finite_rows": 1073,
+      "preferred_velocity_finite_rows": 1073,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_155948_195276": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2739,
+      "ball_radial_velocity_finite_rows": 2739,
+      "preferred_velocity_finite_rows": 2739,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_160339_805618": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2187,
+      "ball_radial_velocity_finite_rows": 2187,
+      "preferred_velocity_finite_rows": 2187,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_160729_834119": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 2742,
+      "ball_radial_velocity_finite_rows": 2742,
+      "preferred_velocity_finite_rows": 2742,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_160939_949823": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1163,
+      "ball_radial_velocity_finite_rows": 1163,
+      "preferred_velocity_finite_rows": 1163,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_161021_881058": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1248,
+      "ball_radial_velocity_finite_rows": 1248,
+      "preferred_velocity_finite_rows": 1248,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260928_161112_462418": {
+      "dataset": "TEST9282",
+      "target_edge_radial_velocity_finite_rows": 1183,
+      "ball_radial_velocity_finite_rows": 1183,
+      "preferred_velocity_finite_rows": 1183,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_141554_449406": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1439,
+      "ball_radial_velocity_finite_rows": 1439,
+      "preferred_velocity_finite_rows": 1439,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_142133_737611": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 3444,
+      "ball_radial_velocity_finite_rows": 3444,
+      "preferred_velocity_finite_rows": 3444,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_143309_563950": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 3474,
+      "ball_radial_velocity_finite_rows": 3474,
+      "preferred_velocity_finite_rows": 3474,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_141943_651533": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1655,
+      "ball_radial_velocity_finite_rows": 1655,
+      "preferred_velocity_finite_rows": 1655,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_142902_129773": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2203,
+      "ball_radial_velocity_finite_rows": 2203,
+      "preferred_velocity_finite_rows": 2203,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_143121_481933": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2296,
+      "ball_radial_velocity_finite_rows": 2296,
+      "preferred_velocity_finite_rows": 2296,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_143916_951223": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1236,
+      "ball_radial_velocity_finite_rows": 1236,
+      "preferred_velocity_finite_rows": 1236,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_144026_432732": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 3180,
+      "ball_radial_velocity_finite_rows": 3180,
+      "preferred_velocity_finite_rows": 3180,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_145240_016465": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2781,
+      "ball_radial_velocity_finite_rows": 2781,
+      "preferred_velocity_finite_rows": 2781,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_145640_455896": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1194,
+      "ball_radial_velocity_finite_rows": 1194,
+      "preferred_velocity_finite_rows": 1194,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_145749_128318": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 955,
+      "ball_radial_velocity_finite_rows": 955,
+      "preferred_velocity_finite_rows": 955,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_145833_241952": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1212,
+      "ball_radial_velocity_finite_rows": 1212,
+      "preferred_velocity_finite_rows": 1212,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_151513_103798": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1451,
+      "ball_radial_velocity_finite_rows": 1451,
+      "preferred_velocity_finite_rows": 1451,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_151615_577060": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 3157,
+      "ball_radial_velocity_finite_rows": 3157,
+      "preferred_velocity_finite_rows": 3157,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_152324_843836": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2602,
+      "ball_radial_velocity_finite_rows": 2602,
+      "preferred_velocity_finite_rows": 2602,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_151907_014177": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2210,
+      "ball_radial_velocity_finite_rows": 2210,
+      "preferred_velocity_finite_rows": 2210,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_152533_717861": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 839,
+      "ball_radial_velocity_finite_rows": 839,
+      "preferred_velocity_finite_rows": 839,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_152620_062521": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1254,
+      "ball_radial_velocity_finite_rows": 1254,
+      "preferred_velocity_finite_rows": 1254,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_153359_003119": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1296,
+      "ball_radial_velocity_finite_rows": 1296,
+      "preferred_velocity_finite_rows": 1296,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_153515_917326": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2709,
+      "ball_radial_velocity_finite_rows": 2709,
+      "preferred_velocity_finite_rows": 2709,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_153709_879558": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2591,
+      "ball_radial_velocity_finite_rows": 2591,
+      "preferred_velocity_finite_rows": 2591,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_153934_358435": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 937,
+      "ball_radial_velocity_finite_rows": 937,
+      "preferred_velocity_finite_rows": 937,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154042_586112": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1060,
+      "ball_radial_velocity_finite_rows": 1060,
+      "preferred_velocity_finite_rows": 1060,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154125_215222": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1281,
+      "ball_radial_velocity_finite_rows": 1281,
+      "preferred_velocity_finite_rows": 1281,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154441_694068": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1346,
+      "ball_radial_velocity_finite_rows": 1346,
+      "preferred_velocity_finite_rows": 1346,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154701_180683": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2197,
+      "ball_radial_velocity_finite_rows": 2197,
+      "preferred_velocity_finite_rows": 2197,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154920_610001": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 2077,
+      "ball_radial_velocity_finite_rows": 2077,
+      "preferred_velocity_finite_rows": 2077,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_154559_409291": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 728,
+      "ball_radial_velocity_finite_rows": 728,
+      "preferred_velocity_finite_rows": 728,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_155321_816675": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1086,
+      "ball_radial_velocity_finite_rows": 1086,
+      "preferred_velocity_finite_rows": 1086,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_155407_381663": {
+      "dataset": "TEST930",
+      "target_edge_radial_velocity_finite_rows": 1490,
+      "ball_radial_velocity_finite_rows": 1490,
+      "preferred_velocity_finite_rows": 1490,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_162918_250209": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1016,
+      "ball_radial_velocity_finite_rows": 1016,
+      "preferred_velocity_finite_rows": 1016,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_163126_443946": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 719,
+      "ball_radial_velocity_finite_rows": 719,
+      "preferred_velocity_finite_rows": 719,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_163559_237760": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1186,
+      "ball_radial_velocity_finite_rows": 1186,
+      "preferred_velocity_finite_rows": 1186,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_164101_081778": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1435,
+      "ball_radial_velocity_finite_rows": 1435,
+      "preferred_velocity_finite_rows": 1435,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_164251_501944": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2965,
+      "ball_radial_velocity_finite_rows": 2965,
+      "preferred_velocity_finite_rows": 2965,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_164934_629588": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2588,
+      "ball_radial_velocity_finite_rows": 2588,
+      "preferred_velocity_finite_rows": 2588,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_165204_083301": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 839,
+      "ball_radial_velocity_finite_rows": 839,
+      "preferred_velocity_finite_rows": 839,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_165318_858113": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1228,
+      "ball_radial_velocity_finite_rows": 1228,
+      "preferred_velocity_finite_rows": 1228,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_165449_865967": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 3203,
+      "ball_radial_velocity_finite_rows": 3203,
+      "preferred_velocity_finite_rows": 3203,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_165659_861716": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2661,
+      "ball_radial_velocity_finite_rows": 2661,
+      "preferred_velocity_finite_rows": 2661,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_165910_211099": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2392,
+      "ball_radial_velocity_finite_rows": 2392,
+      "preferred_velocity_finite_rows": 2392,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_170532_077040": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 909,
+      "ball_radial_velocity_finite_rows": 909,
+      "preferred_velocity_finite_rows": 909,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_170635_973310": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1372,
+      "ball_radial_velocity_finite_rows": 1372,
+      "preferred_velocity_finite_rows": 1372,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_171010_465209": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1335,
+      "ball_radial_velocity_finite_rows": 1335,
+      "preferred_velocity_finite_rows": 1335,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_171154_095562": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1616,
+      "ball_radial_velocity_finite_rows": 1616,
+      "preferred_velocity_finite_rows": 1616,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_171849_164086": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2584,
+      "ball_radial_velocity_finite_rows": 2584,
+      "preferred_velocity_finite_rows": 2584,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_172130_321513": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 4134,
+      "ball_radial_velocity_finite_rows": 4134,
+      "preferred_velocity_finite_rows": 4134,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_172420_553385": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1715,
+      "ball_radial_velocity_finite_rows": 1715,
+      "preferred_velocity_finite_rows": 1715,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_172546_219773": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 666,
+      "ball_radial_velocity_finite_rows": 666,
+      "preferred_velocity_finite_rows": 666,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_195155_946027": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 984,
+      "ball_radial_velocity_finite_rows": 984,
+      "preferred_velocity_finite_rows": 984,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_195410_541501": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 884,
+      "ball_radial_velocity_finite_rows": 884,
+      "preferred_velocity_finite_rows": 884,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_195524_207173": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2522,
+      "ball_radial_velocity_finite_rows": 2522,
+      "preferred_velocity_finite_rows": 2522,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_195721_548125": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2308,
+      "ball_radial_velocity_finite_rows": 2308,
+      "preferred_velocity_finite_rows": 2308,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200014_534668": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2158,
+      "ball_radial_velocity_finite_rows": 2158,
+      "preferred_velocity_finite_rows": 2158,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200131_822382": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2437,
+      "ball_radial_velocity_finite_rows": 2437,
+      "preferred_velocity_finite_rows": 2437,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200315_060414": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 631,
+      "ball_radial_velocity_finite_rows": 631,
+      "preferred_velocity_finite_rows": 631,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200410_141259": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 897,
+      "ball_radial_velocity_finite_rows": 897,
+      "preferred_velocity_finite_rows": 897,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200647_756049": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 684,
+      "ball_radial_velocity_finite_rows": 684,
+      "preferred_velocity_finite_rows": 684,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200803_648762": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1036,
+      "ball_radial_velocity_finite_rows": 1036,
+      "preferred_velocity_finite_rows": 1036,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_200848_415125": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 926,
+      "ball_radial_velocity_finite_rows": 926,
+      "preferred_velocity_finite_rows": 926,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201000_948925": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1955,
+      "ball_radial_velocity_finite_rows": 1955,
+      "preferred_velocity_finite_rows": 1955,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201148_064533": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1770,
+      "ball_radial_velocity_finite_rows": 1770,
+      "preferred_velocity_finite_rows": 1770,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201335_263054": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1932,
+      "ball_radial_velocity_finite_rows": 1932,
+      "preferred_velocity_finite_rows": 1932,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201456_742142": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2228,
+      "ball_radial_velocity_finite_rows": 2228,
+      "preferred_velocity_finite_rows": 2228,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201612_133867": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1899,
+      "ball_radial_velocity_finite_rows": 1899,
+      "preferred_velocity_finite_rows": 1899,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201728_919168": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2367,
+      "ball_radial_velocity_finite_rows": 2367,
+      "preferred_velocity_finite_rows": 2367,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_201914_782106": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 703,
+      "ball_radial_velocity_finite_rows": 703,
+      "preferred_velocity_finite_rows": 703,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202022_913311": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 770,
+      "ball_radial_velocity_finite_rows": 770,
+      "preferred_velocity_finite_rows": 770,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202202_294336": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1233,
+      "ball_radial_velocity_finite_rows": 1233,
+      "preferred_velocity_finite_rows": 1233,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202244_044371": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1260,
+      "ball_radial_velocity_finite_rows": 1260,
+      "preferred_velocity_finite_rows": 1260,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202522_188091": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 591,
+      "ball_radial_velocity_finite_rows": 591,
+      "preferred_velocity_finite_rows": 591,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202615_646568": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1887,
+      "ball_radial_velocity_finite_rows": 1887,
+      "preferred_velocity_finite_rows": 1887,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202803_094632": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1732,
+      "ball_radial_velocity_finite_rows": 1732,
+      "preferred_velocity_finite_rows": 1732,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_202903_995370": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 1849,
+      "ball_radial_velocity_finite_rows": 1849,
+      "preferred_velocity_finite_rows": 1849,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_203013_395182": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 2395,
+      "ball_radial_velocity_finite_rows": 2395,
+      "preferred_velocity_finite_rows": 2395,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_203202_223682": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 465,
+      "ball_radial_velocity_finite_rows": 465,
+      "preferred_velocity_finite_rows": 465,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_203304_538324": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 725,
+      "ball_radial_velocity_finite_rows": 725,
+      "preferred_velocity_finite_rows": 725,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260930_203407_527246": {
+      "dataset": "TEST931",
+      "target_edge_radial_velocity_finite_rows": 856,
+      "ball_radial_velocity_finite_rows": 856,
+      "preferred_velocity_finite_rows": 856,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_110927_442148": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1198,
+      "ball_radial_velocity_finite_rows": 1198,
+      "preferred_velocity_finite_rows": 1198,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_111018_781333": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1293,
+      "ball_radial_velocity_finite_rows": 1293,
+      "preferred_velocity_finite_rows": 1293,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_111202_803939": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2425,
+      "ball_radial_velocity_finite_rows": 2425,
+      "preferred_velocity_finite_rows": 2425,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_111724_597943": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1064,
+      "ball_radial_velocity_finite_rows": 1064,
+      "preferred_velocity_finite_rows": 1064,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_112019_019069": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 4954,
+      "ball_radial_velocity_finite_rows": 4954,
+      "preferred_velocity_finite_rows": 4954,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_112455_515872": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 3711,
+      "ball_radial_velocity_finite_rows": 3711,
+      "preferred_velocity_finite_rows": 3711,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_113751_444804": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1147,
+      "ball_radial_velocity_finite_rows": 1147,
+      "preferred_velocity_finite_rows": 1147,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_113834_808828": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1649,
+      "ball_radial_velocity_finite_rows": 1649,
+      "preferred_velocity_finite_rows": 1649,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_114014_795136": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 4015,
+      "ball_radial_velocity_finite_rows": 4015,
+      "preferred_velocity_finite_rows": 4015,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_114223_293129": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 3231,
+      "ball_radial_velocity_finite_rows": 3231,
+      "preferred_velocity_finite_rows": 3231,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_114511_591870": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1365,
+      "ball_radial_velocity_finite_rows": 1365,
+      "preferred_velocity_finite_rows": 1365,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_114647_014112": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1228,
+      "ball_radial_velocity_finite_rows": 1228,
+      "preferred_velocity_finite_rows": 1228,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_114942_195544": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1351,
+      "ball_radial_velocity_finite_rows": 1351,
+      "preferred_velocity_finite_rows": 1351,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_115036_828602": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1287,
+      "ball_radial_velocity_finite_rows": 1287,
+      "preferred_velocity_finite_rows": 1287,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_115347_375030": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2761,
+      "ball_radial_velocity_finite_rows": 2761,
+      "preferred_velocity_finite_rows": 2761,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_115453_296456": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 3126,
+      "ball_radial_velocity_finite_rows": 3126,
+      "preferred_velocity_finite_rows": 3126,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_115713_158988": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1360,
+      "ball_radial_velocity_finite_rows": 1360,
+      "preferred_velocity_finite_rows": 1360,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_115808_998483": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 960,
+      "ball_radial_velocity_finite_rows": 960,
+      "preferred_velocity_finite_rows": 960,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_120136_785058": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1211,
+      "ball_radial_velocity_finite_rows": 1211,
+      "preferred_velocity_finite_rows": 1211,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_120222_005294": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1245,
+      "ball_radial_velocity_finite_rows": 1245,
+      "preferred_velocity_finite_rows": 1245,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_120633_398135": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2885,
+      "ball_radial_velocity_finite_rows": 2885,
+      "preferred_velocity_finite_rows": 2885,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_120920_552950": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 3335,
+      "ball_radial_velocity_finite_rows": 3335,
+      "preferred_velocity_finite_rows": 3335,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121145_400008": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2843,
+      "ball_radial_velocity_finite_rows": 2843,
+      "preferred_velocity_finite_rows": 2843,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121424_163407": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1475,
+      "ball_radial_velocity_finite_rows": 1475,
+      "preferred_velocity_finite_rows": 1475,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121543_540346": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1401,
+      "ball_radial_velocity_finite_rows": 1401,
+      "preferred_velocity_finite_rows": 1401,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121635_734618": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1400,
+      "ball_radial_velocity_finite_rows": 1400,
+      "preferred_velocity_finite_rows": 1400,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121803_801382": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2814,
+      "ball_radial_velocity_finite_rows": 2814,
+      "preferred_velocity_finite_rows": 2814,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_121915_771430": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 1882,
+      "ball_radial_velocity_finite_rows": 1882,
+      "preferred_velocity_finite_rows": 1882,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_122327_432369": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 2611,
+      "ball_radial_velocity_finite_rows": 2611,
+      "preferred_velocity_finite_rows": 2611,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    },
+    "session_20260929_122444_387955": {
+      "dataset": "TEST929",
+      "target_edge_radial_velocity_finite_rows": 907,
+      "ball_radial_velocity_finite_rows": 907,
+      "preferred_velocity_finite_rows": 907,
+      "source": "target_edge_radial_velocity_preferred_with_ball_fallback",
+      "available": true,
+      "review_required": false
+    }
+  },
+  "train_only_scaler": {
+    "median": [
+      0.20721527934074402,
+      -1.170244812965393,
+      -1.3260934572656424e-08,
+      0.0,
+      2.7930545806884766,
+      0.1207284927368164,
+      5.200229167938232,
+      0.1207284927368164,
+      5.200229167938232,
+      3.4795775413513184,
+      0.0,
+      0.0,
+      1.0,
+      3.0,
+      7.942231178283691,
+      0.5,
+      1.0,
+      6.942231178283691
+    ],
+    "scale_iqr_or_std": [
+      2.050471067428589,
+      2.647718906402588,
+      4.787258148193359,
+      4.88189697265625,
+      2.532667636871338,
+      3.8517537117004395,
+      2.812673807144165,
+      3.8517537117004395,
+      2.812673807144165,
+      3.2707343101501465,
+      3.555784225463867,
+      1.0,
+      1.0,
+      3.0,
+      1.7409214973449707,
+      2.3663540460461263e-08,
+      4.7327080920922526e-08,
+      1.7409214973449707
+    ]
+  },
+  "training": {
+    "result": {
+      "status": "trained",
+      "device": "cpu",
+      "epochs": 8,
+      "batch_size": 256,
+      "hidden_size": 32,
+      "layers": 1,
+      "dropout": 0.0,
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "train_windows": 12209,
+      "train_positive_windows": 92,
+      "train_negative_windows": 12117,
+      "pos_weight": 131.70652173913044
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.9338408534725507
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.4174438342452049
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.21760584693402052
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.2814258535703023
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.2386852438406398
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.20576438148661205
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.1599443911885222
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.20905278304902217
+      }
+    ]
+  },
+  "manifest_notes": [
+    {
+      "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST9282\\analysis_reduced_sensitivity_20260928_primary_review\\session_manifest.csv",
+      "training_scope": true,
+      "manifest_rows": 42,
+      "selected_rows": 39,
+      "sessions_loaded": 39,
+      "missing_or_unreadable": [],
+      "filtered_rows": 3
+    },
+    {
+      "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST930\\analysis_20260929_review\\session_manifest.csv",
+      "training_scope": true,
+      "manifest_rows": 30,
+      "selected_rows": 30,
+      "sessions_loaded": 30,
+      "missing_or_unreadable": [],
+      "filtered_rows": 0
+    },
+    {
+      "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST931\\analysis_20261001_luna\\session_manifest.csv",
+      "training_scope": true,
+      "manifest_rows": 53,
+      "selected_rows": 48,
+      "sessions_loaded": 48,
+      "missing_or_unreadable": [],
+      "filtered_rows": 5
+    },
+    {
+      "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST929\\analysis_20260929_luna\\session_manifest.csv",
+      "training_scope": false,
+      "manifest_rows": 30,
+      "selected_rows": 30,
+      "sessions_loaded": 30,
+      "missing_or_unreadable": [],
+      "filtered_rows": 0
+    }
+  ],
+  "raw_files_modified": false,
+  "test_set_used_for_training_or_selection": false
+}

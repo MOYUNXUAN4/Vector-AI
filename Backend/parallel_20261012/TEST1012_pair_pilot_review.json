@@ -1,0 +1,546 @@
+{
+  "method": {
+    "screen": "raw CSV proxy only; no live display inference",
+    "anchor": "last positive clearance row before consecutive valid running L1 crossing",
+    "clearance": "directional_edge_distance - ball_radius",
+    "angle": "ball center minus platform center",
+    "fall_sampling": "latest same-context outward sample at or before lower anchor minus offset; age <=0.06s",
+    "completion_sampling": "current outward row; future recovery within 1.5s only for cohort eligibility",
+    "recovery": "future inward radial velocity <-0.05m/s continuously >=0.1s, c gain >=0.02m over latest same-context baseline at/before end-0.1s, c>0, all rows consecutive and gaps <=0.1s",
+    "matching_cost": "angle_delta/30 + clearance_delta/0.5 + radial_velocity_delta/0.75; max pair count then minimum sum",
+    "no_model_state_or_sensitivity_recorded": true
+  },
+  "fall_sessions": {
+    "session_20261012_201753_282830": {
+      "anchor_lower_seq": 615,
+      "anchor_upper_seq": 616,
+      "samples": {
+        "0.8": null,
+        "0.6": null,
+        "0.4": {
+          "sequence": 590,
+          "age_seconds": 0.01699995994567871,
+          "clearance": 1.2494072914123535,
+          "radial_velocity": 2.5314159393310547,
+          "angle_deg": 192.59360477049373,
+          "platform_id": "-84908",
+          "version_id": "-84908-g1"
+        }
+      },
+      "sample_rejections": {
+        "0.8": "not positive-clearance/outward radial velocity",
+        "0.6": "not positive-clearance/outward radial velocity"
+      }
+    },
+    "session_20261012_201929_389058": {
+      "anchor_lower_seq": 934,
+      "anchor_upper_seq": 935,
+      "samples": {
+        "0.8": {
+          "sequence": 885,
+          "age_seconds": 0.015000104904174805,
+          "clearance": 2.001439094543457,
+          "radial_velocity": 2.185619831085205,
+          "angle_deg": 82.72706130626992,
+          "platform_id": "-85562",
+          "version_id": "-85562-g1"
+        },
+        "0.6": {
+          "sequence": 898,
+          "age_seconds": 0.0010001659393310547,
+          "clearance": 1.4954748153686523,
+          "radial_velocity": 2.4787168502807617,
+          "angle_deg": 90.00116972207799,
+          "platform_id": "-85562",
+          "version_id": "-85562-g1"
+        },
+        "0.4": {
+          "sequence": 909,
+          "age_seconds": 0.014999866485595703,
+          "clearance": 1.0346455574035645,
+          "radial_velocity": 2.4780452251434326,
+          "angle_deg": 91.3568937480071,
+          "platform_id": "-85562",
+          "version_id": "-85562-g1"
+        }
+      },
+      "sample_rejections": {}
+    },
+    "session_20261012_201948_796111": {
+      "anchor_lower_seq": 912,
+      "anchor_upper_seq": 913,
+      "samples": {
+        "0.8": {
+          "sequence": 863,
+          "age_seconds": 0.01600027084350586,
+          "clearance": 2.042351722717285,
+          "radial_velocity": 2.476991653442383,
+          "angle_deg": 89.02274313928585,
+          "platform_id": "-85728",
+          "version_id": "-85728-g1"
+        },
+        "0.6": {
+          "sequence": 875,
+          "age_seconds": 0.017000198364257812,
+          "clearance": 1.5461206436157227,
+          "radial_velocity": 2.478379726409912,
+          "angle_deg": 89.12801149876037,
+          "platform_id": "-85728",
+          "version_id": "-85728-g1"
+        },
+        "0.4": {
+          "sequence": 887,
+          "age_seconds": 0.01900005340576172,
+          "clearance": 1.055619716644287,
+          "radial_velocity": 2.478431463241577,
+          "angle_deg": 89.2118216099137,
+          "platform_id": "-85728",
+          "version_id": "-85728-g1"
+        }
+      },
+      "sample_rejections": {}
+    },
+    "session_20261012_202006_528702": {
+      "anchor_lower_seq": 619,
+      "anchor_upper_seq": 620,
+      "samples": {
+        "0.8": {
+          "sequence": 570,
+          "age_seconds": 0.01900005340576172,
+          "clearance": 1.7960429191589355,
+          "radial_velocity": 2.3370182514190674,
+          "angle_deg": 289.4635885472412,
+          "platform_id": "-85892",
+          "version_id": "-85892-g1"
+        },
+        "0.6": {
+          "sequence": 583,
+          "age_seconds": 0.002000093460083008,
+          "clearance": 1.3680262565612793,
+          "radial_velocity": 1.786527395248413,
+          "angle_deg": 284.66219202431535,
+          "platform_id": "-85892",
+          "version_id": "-85892-g1"
+        },
+        "0.4": {
+          "sequence": 595,
+          "age_seconds": 0.0009999275207519531,
+          "clearance": 0.9554839134216309,
+          "radial_velocity": 2.1125473976135254,
+          "angle_deg": 277.9391495406559,
+          "platform_id": "-85892",
+          "version_id": "-85892-g1"
+        }
+      },
+      "sample_rejections": {}
+    },
+    "session_20261012_202019_348109": {
+      "anchor_lower_seq": 516,
+      "anchor_upper_seq": 517,
+      "samples": {
+        "0.8": {
+          "sequence": 467,
+          "age_seconds": 0.016000032424926758,
+          "clearance": 2.016878604888916,
+          "radial_velocity": 2.4483819007873535,
+          "angle_deg": 278.9655511560725,
+          "platform_id": "-86054",
+          "version_id": "-86054-g1"
+        },
+        "0.6": {
+          "sequence": 479,
+          "age_seconds": 0.014000177383422852,
+          "clearance": 1.5207796096801758,
+          "radial_velocity": 2.4545297622680664,
+          "angle_deg": 278.00239420041436,
+          "platform_id": "-86054",
+          "version_id": "-86054-g1"
+        },
+        "0.4": {
+          "sequence": 492,
+          "age_seconds": 0.002000093460083008,
+          "clearance": 0.9960837364196777,
+          "radial_velocity": 2.459204912185669,
+          "angle_deg": 277.1844363410414,
+          "platform_id": "-86054",
+          "version_id": "-86054-g1"
+        }
+      },
+      "sample_rejections": {}
+    },
+    "session_20261012_202031_072605": {
+      "anchor_lower_seq": 681,
+      "anchor_upper_seq": 682,
+      "samples": {
+        "0.8": {
+          "sequence": 632,
+          "age_seconds": 0.015000104904174805,
+          "clearance": 2.0535459518432617,
+          "radial_velocity": 2.604222536087036,
+          "angle_deg": 353.7486850970439,
+          "platform_id": "-86216",
+          "version_id": "-86216-g1"
+        },
+        "0.6": {
+          "sequence": 644,
+          "age_seconds": 0.016000032424926758,
+          "clearance": 1.555391788482666,
+          "radial_velocity": 2.4626669883728027,
+          "angle_deg": 353.27804863535175,
+          "platform_id": "-86216",
+          "version_id": "-86216-g1"
+        },
+        "0.4": {
+          "sequence": 656,
+          "age_seconds": 0.010999917984008789,
+          "clearance": 1.051257610321045,
+          "radial_velocity": 2.4648194313049316,
+          "angle_deg": 353.94127305772065,
+          "platform_id": "-86216",
+          "version_id": "-86216-g1"
+        }
+      },
+      "sample_rejections": {}
+    }
+  },
+  "completion_control_counts": {
+    "session_20261012_201501_583328": 507,
+    "session_20261012_201537_424286": 470,
+    "session_20261012_201610_080573": 387,
+    "session_20261012_201647_039319": 422,
+    "session_20261012_201728_372912": 316,
+    "session_20261012_201806_185949": 308,
+    "session_20261012_201832_486360": 373,
+    "session_20261012_201902_617504": 440
+  },
+  "excluded_sessions": [
+    {
+      "session": "session_20261012_202045_661325",
+      "outcome": "edge_exit",
+      "terminal_layers": [
+        "2"
+      ],
+      "reason": "outside first-layer fall/completion cohorts"
+    }
+  ],
+  "offset_results": [
+    {
+      "offset_seconds": 0.8,
+      "pair_count": 5,
+      "fall_coverage": "5/6",
+      "completion_coverage": "5/8",
+      "pairs": [
+        {
+          "fall_session": "session_20261012_201929_389058",
+          "complete_session": "session_20261012_201501_583328",
+          "fall_anchor_lower_seq": 934,
+          "fall_anchor_upper_seq": 935,
+          "fall_asof_seq": 885,
+          "complete_recovery_label_seq": 590,
+          "complete_current_seq": 526,
+          "fall_age_seconds": 0.015000104904174805,
+          "future_recovery_delay_seconds": 1.069000005722046,
+          "angle_delta_deg": 1.5199538779780823,
+          "clearance_delta": 0.007567405700683594,
+          "radial_velocity_delta": 0.2639138698577881,
+          "normalized_additive_cost": 0.41768510047768737
+        },
+        {
+          "fall_session": "session_20261012_201948_796111",
+          "complete_session": "session_20261012_201537_424286",
+          "fall_anchor_lower_seq": 912,
+          "fall_anchor_upper_seq": 913,
+          "fall_asof_seq": 863,
+          "complete_recovery_label_seq": 548,
+          "complete_current_seq": 490,
+          "fall_age_seconds": 0.01600027084350586,
+          "future_recovery_delay_seconds": 0.9689998626708984,
+          "angle_delta_deg": 0.30044341386314954,
+          "clearance_delta": 0.012300491333007812,
+          "radial_velocity_delta": 0.0015020370483398438,
+          "normalized_additive_cost": 0.03661847919257374
+        },
+        {
+          "fall_session": "session_20261012_202006_528702",
+          "complete_session": "session_20261012_201647_039319",
+          "fall_anchor_lower_seq": 619,
+          "fall_anchor_upper_seq": 620,
+          "fall_asof_seq": 570,
+          "complete_recovery_label_seq": 553,
+          "complete_current_seq": 505,
+          "fall_age_seconds": 0.01900005340576172,
+          "future_recovery_delay_seconds": 0.7990000247955322,
+          "angle_delta_deg": 18.051536541353414,
+          "clearance_delta": 0.004878520965576172,
+          "radial_velocity_delta": 0.14089608192443848,
+          "normalized_additive_cost": 0.7993363692088508
+        },
+        {
+          "fall_session": "session_20261012_202019_348109",
+          "complete_session": "session_20261012_201610_080573",
+          "fall_anchor_lower_seq": 516,
+          "fall_anchor_upper_seq": 517,
+          "fall_asof_seq": 467,
+          "complete_recovery_label_seq": 951,
+          "complete_current_seq": 898,
+          "fall_age_seconds": 0.016000032424926758,
+          "future_recovery_delay_seconds": 0.8810000419616699,
+          "angle_delta_deg": 8.965213283340347,
+          "clearance_delta": 0.006738185882568359,
+          "radial_velocity_delta": 0.025700092315673828,
+          "normalized_additive_cost": 0.34658360429738005
+        },
+        {
+          "fall_session": "session_20261012_202031_072605",
+          "complete_session": "session_20261012_201902_617504",
+          "fall_anchor_lower_seq": 681,
+          "fall_anchor_upper_seq": 682,
+          "fall_asof_seq": 632,
+          "complete_recovery_label_seq": 841,
+          "complete_current_seq": 770,
+          "fall_age_seconds": 0.015000104904174805,
+          "future_recovery_delay_seconds": 1.185999870300293,
+          "angle_delta_deg": 0.5522387262012671,
+          "clearance_delta": 0.01728343963623047,
+          "radial_velocity_delta": 0.14301204681396484,
+          "normalized_additive_cost": 0.24365756589778964
+        }
+      ],
+      "unmatched_falls": [
+        {
+          "session": "session_20261012_201753_282830",
+          "reason": "not positive-clearance/outward radial velocity"
+        }
+      ],
+      "unmatched_completions": [
+        {
+          "session": "session_20261012_201728_372912",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        },
+        {
+          "session": "session_20261012_201806_185949",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        },
+        {
+          "session": "session_20261012_201832_486360",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        }
+      ]
+    },
+    {
+      "offset_seconds": 0.6,
+      "pair_count": 5,
+      "fall_coverage": "5/6",
+      "completion_coverage": "5/8",
+      "pairs": [
+        {
+          "fall_session": "session_20261012_201929_389058",
+          "complete_session": "session_20261012_201501_583328",
+          "fall_anchor_lower_seq": 934,
+          "fall_anchor_upper_seq": 935,
+          "fall_asof_seq": 898,
+          "complete_recovery_label_seq": 1257,
+          "complete_current_seq": 1231,
+          "fall_age_seconds": 0.0010001659393310547,
+          "future_recovery_delay_seconds": 0.434999942779541,
+          "angle_delta_deg": 4.565990910598515,
+          "clearance_delta": 0.013873577117919922,
+          "radial_velocity_delta": 0.007921695709228516,
+          "normalized_additive_cost": 0.19050911220142838
+        },
+        {
+          "fall_session": "session_20261012_201948_796111",
+          "complete_session": "session_20261012_201537_424286",
+          "fall_anchor_lower_seq": 912,
+          "fall_anchor_upper_seq": 913,
+          "fall_asof_seq": 875,
+          "complete_recovery_label_seq": 548,
+          "complete_current_seq": 502,
+          "fall_age_seconds": 0.017000198364257812,
+          "future_recovery_delay_seconds": 0.7709999084472656,
+          "angle_delta_deg": 0.267089808867496,
+          "clearance_delta": 0.0065021514892578125,
+          "radial_velocity_delta": 0.00014781951904296875,
+          "normalized_additive_cost": 0.022104389299489453
+        },
+        {
+          "fall_session": "session_20261012_202006_528702",
+          "complete_session": "session_20261012_201610_080573",
+          "fall_anchor_lower_seq": 619,
+          "fall_anchor_upper_seq": 620,
+          "fall_asof_seq": 583,
+          "complete_recovery_label_seq": 542,
+          "complete_current_seq": 506,
+          "fall_age_seconds": 0.002000093460083008,
+          "future_recovery_delay_seconds": 0.5990002155303955,
+          "angle_delta_deg": 14.66219215857086,
+          "clearance_delta": 0.09667348861694336,
+          "radial_velocity_delta": 0.18160808086395264,
+          "normalized_additive_cost": 0.9242308236715189
+        },
+        {
+          "fall_session": "session_20261012_202019_348109",
+          "complete_session": "session_20261012_201647_039319",
+          "fall_anchor_lower_seq": 516,
+          "fall_anchor_upper_seq": 517,
+          "fall_asof_seq": 479,
+          "complete_recovery_label_seq": 712,
+          "complete_current_seq": 667,
+          "fall_age_seconds": 0.014000177383422852,
+          "future_recovery_delay_seconds": 0.7519998550415039,
+          "angle_delta_deg": 6.670829095621059,
+          "clearance_delta": 0.006733417510986328,
+          "radial_velocity_delta": 0.023466825485229492,
+          "normalized_additive_cost": 0.2671169055229806
+        },
+        {
+          "fall_session": "session_20261012_202031_072605",
+          "complete_session": "session_20261012_201902_617504",
+          "fall_anchor_lower_seq": 681,
+          "fall_anchor_upper_seq": 682,
+          "fall_asof_seq": 644,
+          "complete_recovery_label_seq": 841,
+          "complete_current_seq": 782,
+          "fall_age_seconds": 0.016000032424926758,
+          "future_recovery_delay_seconds": 0.9809999465942383,
+          "angle_delta_deg": 0.6647302952377458,
+          "clearance_delta": 0.012041568756103516,
+          "radial_velocity_delta": 0.00215911865234375,
+          "normalized_additive_cost": 0.04911963888992356
+        }
+      ],
+      "unmatched_falls": [
+        {
+          "session": "session_20261012_201753_282830",
+          "reason": "not positive-clearance/outward radial velocity"
+        }
+      ],
+      "unmatched_completions": [
+        {
+          "session": "session_20261012_201728_372912",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        },
+        {
+          "session": "session_20261012_201806_185949",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        },
+        {
+          "session": "session_20261012_201832_486360",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        }
+      ]
+    },
+    {
+      "offset_seconds": 0.4,
+      "pair_count": 6,
+      "fall_coverage": "6/6",
+      "completion_coverage": "6/8",
+      "pairs": [
+        {
+          "fall_session": "session_20261012_201753_282830",
+          "complete_session": "session_20261012_201806_185949",
+          "fall_anchor_lower_seq": 615,
+          "fall_anchor_upper_seq": 616,
+          "fall_asof_seq": 590,
+          "complete_recovery_label_seq": 537,
+          "complete_current_seq": 512,
+          "fall_age_seconds": 0.01699995994567871,
+          "future_recovery_delay_seconds": 0.4140000343322754,
+          "angle_delta_deg": 4.116928352720549,
+          "clearance_delta": 0.021642684936523438,
+          "radial_velocity_delta": 0.157423734664917,
+          "normalized_additive_cost": 0.39041462785028785
+        },
+        {
+          "fall_session": "session_20261012_201929_389058",
+          "complete_session": "session_20261012_201537_424286",
+          "fall_anchor_lower_seq": 934,
+          "fall_anchor_upper_seq": 935,
+          "fall_asof_seq": 909,
+          "complete_recovery_label_seq": 548,
+          "complete_current_seq": 514,
+          "fall_age_seconds": 0.014999866485595703,
+          "future_recovery_delay_seconds": 0.5679998397827148,
+          "angle_delta_deg": 1.9023532131926686,
+          "clearance_delta": 0.0020351409912109375,
+          "radial_velocity_delta": 0.0005080699920654297,
+          "normalized_additive_cost": 0.06815948241159807
+        },
+        {
+          "fall_session": "session_20261012_201948_796111",
+          "complete_session": "session_20261012_201501_583328",
+          "fall_anchor_lower_seq": 912,
+          "fall_anchor_upper_seq": 913,
+          "fall_asof_seq": 887,
+          "complete_recovery_label_seq": 590,
+          "complete_current_seq": 549,
+          "fall_age_seconds": 0.01900005340576172,
+          "future_recovery_delay_seconds": 0.6790001392364502,
+          "angle_delta_deg": 6.358954348455995,
+          "clearance_delta": 0.005481719970703125,
+          "radial_velocity_delta": 0.019025564193725586,
+          "normalized_additive_cost": 0.24829600381490688
+        },
+        {
+          "fall_session": "session_20261012_202006_528702",
+          "complete_session": "session_20261012_201610_080573",
+          "fall_anchor_lower_seq": 619,
+          "fall_anchor_upper_seq": 620,
+          "fall_asof_seq": 595,
+          "complete_recovery_label_seq": 951,
+          "complete_current_seq": 924,
+          "fall_age_seconds": 0.0009999275207519531,
+          "future_recovery_delay_seconds": 0.4500000476837158,
+          "angle_delta_deg": 7.938864991196738,
+          "clearance_delta": 0.0032100677490234375,
+          "radial_velocity_delta": 0.3661181926727295,
+          "normalized_additive_cost": 0.7592065587682442
+        },
+        {
+          "fall_session": "session_20261012_202019_348109",
+          "complete_session": "session_20261012_201647_039319",
+          "fall_anchor_lower_seq": 516,
+          "fall_anchor_upper_seq": 517,
+          "fall_asof_seq": 492,
+          "complete_recovery_label_seq": 712,
+          "complete_current_seq": 680,
+          "fall_age_seconds": 0.002000093460083008,
+          "future_recovery_delay_seconds": 0.5360000133514404,
+          "angle_delta_deg": 5.990897283309664,
+          "clearance_delta": 0.0029239654541015625,
+          "radial_velocity_delta": 0.018923044204711914,
+          "normalized_additive_cost": 0.2307752326248078
+        },
+        {
+          "fall_session": "session_20261012_202031_072605",
+          "complete_session": "session_20261012_201902_617504",
+          "fall_anchor_lower_seq": 681,
+          "fall_anchor_upper_seq": 682,
+          "fall_asof_seq": 656,
+          "complete_recovery_label_seq": 841,
+          "complete_current_seq": 795,
+          "fall_age_seconds": 0.010999917984008789,
+          "future_recovery_delay_seconds": 0.7659997940063477,
+          "angle_delta_deg": 0.6350155689910935,
+          "clearance_delta": 0.018297672271728516,
+          "radial_velocity_delta": 0.0027480125427246094,
+          "normalized_additive_cost": 0.06142654690012629
+        }
+      ],
+      "unmatched_falls": [],
+      "unmatched_completions": [
+        {
+          "session": "session_20261012_201728_372912",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        },
+        {
+          "session": "session_20261012_201832_486360",
+          "reason": "not selected by max-cardinality/min-cost assignment"
+        }
+      ]
+    }
+  ],
+  "primary_raw_pair_checks_passed": 16,
+  "model_training_performed": false,
+  "not_formal_geometry_anchor": true
+}

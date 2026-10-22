@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "confirmation_date": "2026-10-20",
+  "source": "Direct user confirmations in this conversation; purpose is not inferred from P01 directory or board flags.",
+  "participant_id": "P01",
+  "participant_sessions": [
+    "session_20261019_105632_058608", "session_20261019_105656_285619",
+    "session_20261019_105712_007803", "session_20261019_105734_310716",
+    "session_20261019_105912_781089", "session_20261019_105922_291656",
+    "session_20261019_105951_117357", "session_20261019_110023_567130",
+    "session_20261019_110055_533132", "session_20261019_110107_096491"
+  ],
+  "operator_sessions": [
+    "session_20261019_150806_990055", "session_20261019_150834_945026",
+    "session_20261019_151034_541581", "session_20261019_151734_571261",
+    "session_20261019_152252_747676", "session_20261019_153509_548346",
+    "session_20261019_154922_281603", "session_20261019_160159_651804",
+    "session_20261019_161529_760840", "session_20261019_161733_153717",
+    "session_20261019_162520_538240", "session_20261019_163835_953305",
+    "session_20261020_092857_539658", "session_20261020_095212_942873",
+    "session_20261020_095225_074273", "session_20261020_100423_350121",
+    "session_20261020_100624_879840", "session_20261020_145740_792957"
+  ],
+  "equipment_exclusions": {
+    "session_20261019_105734_310716": {
+      "reason": "battery_dislodged_user_confirmed",
+      "evidence": "parallel_20261019/p01_review/REPORT.md"
+    }
+  },
+  "input_mode_evidence": {
+    "session_20261020_145740_792957": {"mode": "keyboard", "evidence": "User explicitly confirmed latest session is keyboard UI testing on 2026-10-20."},
+    "session_20261020_092857_539658": {"mode": "unloaded_board_test", "evidence": "parallel_20261020/retest_092857/REPORT.md and user-confirmed unloaded test context"},
+    "session_20261020_095212_942873": {"mode": "unloaded_board_test", "evidence": "parallel_20261020/retest_0952/REPORT.md"},
+    "session_20261020_095225_074273": {"mode": "unloaded_board_test", "evidence": "parallel_20261020/retest_0952/REPORT.md"}
+  },
+  "historical_participant_configuration": {
+    "declared_sensitivity": 0.55,
+    "difficulty": 3,
+    "session_layers": 3,
+    "orange_red_purple_enabled_user_confirmed": true,
+    "original_hints_unchanged_user_confirmed": true,
+    "source": "parallel_20261019/p01_review/REPORT.md",
+    "effective_sensitivity_not_recorded_in_csv": true,
+    "practice_formal_task_roles": "unknown"
+  },
+  "future_collection_target": {
+    "game_entry": "standalone_VectorAI.exe",
+    "declared_sensitivity_target": 0.55,
+    "difficulty": 3,
+    "session_layers": 5,
+    "layer_choice_source": "Latest direct user reply: 那就5层吧也没有关系; supersedes earlier 6-layer and 10-layer replies.",
+    "presentation": "original_separate_colored_banners",
+    "unified_ui_enabled": false,
+    "orange_ai_enabled": true,
+    "red_geometry_enabled": true,
+    "purple_tte_enabled": true,
+    "original_yellow_attention": "unchanged",
+    "runtime_verified": false
+  }
+}

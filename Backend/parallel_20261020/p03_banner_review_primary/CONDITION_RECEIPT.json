@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "participant_id": "P03",
+  "record_date": "2026-10-20",
+  "sessions": [
+    {"session_id": "session_20261020_204207_908174", "run_id": "31a01c3b932e40b186f88beb06bdc513"},
+    {"session_id": "session_20261020_204245_310354", "run_id": "c967d0e27c2347959f38d295ea738887"},
+    {"session_id": "session_20261020_204323_779285", "run_id": "1b3beda2a3f047b9af4b5a3dedc75644"},
+    {"session_id": "session_20261020_204340_783591", "run_id": "4ffbc7c05beb42599c5183fab2ba4329"},
+    {"session_id": "session_20261020_204429_025778", "run_id": "dae0729f4cb240d2bd5188279c724c68"},
+    {"session_id": "session_20261020_204511_543162", "run_id": "23eb44ad157a42aabbac1d70e6c2163f"}
+  ],
+  "intended_experimental_warning_condition": "on",
+  "intended_condition_label_retained": true,
+  "actual_pipeline_availability": "unavailable_in_all_matched_shadow_records",
+  "user_reported_experimental_banners": "none_seen",
+  "user_reported_original_yellow_attention": "normal",
+  "compatibility_failure": "5-layer session rejected by original shared normalizer accepting only 3,8,10",
+  "normal_functioning_warning_on_group_eligible": false,
+  "randomized_warning_off_control": false,
+  "exclude_from_overall_system_coverage_accounting": false,
+  "automatic_model_training_inclusion": false,
+  "historical_data_rewritten": false,
+  "post_fix_replay_is_actual_historical_display": false,
+  "notes": "Retain participant/raw records and original intended-on assignment. Report actual unavailability as a configuration failure. A later software fix cannot create cue exposure in these historical runs.",
+  "evidence": ["../p03_banner_review_luna/input_sha256.json", "REPORT.md", "direct user observations in this conversation"]
+}

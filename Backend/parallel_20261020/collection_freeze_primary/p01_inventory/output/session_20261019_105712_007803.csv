@@ -1,0 +1,20 @@
+﻿evidence_field,value
+session,session_20261019_105712_007803
+directory,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_105712_007803
+raw_path,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_105712_007803\raw.csv
+raw_present,True
+raw_rows,2241
+cohort_evidence,user_confirmed_participant
+status,ok
+source_counts,"{""unity"": 828, ""wii"": 1413}"
+run_ids,"[""f848f2248b7443d7b740b5b2eda42bc4""]"
+run_attribution,single_run
+run_state_counts,"{""<empty>"": 1413, ""ended"": 1, ""running"": 827}"
+session_outcome_counts,"{""<empty>"": 2240, ""edge_exit"": 1}"
+terminal_row,"{""source"": ""wii"", ""source_timestamp"": ""2026-10-19T02:57:34.3044912Z"", ""sequence"": ""54389"", ""run_id"": """", ""run_state"": """", ""session_outcome"": """", ""session_end_backend_timestamp"": """"}"
+sequence,"{""unity"": {""start"": 1, ""end"": 828, ""unique_start"": 1, ""unique_end"": 828, ""count"": 828, ""unique_count"": 828, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}, ""wii"": {""start"": 52977, ""end"": 54389, ""unique_start"": 52977, ""unique_end"": 54389, ""count"": 1413, ""unique_count"": 1413, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}}"
+unity_terminal_row,"{""source_timestamp"": ""1792378646.23"", ""sequence"": ""828"", ""run_id"": ""f848f2248b7443d7b740b5b2eda42bc4"", ""run_state"": ""ended"", ""session_outcome"": ""edge_exit"", ""session_end_backend_timestamp"": ""1792378646.23""}"
+unity_source,"{""rows"": 828, ""timestamp_valid_rows"": 828, ""missing_timestamp_rows"": 0, ""adjacent_pairs_blocked_by_missing_timestamp"": 0, ""nonpositive_adjacent_dt_count"": 1, ""start"": 1792378632.004, ""end"": 1792378646.23, ""duration_seconds"": 14.2260000705719, ""gap_count_gt_0_1s"": 1, ""gap_count_gt_0_4s"": 1, ""max_gap_seconds"": 0.4939999580383301, ""gap_values_gt_0_1s"": [0.4939999580383301], ""intervals_with_missing_timestamp"": 0}"
+distributions_by_source,"{""unity"": {""calibration_mode"": {""True"": 828}, ""selected_session_layers"": {""3"": 828}, ""selected_difficulty"": {""3"": 828}, ""difficulty"": {""3"": 828}}, ""wii"": {""wii_board_loaded"": {""False"": 563, ""True"": 850}, ""wii_center_applied"": {""False"": 563, ""True"": 850}, ""wii_control_valid"": {""True"": 1413}}}"
+recommendation,
+source_files_unchanged,True

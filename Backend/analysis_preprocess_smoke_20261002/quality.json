@@ -1,0 +1,39 @@
+{
+  "rows_raw": 2522,
+  "sources": {
+    "wii": 1506,
+    "unity": 1016
+  },
+  "valid_wii_rows": 1125,
+  "invalid_wii_rows": 381,
+  "invalid_rows_by_reason": {
+    "low_weight": 371,
+    "invalid_sensor": 10
+  },
+  "fall_events": 0,
+  "duplicate_samples": 0,
+  "sequence_gap_rows": 0,
+  "time_gap_rows": 25,
+  "source_sampling": {
+    "unity": {
+      "rows": 1016,
+      "rate_hz": 54.79796152265896,
+      "gap_over_2_periods": 25,
+      "max_gap_seconds": 0.49094605445861816
+    },
+    "wii": {
+      "rows": 1506,
+      "rate_hz": 63.45041222233517,
+      "gap_over_2_periods": 0,
+      "max_gap_seconds": 0.031616926193237305
+    }
+  },
+  "aligned_rows": 1064,
+  "alignment_success_rate": 0.8994360902255639,
+  "windows": 43,
+  "positive_windows": 0,
+  "window_seconds": 1.0,
+  "horizon_seconds": 2.0,
+  "step_seconds": 0.25,
+  "target_hz": 60.0
+}

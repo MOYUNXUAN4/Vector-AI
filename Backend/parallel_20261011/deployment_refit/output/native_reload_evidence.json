@@ -1,0 +1,55 @@
+{
+  "export": {
+    "directory": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261011\\deployment_refit\\output\\artifact",
+    "model": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261011\\deployment_refit\\output\\artifact\\model.txt",
+    "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261011\\deployment_refit\\output\\artifact\\manifest.json",
+    "evidence": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261011\\deployment_refit\\output\\artifact\\build_evidence.json",
+    "model_sha256": "01addaa225b0400cea73069adbb070ffb54d8209f87e4bcb75781a01a0536068",
+    "manifest_sha256": "b75cac3173496171a9e2c17906938fc5bdac22243ff7f8ce5cee75b96900d29e"
+  },
+  "eligible_prediction_rows": 5558,
+  "reload_prediction_max_abs_error": 0.0,
+  "public_geometry_valid_rows": 5558,
+  "public_wrapper_max_abs_error": 0.0,
+  "prediction_tolerance": {
+    "rtol": 0,
+    "atol": 1e-12
+  },
+  "preflight_input_sha256": {
+    "telemetry_logs\\nested_calibration_20261008\\calibration\\run_nested_calibration.py": "045d751c707e6f4d0a306e67db5cd7c27cb240e11d3fc1dec84d50056228357f",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\runner\\run_cop_single_factor.py": "5870edfd80a62791df8f13ada3fa33e868b2610fab72a15d0866f929cd3db6d3",
+    "telemetry_logs\\TEST1009\\training_20261009\\run_nested.py": "9f1765e8948b6f1fbd9a5d28a8e52c8bd20dc6f003c5426602824bf86493c767",
+    "telemetry_logs\\TEST1009\\training_20261009\\evaluation_fixed_20261009\\fixed_evaluation.py": "4edbf6c83c6a5ee0b09fa54eb7e56591497dc37e60ed19b5e90f07f292cdc02d",
+    "parallel_20261011\\deployment\\native_export.py": "818a4fd0eebcd538b2439fd19d7a45b7f8b1ef7d557a727099b6193ef6441036",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\features.csv": "32ba0664ee3c6566d825956a90ff957160e68e7b4bf1247112e77a1c055a29bd",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\session_manifest.csv": "c2ca2dc50e4e91384afa95c0ed490d5808242f18a3998e93f8df6e596eb709ee",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\event_anchors.csv": "16cb140fd20414bed020760edc634a63fcf6ebd9d99ed6aaca253d1f813cc5ae",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\recovery_points.csv": "34733a34699b870460ceddbb640fe4c3989e1d3cf4bc81e92f1b4d1e7adf5576",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\source_hashes.json": "afe1324c161d4fcc44dcefc1f2592084d1a72a64af0af1beab55fc9e907dcd45",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\summary.json": "815db51e1d2ff13d30e69ff2e49687f22c34f8c99542e0948ffb09f19ae62d5a",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\risk_episode_ledger.csv": "306083f68c4361f32f829fd73885073fbb99a737893ca3504b6afceadf7912a5",
+    "telemetry_logs\\TEST1009\\training_20261009\\session_associations_and_splits.csv": "759f711063a9fba03c6783da317f99c7826324e9be1c412c6de13854360f2d8a",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\training_labels.csv": "e3d4d16fa4559df7e58e06b8ea5cc2014c4952df2bcfbbbc22746fca9d68ebae",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\outer_membership.csv": "a09c6f6121e88799b7f0eae61c50448fc9704a9ac848d48d1702ea0d7891bd50",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\config.json": "275748fc7b8b913594340b90e6e0cd6c2a6705f4cada51c237791dcbfb7063e9"
+  },
+  "sources_unchanged": true,
+  "postfit_input_sha256": {
+    "telemetry_logs\\nested_calibration_20261008\\calibration\\run_nested_calibration.py": "045d751c707e6f4d0a306e67db5cd7c27cb240e11d3fc1dec84d50056228357f",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\runner\\run_cop_single_factor.py": "5870edfd80a62791df8f13ada3fa33e868b2610fab72a15d0866f929cd3db6d3",
+    "telemetry_logs\\TEST1009\\training_20261009\\run_nested.py": "9f1765e8948b6f1fbd9a5d28a8e52c8bd20dc6f003c5426602824bf86493c767",
+    "telemetry_logs\\TEST1009\\training_20261009\\evaluation_fixed_20261009\\fixed_evaluation.py": "4edbf6c83c6a5ee0b09fa54eb7e56591497dc37e60ed19b5e90f07f292cdc02d",
+    "parallel_20261011\\deployment\\native_export.py": "818a4fd0eebcd538b2439fd19d7a45b7f8b1ef7d557a727099b6193ef6441036",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\features.csv": "32ba0664ee3c6566d825956a90ff957160e68e7b4bf1247112e77a1c055a29bd",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\session_manifest.csv": "c2ca2dc50e4e91384afa95c0ed490d5808242f18a3998e93f8df6e596eb709ee",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\event_anchors.csv": "16cb140fd20414bed020760edc634a63fcf6ebd9d99ed6aaca253d1f813cc5ae",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\recovery_points.csv": "34733a34699b870460ceddbb640fe4c3989e1d3cf4bc81e92f1b4d1e7adf5576",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\source_hashes.json": "afe1324c161d4fcc44dcefc1f2592084d1a72a64af0af1beab55fc9e907dcd45",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\summary.json": "815db51e1d2ff13d30e69ff2e49687f22c34f8c99542e0948ffb09f19ae62d5a",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\prepared_inputs\\risk_episode_ledger.csv": "306083f68c4361f32f829fd73885073fbb99a737893ca3504b6afceadf7912a5",
+    "telemetry_logs\\TEST1009\\training_20261009\\session_associations_and_splits.csv": "759f711063a9fba03c6783da317f99c7826324e9be1c412c6de13854360f2d8a",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\training_labels.csv": "e3d4d16fa4559df7e58e06b8ea5cc2014c4952df2bcfbbbc22746fca9d68ebae",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\outer_membership.csv": "a09c6f6121e88799b7f0eae61c50448fc9704a9ac848d48d1702ea0d7891bd50",
+    "telemetry_logs\\TEST1009\\training_20261009\\cop_single_factor_20261009\\baseline_fixed\\config.json": "275748fc7b8b913594340b90e6e0cd6c2a6705f4cada51c237791dcbfb7063e9"
+  }
+}

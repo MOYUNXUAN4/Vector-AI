@@ -1,0 +1,290 @@
+{
+  "scope": "TEST1009 raw development packets; runtime adapter and guard; no inference",
+  "sessions": 30,
+  "expected_decisions": 6898,
+  "runtime_ready_decisions": 6898,
+  "missing_decision_count": 0,
+  "missing_first_20": [],
+  "feature_mismatch_count": 0,
+  "feature_mismatch_first_20": [],
+  "unknown_disabled_warning_decisions": 6898,
+  "raw_files_unchanged": true,
+  "calibration_session_gameplay_compatibility": "explicit opt-in; raw flag retained; small platform + three-layer configured gameplay required",
+  "limitations": [
+    "Recorded backend wall time replay proxy is not live monotonic performance validation.",
+    "No model, threshold, state policy, live service, socket or Unity display tested.",
+    "Missing or invalid evidence returns UNKNOWN; no frozen validation set was read."
+  ],
+  "session_details": [
+    {
+      "session_id": "session_20261009_094954_427313",
+      "unity_packets": 1097,
+      "accepted_packets": 796,
+      "baseline_decisions": 192,
+      "runtime_feature_decisions": 192,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095015_750430",
+      "unity_packets": 1327,
+      "accepted_packets": 1025,
+      "baseline_decisions": 256,
+      "runtime_feature_decisions": 256,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095206_853253",
+      "unity_packets": 2407,
+      "accepted_packets": 2123,
+      "baseline_decisions": 529,
+      "runtime_feature_decisions": 529,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095252_106312",
+      "unity_packets": 1870,
+      "accepted_packets": 1568,
+      "baseline_decisions": 397,
+      "runtime_feature_decisions": 397,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095344_428679",
+      "unity_packets": 725,
+      "accepted_packets": 423,
+      "baseline_decisions": 98,
+      "runtime_feature_decisions": 98,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095359_807711",
+      "unity_packets": 498,
+      "accepted_packets": 195,
+      "baseline_decisions": 46,
+      "runtime_feature_decisions": 46,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095414_328195",
+      "unity_packets": 1242,
+      "accepted_packets": 940,
+      "baseline_decisions": 232,
+      "runtime_feature_decisions": 232,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095449_567461",
+      "unity_packets": 1344,
+      "accepted_packets": 1041,
+      "baseline_decisions": 246,
+      "runtime_feature_decisions": 246,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095519_650185",
+      "unity_packets": 1983,
+      "accepted_packets": 1681,
+      "baseline_decisions": 421,
+      "runtime_feature_decisions": 421,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095714_730473",
+      "unity_packets": 2035,
+      "accepted_packets": 1751,
+      "baseline_decisions": 436,
+      "runtime_feature_decisions": 436,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095755_667634",
+      "unity_packets": 583,
+      "accepted_packets": 281,
+      "baseline_decisions": 70,
+      "runtime_feature_decisions": 70,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095811_191578",
+      "unity_packets": 786,
+      "accepted_packets": 484,
+      "baseline_decisions": 116,
+      "runtime_feature_decisions": 116,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095831_124251",
+      "unity_packets": 1043,
+      "accepted_packets": 741,
+      "baseline_decisions": 171,
+      "runtime_feature_decisions": 171,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095851_422061",
+      "unity_packets": 1320,
+      "accepted_packets": 1018,
+      "baseline_decisions": 247,
+      "runtime_feature_decisions": 247,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095919_317341",
+      "unity_packets": 2139,
+      "accepted_packets": 1837,
+      "baseline_decisions": 462,
+      "runtime_feature_decisions": 462,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095958_956202",
+      "unity_packets": 1938,
+      "accepted_packets": 1636,
+      "baseline_decisions": 412,
+      "runtime_feature_decisions": 412,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100037_026082",
+      "unity_packets": 564,
+      "accepted_packets": 262,
+      "baseline_decisions": 64,
+      "runtime_feature_decisions": 64,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100049_811540",
+      "unity_packets": 572,
+      "accepted_packets": 270,
+      "baseline_decisions": 66,
+      "runtime_feature_decisions": 66,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100107_863016",
+      "unity_packets": 934,
+      "accepted_packets": 631,
+      "baseline_decisions": 141,
+      "runtime_feature_decisions": 141,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100126_047517",
+      "unity_packets": 1014,
+      "accepted_packets": 712,
+      "baseline_decisions": 168,
+      "runtime_feature_decisions": 168,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100149_862095",
+      "unity_packets": 1564,
+      "accepted_packets": 1262,
+      "baseline_decisions": 313,
+      "runtime_feature_decisions": 313,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100218_355901",
+      "unity_packets": 1890,
+      "accepted_packets": 1587,
+      "baseline_decisions": 394,
+      "runtime_feature_decisions": 394,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100259_607957",
+      "unity_packets": 775,
+      "accepted_packets": 473,
+      "baseline_decisions": 113,
+      "runtime_feature_decisions": 113,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100317_201063",
+      "unity_packets": 745,
+      "accepted_packets": 442,
+      "baseline_decisions": 110,
+      "runtime_feature_decisions": 110,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100345_605997",
+      "unity_packets": 1420,
+      "accepted_packets": 1118,
+      "baseline_decisions": 273,
+      "runtime_feature_decisions": 273,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100414_008338",
+      "unity_packets": 1115,
+      "accepted_packets": 813,
+      "baseline_decisions": 191,
+      "runtime_feature_decisions": 191,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100436_586122",
+      "unity_packets": 1746,
+      "accepted_packets": 1444,
+      "baseline_decisions": 365,
+      "runtime_feature_decisions": 365,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100507_965698",
+      "unity_packets": 1428,
+      "accepted_packets": 1127,
+      "baseline_decisions": 280,
+      "runtime_feature_decisions": 280,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100534_530672",
+      "unity_packets": 480,
+      "accepted_packets": 179,
+      "baseline_decisions": 42,
+      "runtime_feature_decisions": 42,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100545_738309",
+      "unity_packets": 503,
+      "accepted_packets": 201,
+      "baseline_decisions": 47,
+      "runtime_feature_decisions": 47,
+      "unknown_decision_reasons": {},
+      "raw_unchanged": true
+    }
+  ]
+}

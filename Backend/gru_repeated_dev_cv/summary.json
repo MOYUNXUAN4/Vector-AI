@@ -1,0 +1,42 @@
+{
+  "development_datasets": [
+    "TEST9282",
+    "TEST930",
+    "TEST931"
+  ],
+  "development_sessions": 117,
+  "seeds": [
+    20261001,
+    20261002,
+    20261003,
+    20261004,
+    20261005
+  ],
+  "split_fraction": 0.2,
+  "test_set_used": false,
+  "raw_files_modified": false,
+  "summary": [
+    {
+      "feature_group": "all_current",
+      "folds": 5,
+      "session_f1_mean": 0.7743386243386242,
+      "session_f1_std": 0.05542627942031943,
+      "session_recall_mean": 0.9800000000000001,
+      "session_precision_mean": 0.643043884220355,
+      "session_nonfall_false_alarm_rate_mean": 0.4,
+      "session_nonfall_false_alarm_rate_std": 0.12975644374703535,
+      "session_last_warning_lead_median_mean_s": 0.35670154094696044
+    },
+    {
+      "feature_group": "edge_kinematic",
+      "folds": 5,
+      "session_f1_mean": 0.8073375899462855,
+      "session_f1_std": 0.029718692066478317,
+      "session_recall_mean": 0.96,
+      "session_precision_mean": 0.6991758241758242,
+      "session_nonfall_false_alarm_rate_mean": 0.3,
+      "session_nonfall_false_alarm_rate_std": 0.07824607964359515,
+      "session_last_warning_lead_median_mean_s": 0.277478551864624
+    }
+  ]
+}

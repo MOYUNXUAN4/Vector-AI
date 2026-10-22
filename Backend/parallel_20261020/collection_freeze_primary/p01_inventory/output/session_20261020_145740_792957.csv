@@ -1,0 +1,20 @@
+﻿evidence_field,value
+session,session_20261020_145740_792957
+directory,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261020_145740_792957
+raw_path,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261020_145740_792957\raw.csv
+raw_present,True
+raw_rows,1929
+cohort_evidence,unknown
+status,ok
+source_counts,"{""unity"": 1929}"
+run_ids,"[""c8844adef23247debfaed314e246311f""]"
+run_attribution,single_run
+run_state_counts,"{""ended"": 1, ""running"": 1928}"
+session_outcome_counts,"{""<empty>"": 1928, ""user_exit"": 1}"
+terminal_row,"{""source"": ""unity"", ""source_timestamp"": ""1792479493.576"", ""sequence"": ""1929"", ""run_id"": ""c8844adef23247debfaed314e246311f"", ""run_state"": ""ended"", ""session_outcome"": ""user_exit"", ""session_end_backend_timestamp"": ""1792479493.574""}"
+sequence,"{""unity"": {""start"": 1, ""end"": 1929, ""unique_start"": 1, ""unique_end"": 1929, ""count"": 1929, ""unique_count"": 1929, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}}"
+unity_terminal_row,"{""source_timestamp"": ""1792479493.576"", ""sequence"": ""1929"", ""run_id"": ""c8844adef23247debfaed314e246311f"", ""run_state"": ""ended"", ""session_outcome"": ""user_exit"", ""session_end_backend_timestamp"": ""1792479493.574""}"
+unity_source,"{""rows"": 1929, ""timestamp_valid_rows"": 1929, ""missing_timestamp_rows"": 0, ""adjacent_pairs_blocked_by_missing_timestamp"": 0, ""nonpositive_adjacent_dt_count"": 0, ""start"": 1792479460.798, ""end"": 1792479493.576, ""duration_seconds"": 32.77799987792969, ""gap_count_gt_0_1s"": 1, ""gap_count_gt_0_4s"": 1, ""max_gap_seconds"": 0.5630002021789551, ""gap_values_gt_0_1s"": [0.5630002021789551], ""intervals_with_missing_timestamp"": 0}"
+distributions_by_source,"{""unity"": {""calibration_mode"": {""True"": 1929}, ""selected_session_layers"": {""3"": 1929}, ""selected_difficulty"": {""3"": 1929}, ""difficulty"": {""3"": 1929}}}"
+recommendation,
+source_files_unchanged,True

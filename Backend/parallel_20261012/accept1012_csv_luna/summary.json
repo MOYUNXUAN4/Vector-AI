@@ -1,0 +1,2704 @@
+{
+  "source_root": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST",
+  "sessions_found": 8,
+  "sessionID_policy": "Each sessionID is preserved from its own directory name; no cross-session joining or normalization.",
+  "method": "Python standard-library csv and hashlib SHA-256 before/after; input CSVs opened read-only.",
+  "sessions": [
+    {
+      "sessionID": "20261012_094803_454375",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_094803_454375\\raw.csv",
+      "sha256_before": "af6bca985f73c98612dbf0f1a80df56d730f2135eb51b76df3f413d332687d19",
+      "sha256_after": "af6bca985f73c98612dbf0f1a80df56d730f2135eb51b76df3f413d332687d19",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 3075,
+        "unity": 1424,
+        "wii": 1651,
+        "other": 0
+      },
+      "run_ids": [
+        "3aeb5af0e702497b860df484d08c9321"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "2026-10-12T01:48:03.4657903Z",
+          "last": "2026-10-12T01:48:29.4322083Z",
+          "span_seconds_by_sorted_valid_timestamp": 25.974208116531372,
+          "sampling_interval_seconds_p50": 0.008503556251525879,
+          "sampling_interval_seconds_p95": 0.01567420959472656,
+          "sampling_interval_seconds_max": 0.022973060607910156
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769683.458",
+            "source_timestamp_last": "1791769707.21",
+            "source_timestamp_span_seconds": 23.752000093460083,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.01900005340576172,
+            "sampling_interval_seconds_max": 0.07899999618530273
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:48:03.4657903Z",
+            "source_timestamp_last": "2026-10-12T01:48:29.4322083Z",
+            "source_timestamp_span_seconds": 25.966418027877808,
+            "sampling_interval_seconds_p50": 0.01555490493774414,
+            "sampling_interval_seconds_p95": 0.01634693145751953,
+            "sampling_interval_seconds_max": 0.03188014030456543
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 1424,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769683.458"
+          },
+          {
+            "unity_row_index": 1423,
+            "run_state": "ended",
+            "source_timestamp": "1791769707.21"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 1423,
+            "session_outcome": "calibration_completed",
+            "source_timestamp": "1791769707.21"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "calibration_completed"
+        ],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False"
+        ],
+        "enters": 0,
+        "exits": 0,
+        "segments": [],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 1424,
+        "query_valid_rows": 1424,
+        "ownership_valid_rows": 1424,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-9504",
+          "-9524",
+          "-9550",
+          "-9574"
+        ],
+        "version_ids": [
+          "-9504-g1",
+          "-9524-g1",
+          "-9550-g1",
+          "-9574-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-9504",
+          "-9524",
+          "-9550",
+          "-9574"
+        ],
+        "active_version_ids": [
+          "-9504-g1",
+          "-9524-g1",
+          "-9550-g1",
+          "-9574-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 1176,
+          "True": 248
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 1176,
+          "ATTENTION": 248
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769707.21",
+        "sequence": "1424",
+        "run_id": "3aeb5af0e702497b860df484d08c9321",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1791769707.208",
+        "passed_count": "3",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "nan",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-9574",
+        "geometry_version_id": "-9574-g1",
+        "geometry_active_platform_instance_id": "-9574",
+        "geometry_active_version_id": "-9574-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_094829_452155",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_094829_452155\\raw.csv",
+      "sha256_before": "4426bc35ed1d3901fd75bf55a0c410b008309575c548fc56170d80f8825d7669",
+      "sha256_after": "4426bc35ed1d3901fd75bf55a0c410b008309575c548fc56170d80f8825d7669",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 2243,
+        "unity": 1037,
+        "wii": 1206,
+        "other": 0
+      },
+      "run_ids": [
+        "c51b81741ea64c9998ac95a7dce0458b"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "2026-10-12T01:48:29.4482737Z",
+          "last": "2026-10-12T01:48:48.3995000Z",
+          "span_seconds_by_sorted_valid_timestamp": 18.951499938964844,
+          "sampling_interval_seconds_p50": 0.008547544479370117,
+          "sampling_interval_seconds_p95": 0.015786015987396238,
+          "sampling_interval_seconds_max": 0.01900005340576172
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769709.448",
+            "source_timestamp_last": "1791769726.696",
+            "source_timestamp_span_seconds": 17.248000144958496,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.01900005340576172,
+            "sampling_interval_seconds_max": 0.02200007438659668
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:48:29.4482737Z",
+            "source_timestamp_last": "2026-10-12T01:48:48.3995000Z",
+            "source_timestamp_span_seconds": 18.951226949691772,
+            "sampling_interval_seconds_p50": 0.01555180549621582,
+            "sampling_interval_seconds_p95": 0.01636538505554199,
+            "sampling_interval_seconds_max": 0.031209945678710938
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 1037,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769709.448"
+          },
+          {
+            "unity_row_index": 1036,
+            "run_state": "ended",
+            "source_timestamp": "1791769726.696"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 1036,
+            "session_outcome": "calibration_completed",
+            "source_timestamp": "1791769726.696"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "calibration_completed"
+        ],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False"
+        ],
+        "enters": 0,
+        "exits": 0,
+        "segments": [],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 1037,
+        "query_valid_rows": 1037,
+        "ownership_valid_rows": 1037,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-9670",
+          "-9690",
+          "-9714",
+          "-9738"
+        ],
+        "version_ids": [
+          "-9670-g1",
+          "-9690-g1",
+          "-9714-g1",
+          "-9738-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-9670",
+          "-9690",
+          "-9714",
+          "-9738"
+        ],
+        "active_version_ids": [
+          "-9670-g1",
+          "-9690-g1",
+          "-9714-g1",
+          "-9738-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 821,
+          "True": 216
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 821,
+          "ATTENTION": 216
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769726.696",
+        "sequence": "1037",
+        "run_id": "c51b81741ea64c9998ac95a7dce0458b",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1791769726.694",
+        "passed_count": "3",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "nan",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-9738",
+        "geometry_version_id": "-9738-g1",
+        "geometry_active_platform_instance_id": "-9738",
+        "geometry_active_version_id": "-9738-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_094848_416014",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_094848_416014\\raw.csv",
+      "sha256_before": "c753bb4446a010df87748dfd7270fe5131c6ab54ff0ee0c89f2bbf961f354de4",
+      "sha256_after": "c753bb4446a010df87748dfd7270fe5131c6ab54ff0ee0c89f2bbf961f354de4",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 4098,
+        "unity": 1893,
+        "wii": 2205,
+        "other": 0
+      },
+      "run_ids": [
+        "c96f68cf340c4b0187aa1925bb51c859"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "1791769728.411",
+          "last": "2026-10-12T01:49:23.6340283Z",
+          "span_seconds_by_sorted_valid_timestamp": 35.22302794456482,
+          "sampling_interval_seconds_p50": 0.008533000946044922,
+          "sampling_interval_seconds_p95": 0.015789222717285157,
+          "sampling_interval_seconds_max": 0.03102397918701172
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769728.411",
+            "source_timestamp_last": "1791769760.512",
+            "source_timestamp_span_seconds": 32.1010000705719,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.019999980926513672,
+            "sampling_interval_seconds_max": 0.6189999580383301
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:48:48.4157411Z",
+            "source_timestamp_last": "2026-10-12T01:49:23.6340283Z",
+            "source_timestamp_span_seconds": 35.218286991119385,
+            "sampling_interval_seconds_p50": 0.015565991401672363,
+            "sampling_interval_seconds_p95": 0.016534292697906492,
+            "sampling_interval_seconds_max": 0.031683921813964844
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 1893,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769728.411"
+          },
+          {
+            "unity_row_index": 1892,
+            "run_state": "ended",
+            "source_timestamp": "1791769760.512"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 1892,
+            "session_outcome": "calibration_completed",
+            "source_timestamp": "1791769760.512"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "calibration_completed"
+        ],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False",
+          "True"
+        ],
+        "enters": 4,
+        "exits": 4,
+        "segments": [
+          {
+            "start_unity_row_index": 668,
+            "end_unity_row_index": 701,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 957,
+            "end_unity_row_index": 1002,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 1272,
+            "end_unity_row_index": 1299,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 1624,
+            "end_unity_row_index": 1657,
+            "start_state": "True",
+            "end_state": "False"
+          }
+        ],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 1893,
+        "query_valid_rows": 1893,
+        "ownership_valid_rows": 1893,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-9832",
+          "-9852",
+          "-9878",
+          "-9902"
+        ],
+        "version_ids": [
+          "-9832-g1",
+          "-9852-g1",
+          "-9878-g1",
+          "-9902-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-9832",
+          "-9852",
+          "-9878",
+          "-9902"
+        ],
+        "active_version_ids": [
+          "-9832-g1",
+          "-9852-g1",
+          "-9878-g1",
+          "-9902-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 1489,
+          "True": 404
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 1351,
+          "ATTENTION": 404,
+          "EDGE WARNING": 135,
+          "EDGE CONTACT": 3
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769760.512",
+        "sequence": "1893",
+        "run_id": "c96f68cf340c4b0187aa1925bb51c859",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1791769760.512",
+        "passed_count": "3",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "73.28535461425781",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-9902",
+        "geometry_version_id": "-9902-g1",
+        "geometry_active_platform_instance_id": "-9902",
+        "geometry_active_version_id": "-9902-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_094923_638395",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_094923_638395\\raw.csv",
+      "sha256_before": "612793a63316b294b7e909a3304160191ad427892d8d11804a4b1f4bd5960491",
+      "sha256_after": "612793a63316b294b7e909a3304160191ad427892d8d11804a4b1f4bd5960491",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 5125,
+        "unity": 2335,
+        "wii": 2790,
+        "other": 0
+      },
+      "run_ids": [
+        "3b2bb9371b3948c0964f3a851085fe69"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "1791769763.635",
+          "last": "2026-10-12T01:50:07.6706740Z",
+          "span_seconds_by_sorted_valid_timestamp": 44.03567409515381,
+          "sampling_interval_seconds_p50": 0.008644580841064453,
+          "sampling_interval_seconds_p95": 0.015827751159667967,
+          "sampling_interval_seconds_max": 0.03149700164794922
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769763.635",
+            "source_timestamp_last": "1791769803.164",
+            "source_timestamp_span_seconds": 39.52900004386902,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.019999980926513672,
+            "sampling_interval_seconds_max": 0.6630001068115234
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:49:23.6497558Z",
+            "source_timestamp_last": "2026-10-12T01:50:07.6706740Z",
+            "source_timestamp_span_seconds": 44.02091908454895,
+            "sampling_interval_seconds_p50": 0.015565872192382812,
+            "sampling_interval_seconds_p95": 0.016377878189086915,
+            "sampling_interval_seconds_max": 0.03149700164794922
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 2335,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769763.635"
+          },
+          {
+            "unity_row_index": 2334,
+            "run_state": "ended",
+            "source_timestamp": "1791769803.164"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 2334,
+            "session_outcome": "calibration_completed",
+            "source_timestamp": "1791769803.164"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "calibration_completed"
+        ],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False",
+          "True"
+        ],
+        "enters": 4,
+        "exits": 4,
+        "segments": [
+          {
+            "start_unity_row_index": 938,
+            "end_unity_row_index": 963,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 1149,
+            "end_unity_row_index": 1157,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 1900,
+            "end_unity_row_index": 1912,
+            "start_state": "True",
+            "end_state": "False"
+          },
+          {
+            "start_unity_row_index": 2114,
+            "end_unity_row_index": 2144,
+            "start_state": "True",
+            "end_state": "False"
+          }
+        ],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 2335,
+        "query_valid_rows": 2335,
+        "ownership_valid_rows": 2335,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-10016",
+          "-10040",
+          "-10066",
+          "-9996"
+        ],
+        "version_ids": [
+          "-10016-g1",
+          "-10040-g1",
+          "-10066-g1",
+          "-9996-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-10016",
+          "-10040",
+          "-10066",
+          "-9996"
+        ],
+        "active_version_ids": [
+          "-10016-g1",
+          "-10040-g1",
+          "-10066-g1",
+          "-9996-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 1720,
+          "True": 615
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 1645,
+          "ATTENTION": 615,
+          "EDGE WARNING": 75
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769803.164",
+        "sequence": "2335",
+        "run_id": "3b2bb9371b3948c0964f3a851085fe69",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1791769803.164",
+        "passed_count": "3",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "116.21995544433594",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-10066",
+        "geometry_version_id": "-10066-g1",
+        "geometry_active_platform_instance_id": "-10066",
+        "geometry_active_version_id": "-10066-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_095007_690150",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_095007_690150\\raw.csv",
+      "sha256_before": "18cd5e5c1af37531c340b781ef3ecd99d77de7e0ca3fe162a0745ec5eef3662e",
+      "sha256_after": "18cd5e5c1af37531c340b781ef3ecd99d77de7e0ca3fe162a0745ec5eef3662e",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 1317,
+        "unity": 549,
+        "wii": 768,
+        "other": 0
+      },
+      "run_ids": [
+        "091b7c741b6e4d59916c8f47acf765fd"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "2026-10-12T01:50:07.6864893Z",
+          "last": "2026-10-12T01:50:19.8420561Z",
+          "span_seconds_by_sorted_valid_timestamp": 12.156055927276611,
+          "sampling_interval_seconds_p50": 0.009290099143981934,
+          "sampling_interval_seconds_p95": 0.015958428382873535,
+          "sampling_interval_seconds_max": 0.030137062072753906
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769807.686",
+            "source_timestamp_last": "1791769816.796",
+            "source_timestamp_span_seconds": 9.109999895095825,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.01900005340576172,
+            "sampling_interval_seconds_max": 0.021999835968017578
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:50:07.6864893Z",
+            "source_timestamp_last": "2026-10-12T01:50:19.8420561Z",
+            "source_timestamp_span_seconds": 12.155566930770874,
+            "sampling_interval_seconds_p50": 0.015585899353027344,
+            "sampling_interval_seconds_p95": 0.01639547348022461,
+            "sampling_interval_seconds_max": 0.03141283988952637
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 549,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1"
+        ],
+        "layer_id": [
+          "1"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769807.686"
+          },
+          {
+            "unity_row_index": 548,
+            "run_state": "ended",
+            "source_timestamp": "1791769816.796"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 548,
+            "session_outcome": "edge_exit",
+            "source_timestamp": "1791769816.796"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "edge_exit"
+        ],
+        "fall_reason_values": [
+          "fell_off_platform"
+        ],
+        "fall_event_true_rows": 1,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False",
+          "True"
+        ],
+        "enters": 1,
+        "exits": 1,
+        "segments": [
+          {
+            "start_unity_row_index": 517,
+            "end_unity_row_index": 548,
+            "start_state": "True",
+            "end_state": "False"
+          }
+        ],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 549,
+        "query_valid_rows": 549,
+        "ownership_valid_rows": 549,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-10158",
+          "-10178"
+        ],
+        "version_ids": [
+          "-10158-g1",
+          "-10178-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-10158",
+          "-10178"
+        ],
+        "active_version_ids": [
+          "-10158-g1",
+          "-10178-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 351,
+          "True": 198
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 318,
+          "ATTENTION": 198,
+          "EDGE WARNING": 22,
+          "EDGE CONTACT": 10,
+          "FALL": 1
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769816.796",
+        "sequence": "549",
+        "run_id": "091b7c741b6e4d59916c8f47acf765fd",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1791769816.796",
+        "passed_count": "0",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "True",
+        "fall_reason": "fell_off_platform",
+        "attention_state": "False",
+        "prediction_state": "FALL",
+        "warning_type": "FALL",
+        "warning_active": "False",
+        "visible_warning_state": "FALL",
+        "edge_warning_state": "False",
+        "edge_warning_time": "129.29026794433594",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-10178",
+        "geometry_version_id": "-10178-g1",
+        "geometry_active_platform_instance_id": "-10178",
+        "geometry_active_version_id": "-10178-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_095019_846147",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_095019_846147\\raw.csv",
+      "sha256_before": "cb4163e10e88ef12fe4f8cd8a2aedf467a27ce01031f2ab3c7ba9615c8850aae",
+      "sha256_after": "cb4163e10e88ef12fe4f8cd8a2aedf467a27ce01031f2ab3c7ba9615c8850aae",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 2046,
+        "unity": 673,
+        "wii": 1373,
+        "other": 0
+      },
+      "run_ids": [
+        "88e5a06bd9d94122a4f3a76d7d801cff"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "1791769819.842",
+          "last": "2026-10-12T01:50:41.5424026Z",
+          "span_seconds_by_sorted_valid_timestamp": 21.70040202140808,
+          "sampling_interval_seconds_p50": 0.012218952178955078,
+          "sampling_interval_seconds_p95": 0.01612401008605957,
+          "sampling_interval_seconds_max": 0.0311892032623291
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769819.842",
+            "source_timestamp_last": "1791769831.024",
+            "source_timestamp_span_seconds": 11.181999921798706,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.01900005340576172,
+            "sampling_interval_seconds_max": 0.02200007438659668
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:50:19.8576095Z",
+            "source_timestamp_last": "2026-10-12T01:50:41.5424026Z",
+            "source_timestamp_span_seconds": 21.68479299545288,
+            "sampling_interval_seconds_p50": 0.015568971633911133,
+            "sampling_interval_seconds_p95": 0.016396915912628172,
+            "sampling_interval_seconds_max": 0.0319218635559082
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 673,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1"
+        ],
+        "layer_id": [
+          "1"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769819.842"
+          },
+          {
+            "unity_row_index": 672,
+            "run_state": "ended",
+            "source_timestamp": "1791769831.024"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 672,
+            "session_outcome": "edge_exit",
+            "source_timestamp": "1791769831.024"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "edge_exit"
+        ],
+        "fall_reason_values": [
+          "fell_off_platform"
+        ],
+        "fall_event_true_rows": 1,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False",
+          "True"
+        ],
+        "enters": 1,
+        "exits": 1,
+        "segments": [
+          {
+            "start_unity_row_index": 612,
+            "end_unity_row_index": 672,
+            "start_state": "True",
+            "end_state": "False"
+          }
+        ],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 673,
+        "query_valid_rows": 673,
+        "ownership_valid_rows": 673,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-10320",
+          "-10340"
+        ],
+        "version_ids": [
+          "-10320-g1",
+          "-10340-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-10320",
+          "-10340"
+        ],
+        "active_version_ids": [
+          "-10320-g1",
+          "-10340-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 499,
+          "True": 174
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 438,
+          "ATTENTION": 174,
+          "EDGE WARNING": 48,
+          "EDGE CONTACT": 12,
+          "FALL": 1
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769831.024",
+        "sequence": "673",
+        "run_id": "88e5a06bd9d94122a4f3a76d7d801cff",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1791769831.024",
+        "passed_count": "0",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "True",
+        "fall_reason": "fell_off_platform",
+        "attention_state": "False",
+        "prediction_state": "FALL",
+        "warning_type": "FALL",
+        "warning_active": "False",
+        "visible_warning_state": "FALL",
+        "edge_warning_state": "False",
+        "edge_warning_time": "142.16737365722656",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-10340",
+        "geometry_version_id": "-10340-g1",
+        "geometry_active_platform_instance_id": "-10340",
+        "geometry_active_version_id": "-10340-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_095041_552734",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_095041_552734\\raw.csv",
+      "sha256_before": "0947ca25fe076620675ec4c92ddde6c703dc202ddc9bb380ea07b6b1fe13d7ee",
+      "sha256_after": "0947ca25fe076620675ec4c92ddde6c703dc202ddc9bb380ea07b6b1fe13d7ee",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 1949,
+        "unity": 908,
+        "wii": 1041,
+        "other": 0
+      },
+      "run_ids": [
+        "f64575b813894516ae51ae1347d4789b"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "1791769841.549",
+          "last": "2026-10-12T01:50:57.8636969Z",
+          "span_seconds_by_sorted_valid_timestamp": 16.314696073532104,
+          "sampling_interval_seconds_p50": 0.008433938026428223,
+          "sampling_interval_seconds_p95": 0.015638887882232666,
+          "sampling_interval_seconds_max": 0.019999980926513672
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769841.549",
+            "source_timestamp_last": "1791769856.649",
+            "source_timestamp_span_seconds": 15.099999904632568,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.019999980926513672,
+            "sampling_interval_seconds_max": 0.023999929428100586
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:50:41.5575509Z",
+            "source_timestamp_last": "2026-10-12T01:50:57.8636969Z",
+            "source_timestamp_span_seconds": 16.306146144866943,
+            "sampling_interval_seconds_p50": 0.015569090843200684,
+            "sampling_interval_seconds_p95": 0.016343891620635986,
+            "sampling_interval_seconds_max": 0.03124690055847168
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 908,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2"
+        ],
+        "layer_id": [
+          "1",
+          "2"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769841.549"
+          }
+        ],
+        "session_outcome_transition_events": [],
+        "run_state_values": [
+          "running"
+        ],
+        "session_outcome_values": [],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 0,
+        "end_missing_status": "end timestamp absent; restart only a possibility, requires external confirmation"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False"
+        ],
+        "enters": 0,
+        "exits": 0,
+        "segments": [],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 908,
+        "query_valid_rows": 908,
+        "ownership_valid_rows": 908,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-10484",
+          "-10504",
+          "-10528"
+        ],
+        "version_ids": [
+          "-10484-g1",
+          "-10504-g1",
+          "-10528-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-10484",
+          "-10504",
+          "-10528"
+        ],
+        "active_version_ids": [
+          "-10484-g1",
+          "-10504-g1",
+          "-10528-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 753,
+          "True": 155
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 753,
+          "ATTENTION": 155
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769856.649",
+        "sequence": "908",
+        "run_id": "f64575b813894516ae51ae1347d4789b",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan",
+        "passed_count": "1",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "nan",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-10528",
+        "geometry_version_id": "-10528-g1",
+        "geometry_active_platform_instance_id": "-10528",
+        "geometry_active_version_id": "-10528-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    },
+    {
+      "sessionID": "20261012_095057_878988",
+      "file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\1012TEST\\session_20261012_095057_878988\\raw.csv",
+      "sha256_before": "116409d05879defc92fd7e4bfe93e9ce96a08ec0270c19e77c4c4ae718ea49d2",
+      "sha256_after": "116409d05879defc92fd7e4bfe93e9ce96a08ec0270c19e77c4c4ae718ea49d2",
+      "raw_unchanged": true,
+      "row_counts": {
+        "all": 3461,
+        "unity": 1139,
+        "wii": 2322,
+        "other": 0
+      },
+      "run_ids": [
+        "88811b735b944abc963cecab0b33a4d0"
+      ],
+      "timestamps": {
+        "all_rows": {
+          "first": "1791769857.874",
+          "last": "2026-10-12T01:51:34.5893255Z",
+          "span_seconds_by_sorted_valid_timestamp": 36.71532487869263,
+          "sampling_interval_seconds_p50": 0.011988520622253418,
+          "sampling_interval_seconds_p95": 0.016102898120880126,
+          "sampling_interval_seconds_max": 0.03169608116149902
+        },
+        "by_source_in_file_order": {
+          "unity": {
+            "source_timestamp_first": "1791769857.874",
+            "source_timestamp_last": "1791769876.81",
+            "source_timestamp_span_seconds": 18.935999870300293,
+            "sampling_interval_seconds_p50": 0.01699995994567871,
+            "sampling_interval_seconds_p95": 0.019999980926513672,
+            "sampling_interval_seconds_max": 0.02200007438659668
+          },
+          "wii": {
+            "source_timestamp_first": "2026-10-12T01:50:57.8791147Z",
+            "source_timestamp_last": "2026-10-12T01:51:34.5893255Z",
+            "source_timestamp_span_seconds": 36.71021103858948,
+            "sampling_interval_seconds_p50": 0.015568017959594727,
+            "sampling_interval_seconds_p95": 0.016387939453125,
+            "sampling_interval_seconds_max": 0.031723976135253906
+          }
+        }
+      },
+      "unity_sequence": {
+        "first": 1,
+        "last": 1139,
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0,
+        "nonincreasing_pairs_sample": []
+      },
+      "unity_source_time": {
+        "duplicate_or_nonincreasing_adjacent_count": 0,
+        "descending_adjacent_count": 0
+      },
+      "configuration_values": {
+        "calibration_mode": [
+          "True"
+        ],
+        "selected_session_layers": [
+          "3"
+        ],
+        "selected_difficulty": [
+          "3"
+        ],
+        "difficulty": [
+          "3"
+        ],
+        "platform_difficulty": [
+          "3"
+        ],
+        "active_platform_difficulty": [
+          "3"
+        ]
+      },
+      "layer_field_values": {
+        "selected_session_layers": [
+          "3"
+        ],
+        "response_layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "layer_id": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "actualdifficulty_header_present": false,
+      "terminal_events": {
+        "run_state_transition_events": [
+          {
+            "unity_row_index": 0,
+            "run_state": "running",
+            "source_timestamp": "1791769857.874"
+          },
+          {
+            "unity_row_index": 1138,
+            "run_state": "ended",
+            "source_timestamp": "1791769876.81"
+          }
+        ],
+        "session_outcome_transition_events": [
+          {
+            "unity_row_index": 1138,
+            "session_outcome": "calibration_completed",
+            "source_timestamp": "1791769876.81"
+          }
+        ],
+        "run_state_values": [
+          "ended",
+          "running"
+        ],
+        "session_outcome_values": [
+          "calibration_completed"
+        ],
+        "fall_reason_values": [],
+        "fall_event_true_rows": 0,
+        "session_end_backend_timestamp_nonempty_rows": 1,
+        "end_missing_status": "end timestamp present"
+      },
+      "edge_warning_state": {
+        "distinct_values": [
+          "False",
+          "True"
+        ],
+        "enters": 1,
+        "exits": 1,
+        "segments": [
+          {
+            "start_unity_row_index": 302,
+            "end_unity_row_index": 317,
+            "start_state": "True",
+            "end_state": "False"
+          }
+        ],
+        "counting_note": "Transitions inferred from edge_warning_state tokens; verify field semantics if states are not active/inactive labels."
+      },
+      "geometry": {
+        "unity_rows": 1139,
+        "query_valid_rows": 1139,
+        "ownership_valid_rows": 1139,
+        "identity_mismatch_rows": 0,
+        "identity_mismatch_ratio_unity": 0.0,
+        "identity_mismatch_ratio_of_rows_with_both_ids": 0.0,
+        "platform_instance_ids": [
+          "-10644",
+          "-10664",
+          "-10690",
+          "-10716"
+        ],
+        "version_ids": [
+          "-10644-g1",
+          "-10664-g1",
+          "-10690-g1",
+          "-10716-g1"
+        ],
+        "active_platform_instance_ids": [
+          "-10644",
+          "-10664",
+          "-10690",
+          "-10716"
+        ],
+        "active_version_ids": [
+          "-10644-g1",
+          "-10664-g1",
+          "-10690-g1",
+          "-10716-g1"
+        ]
+      },
+      "model_evidence": {
+        "model_warning_or_update_sequence_or_model_score_headers": [],
+        "model_warning_present": false,
+        "update_sequence_present": false,
+        "attention_state_values_are_csv_labels_only": {
+          "False": 980,
+          "True": 159
+        },
+        "prediction_state_values_are_csv_labels_only": {
+          "SAFE": 965,
+          "ATTENTION": 159,
+          "EDGE WARNING": 15
+        },
+        "interpretation": "CSV fields alone do not prove ML strong prompt/alert behavior; missing model evidence columns cannot establish that the model did not alert."
+      },
+      "last_unity_row_key_fields": {
+        "source_timestamp": "1791769876.81",
+        "sequence": "1139",
+        "run_id": "88811b735b944abc963cecab0b33a4d0",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1791769876.81",
+        "passed_count": "3",
+        "commanded_difficulty": "3",
+        "active_platform_difficulty": "3",
+        "difficulty": "3",
+        "fall_event": "False",
+        "fall_reason": "",
+        "attention_state": "False",
+        "prediction_state": "SAFE",
+        "warning_type": "",
+        "warning_active": "False",
+        "visible_warning_state": "SAFE",
+        "edge_warning_state": "False",
+        "edge_warning_time": "nan",
+        "geometry_query_valid": "True",
+        "geometry_ownership_valid": "True",
+        "geometry_platform_instance_id": "-10716",
+        "geometry_version_id": "-10716-g1",
+        "geometry_active_platform_instance_id": "-10716",
+        "geometry_active_version_id": "-10716-g1"
+      },
+      "headers": [
+        "backend_timestamp",
+        "source",
+        "source_timestamp",
+        "sequence",
+        "passed_count",
+        "run_id",
+        "run_start_backend_timestamp",
+        "run_state",
+        "session_outcome",
+        "session_end_backend_timestamp",
+        "commanded_difficulty",
+        "active_platform_difficulty",
+        "tl",
+        "tr",
+        "bl",
+        "br",
+        "offset_tl",
+        "offset_tr",
+        "offset_bl",
+        "offset_br",
+        "ratio_tl",
+        "ratio_tr",
+        "ratio_bl",
+        "ratio_br",
+        "total_weight",
+        "cop_x",
+        "cop_z",
+        "ball_pos_x",
+        "ball_pos_z",
+        "duplicate_sample",
+        "platform_level",
+        "distance_to_hole",
+        "platform_tilt",
+        "difficulty",
+        "fall_event",
+        "fall_reason",
+        "calibration_mode",
+        "selected_session_layers",
+        "selected_difficulty",
+        "attention_state",
+        "prediction_state",
+        "response_experiment_id",
+        "experiment_id",
+        "response_condition",
+        "trial_scenario",
+        "trial_valid",
+        "response_trial_id",
+        "trial_id",
+        "response_layer_id",
+        "layer_id",
+        "warning_source",
+        "warning_type",
+        "warning_active",
+        "visible_warning_state",
+        "warning_episode_id",
+        "warning_episode_start_time",
+        "warning_episode_start_backend_timestamp",
+        "warning_episode_end_time",
+        "warning_episode_end_backend_timestamp",
+        "attention_episode_id",
+        "attention_episode_enter_time",
+        "attention_episode_exit_time",
+        "attention_episode_start_time",
+        "attention_episode_end_time",
+        "target_x",
+        "target_z",
+        "target_hole_distance",
+        "target_hole_radius",
+        "target_hole_approach_velocity",
+        "moving_toward_target_hole",
+        "hole_approach_state",
+        "platform_center_x",
+        "platform_center_z",
+        "platform_radius",
+        "platform_scale",
+        "platform_difficulty",
+        "platform_radius_source",
+        "platform_root_lossy_scale_x",
+        "platform_root_lossy_scale_y",
+        "platform_root_lossy_scale_z",
+        "platform_collider_lossy_scale_x",
+        "platform_collider_lossy_scale_y",
+        "platform_collider_lossy_scale_z",
+        "ball_velocity_x",
+        "ball_velocity_z",
+        "ball_position_velocity_x",
+        "ball_position_velocity_z",
+        "ball_radial_distance",
+        "ball_radial_velocity",
+        "nearest_edge_direction_x",
+        "nearest_edge_direction_z",
+        "target_edge_direction_x",
+        "target_edge_direction_z",
+        "target_edge_distance",
+        "target_edge_radial_velocity",
+        "directional_edge_distance",
+        "directional_edge_point_x",
+        "directional_edge_point_z",
+        "directional_edge_valid",
+        "ball_radius",
+        "edge_warning_margin",
+        "edge_warning_radius",
+        "edge_warning_distance_threshold",
+        "cop_velocity_x",
+        "cop_velocity_z",
+        "cop_speed",
+        "fall_direction",
+        "edge_warning_state",
+        "edge_warning_time",
+        "edge_warning_backend_timestamp",
+        "edge_contact_time",
+        "edge_contact_backend_timestamp",
+        "support_lost_time",
+        "support_lost_backend_timestamp",
+        "fall_event_time",
+        "fall_event_backend_timestamp",
+        "geometry_platform_instance_id",
+        "geometry_version_id",
+        "geometry_source_timestamp",
+        "geometry_query_valid",
+        "geometry_ownership_valid",
+        "geometry_active_platform_instance_id",
+        "geometry_active_version_id"
+      ]
+    }
+  ]
+}

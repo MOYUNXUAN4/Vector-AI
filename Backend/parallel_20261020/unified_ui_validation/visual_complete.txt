@@ -1,0 +1,1 @@
+3 actual Unity Editor IMGUI pages captured; synthetic states only; no UDP or Play Mode.

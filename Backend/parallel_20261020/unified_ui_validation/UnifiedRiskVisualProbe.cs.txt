@@ -1,0 +1,193 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+// Temporary dynamically compiled Editor-only probe, not an imported game script.
+public class UnifiedRiskVisualProbe : EditorWindow
+{
+    const string Output = @"C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\parallel_20261020\unified_ui_validation";
+    const BindingFlags Methods = BindingFlags.Instance | BindingFlags.NonPublic;
+    Scene preview;
+    Component ui;
+    Type uiType;
+    object savedInstance;
+    FieldInfo instance;
+    MethodInfo build, render;
+    int page, paints;
+    bool capturing, closed;
+    double started;
+    int width, height;
+
+    public static string Start()
+    {
+        if (EditorApplication.isPlaying || EditorApplication.isCompiling)
+            throw new InvalidOperationException("Visual verification requires idle Edit Mode");
+        Directory.CreateDirectory(Output);
+        var window = CreateInstance<UnifiedRiskVisualProbe>();
+        window.titleContent = new GUIContent("Unified risk UI - isolated synthetic verification");
+        window.position = new Rect(30, 35, 1000, 640);
+        window.Initialize();
+        window.ShowUtility();
+        window.Focus();
+        EditorApplication.update += window.Tick;
+        return "started isolated IMGUI check; no sockets, gameplay, scene loads or setting changes";
+    }
+
+    void Initialize()
+    {
+        started = EditorApplication.timeSinceStartup;
+        uiType = AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType("UIManager", false)).First(t => t != null);
+        instance = uiType.GetField("Instance", BindingFlags.Public | BindingFlags.Static);
+        savedInstance = instance.GetValue(null);
+        preview = EditorSceneManager.NewPreviewScene();
+        var go = new GameObject("UnifiedRiskVisualProbeObject") { hideFlags = HideFlags.HideAndDontSave };
+        go.SetActive(false);
+        SceneManager.MoveGameObjectToScene(go, preview);
+        ui = go.AddComponent(uiType);
+        build = uiType.GetMethod("BuildUnifiedRiskPresentationState", BindingFlags.Static | BindingFlags.NonPublic);
+        render = uiType.GetMethod("DrawUnifiedRiskPresentationState", Methods);
+    }
+
+    void Tick()
+    {
+        if (closed) return;
+        if (EditorApplication.isPlaying || EditorApplication.isCompiling || EditorApplication.timeSinceStartup-started > 45)
+        {
+            File.WriteAllText(Path.Combine(Output,"visual_error.txt"),"Probe aborted: editor mode changed or time cap reached.");
+            Close();
+            return;
+        }
+        Repaint();
+    }
+
+    object State(int mask)
+    {
+        object state = build.Invoke(null,new object[]{true,(mask&1)!=0,(mask&2)!=0,(mask&4)!=0,(mask&8)!=0});
+        Type type=state.GetType();
+        type.GetField("modelProbability").SetValue(state,.81f);
+        type.GetField("geometryClearance").SetValue(state,-.015f);
+        type.GetField("proximityState").SetValue(state,"STRONG");
+        return state;
+    }
+
+    void Tile(Rect bounds, string title, int mask, bool narrow=false)
+    {
+        GUI.BeginGroup(bounds);
+        GUI.Label(new Rect(8,0,bounds.width-16,21),title,EditorStyles.boldLabel);
+        GUI.BeginGroup(new Rect(0,21,bounds.width,bounds.height-21));
+        render.Invoke(ui,new object[]{State(mask),narrow?300f:bounds.width,bounds.height-21});
+        GUI.EndGroup();
+        GUI.EndGroup();
+    }
+
+    void OnGUI()
+    {
+        if (closed || ui==null) return;
+        try
+        {
+            EditorGUI.DrawRect(new Rect(0,0,position.width,position.height),new Color(.16f,.17f,.19f));
+            GUI.Label(new Rect(8,3,position.width-16,22),"Synthetic display-only check (not real UDP / not a model acceptance test) - page "+(page+1),EditorStyles.boldLabel);
+            if(page==0)
+            {
+                Tile(new Rect(0,30,500,198),"AI only - P=0.81 expected",1);
+                Tile(new Rect(500,30,500,198),"TTE only - no model probability",4);
+                Tile(new Rect(0,230,500,198),"Existing local yellow only",8);
+                Tile(new Rect(500,230,500,198),"Current geometry only",2);
+                Tile(new Rect(0,430,500,198),"All four sources - each source retained",15);
+                Tile(new Rect(500,430,500,198),"No sources - risk panel absent",0);
+            }
+            else if(page==1)
+            {
+                Tile(new Rect(0,30,500,198),"Before withdrawal - AI plus local state",9);
+                Tile(new Rect(500,30,500,198),"After AI withdrawal - local only, NO old P",8);
+                Tile(new Rect(0,230,500,198),"TTE withdrawn - local state takes over",8);
+                Tile(new Rect(500,230,500,198),"All withdrawn - no retained risk panel",0);
+                Tile(new Rect(0,430,500,198),"Geometry plus AI - both named",3);
+                Tile(new Rect(500,430,500,198),"AI and TTE - both named",5);
+            }
+            else Tile(new Rect(20,35,960,590),"Narrow 300px viewport - wrapping, all sources",15,true);
+            if(Event.current.type==EventType.Repaint)
+            {
+                width=Mathf.RoundToInt(position.width);
+                height=Mathf.RoundToInt(position.height);
+                if(++paints>=4 && !capturing)
+                {
+                    capturing=true;
+                    EditorApplication.delayCall+=Capture;
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            File.WriteAllText(Path.Combine(Output,"visual_error.txt"),e.ToString());
+            Close();
+        }
+    }
+
+    void Capture()
+    {
+        if(closed) return;
+        try
+        {
+            var image=new Texture2D(width,height,TextureFormat.RGB24,false);
+            var target=RenderTexture.GetTemporary(width,height,0,RenderTextureFormat.ARGB32);
+            var previous=RenderTexture.active;
+            try
+            {
+                // Capture this GUIView's render surface, never desktop pixels.
+                var parent=typeof(EditorWindow).GetField("m_Parent",BindingFlags.Instance|BindingFlags.NonPublic).GetValue(this);
+                var guiView=typeof(EditorWindow).Assembly.GetType("UnityEditor.GUIView");
+                guiView.GetMethod("GrabPixels",BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic)
+                    .Invoke(parent,new object[]{target,new Rect(0,0,width,height)});
+                RenderTexture.active=target;
+                image.ReadPixels(new Rect(0,0,width,height),0,0);
+                // GUIView's native surface uses the opposite vertical origin to PNG.
+                var pixels=image.GetPixels();
+                for(int y=0;y<height/2;y++)
+                    for(int x=0;x<width;x++)
+                    {
+                        int a=y*width+x,b=(height-1-y)*width+x;
+                        var color=pixels[a]; pixels[a]=pixels[b]; pixels[b]=color;
+                    }
+                image.SetPixels(pixels);
+                image.Apply();
+                File.WriteAllBytes(Path.Combine(Output,"visual_page_"+(page+1)+".png"),image.EncodeToPNG());
+            }
+            finally
+            {
+                RenderTexture.active=previous;
+                RenderTexture.ReleaseTemporary(target);
+                DestroyImmediate(image);
+            }
+            page++;
+            paints=0;
+            capturing=false;
+            if(page>=3)
+            {
+                File.WriteAllText(Path.Combine(Output,"visual_complete.txt"),"3 actual Unity Editor IMGUI pages captured; synthetic states only; no UDP or Play Mode.");
+                Close();
+            }
+            else { Focus(); Repaint(); }
+        }
+        catch(Exception e)
+        {
+            File.WriteAllText(Path.Combine(Output,"visual_error.txt"),e.ToString());
+            Close();
+        }
+    }
+
+    void OnDisable()
+    {
+        if(closed) return;
+        closed=true;
+        EditorApplication.update-=Tick;
+        EditorApplication.delayCall-=Capture;
+        if(preview.IsValid()) EditorSceneManager.ClosePreviewScene(preview);
+        instance?.SetValue(null,savedInstance);
+    }
+}

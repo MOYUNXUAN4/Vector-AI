@@ -1,0 +1,918 @@
+[
+ {
+  "session": "session_20261020_204207_908174",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 268,
+    "start_s": 8.126,
+    "end_s": 26.481,
+    "dur_s": 18.355,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 20,
+    "start_s": 27.597,
+    "end_s": 27.911,
+    "dur_s": 0.315,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 33,
+    "start_s": 27.93,
+    "end_s": 28.463,
+    "dur_s": 0.533,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_204245_310354",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 200,
+    "start_s": 4.065,
+    "end_s": 17.202,
+    "dur_s": 13.137,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 4,
+    "start_s": 18.687,
+    "end_s": 22.886,
+    "dur_s": 4.199,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 33,
+    "start_s": 21.468,
+    "end_s": 22.001,
+    "dur_s": 0.533,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 27,
+    "start_s": 22.904,
+    "end_s": 23.334,
+    "dur_s": 0.431,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "3",
+    "type": "STRONG",
+    "frames": 32,
+    "start_s": 23.352,
+    "end_s": 23.867,
+    "dur_s": 0.515,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "3",
+    "type": "ATTENTION",
+    "frames": 137,
+    "start_s": 26.971,
+    "end_s": 30.406,
+    "dur_s": 3.435,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_204323_779285",
+  "fall_at_s": 12.955,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 334,
+    "start_s": 2.665,
+    "end_s": 12.348,
+    "dur_s": 9.683,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 25,
+    "start_s": 12.361,
+    "end_s": 12.76,
+    "dur_s": 0.4,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_204340_783591",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 223,
+    "start_s": 3.658,
+    "end_s": 11.221,
+    "dur_s": 7.563,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 26,
+    "start_s": 11.239,
+    "end_s": 11.657,
+    "dur_s": 0.417,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 124,
+    "start_s": 14.79,
+    "end_s": 19.904,
+    "dur_s": 5.114,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 54,
+    "start_s": 19.922,
+    "end_s": 20.801,
+    "dur_s": 0.879,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "2",
+    "type": "ATTENTION",
+    "frames": 213,
+    "start_s": 24.704,
+    "end_s": 38.448,
+    "dur_s": 13.743,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_204429_025778",
+  "fall_at_s": 37.595,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 172,
+    "start_s": 2.236,
+    "end_s": 17.931,
+    "dur_s": 15.695,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 72,
+    "start_s": 17.949,
+    "end_s": 36.257,
+    "dur_s": 18.307,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 210,
+    "start_s": 21.197,
+    "end_s": 36.244,
+    "dur_s": 15.047,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 26,
+    "start_s": 36.275,
+    "end_s": 36.693,
+    "dur_s": 0.418,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_204511_543162",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 184,
+    "start_s": 2.914,
+    "end_s": 9.166,
+    "dur_s": 6.253,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 103,
+    "start_s": 9.18,
+    "end_s": 16.898,
+    "dur_s": 7.718,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 112,
+    "start_s": 13.748,
+    "end_s": 16.415,
+    "dur_s": 2.667,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 105,
+    "start_s": 16.912,
+    "end_s": 20.014,
+    "dur_s": 3.102,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "3",
+    "type": "STRONG",
+    "frames": 49,
+    "start_s": 20.027,
+    "end_s": 20.826,
+    "dur_s": 0.799,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "4",
+    "type": "STRONG",
+    "frames": 32,
+    "start_s": 22.196,
+    "end_s": 22.713,
+    "dur_s": 0.517,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "5",
+    "type": "STRONG",
+    "frames": 44,
+    "start_s": 22.729,
+    "end_s": 23.445,
+    "dur_s": 0.716,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "6",
+    "type": "STRONG",
+    "frames": 12,
+    "start_s": 24.111,
+    "end_s": 24.293,
+    "dur_s": 0.182,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "6",
+    "type": "ATTENTION",
+    "frames": 70,
+    "start_s": 26.11,
+    "end_s": 33.406,
+    "dur_s": 7.296,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214022_086000",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 194,
+    "start_s": 1.234,
+    "end_s": 6.749,
+    "dur_s": 5.514,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "0",
+    "type": "STRONG",
+    "frames": 1,
+    "start_s": 6.776,
+    "end_s": 6.776,
+    "dur_s": 0.0,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 64,
+    "start_s": 6.784,
+    "end_s": 7.832,
+    "dur_s": 1.048,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 32,
+    "start_s": 11.59,
+    "end_s": 17.056,
+    "dur_s": 5.466,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 12,
+    "start_s": 17.068,
+    "end_s": 17.249,
+    "dur_s": 0.18,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "3",
+    "type": "STRONG",
+    "frames": 26,
+    "start_s": 17.269,
+    "end_s": 17.685,
+    "dur_s": 0.416,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "3",
+    "type": "ATTENTION",
+    "frames": 157,
+    "start_s": 21.049,
+    "end_s": 35.286,
+    "dur_s": 14.237,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214100_600233",
+  "fall_at_s": 7.559,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 61,
+    "start_s": 2.89,
+    "end_s": 7.204,
+    "dur_s": 4.314,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 11,
+    "start_s": 7.307,
+    "end_s": 7.473,
+    "dur_s": 0.166,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214112_191029",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 290,
+    "start_s": 4.145,
+    "end_s": 21.3,
+    "dur_s": 17.155,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "0",
+    "type": "STRONG",
+    "frames": 1,
+    "start_s": 22.647,
+    "end_s": 22.647,
+    "dur_s": 0.0,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 4,
+    "start_s": 22.678,
+    "end_s": 22.724,
+    "dur_s": 0.046,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 46,
+    "start_s": 22.738,
+    "end_s": 23.484,
+    "dur_s": 0.746,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "2",
+    "type": "ATTENTION",
+    "frames": 53,
+    "start_s": 26.108,
+    "end_s": 29.93,
+    "dur_s": 3.822,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214149_759405",
+  "fall_at_s": 17.691,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 194,
+    "start_s": 4.341,
+    "end_s": 14.712,
+    "dur_s": 10.371,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 12,
+    "start_s": 16.232,
+    "end_s": 16.412,
+    "dur_s": 0.181,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 64,
+    "start_s": 16.434,
+    "end_s": 17.481,
+    "dur_s": 1.047,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214210_571969",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 281,
+    "start_s": 5.815,
+    "end_s": 24.238,
+    "dur_s": 18.423,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214244_551605",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 171,
+    "start_s": 5.08,
+    "end_s": 18.874,
+    "dur_s": 13.794,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "0",
+    "type": "STRONG",
+    "frames": 1,
+    "start_s": 20.609,
+    "end_s": 20.609,
+    "dur_s": 0.0,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 8,
+    "start_s": 20.623,
+    "end_s": 20.74,
+    "dur_s": 0.117,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 196,
+    "start_s": 23.124,
+    "end_s": 32.109,
+    "dur_s": 8.986,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214320_667777",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 414,
+    "start_s": 5.098,
+    "end_s": 30.544,
+    "dur_s": 25.446,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214354_584139",
+  "fall_at_s": null,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 166,
+    "start_s": 2.251,
+    "end_s": 5.001,
+    "dur_s": 2.751,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 15.884,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 41,
+    "start_s": 5.015,
+    "end_s": 6.766,
+    "dur_s": 1.751,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "1",
+    "type": "ATTENTION",
+    "frames": 234,
+    "start_s": 8.634,
+    "end_s": 20.447,
+    "dur_s": 11.813,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "2",
+    "type": "STRONG",
+    "frames": 73,
+    "start_s": 20.461,
+    "end_s": 22.21,
+    "dur_s": 1.75,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   },
+   {
+    "source": "unity_attention_rule",
+    "episode": "2",
+    "type": "ATTENTION",
+    "frames": 198,
+    "start_s": 24.902,
+    "end_s": 36.74,
+    "dur_s": 11.837,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ },
+ {
+  "session": "session_20261020_214437_062477",
+  "fall_at_s": 19.627,
+  "episodes": [
+   {
+    "source": "unity_attention_rule",
+    "episode": "0",
+    "type": "ATTENTION",
+    "frames": 364,
+    "start_s": 1.501,
+    "end_s": 18.487,
+    "dur_s": 16.986,
+    "visible": [
+     "ATTENTION"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 15.884
+   },
+   {
+    "source": "unity_edge_geometry",
+    "episode": "1",
+    "type": "STRONG",
+    "frames": 49,
+    "start_s": 18.501,
+    "end_s": 19.299,
+    "dur_s": 0.798,
+    "visible": [
+     "EDGE_WARNING"
+    ],
+    "scale_min": 0.85,
+    "scale_max": 0.85
+   }
+  ]
+ }
+]

@@ -1,0 +1,1099 @@
+{
+  "scope": "P03 post-fix nine-run client accepted/revoked episode and local-monotonic burden analysis",
+  "input_receipt": {
+    "fix_version": "PILOT055_D3_L5_OLD_UI_COMPAT5_R1_20261020",
+    "session_ids": [
+      "session_20261020_214022_086000",
+      "session_20261020_214100_600233",
+      "session_20261020_214112_191029",
+      "session_20261020_214149_759405",
+      "session_20261020_214210_571969",
+      "session_20261020_214244_551605",
+      "session_20261020_214320_667777",
+      "session_20261020_214354_584139",
+      "session_20261020_214437_062477"
+    ]
+  },
+  "source_hash_verification": {
+    "report_hashes_checked": 10,
+    "hashes": {
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214022_086000\\raw.csv": "05af9d4afa4de0257ffe71e3806636d732fdc34636e6b87d63760d7c2bfd8675",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214100_600233\\raw.csv": "4184d92f4662b3a92577ce2b6863a6a704f5ad3111606583f1389902d92c74fa",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214112_191029\\raw.csv": "429d38d1835b431729dc76f05e191b918fd90f763aa554cc3c5da17af50376f1",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214149_759405\\raw.csv": "389a3ec17bfb6441139aa6bfe8f2c0e8dd3a9a35c8d29aaa0cf84860a56cc484",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214210_571969\\raw.csv": "3c29c1d4dcbf7cc2d03328ee801dc187a5a85016ea0a273d959f8ab937ba709c",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214244_551605\\raw.csv": "cd90e3c9f418ee2cdb19a624c5e17f3cc0c0c6cd230306d65bc71e109eae0fac",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214320_667777\\raw.csv": "e661c93d3bab42f576910513c136859b8f5507b1f7c69678a8c2f6e121c8e58e",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214354_584139\\raw.csv": "16254841d7d196b3e19ac79702720d5b1f288c6c47b1b44e6b578714f55c34c9",
+      "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214437_062477\\raw.csv": "64f0eff0dce9121772fded006efd446f656ccba8da08da0f1303f9c31f0f39bd",
+      "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\Player.log": "da7f99f99a64e981f9a476bf8f650c50ecddec4d7d638b6d3a91d0f969c82770"
+    },
+    "input_client_result_hash": "1fe03b9653b7e739ae77600985d62b419fb7c470e2c55132f39ffbf4ebdd33a9",
+    "condition_receipt_hash": "73b1bb42631b3711f266097a8af73e8a6b67d625f259956fa2ed1b6bd10431b7"
+  },
+  "group_counts": {
+    "completed_6": 6,
+    "fallout_3": 3,
+    "unknown": 0
+  },
+  "groups": {
+    "completed_6": [
+      "session_20261020_214022_086000",
+      "session_20261020_214112_191029",
+      "session_20261020_214210_571969",
+      "session_20261020_214244_551605",
+      "session_20261020_214320_667777",
+      "session_20261020_214354_584139"
+    ],
+    "fallout_3": [
+      "session_20261020_214100_600233",
+      "session_20261020_214149_759405",
+      "session_20261020_214437_062477"
+    ],
+    "unknown": []
+  },
+  "aggregate_by_channel": {
+    "ExperimentalModelWarning": {
+      "episodes": 5,
+      "closed_duration_s": 2.104289,
+      "closed_duration_count": 5,
+      "unknown_duration_episodes": 0,
+      "active_records": 34,
+      "revoked_records": 5,
+      "mismatched_transitions": 0,
+      "negative_durations": 0
+    },
+    "ExperimentalProximityWarning": {
+      "episodes": 20,
+      "closed_duration_s": 8.199811,
+      "closed_duration_count": 20,
+      "unknown_duration_episodes": 0,
+      "active_records": 20,
+      "revoked_records": 20,
+      "mismatched_transitions": 0,
+      "negative_durations": 0
+    },
+    "ExperimentalGeometryWarning": {
+      "episodes": 5,
+      "closed_duration_s": 0.0,
+      "closed_duration_count": 0,
+      "unknown_duration_episodes": 5,
+      "active_records": 5,
+      "revoked_records": 5,
+      "mismatched_transitions": 0,
+      "negative_durations": 0
+    }
+  },
+  "runs": [
+    {
+      "session_id": "session_20261020_214022_086000",
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 2,
+          "active_records": 17,
+          "revoked_records": 2,
+          "closed_duration_s": 1.086824,
+          "closed_duration_episode_count": 2,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 195,
+              "onset_local_monotonic_s": 33.447281,
+              "onset_input_sequence": null,
+              "onset_prediction_sequence": "16",
+              "last_prediction_sequence": "25",
+              "reason": "confirmed",
+              "revoke_reason": "backend_safe",
+              "last_active_line": 336,
+              "closed": true,
+              "revoke_line": 350,
+              "revoke_local_monotonic_s": 34.103788,
+              "revoke_input_sequence": null,
+              "duration_s": 0.656507,
+              "duration_status": "closed_local_monotonic_interval"
+            },
+            {
+              "onset_line": 379,
+              "onset_local_monotonic_s": 43.833054,
+              "onset_input_sequence": null,
+              "onset_prediction_sequence": "174",
+              "last_prediction_sequence": "180",
+              "reason": "confirmed",
+              "revoke_reason": "layer_transition",
+              "last_active_line": 478,
+              "closed": true,
+              "revoke_line": 492,
+              "revoke_local_monotonic_s": 44.263371,
+              "revoke_input_sequence": null,
+              "duration_s": 0.430317,
+              "duration_status": "closed_local_monotonic_interval"
+            }
+          ]
+        },
+        "purple_tte": {
+          "episode_count": 4,
+          "active_records": 4,
+          "revoked_records": 4,
+          "closed_duration_s": 1.319899,
+          "closed_duration_episode_count": 4,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 181,
+              "onset_local_monotonic_s": 33.147232,
+              "onset_input_sequence": "368",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 279,
+              "revoke_local_monotonic_s": 33.805178,
+              "revoke_input_sequence": "406",
+              "duration_s": 0.657946,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+                "input_sequence": "368",
+                "csv_sequence": "368",
+                "source": "unity",
+                "source_timestamp": "1792503628.22",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 365,
+              "onset_local_monotonic_s": 43.573603,
+              "onset_input_sequence": "994",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 449,
+              "revoke_local_monotonic_s": 44.096586,
+              "revoke_input_sequence": "1024",
+              "duration_s": 0.522983,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+                "input_sequence": "994",
+                "csv_sequence": "994",
+                "source": "unity",
+                "source_timestamp": "1792503638.65",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 508,
+              "onset_local_monotonic_s": 52.06182,
+              "onset_input_sequence": "1503",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 522,
+              "revoke_local_monotonic_s": 52.124675,
+              "revoke_input_sequence": "1505",
+              "duration_s": 0.062855,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+                "input_sequence": "1503",
+                "csv_sequence": "1503",
+                "source": "unity",
+                "source_timestamp": "1792503647.137",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 537,
+              "onset_local_monotonic_s": 52.499756,
+              "onset_input_sequence": "1529",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 551,
+              "revoke_local_monotonic_s": 52.575871,
+              "revoke_input_sequence": "1532",
+              "duration_s": 0.076115,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+                "input_sequence": "1529",
+                "csv_sequence": "1529",
+                "source": "unity",
+                "source_timestamp": "1792503647.568",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214100_600233",
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "outcome": "edge_exit",
+      "group": "fallout_3",
+      "channels": {
+        "orange_model": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        },
+        "purple_tte": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0.509446,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 610,
+              "onset_local_monotonic_s": 72.219549,
+              "onset_input_sequence": "403",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "layer_transition",
+              "closed": true,
+              "revoke_line": 624,
+              "revoke_local_monotonic_s": 72.728995,
+              "revoke_input_sequence": "434",
+              "duration_s": 0.509446,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+                "input_sequence": "403",
+                "csv_sequence": "403",
+                "source": "unity",
+                "source_timestamp": "1792503667.289",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 1,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 640,
+              "onset_local_monotonic_s": null,
+              "onset_input_sequence": "445",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "clearance_nonpositive",
+              "revoke_reason": "run_ended:edge_exit",
+              "closed": true,
+              "revoke_line": 666,
+              "revoke_local_monotonic_s": null,
+              "revoke_input_sequence": "454",
+              "duration_s": null,
+              "duration_status": "unknown_clock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214112_191029",
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        },
+        "purple_tte": {
+          "episode_count": 4,
+          "active_records": 4,
+          "revoked_records": 4,
+          "closed_duration_s": 1.311487,
+          "closed_duration_episode_count": 4,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 726,
+              "onset_local_monotonic_s": 87.437381,
+              "onset_input_sequence": "620",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "layer_transition",
+              "closed": true,
+              "revoke_line": 740,
+              "revoke_local_monotonic_s": 87.743752,
+              "revoke_input_sequence": "638",
+              "duration_s": 0.306371,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "1a893ee7e97f4e8b86450665aa830167",
+                "input_sequence": "620",
+                "csv_sequence": "620",
+                "source": "unity",
+                "source_timestamp": "1792503682.504",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 756,
+              "onset_local_monotonic_s": 93.435596,
+              "onset_input_sequence": "980",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 770,
+              "revoke_local_monotonic_s": 93.499753,
+              "revoke_input_sequence": "982",
+              "duration_s": 0.064157,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "1a893ee7e97f4e8b86450665aa830167",
+                "input_sequence": "980",
+                "csv_sequence": "980",
+                "source": "unity",
+                "source_timestamp": "1792503688.512",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 785,
+              "onset_local_monotonic_s": 98.939746,
+              "onset_input_sequence": "1310",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 799,
+              "revoke_local_monotonic_s": 99.763254,
+              "revoke_input_sequence": "1359",
+              "duration_s": 0.823508,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "1a893ee7e97f4e8b86450665aa830167",
+                "input_sequence": "1310",
+                "csv_sequence": "1310",
+                "source": "unity",
+                "source_timestamp": "1792503694.004",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 814,
+              "onset_local_monotonic_s": 105.932294,
+              "onset_input_sequence": "1730",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 828,
+              "revoke_local_monotonic_s": 106.049745,
+              "revoke_input_sequence": "1735",
+              "duration_s": 0.117451,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "1a893ee7e97f4e8b86450665aa830167",
+                "input_sequence": "1730",
+                "csv_sequence": "1730",
+                "source": "unity",
+                "source_timestamp": "1792503701.006",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214149_759405",
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "outcome": "edge_exit",
+      "group": "fallout_3",
+      "channels": {
+        "orange_model": {
+          "episode_count": 1,
+          "active_records": 5,
+          "revoked_records": 1,
+          "closed_duration_s": 0.326497,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 901,
+              "onset_local_monotonic_s": 129.068474,
+              "onset_input_sequence": null,
+              "onset_prediction_sequence": "134",
+              "last_prediction_sequence": "138",
+              "reason": "confirmed",
+              "revoke_reason": "backend_safe",
+              "last_active_line": 957,
+              "closed": true,
+              "revoke_line": 971,
+              "revoke_local_monotonic_s": 129.394971,
+              "revoke_input_sequence": null,
+              "duration_s": 0.326497,
+              "duration_status": "closed_local_monotonic_interval"
+            }
+          ]
+        },
+        "purple_tte": {
+          "episode_count": 2,
+          "active_records": 2,
+          "revoked_records": 2,
+          "closed_duration_s": 1.137252,
+          "closed_duration_episode_count": 2,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 887,
+              "onset_local_monotonic_s": 128.806917,
+              "onset_input_sequence": "848",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 986,
+              "revoke_local_monotonic_s": 129.46494,
+              "revoke_input_sequence": "886",
+              "duration_s": 0.658023,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+                "input_sequence": "848",
+                "csv_sequence": "848",
+                "source": "unity",
+                "source_timestamp": "1792503723.872",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 1001,
+              "onset_local_monotonic_s": 130.436889,
+              "onset_input_sequence": "946",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 1015,
+              "revoke_local_monotonic_s": 130.916118,
+              "revoke_input_sequence": "974",
+              "duration_s": 0.479229,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+                "input_sequence": "946",
+                "csv_sequence": "946",
+                "source": "unity",
+                "source_timestamp": "1792503725.503",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 1,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1030,
+              "onset_local_monotonic_s": null,
+              "onset_input_sequence": "1036",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "clearance_nonpositive",
+              "revoke_reason": "run_ended:edge_exit",
+              "closed": true,
+              "revoke_line": 1056,
+              "revoke_local_monotonic_s": null,
+              "revoke_input_sequence": "1062",
+              "duration_s": null,
+              "duration_status": "unknown_clock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214210_571969",
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        },
+        "purple_tte": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0.626769,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1116,
+              "onset_local_monotonic_s": 160.379747,
+              "onset_input_sequence": "1495",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 1130,
+              "revoke_local_monotonic_s": 161.006516,
+              "revoke_input_sequence": "1530",
+              "duration_s": 0.626769,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+                "input_sequence": "1495",
+                "csv_sequence": "1495",
+                "source": "unity",
+                "source_timestamp": "1792503755.443",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214244_551605",
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        },
+        "purple_tte": {
+          "episode_count": 2,
+          "active_records": 2,
+          "revoked_records": 2,
+          "closed_duration_s": 0.639415,
+          "closed_duration_episode_count": 2,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1189,
+              "onset_local_monotonic_s": 189.464773,
+              "onset_input_sequence": "1201",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "layer_transition",
+              "closed": true,
+              "revoke_line": 1203,
+              "revoke_local_monotonic_s": 190.041277,
+              "revoke_input_sequence": "1236",
+              "duration_s": 0.576504,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "47823c251f904955be573d9c446875ff",
+                "input_sequence": "1201",
+                "csv_sequence": "1201",
+                "source": "unity",
+                "source_timestamp": "1792503784.531",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 1219,
+              "onset_local_monotonic_s": 194.276986,
+              "onset_input_sequence": "1490",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 1233,
+              "revoke_local_monotonic_s": 194.339897,
+              "revoke_input_sequence": "1492",
+              "duration_s": 0.062911,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "47823c251f904955be573d9c446875ff",
+                "input_sequence": "1490",
+                "csv_sequence": "1490",
+                "source": "unity",
+                "source_timestamp": "1792503789.343",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214320_667777",
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        },
+        "purple_tte": {
+          "episode_count": 2,
+          "active_records": 2,
+          "revoked_records": 2,
+          "closed_duration_s": 0.887618,
+          "closed_duration_episode_count": 2,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1292,
+              "onset_local_monotonic_s": 217.367087,
+              "onset_input_sequence": "708",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "layer_transition",
+              "closed": true,
+              "revoke_line": 1306,
+              "revoke_local_monotonic_s": 218.04778,
+              "revoke_input_sequence": "748",
+              "duration_s": 0.680693,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+                "input_sequence": "708",
+                "csv_sequence": "708",
+                "source": "unity",
+                "source_timestamp": "1792503812.433",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 1322,
+              "onset_local_monotonic_s": 227.896508,
+              "onset_input_sequence": "1340",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 1336,
+              "revoke_local_monotonic_s": 228.103433,
+              "revoke_input_sequence": "1351",
+              "duration_s": 0.206925,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+                "input_sequence": "1340",
+                "csv_sequence": "1340",
+                "source": "unity",
+                "source_timestamp": "1792503822.961",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 0,
+          "active_records": 0,
+          "revoked_records": 0,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": []
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214354_584139",
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "outcome": "calibration_completed",
+      "group": "completed_6",
+      "channels": {
+        "orange_model": {
+          "episode_count": 1,
+          "active_records": 7,
+          "revoked_records": 1,
+          "closed_duration_s": 0.381355,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1465,
+              "onset_local_monotonic_s": 259.826084,
+              "onset_input_sequence": null,
+              "onset_prediction_sequence": "207",
+              "last_prediction_sequence": "213",
+              "reason": "confirmed",
+              "revoke_reason": "backend_unknown",
+              "last_active_line": 1564,
+              "closed": true,
+              "revoke_line": 1578,
+              "revoke_local_monotonic_s": 260.207439,
+              "revoke_input_sequence": null,
+              "duration_s": 0.381355,
+              "duration_status": "closed_local_monotonic_interval"
+            }
+          ]
+        },
+        "purple_tte": {
+          "episode_count": 3,
+          "active_records": 3,
+          "revoked_records": 3,
+          "closed_duration_s": 1.052892,
+          "closed_duration_episode_count": 3,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1422,
+              "onset_local_monotonic_s": 248.651332,
+              "onset_input_sequence": "550",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_clear",
+              "closed": true,
+              "revoke_line": 1436,
+              "revoke_local_monotonic_s": 249.075684,
+              "revoke_input_sequence": "574",
+              "duration_s": 0.424352,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "aa9c12a7604d4d468df13244c1118b05",
+                "input_sequence": "550",
+                "csv_sequence": "550",
+                "source": "unity",
+                "source_timestamp": "1792503843.717",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 1451,
+              "onset_local_monotonic_s": 259.73167,
+              "onset_input_sequence": "1213",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 1507,
+              "revoke_local_monotonic_s": 259.971534,
+              "revoke_input_sequence": "1229",
+              "duration_s": 0.239864,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "aa9c12a7604d4d468df13244c1118b05",
+                "input_sequence": "1213",
+                "csv_sequence": "1213",
+                "source": "unity",
+                "source_timestamp": "1792503854.759",
+                "tte_seconds": null
+              }
+            },
+            {
+              "onset_line": 1620,
+              "onset_local_monotonic_s": 267.777805,
+              "onset_input_sequence": "1698",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "layer_transition",
+              "closed": true,
+              "revoke_line": 1634,
+              "revoke_local_monotonic_s": 268.166481,
+              "revoke_input_sequence": "1721",
+              "duration_s": 0.388676,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "aa9c12a7604d4d468df13244c1118b05",
+                "input_sequence": "1698",
+                "csv_sequence": "1698",
+                "source": "unity",
+                "source_timestamp": "1792503862.842",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 2,
+          "active_records": 2,
+          "revoked_records": 2,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 2,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1395,
+              "onset_local_monotonic_s": null,
+              "onset_input_sequence": "303",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "clearance_nonpositive",
+              "revoke_reason": "geometry_clear",
+              "closed": true,
+              "revoke_line": 1408,
+              "revoke_local_monotonic_s": null,
+              "revoke_input_sequence": "393",
+              "duration_s": null,
+              "duration_status": "unknown_clock"
+            },
+            {
+              "onset_line": 1593,
+              "onset_local_monotonic_s": null,
+              "onset_input_sequence": "1244",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "clearance_nonpositive",
+              "revoke_reason": "geometry_clear",
+              "closed": true,
+              "revoke_line": 1606,
+              "revoke_local_monotonic_s": null,
+              "revoke_input_sequence": "1306",
+              "duration_s": null,
+              "duration_status": "unknown_clock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "session_id": "session_20261020_214437_062477",
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "outcome": "edge_exit",
+      "group": "fallout_3",
+      "channels": {
+        "orange_model": {
+          "episode_count": 1,
+          "active_records": 5,
+          "revoked_records": 1,
+          "closed_duration_s": 0.309613,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1708,
+              "onset_local_monotonic_s": 300.168696,
+              "onset_input_sequence": null,
+              "onset_prediction_sequence": "188",
+              "last_prediction_sequence": "192",
+              "reason": "confirmed",
+              "revoke_reason": "backend_safe",
+              "last_active_line": 1764,
+              "closed": true,
+              "revoke_line": 1778,
+              "revoke_local_monotonic_s": 300.478309,
+              "revoke_input_sequence": null,
+              "duration_s": 0.309613,
+              "duration_status": "closed_local_monotonic_interval"
+            }
+          ]
+        },
+        "purple_tte": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0.715033,
+          "closed_duration_episode_count": 1,
+          "unknown_duration_episode_count": 0,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1694,
+              "onset_local_monotonic_s": 299.777888,
+              "onset_input_sequence": "1069",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "available",
+              "revoke_reason": "backend_unknown",
+              "closed": true,
+              "revoke_line": 1793,
+              "revoke_local_monotonic_s": 300.492921,
+              "revoke_input_sequence": "1111",
+              "duration_s": 0.715033,
+              "duration_status": "closed_local_monotonic_interval",
+              "onset_source_join": {
+                "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+                "input_sequence": "1069",
+                "csv_sequence": "1069",
+                "source": "unity",
+                "source_timestamp": "1792503894.849",
+                "tte_seconds": null
+              }
+            }
+          ]
+        },
+        "red_geometry": {
+          "episode_count": 1,
+          "active_records": 1,
+          "revoked_records": 1,
+          "closed_duration_s": 0,
+          "closed_duration_episode_count": 0,
+          "unknown_duration_episode_count": 1,
+          "mismatched_revoke_without_active": 0,
+          "negative_duration_count": 0,
+          "episodes": [
+            {
+              "onset_line": 1808,
+              "onset_local_monotonic_s": null,
+              "onset_input_sequence": "1136",
+              "onset_prediction_sequence": null,
+              "last_prediction_sequence": null,
+              "reason": "clearance_nonpositive",
+              "revoke_reason": "run_ended:edge_exit",
+              "closed": true,
+              "revoke_line": 1834,
+              "revoke_local_monotonic_s": null,
+              "revoke_input_sequence": "1178",
+              "duration_s": null,
+              "duration_status": "unknown_clock"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation_limits": [
+    "Episodes are keyed by exact run and channel; repeated ACTIVE refreshes do not create episodes.",
+    "Only paired ACTIVE/REVOKED endpoints in the same client local_monotonic_s clock domain yield duration.",
+    "Unclosed episodes remain censored/unknown; no duration is inferred from the next run or event.",
+    "Geometry records lack local_monotonic_s, so geometry duration is unknown even when closed.",
+    "TTE onset source join uses only exact run_id plus input sequence matching raw.csv sequence; no neighboring clock inference.",
+    "Orange/purple burden is time under accepted client state, not pixel display duration, false-positive rate, or intervention effect.",
+    "Prediction sequence is retained as a model-event identifier and is never treated as input-source time."
+  ]
+}

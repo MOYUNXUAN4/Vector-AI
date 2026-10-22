@@ -1,0 +1,902 @@
+{
+  "dataset": "TEST1012",
+  "status": "INITIAL_AUDIT_NOT_TRAINING_APPROVAL",
+  "configuration": {
+    "input_sensitivity": 0.55,
+    "previous_sensitivity": 0.66,
+    "source": "user_confirmation",
+    "reported_experimental_banners": "on",
+    "original_yellow_attention": "unchanged",
+    "experimental_banner_status": "user_corrected_confirmation_on_matches_live_receiver_activation_logs",
+    "configuration_evidence": "sensitivity from user confirmation; banner status corrected by latest user reply; not logged as telemetry configuration"
+  },
+  "session_count": 15,
+  "outcome_counts": {
+    "complete": 8,
+    "edge_exit": 7
+  },
+  "session_records": [
+    {
+      "session_id": "session_20261012_201501_583328",
+      "run_id": "435b5df81f974604b25f5995b28a2aba",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201501_583328\\raw.csv",
+      "sha256": "67a0546dc888d00e5dd7539a7fcaf817d7bb9cc6de74728dc4301ed3652bd1ab",
+      "unity_rows": 1939,
+      "wii_rows": 2285,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1939,
+      "source_gaps_over_0_1s": [
+        {
+          "sequence_after": "1739",
+          "seconds": 0.6349999904632568,
+          "layers": [
+            "2",
+            "2"
+          ]
+        }
+      ],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121456_488_c529e8d8.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121456_488_c529e8d8.jsonl",
+          "line": 1980,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1939,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121456_488_c529e8d8.jsonl",
+          "line": 1986,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1939,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1939
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121456_488_c529e8d8.jsonl",
+          "line": 1987,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1939,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201537_424286",
+      "run_id": "8ba9d838b025468c844f2b6911eed2fb",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201537_424286\\raw.csv",
+      "sha256": "228930c699c5ed49883043b821c98768c90ef683894193b4fb4cc57f202d0120",
+      "unity_rows": 1736,
+      "wii_rows": 2072,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1736,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121536_930_bdb3d243.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121536_930_bdb3d243.jsonl",
+          "line": 1734,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1736,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121536_930_bdb3d243.jsonl",
+          "line": 1740,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1736,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1736
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121536_930_bdb3d243.jsonl",
+          "line": 1741,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1736,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201610_080573",
+      "run_id": "38d07fab1e5a42a0874aa41b196e840e",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201610_080573\\raw.csv",
+      "sha256": "836e28addfb04379c0ad30f991c308e8b3a241131f72dca9016b76c1faea1917",
+      "unity_rows": 2097,
+      "wii_rows": 2324,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 2097,
+      "source_gaps_over_0_1s": [
+        {
+          "sequence_after": "2023",
+          "seconds": 0.5999999046325684,
+          "layers": [
+            "3",
+            "3"
+          ]
+        }
+      ],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121609_697_32b770f9.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121609_697_32b770f9.jsonl",
+          "line": 2153,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 2097,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121609_697_32b770f9.jsonl",
+          "line": 2160,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 2097,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 2097
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121609_697_32b770f9.jsonl",
+          "line": 2161,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 2097,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201647_039319",
+      "run_id": "cdfa7700041540e89820e520b36297d5",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201647_039319\\raw.csv",
+      "sha256": "1e0b768e23761a0c1051c82c9d471ac4fb30b905b7cb2d98fbfc1809b716bdb5",
+      "unity_rows": 2320,
+      "wii_rows": 2630,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 2320,
+      "source_gaps_over_0_1s": [
+        {
+          "sequence_after": "1970",
+          "seconds": 0.6349999904632568,
+          "layers": [
+            "3",
+            "3"
+          ]
+        }
+      ],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121646_395_3d62b1b8.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121646_395_3d62b1b8.jsonl",
+          "line": 2420,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 2320,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121646_395_3d62b1b8.jsonl",
+          "line": 2426,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 2320,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 2320
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121646_395_3d62b1b8.jsonl",
+          "line": 2427,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 2320,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201728_372912",
+      "run_id": "9a5f2acc471d4e01b55ec7186393e658",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201728_372912\\raw.csv",
+      "sha256": "a645ba9df9078d915416effab154e3f37aa4fcabf40bf9780cae34f1550abafb",
+      "unity_rows": 1361,
+      "wii_rows": 1574,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1361,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121727_372_83cebc14.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121727_372_83cebc14.jsonl",
+          "line": 1302,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1361,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121727_372_83cebc14.jsonl",
+          "line": 1308,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1361,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1361
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121727_372_83cebc14.jsonl",
+          "line": 1309,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1361,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201753_282830",
+      "run_id": "d4a8bf859ee949ebaf7f14fe3f137631",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201753_282830\\raw.csv",
+      "sha256": "bcbe2ce98a5243dffc663fc79e4418754808d9d7d5fa164e0570b1cd81890824",
+      "unity_rows": 641,
+      "wii_rows": 811,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 641,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121752_712_f2a01289.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121752_712_f2a01289.jsonl",
+          "line": 449,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 641,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121752_712_f2a01289.jsonl",
+          "line": 459,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 641,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 641
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121752_712_f2a01289.jsonl",
+          "line": 460,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 641,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201806_185949",
+      "run_id": "0d3a12b5112e4ad6ae52e9e6277669f8",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201806_185949\\raw.csv",
+      "sha256": "2b67c4cde1b39f0c08118b9856f57a4c53115f97495b0ef1a10b8c0d42b7071a",
+      "unity_rows": 1474,
+      "wii_rows": 1657,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1474,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121805_843_8c277e30.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121805_843_8c277e30.jsonl",
+          "line": 1429,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1474,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121805_843_8c277e30.jsonl",
+          "line": 1435,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1474,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1474
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121805_843_8c277e30.jsonl",
+          "line": 1436,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1474,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201832_486360",
+      "run_id": "d2cc8d62b8f24b85b4d85453ba5946fd",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201832_486360\\raw.csv",
+      "sha256": "2bb8ce308a6615914147a2ab4c20ba5a1d0325a1891f612c30d7c8b4ca5cf263",
+      "unity_rows": 1668,
+      "wii_rows": 1917,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1668,
+      "source_gaps_over_0_1s": [
+        {
+          "sequence_after": "1497",
+          "seconds": 0.5969998836517334,
+          "layers": [
+            "3",
+            "3"
+          ]
+        }
+      ],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121832_077_5d46fbe7.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121832_077_5d46fbe7.jsonl",
+          "line": 1660,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1668,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121832_077_5d46fbe7.jsonl",
+          "line": 1666,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1668,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1668
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121832_077_5d46fbe7.jsonl",
+          "line": 1667,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1668,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201902_617504",
+      "run_id": "5978359fe4fc42fa9831399fd17875a8",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201902_617504\\raw.csv",
+      "sha256": "c2eaad693677997ecda9ec4df5c02062a6829bbed3a429767346f2d94cb6114e",
+      "unity_rows": 1532,
+      "wii_rows": 1708,
+      "raw_outcome": "calibration_completed",
+      "analysis_outcome": "complete",
+      "end_state": "ended",
+      "passed_count": 3,
+      "terminal_layer": 4,
+      "terminal_sequence": 1532,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121902_151_ad086eda.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121902_151_ad086eda.jsonl",
+          "line": 1505,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "calibration_completed",
+          "sequence": 1532,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121902_151_ad086eda.jsonl",
+          "line": 1511,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "calibration_completed",
+          "sequence": 1532,
+          "packet_outcome": "calibration_completed",
+          "packet_sequence": 1532
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121902_151_ad086eda.jsonl",
+          "line": 1512,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1532,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201929_389058",
+      "run_id": "a184e88dd8924139a55838248cb43068",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201929_389058\\raw.csv",
+      "sha256": "e73ed2395f6db79bb0c54e56f23c01152c10d06b3e7de3a27fdf2350886c8534",
+      "unity_rows": 958,
+      "wii_rows": 1232,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 958,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121929_104_a0c0ddf1.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121929_104_a0c0ddf1.jsonl",
+          "line": 808,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 958,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121929_104_a0c0ddf1.jsonl",
+          "line": 818,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 958,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 958
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121929_104_a0c0ddf1.jsonl",
+          "line": 819,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 958,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_201948_796111",
+      "run_id": "13762954896f4079bffadc3008517e49",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_201948_796111\\raw.csv",
+      "sha256": "9d46b50c037781121241d94eddbc0a58f0349dc655876a99cba5fa3e3f428916",
+      "unity_rows": 936,
+      "wii_rows": 1120,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 936,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121947_912_87da217c.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121947_912_87da217c.jsonl",
+          "line": 780,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 936,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121947_912_87da217c.jsonl",
+          "line": 790,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 936,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 936
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_121947_912_87da217c.jsonl",
+          "line": 791,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 936,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_202006_528702",
+      "run_id": "e1fadd8b241a4316973fcee7917ed7d3",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_202006_528702\\raw.csv",
+      "sha256": "bc23de5f22c3320c3517979f611b87d43f49c471212b5830cb82f550d3ec1123",
+      "unity_rows": 643,
+      "wii_rows": 809,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 643,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122006_417_790360fa.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122006_417_790360fa.jsonl",
+          "line": 435,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 643,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122006_417_790360fa.jsonl",
+          "line": 445,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 643,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 643
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122006_417_790360fa.jsonl",
+          "line": 446,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 643,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_202019_348109",
+      "run_id": "21bafdb2385c4c878e2529ec478909c4",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_202019_348109\\raw.csv",
+      "sha256": "0834ea0f7a1baffff965676edf7a68b6023dc90028913e3f9e15cb007bb3a5b7",
+      "unity_rows": 540,
+      "wii_rows": 747,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 540,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122019_100_02359463.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122019_100_02359463.jsonl",
+          "line": 320,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 540,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122019_100_02359463.jsonl",
+          "line": 330,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 540,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 540
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122019_100_02359463.jsonl",
+          "line": 331,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 540,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_202031_072605",
+      "run_id": "a948cced53c94f70ab6bf96cf805ec2c",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_202031_072605\\raw.csv",
+      "sha256": "8eb5311e9712856e18b37f31686193fe603dd20dd880ae740639ce806bdd8cea",
+      "unity_rows": 706,
+      "wii_rows": 924,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 0,
+      "terminal_layer": 1,
+      "terminal_sequence": 706,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122030_777_c27d4777.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122030_777_c27d4777.jsonl",
+          "line": 522,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 706,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122030_777_c27d4777.jsonl",
+          "line": 532,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 706,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 706
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122030_777_c27d4777.jsonl",
+          "line": 533,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 706,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": true
+    },
+    {
+      "session_id": "session_20261012_202045_661325",
+      "run_id": "f1fb8d5b7e70483194053e4c6ad01d0a",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST1012\\session_20261012_202045_661325\\raw.csv",
+      "sha256": "43fca8b84eea0430b18e145ca52f60cb8c3ba1175153207240313adcdb4d0ffe",
+      "unity_rows": 1008,
+      "wii_rows": 51040,
+      "raw_outcome": "edge_exit",
+      "analysis_outcome": "edge_exit",
+      "end_state": "ended",
+      "passed_count": 1,
+      "terminal_layer": 2,
+      "terminal_sequence": 1008,
+      "source_gaps_over_0_1s": [],
+      "sensitivity_not_in_csv": true,
+      "lifecycle": [
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122045_149_f7c0a498.jsonl",
+          "line": 1,
+          "event": "new_run_created",
+          "outcome": "",
+          "sequence": 0,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122045_149_f7c0a498.jsonl",
+          "line": 890,
+          "event": "terminal_snapshot_frozen",
+          "outcome": "edge_exit",
+          "sequence": 1008,
+          "packet_outcome": null,
+          "packet_sequence": null
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122045_149_f7c0a498.jsonl",
+          "line": 900,
+          "event": "terminal_udp_send_call_completed",
+          "outcome": "edge_exit",
+          "sequence": 1008,
+          "packet_outcome": "edge_exit",
+          "packet_sequence": 1008
+        },
+        {
+          "path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\EndlessFallingDiagnostics\\samples_20261012_122045_149_f7c0a498.jsonl",
+          "line": 901,
+          "event": "restart_requested",
+          "outcome": "",
+          "sequence": 1008,
+          "packet_outcome": null,
+          "packet_sequence": null
+        }
+      ],
+      "terminal_csv_jsonl_match": true,
+      "source_stable_during_read": false
+    }
+  ],
+  "model_training_performed": false,
+  "old_development_data_mixed": false,
+  "frozen_data_used": false,
+  "raw_files_modified_by_analysis": false,
+  "dataset_frozen": false,
+  "read_snapshot_warning": "Last session raw.csv continues to receive Wii records after Unity run ended; source hashes are read snapshots, not a frozen dataset."
+}

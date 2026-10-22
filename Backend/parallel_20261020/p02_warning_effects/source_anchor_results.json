@@ -1,0 +1,1870 @@
+{
+  "scope": "descriptive source lead; not rendered warning lead or model acceptance",
+  "shadow_sha256": "771ce95c0c284d5f53af3a53275e323e573188a5765707d308979af1c6a5f07e",
+  "sessions": [
+    {
+      "session": "session_20261020_101929_120829",
+      "run_id": "358796c34dff4bc1bd095becdcaec003",
+      "csv_sha256": "2abbad6a20cadce120eeae7bba30689c4b30a10bce94cc3f5261c6fbe4d54d18",
+      "outcome": "calibration_completed",
+      "source_span_s": 80.84999990463257,
+      "crossings": [
+        {
+          "last_positive_sequence": 3250,
+          "first_nonpositive_sequence": 3251,
+          "epoch_interval": [
+            1792462823.295,
+            1792462823.315
+          ],
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "csv_lines": [
+            6687,
+            6689
+          ]
+        }
+      ],
+      "purple_accepted_onsets": [
+        {
+          "client_episode_start_line": 181,
+          "source_csv_line": 705,
+          "input_sequence": 341,
+          "source_epoch": 1792462774.813,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 1.537635326385498,
+          "radial_velocity_at_source": 2.3393940925598145,
+          "client_local_monotonic_s": 30.389851,
+          "client_duration_proxy_s": 0.402936,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 184478,
+            "input_sequence": 364,
+            "input_source_timestamp": 1792462775.193,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.7334613800048828,
+            "outward_velocity": -2.3945813179016113,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.38000011444091797
+        },
+        {
+          "client_episode_start_line": 239,
+          "source_csv_line": 1826,
+          "input_sequence": 889,
+          "source_epoch": 1792462783.947,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.9904379844665527,
+          "radial_velocity_at_source": 4.997120380401611,
+          "client_local_monotonic_s": 39.531105,
+          "client_duration_proxy_s": 0.066715,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 185007,
+            "input_sequence": 893,
+            "input_source_timestamp": 1792462784.012,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 2.7144477367401123,
+            "outward_velocity": 3.041215419769287,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.06500005722045898
+        },
+        {
+          "client_episode_start_line": 268,
+          "source_csv_line": 1886,
+          "input_sequence": 918,
+          "source_epoch": 1792462784.432,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 1.7696130275726318,
+          "radial_velocity_at_source": 2.811478853225708,
+          "client_local_monotonic_s": 40.015044,
+          "client_duration_proxy_s": 0.057114,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 185035,
+            "input_sequence": 921,
+            "input_source_timestamp": 1792462784.484,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 1.7056400775909424,
+            "outward_velocity": 0.1728157252073288,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.05200004577636719
+        },
+        {
+          "client_episode_start_line": 297,
+          "source_csv_line": 2159,
+          "input_sequence": 1050,
+          "source_epoch": 1792462786.633,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.4980390071868896,
+          "radial_velocity_at_source": 4.618293762207031,
+          "client_local_monotonic_s": 42.215699,
+          "client_duration_proxy_s": 0.571847,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 185198,
+            "input_sequence": 1084,
+            "input_source_timestamp": 1792462787.198,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.7495822906494141,
+            "outward_velocity": 0.3191016614437103,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.565000057220459
+        },
+        {
+          "client_episode_start_line": 326,
+          "source_csv_line": 2281,
+          "input_sequence": 1109,
+          "source_epoch": 1792462787.607,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 0.6241607666015625,
+          "radial_velocity_at_source": 1.5692198276519775,
+          "client_local_monotonic_s": 43.19024,
+          "client_duration_proxy_s": 0.072217,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 185227,
+            "input_sequence": 1113,
+            "input_source_timestamp": 1792462787.677,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.5054712295532227,
+            "outward_velocity": 0.6200847625732422,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.06999993324279785
+        },
+        {
+          "client_episode_start_line": 355,
+          "source_csv_line": 2732,
+          "input_sequence": 1328,
+          "source_epoch": 1792462791.262,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.5262322425842285,
+          "radial_velocity_at_source": 4.5167555809021,
+          "client_local_monotonic_s": 46.845525,
+          "client_duration_proxy_s": 0.601917,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 185478,
+            "input_sequence": 1364,
+            "input_source_timestamp": 1792462791.861,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.8952665328979492,
+            "outward_velocity": -3.121957302093506,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.5989999771118164
+        },
+        {
+          "client_episode_start_line": 384,
+          "source_csv_line": 4037,
+          "input_sequence": 1965,
+          "source_epoch": 1792462801.881,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 3.001689910888672,
+          "radial_velocity_at_source": 4.559545516967773,
+          "client_local_monotonic_s": 57.465988,
+          "client_duration_proxy_s": 0.056669,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186082,
+            "input_sequence": 1968,
+            "input_source_timestamp": 1792462801.932,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 2.8152167797088623,
+            "outward_velocity": 3.193424701690674,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.05099987983703613
+        },
+        {
+          "client_episode_start_line": 413,
+          "source_csv_line": 4093,
+          "input_sequence": 1992,
+          "source_epoch": 1792462802.331,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 1.8687968254089355,
+          "radial_velocity_at_source": 2.891324520111084,
+          "client_local_monotonic_s": 57.915513,
+          "client_duration_proxy_s": 0.131967,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186114,
+            "input_sequence": 2000,
+            "input_source_timestamp": 1792462802.461,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 1.5076704025268555,
+            "outward_velocity": 1.9668158292770386,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.12999987602233887
+        },
+        {
+          "client_episode_start_line": 442,
+          "source_csv_line": 4270,
+          "input_sequence": 2078,
+          "source_epoch": 1792462803.756,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.307321071624756,
+          "radial_velocity_at_source": 4.102254867553711,
+          "client_local_monotonic_s": 59.332169,
+          "client_duration_proxy_s": 0.539991,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186223,
+            "input_sequence": 2109,
+            "input_source_timestamp": 1792462804.282,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.7666783332824707,
+            "outward_velocity": -3.13655424118042,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.5260000228881836
+        },
+        {
+          "client_episode_start_line": 471,
+          "source_csv_line": 4485,
+          "input_sequence": 2182,
+          "source_epoch": 1792462805.496,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.44433856010437,
+          "radial_velocity_at_source": 4.113337516784668,
+          "client_local_monotonic_s": 61.082592,
+          "client_duration_proxy_s": 0.185307,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186307,
+            "input_sequence": 2193,
+            "input_source_timestamp": 1792462805.681,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 1.7988321781158447,
+            "outward_velocity": 0.9201968908309937,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.18499994277954102
+        },
+        {
+          "client_episode_start_line": 500,
+          "source_csv_line": 4714,
+          "input_sequence": 2294,
+          "source_epoch": 1792462807.356,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 3.577972412109375,
+          "radial_velocity_at_source": 5.380030155181885,
+          "client_local_monotonic_s": 62.943433,
+          "client_duration_proxy_s": 0.068824,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186412,
+            "input_sequence": 2298,
+            "input_source_timestamp": 1792462807.425,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 3.2871546745300293,
+            "outward_velocity": 3.472080945968628,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.0690000057220459
+        },
+        {
+          "client_episode_start_line": 529,
+          "source_csv_line": 4781,
+          "input_sequence": 2326,
+          "source_epoch": 1792462807.896,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 1.9654722213745117,
+          "radial_velocity_at_source": 3.3122682571411133,
+          "client_local_monotonic_s": 63.483026,
+          "client_duration_proxy_s": 0.059662,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186444,
+            "input_sequence": 2330,
+            "input_source_timestamp": 1792462807.955,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 1.776468276977539,
+            "outward_velocity": 2.135376453399658,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.05900001525878906
+        },
+        {
+          "client_episode_start_line": 558,
+          "source_csv_line": 5227,
+          "input_sequence": 2543,
+          "source_epoch": 1792462811.51,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.5523157119750977,
+          "radial_velocity_at_source": 3.9357738494873047,
+          "client_local_monotonic_s": 67.0958,
+          "client_duration_proxy_s": 0.291948,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 186674,
+            "input_sequence": 2560,
+            "input_source_timestamp": 1792462811.795,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 1.551992416381836,
+            "outward_velocity": 1.946191668510437,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.2850000858306885
+        },
+        {
+          "client_episode_start_line": 587,
+          "source_csv_line": 6599,
+          "input_sequence": 3207,
+          "source_epoch": 1792462822.581,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.974680185317993,
+          "radial_velocity_at_source": 5.123069763183594,
+          "client_local_monotonic_s": 78.167613,
+          "client_duration_proxy_s": 0.72971,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 187365,
+            "input_sequence": 3251,
+            "input_source_timestamp": 1792462823.315,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": -0.013991832733154297,
+            "outward_velocity": 1.7074799537658691,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.7339999675750732
+        },
+        {
+          "client_episode_start_line": 616,
+          "source_csv_line": 6969,
+          "input_sequence": 3389,
+          "source_epoch": 1792462825.615,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.458827257156372,
+          "radial_velocity_at_source": 3.742382287979126,
+          "client_local_monotonic_s": 81.201936,
+          "client_duration_proxy_s": 0.605712,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 187539,
+            "input_sequence": 3425,
+            "input_source_timestamp": 1792462826.215,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.6807951927185059,
+            "outward_velocity": -2.151409864425659,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.5999999046325684
+        },
+        {
+          "client_episode_start_line": 674,
+          "source_csv_line": 7562,
+          "input_sequence": 3676,
+          "source_epoch": 1792462830.4,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "1",
+            "-3322",
+            "-3322-g1"
+          ],
+          "q_at_source": 2.3818283081054688,
+          "radial_velocity_at_source": 3.857001781463623,
+          "client_local_monotonic_s": 85.989618,
+          "client_duration_proxy_s": 0.810585,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 187838,
+            "input_sequence": 3724,
+            "input_source_timestamp": 1792462831.201,
+            "platform_instance_id": -3322,
+            "geometry_version_id": "-3322-g1",
+            "q": 0.08971834182739258,
+            "outward_velocity": -0.5827261209487915,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.8009998798370361
+        },
+        {
+          "client_episode_start_line": 732,
+          "source_csv_line": 8370,
+          "input_sequence": 4070,
+          "source_epoch": 1792462836.965,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 2.545440912246704,
+          "radial_velocity_at_source": 3.763793706893921,
+          "client_local_monotonic_s": 92.548637,
+          "client_duration_proxy_s": 0.053684,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188187,
+            "input_sequence": 4073,
+            "input_source_timestamp": 1792462837.015,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 2.3641133308410645,
+            "outward_velocity": 2.38783597946167,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.05000019073486328
+        },
+        {
+          "client_episode_start_line": 761,
+          "source_csv_line": 8553,
+          "input_sequence": 4158,
+          "source_epoch": 1792462838.441,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 2.516824960708618,
+          "radial_velocity_at_source": 4.0765862464904785,
+          "client_local_monotonic_s": 94.028467,
+          "client_duration_proxy_s": 0.474663,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188301,
+            "input_sequence": 4187,
+            "input_source_timestamp": 1792462838.91,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 0.8892340660095215,
+            "outward_velocity": 1.00742506980896,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.46900010108947754
+        },
+        {
+          "client_episode_start_line": 790,
+          "source_csv_line": 8853,
+          "input_sequence": 4304,
+          "source_epoch": 1792462840.868,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 2.565601348876953,
+          "radial_velocity_at_source": 4.0663580894470215,
+          "client_local_monotonic_s": 96.470691,
+          "client_duration_proxy_s": 0.152153,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188428,
+            "input_sequence": 4314,
+            "input_source_timestamp": 1792462841.03,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 1.9995110034942627,
+            "outward_velocity": 0.8122601509094238,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.16199994087219238
+        },
+        {
+          "client_episode_start_line": 819,
+          "source_csv_line": 9081,
+          "input_sequence": 4415,
+          "source_epoch": 1792462842.719,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 2.023763656616211,
+          "radial_velocity_at_source": 3.3898251056671143,
+          "client_local_monotonic_s": 98.3112,
+          "client_duration_proxy_s": 0.176754,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188539,
+            "input_sequence": 4425,
+            "input_source_timestamp": 1792462842.894,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 1.4917445182800293,
+            "outward_velocity": 1.5273594856262207,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.17499995231628418
+        },
+        {
+          "client_episode_start_line": 848,
+          "source_csv_line": 9118,
+          "input_sequence": 4433,
+          "source_epoch": 1792462843.013,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 1.247680902481079,
+          "radial_velocity_at_source": 1.9211963415145874,
+          "client_local_monotonic_s": 98.605817,
+          "client_duration_proxy_s": 0.066624,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188551,
+            "input_sequence": 4437,
+            "input_source_timestamp": 1792462843.079,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 1.1723246574401855,
+            "outward_velocity": -1.3510900735855103,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.06599998474121094
+        },
+        {
+          "client_episode_start_line": 877,
+          "source_csv_line": 9309,
+          "input_sequence": 4525,
+          "source_epoch": 1792462844.549,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 2.8982088565826416,
+          "radial_velocity_at_source": 4.786966800689697,
+          "client_local_monotonic_s": 100.13586,
+          "client_duration_proxy_s": 0.376687,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188661,
+            "input_sequence": 4547,
+            "input_source_timestamp": 1792462844.919,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 1.5169339179992676,
+            "outward_velocity": 0.47495946288108826,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.36999988555908203
+        },
+        {
+          "client_episode_start_line": 906,
+          "source_csv_line": 9554,
+          "input_sequence": 4644,
+          "source_epoch": 1792462846.528,
+          "context": [
+            "358796c34dff4bc1bd095becdcaec003",
+            "2",
+            "-3346",
+            "-3346-g1"
+          ],
+          "q_at_source": 3.4338302612304688,
+          "radial_velocity_at_source": 5.383191108703613,
+          "client_local_monotonic_s": 102.11622,
+          "client_duration_proxy_s": 0.521279,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 188789,
+            "input_sequence": 4675,
+            "input_source_timestamp": 1792462847.05,
+            "platform_instance_id": -3346,
+            "geometry_version_id": "-3346-g1",
+            "q": 1.3790087699890137,
+            "outward_velocity": 1.217581868171692,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.5219998359680176
+        }
+      ],
+      "shadow_onset_matches": [
+        {
+          "input_sequence": 341,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            184455
+          ]
+        },
+        {
+          "input_sequence": 889,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            185003
+          ]
+        },
+        {
+          "input_sequence": 918,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            185032
+          ]
+        },
+        {
+          "input_sequence": 1050,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            185164
+          ]
+        },
+        {
+          "input_sequence": 1109,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            185223
+          ]
+        },
+        {
+          "input_sequence": 1328,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            185442
+          ]
+        },
+        {
+          "input_sequence": 1965,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186079
+          ]
+        },
+        {
+          "input_sequence": 1992,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186106
+          ]
+        },
+        {
+          "input_sequence": 2078,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186192
+          ]
+        },
+        {
+          "input_sequence": 2182,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186296
+          ]
+        },
+        {
+          "input_sequence": 2294,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186408
+          ]
+        },
+        {
+          "input_sequence": 2326,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186440
+          ]
+        },
+        {
+          "input_sequence": 2543,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            186657
+          ]
+        },
+        {
+          "input_sequence": 3207,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            187321
+          ]
+        },
+        {
+          "input_sequence": 3389,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            187503
+          ]
+        },
+        {
+          "input_sequence": 3676,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            187790
+          ]
+        },
+        {
+          "input_sequence": 4070,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188184
+          ]
+        },
+        {
+          "input_sequence": 4158,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188272
+          ]
+        },
+        {
+          "input_sequence": 4304,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188418
+          ]
+        },
+        {
+          "input_sequence": 4415,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188529
+          ]
+        },
+        {
+          "input_sequence": 4433,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188547
+          ]
+        },
+        {
+          "input_sequence": 4525,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188639
+          ]
+        },
+        {
+          "input_sequence": 4644,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            188758
+          ]
+        }
+      ],
+      "shadow_records": 4851,
+      "shadow_reasons": {
+        "unsupported_or_calibration_phase": 299,
+        "insufficient_0_5s_history": 93,
+        "available": 4434,
+        "outside_proximity_domain": 24,
+        "ended": 1
+      }
+    },
+    {
+      "session": "session_20261020_102058_768764",
+      "run_id": "510db1f687b34b2193ce0113d70e7262",
+      "csv_sha256": "62098ae37d4c1e2ce741ba7313e44f053d5f8e8319a90bab2bc273e25fa6255e",
+      "outcome": "calibration_completed",
+      "source_span_s": 29.79699993133545,
+      "crossings": [
+        {
+          "last_positive_sequence": 558,
+          "first_nonpositive_sequence": 559,
+          "epoch_interval": [
+            1792462868.042,
+            1792462868.063
+          ],
+          "context": [
+            "510db1f687b34b2193ce0113d70e7262",
+            "1",
+            "-5192",
+            "-5192-g1"
+          ],
+          "csv_lines": [
+            1148,
+            1150
+          ]
+        }
+      ],
+      "purple_accepted_onsets": [
+        {
+          "client_episode_start_line": 985,
+          "source_csv_line": 1058,
+          "input_sequence": 515,
+          "source_epoch": 1792462867.322,
+          "context": [
+            "510db1f687b34b2193ce0113d70e7262",
+            "1",
+            "-5192",
+            "-5192-g1"
+          ],
+          "q_at_source": 1.0732293128967285,
+          "radial_velocity_at_source": 1.755806565284729,
+          "client_local_monotonic_s": 122.911804,
+          "client_duration_proxy_s": 0.255726,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 189495,
+            "input_sequence": 530,
+            "input_source_timestamp": 1792462867.577,
+            "platform_instance_id": -5192,
+            "geometry_version_id": "-5192-g1",
+            "q": 0.6562862396240234,
+            "outward_velocity": 0.7627936005592346,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.25499987602233887
+        },
+        {
+          "client_episode_start_line": 1014,
+          "source_csv_line": 1121,
+          "input_sequence": 545,
+          "source_epoch": 1792462867.827,
+          "context": [
+            "510db1f687b34b2193ce0113d70e7262",
+            "1",
+            "-5192",
+            "-5192-g1"
+          ],
+          "q_at_source": 0.4898200035095215,
+          "radial_velocity_at_source": 1.3460664749145508,
+          "client_local_monotonic_s": 123.415469,
+          "client_duration_proxy_s": 0.238272,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 189524,
+            "input_sequence": 559,
+            "input_source_timestamp": 1792462868.063,
+            "platform_instance_id": -5192,
+            "geometry_version_id": "-5192-g1",
+            "q": -0.018947124481201172,
+            "outward_velocity": 2.2018349170684814,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.23600006103515625
+        }
+      ],
+      "shadow_onset_matches": [
+        {
+          "input_sequence": 515,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            189480
+          ]
+        },
+        {
+          "input_sequence": 545,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            189510
+          ]
+        }
+      ],
+      "shadow_records": 1790,
+      "shadow_reasons": {
+        "unsupported_or_calibration_phase": 301,
+        "insufficient_0_5s_history": 92,
+        "available": 1384,
+        "outside_proximity_domain": 12,
+        "ended": 1
+      }
+    },
+    {
+      "session": "session_20261020_102222_863869",
+      "run_id": "9cde97e123d240268311b479d55a83eb",
+      "csv_sha256": "24b4fc27ae686992a28342efa24976aec01d21003fafa913e97a39bfe1ac4120",
+      "outcome": "edge_exit",
+      "source_span_s": 83.98200011253357,
+      "crossings": [
+        {
+          "last_positive_sequence": 2827,
+          "first_nonpositive_sequence": 2828,
+          "epoch_interval": [
+            1792462989.955,
+            1792462989.975
+          ],
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "csv_lines": [
+            5812,
+            5814
+          ]
+        },
+        {
+          "last_positive_sequence": 3368,
+          "first_nonpositive_sequence": 3369,
+          "epoch_interval": [
+            1792462998.971,
+            1792462998.984
+          ],
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "csv_lines": [
+            6927,
+            6929
+          ]
+        },
+        {
+          "last_positive_sequence": 4159,
+          "first_nonpositive_sequence": 4160,
+          "epoch_interval": [
+            1792463012.149,
+            1792463012.165
+          ],
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "csv_lines": [
+            8561,
+            8563
+          ]
+        },
+        {
+          "last_positive_sequence": 4988,
+          "first_nonpositive_sequence": 4989,
+          "epoch_interval": [
+            1792463025.959,
+            1792463025.974
+          ],
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "2",
+            "-5378",
+            "-5378-g1"
+          ],
+          "csv_lines": [
+            10266,
+            10268
+          ]
+        }
+      ],
+      "purple_accepted_onsets": [
+        {
+          "client_episode_start_line": 1130,
+          "source_csv_line": 874,
+          "input_sequence": 426,
+          "source_epoch": 1792462949.938,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 2.278304100036621,
+          "radial_velocity_at_source": 3.2362427711486816,
+          "client_local_monotonic_s": 205.528638,
+          "client_duration_proxy_s": 0.049391,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 191184,
+            "input_sequence": 429,
+            "input_source_timestamp": 1792462949.983,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 2.1340627670288086,
+            "outward_velocity": 2.2917323112487793,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.04500007629394531
+        },
+        {
+          "client_episode_start_line": 1159,
+          "source_csv_line": 2176,
+          "input_sequence": 1059,
+          "source_epoch": 1792462960.482,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.626810073852539,
+          "radial_velocity_at_source": 2.4552979469299316,
+          "client_local_monotonic_s": 216.076868,
+          "client_duration_proxy_s": 0.616293,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 191851,
+            "input_sequence": 1096,
+            "input_source_timestamp": 1792462961.097,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 0.35344982147216797,
+            "outward_velocity": -1.3561255931854248,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6149997711181641
+        },
+        {
+          "client_episode_start_line": 1231,
+          "source_csv_line": 2823,
+          "input_sequence": 1373,
+          "source_epoch": 1792462965.707,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.6361100673675537,
+          "radial_velocity_at_source": 2.3453922271728516,
+          "client_local_monotonic_s": 221.31139,
+          "client_duration_proxy_s": 0.646935,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 192167,
+            "input_sequence": 1412,
+            "input_source_timestamp": 1792462966.356,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 0.5345606803894043,
+            "outward_velocity": -1.7973655462265015,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6489999294281006
+        },
+        {
+          "client_episode_start_line": 1289,
+          "source_csv_line": 5718,
+          "input_sequence": 2781,
+          "source_epoch": 1792462989.185,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 2.006906270980835,
+          "radial_velocity_at_source": 3.281386137008667,
+          "client_local_monotonic_s": 244.772443,
+          "client_duration_proxy_s": 0.79077,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 193583,
+            "input_sequence": 2828,
+            "input_source_timestamp": 1792462989.975,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": -0.022099018096923828,
+            "outward_velocity": 1.4421091079711914,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.7899999618530273
+        },
+        {
+          "client_episode_start_line": 1417,
+          "source_csv_line": 6842,
+          "input_sequence": 3327,
+          "source_epoch": 1792462998.285,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.552842140197754,
+          "radial_velocity_at_source": 2.367969036102295,
+          "client_local_monotonic_s": 253.882016,
+          "client_duration_proxy_s": 0.696354,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 194124,
+            "input_sequence": 3369,
+            "input_source_timestamp": 1792462998.984,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": -0.017011642456054688,
+            "outward_velocity": 1.2128523588180542,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6989998817443848
+        },
+        {
+          "client_episode_start_line": 1531,
+          "source_csv_line": 7250,
+          "input_sequence": 3524,
+          "source_epoch": 1792463001.57,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.6873512268066406,
+          "radial_velocity_at_source": 2.4411606788635254,
+          "client_local_monotonic_s": 257.166955,
+          "client_duration_proxy_s": 0.316381,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 194298,
+            "input_sequence": 3543,
+            "input_source_timestamp": 1792463001.884,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 0.9903807640075684,
+            "outward_velocity": 1.2301706075668335,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.31400012969970703
+        },
+        {
+          "client_episode_start_line": 1560,
+          "source_csv_line": 7304,
+          "input_sequence": 3550,
+          "source_epoch": 1792463002.005,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 0.8419489860534668,
+          "radial_velocity_at_source": 1.23056161403656,
+          "client_local_monotonic_s": 257.602106,
+          "client_duration_proxy_s": 0.281064,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 194322,
+            "input_sequence": 3567,
+            "input_source_timestamp": 1792463002.285,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 0.591224193572998,
+            "outward_velocity": -1.8407877683639526,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.2799999713897705
+        },
+        {
+          "client_episode_start_line": 1589,
+          "source_csv_line": 7715,
+          "input_sequence": 3749,
+          "source_epoch": 1792463005.32,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.5427722930908203,
+          "radial_velocity_at_source": 2.4422993659973145,
+          "client_local_monotonic_s": 260.918658,
+          "client_duration_proxy_s": 0.734934,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 194546,
+            "input_sequence": 3791,
+            "input_source_timestamp": 1792463006.019,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": 0.025034427642822266,
+            "outward_velocity": -0.8624522089958191,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6990001201629639
+        },
+        {
+          "client_episode_start_line": 1717,
+          "source_csv_line": 8486,
+          "input_sequence": 4123,
+          "source_epoch": 1792463011.544,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "1",
+            "-5354",
+            "-5354-g1"
+          ],
+          "q_at_source": 1.1253509521484375,
+          "radial_velocity_at_source": 1.812432885169983,
+          "client_local_monotonic_s": 267.142626,
+          "client_duration_proxy_s": 0.634447,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 194915,
+            "input_sequence": 4160,
+            "input_source_timestamp": 1792463012.165,
+            "platform_instance_id": -5354,
+            "geometry_version_id": "-5354-g1",
+            "q": -0.009811878204345703,
+            "outward_velocity": 1.0409233570098877,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6210000514984131
+        },
+        {
+          "client_episode_start_line": 1817,
+          "source_csv_line": 10212,
+          "input_sequence": 4962,
+          "source_epoch": 1792463025.529,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "2",
+            "-5378",
+            "-5378-g1"
+          ],
+          "q_at_source": 1.0856842994689941,
+          "radial_velocity_at_source": 2.447740077972412,
+          "client_local_monotonic_s": 281.132291,
+          "client_duration_proxy_s": 0.431809,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 195744,
+            "input_sequence": 4989,
+            "input_source_timestamp": 1792463025.974,
+            "platform_instance_id": -5378,
+            "geometry_version_id": "-5378-g1",
+            "q": -0.012937068939208984,
+            "outward_velocity": 2.4546475410461426,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.44499993324279785
+        }
+      ],
+      "fall_detail": {
+        "fall_epoch": 1792463026.841,
+        "edge_contact_epoch": 1792463026.179,
+        "final_context": [
+          "9cde97e123d240268311b479d55a83eb",
+          "2",
+          "-5378",
+          "-5378-g1"
+        ],
+        "last_purple_onset": {
+          "client_episode_start_line": 1817,
+          "source_csv_line": 10212,
+          "input_sequence": 4962,
+          "source_epoch": 1792463025.529,
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "2",
+            "-5378",
+            "-5378-g1"
+          ],
+          "q_at_source": 1.0856842994689941,
+          "radial_velocity_at_source": 2.447740077972412,
+          "client_local_monotonic_s": 281.132291,
+          "client_duration_proxy_s": 0.431809,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 195744,
+            "input_sequence": 4989,
+            "input_source_timestamp": 1792463025.974,
+            "platform_instance_id": -5378,
+            "geometry_version_id": "-5378-g1",
+            "q": -0.012937068939208984,
+            "outward_velocity": 2.4546475410461426,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.44499993324279785
+        },
+        "last_q_crossing": {
+          "last_positive_sequence": 4988,
+          "first_nonpositive_sequence": 4989,
+          "epoch_interval": [
+            1792463025.959,
+            1792463025.974
+          ],
+          "context": [
+            "9cde97e123d240268311b479d55a83eb",
+            "2",
+            "-5378",
+            "-5378-g1"
+          ],
+          "csv_lines": [
+            10266,
+            10268
+          ]
+        },
+        "purple_input_onset_to_fall_s": 1.312000036239624,
+        "purple_input_onset_to_contact_s": 0.6499998569488525,
+        "purple_input_onset_to_qcross_interval_s": [
+          0.43000006675720215,
+          0.44499993324279785
+        ],
+        "subsequent_orange_episode": {
+          "run_id": "9cde97e123d240268311b479d55a83eb",
+          "run_note": "run_3",
+          "channel": "model",
+          "start_log_line": 1831,
+          "end_log_line": 1972,
+          "start_local_monotonic_s": 281.246297,
+          "end_local_monotonic_s": 281.769066,
+          "duration_s": 0.522769,
+          "logcount": 10,
+          "revocation_reason": "backend_unknown",
+          "censored": false,
+          "time_basis": "client_local_monotonic_s",
+          "layer": "",
+          "platform": "",
+          "start_sequence": "1254",
+          "end_sequence": "1262"
+        },
+        "orange_after_purple_onset_monotonic_s": 0.1140060000000176,
+        "first_shadow_inactive_after_last_purple_onset": {
+          "_shadow_line": 195744,
+          "input_sequence": 4989,
+          "input_source_timestamp": 1792463025.974,
+          "q": -0.012937068939208984,
+          "outward_velocity": 2.4546475410461426,
+          "state": "UNKNOWN",
+          "reason": "outside_proximity_domain",
+          "causal_available": false,
+          "joint_recovery": false,
+          "recovery_cancelled": false
+        }
+      },
+      "shadow_onset_matches": [
+        {
+          "input_sequence": 426,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            191181
+          ]
+        },
+        {
+          "input_sequence": 1059,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            191814
+          ]
+        },
+        {
+          "input_sequence": 1373,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            192128
+          ]
+        },
+        {
+          "input_sequence": 2781,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            193536
+          ]
+        },
+        {
+          "input_sequence": 3327,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            194082
+          ]
+        },
+        {
+          "input_sequence": 3524,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            194279
+          ]
+        },
+        {
+          "input_sequence": 3550,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            194305
+          ]
+        },
+        {
+          "input_sequence": 3749,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            194504
+          ]
+        },
+        {
+          "input_sequence": 4123,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            194878
+          ]
+        },
+        {
+          "input_sequence": 4962,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            195717
+          ]
+        }
+      ],
+      "shadow_records": 5041,
+      "shadow_reasons": {
+        "unsupported_or_calibration_phase": 301,
+        "insufficient_0_5s_history": 61,
+        "available": 4583,
+        "outside_proximity_domain": 95,
+        "ended": 1
+      }
+    },
+    {
+      "session": "session_20261020_102349_100467",
+      "run_id": "8e4f5a963d0f4ec48e382cf129ab0eb8",
+      "csv_sha256": "481ea5bcb2fe12383fc149d2320e90748c3595b7cfc00020515b57883bc69bb7",
+      "outcome": "calibration_completed",
+      "source_span_s": 27.243000030517578,
+      "crossings": [
+        {
+          "last_positive_sequence": 1229,
+          "first_nonpositive_sequence": 1230,
+          "epoch_interval": [
+            1792463049.543,
+            1792463049.557
+          ],
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "2",
+            "-5544",
+            "-5544-g1"
+          ],
+          "csv_lines": [
+            2527,
+            2529
+          ]
+        }
+      ],
+      "purple_accepted_onsets": [
+        {
+          "client_episode_start_line": 2073,
+          "source_csv_line": 873,
+          "input_sequence": 425,
+          "source_epoch": 1792463036.148,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "1",
+            "-5518",
+            "-5518-g1"
+          ],
+          "q_at_source": 1.5313148498535156,
+          "radial_velocity_at_source": 2.405637502670288,
+          "client_local_monotonic_s": 291.746267,
+          "client_duration_proxy_s": 0.70249,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 196263,
+            "input_sequence": 467,
+            "input_source_timestamp": 1792463036.847,
+            "platform_instance_id": -5518,
+            "geometry_version_id": "-5518-g1",
+            "q": 0.15404319763183594,
+            "outward_velocity": -1.8265711069107056,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.6989998817443848
+        },
+        {
+          "client_episode_start_line": 2173,
+          "source_csv_line": 1428,
+          "input_sequence": 695,
+          "source_epoch": 1792463040.643,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "1",
+            "-5518",
+            "-5518-g1"
+          ],
+          "q_at_source": 1.6767199039459229,
+          "radial_velocity_at_source": 2.456383228302002,
+          "client_local_monotonic_s": 296.246454,
+          "client_duration_proxy_s": 0.182405,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 196502,
+            "input_sequence": 706,
+            "input_source_timestamp": 1792463040.828,
+            "platform_instance_id": -5518,
+            "geometry_version_id": "-5518-g1",
+            "q": 1.2921948432922363,
+            "outward_velocity": 1.2179769277572632,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.18500018119812012
+        },
+        {
+          "client_episode_start_line": 2202,
+          "source_csv_line": 2090,
+          "input_sequence": 1016,
+          "source_epoch": 1792463045.993,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "1",
+            "-5518",
+            "-5518-g1"
+          ],
+          "q_at_source": 2.1552228927612305,
+          "radial_velocity_at_source": 3.25740385055542,
+          "client_local_monotonic_s": 301.591788,
+          "client_duration_proxy_s": 0.137491,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 196820,
+            "input_sequence": 1024,
+            "input_source_timestamp": 1792463046.128,
+            "platform_instance_id": -5518,
+            "geometry_version_id": "-5518-g1",
+            "q": 1.7617483139038086,
+            "outward_velocity": 2.2416512966156006,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.13499999046325684
+        },
+        {
+          "client_episode_start_line": 2231,
+          "source_csv_line": 2121,
+          "input_sequence": 1031,
+          "source_epoch": 1792463046.243,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "1",
+            "-5518",
+            "-5518-g1"
+          ],
+          "q_at_source": 1.4948385953903198,
+          "radial_velocity_at_source": 2.244586229324341,
+          "client_local_monotonic_s": 301.843814,
+          "client_duration_proxy_s": 0.18486,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 196838,
+            "input_sequence": 1042,
+            "input_source_timestamp": 1792463046.428,
+            "platform_instance_id": -5518,
+            "geometry_version_id": "-5518-g1",
+            "q": 1.1387858390808105,
+            "outward_velocity": 1.476489543914795,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.18499994277954102
+        },
+        {
+          "client_episode_start_line": 2260,
+          "source_csv_line": 2427,
+          "input_sequence": 1181,
+          "source_epoch": 1792463048.738,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "2",
+            "-5544",
+            "-5544-g1"
+          ],
+          "q_at_source": 2.105193853378296,
+          "radial_velocity_at_source": 3.179779529571533,
+          "client_local_monotonic_s": 304.334577,
+          "client_duration_proxy_s": 0.814301,
+          "client_revoke_reason": "backend_unknown",
+          "first_shadow_inactive": {
+            "_shadow_line": 197026,
+            "input_sequence": 1230,
+            "input_source_timestamp": 1792463049.557,
+            "platform_instance_id": -5544,
+            "geometry_version_id": "-5544-g1",
+            "q": -0.004891395568847656,
+            "outward_velocity": 1.128312349319458,
+            "reason": "outside_proximity_domain",
+            "causal_available": false,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.8190000057220459
+        },
+        {
+          "client_episode_start_line": 2374,
+          "source_csv_line": 3249,
+          "input_sequence": 1578,
+          "source_epoch": 1792463055.357,
+          "context": [
+            "8e4f5a963d0f4ec48e382cf129ab0eb8",
+            "3",
+            "-5568",
+            "-5568-g1"
+          ],
+          "q_at_source": 1.6117100715637207,
+          "radial_velocity_at_source": 3.475615978240967,
+          "client_local_monotonic_s": 310.956948,
+          "client_duration_proxy_s": 0.261956,
+          "client_revoke_reason": "backend_clear",
+          "first_shadow_inactive": {
+            "_shadow_line": 197389,
+            "input_sequence": 1593,
+            "input_source_timestamp": 1792463055.607,
+            "platform_instance_id": -5568,
+            "geometry_version_id": "-5568-g1",
+            "q": 1.0605874061584473,
+            "outward_velocity": 1.1156255006790161,
+            "reason": "available",
+            "causal_available": true,
+            "joint_recovery": false,
+            "recovery_cancelled": false
+          },
+          "source_active_until_inactive_s": 0.25
+        }
+      ],
+      "shadow_onset_matches": [
+        {
+          "input_sequence": 425,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            196221
+          ]
+        },
+        {
+          "input_sequence": 695,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            196491
+          ]
+        },
+        {
+          "input_sequence": 1016,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            196812
+          ]
+        },
+        {
+          "input_sequence": 1031,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            196827
+          ]
+        },
+        {
+          "input_sequence": 1181,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            196977
+          ]
+        },
+        {
+          "input_sequence": 1578,
+          "active_valid_exact_match_count": 1,
+          "shadow_lines": [
+            197374
+          ]
+        }
+      ],
+      "shadow_records": 1637,
+      "shadow_reasons": {
+        "unsupported_or_calibration_phase": 302,
+        "insufficient_0_5s_history": 91,
+        "available": 1240,
+        "outside_proximity_domain": 3,
+        "ended": 1
+      }
+    }
+  ]
+}

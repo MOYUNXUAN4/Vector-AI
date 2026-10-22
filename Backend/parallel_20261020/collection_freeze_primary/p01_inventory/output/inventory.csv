@@ -1,0 +1,29 @@
+﻿session,raw_present,raw_rows,run_attribution,run_ids,outcome_counts,unity_duration_seconds,unity_gaps_gt_0_1s,unity_gaps_gt_0_4s,recommendation
+session_20261019_105632_058608,True,2734,single_run,31870bd7101e45a29d78d179f82e06f0,"{""<empty>"": 2733, ""calibration_completed"": 1}",20.449000120162964,1,1,unreviewed_evidence_only
+session_20261019_105656_285619,True,1724,single_run,dc424922ab7a4438809dd72a4b308bb7,"{""<empty>"": 1723, ""edge_exit"": 1}",12.059000015258789,0,0,unreviewed_evidence_only
+session_20261019_105712_007803,True,2241,single_run,f848f2248b7443d7b740b5b2eda42bc4,"{""<empty>"": 2240, ""edge_exit"": 1}",14.2260000705719,1,1,unreviewed_evidence_only
+session_20261019_105734_310716,True,3489,single_run,b6f039d1c47a45e89c8f9dd9dd8967a9,"{""<empty>"": 3488, ""user_exit"": 1}",9.885999917984009,1,1,user_confirmed_equipment_anomaly_review_exclusion
+session_20261019_105912_781089,True,871,single_run,0d93af38d29a499487b66b0c9a6e2199,"{""<empty>"": 870, ""edge_exit"": 1}",4.4040000438690186,0,0,unreviewed_evidence_only
+session_20261019_105922_291656,True,3319,single_run,b0e336b2239b4a8b99d47cf72ef0b5d7,"{""<empty>"": 3318, ""calibration_completed"": 1}",25.23799991607666,1,1,unreviewed_evidence_only
+session_20261019_105951_117357,True,3586,single_run,5c364258088d4dd2adfdb15e6830f185,"{""<empty>"": 3585, ""calibration_completed"": 1}",25.835999965667725,1,1,unreviewed_evidence_only
+session_20261019_110023_567130,True,3684,single_run,bbe4be8d4fbb4e74b192b0570c12707e,"{""<empty>"": 3683, ""calibration_completed"": 1}",28.046000003814697,1,1,unreviewed_evidence_only
+session_20261019_110055_533132,True,1174,single_run,70bdae08f81a4d1480b9f2b2ccd61125,"{""<empty>"": 1173, ""edge_exit"": 1}",7.286999940872192,0,0,unreviewed_evidence_only
+session_20261019_110107_096491,True,10660,single_run,3074f1b0189744ad92cc26e1bec71fe0,"{""<empty>"": 10659, ""calibration_completed"": 1}",24.91100001335144,1,1,unreviewed_evidence_only
+session_20261019_150806_990055,True,2949,single_run,16072c96af72434cb8cb57df8ab10a37,"{""<empty>"": 2948, ""edge_exit"": 1}",22.2739999294281,4,0,timing_review_flag
+session_20261019_150834_945026,True,13571,single_run,8bcb677b6db3475c8ab0925bac5646b7,"{""<empty>"": 13570, ""edge_exit"": 1}",114.59299993515015,25,5,timing_review_flag
+session_20261019_151034_541581,True,5107,single_run,9245f6df3cc54a2ea9fdfa490a8bb3d5,"{""<empty>"": 5107}",47.407999992370605,23,2,terminal_evidence_mismatch_review
+session_20261019_151734_571261,True,12944,single_run,ac6b73c60fb54f2a92773ce1e3dba3bd,"{""<empty>"": 12944}",106.23000001907349,7,5,unreviewed_evidence_only
+session_20261019_152252_747676,True,8088,single_run,80fd811bd52a463281135b47935490b0,"{""<empty>"": 8087, ""user_exit"": 1}",66.76799988746643,5,3,unreviewed_evidence_only
+session_20261019_153509_548346,True,20351,single_run,ff95db15108d47719db3252c52c71c03,"{""<empty>"": 20350, ""user_exit"": 1}",64.70199990272522,6,2,unreviewed_evidence_only
+session_20261019_154922_281603,True,52509,single_run,9204c7d8ac7047a2b29ea3293c13e805,"{""<empty>"": 52508, ""user_exit"": 1}",91.03500008583069,3,2,unreviewed_evidence_only
+session_20261019_160159_651804,True,56234,single_run,1d625d390d81482d971d39c819fceaed,"{""<empty>"": 56233, ""user_exit"": 1}",88.24000000953674,4,4,unreviewed_evidence_only
+session_20261019_161529_760840,True,14593,single_run,4441601ae0784db38e613f0b69b85877,"{""<empty>"": 14592, ""edge_exit"": 1}",115.71799993515015,6,6,unreviewed_evidence_only
+session_20261019_161733_153717,True,9840,single_run,1af5b5214f23433990c0249753e89dd9,"{""<empty>"": 9840}",80.81399989128113,4,4,unreviewed_evidence_only
+session_20261019_162520_538240,True,55200,single_run,8c22553947de4739b4f9c45e7abcf0b6,"{""<empty>"": 55199, ""user_exit"": 1}",89.1029999256134,5,5,unreviewed_evidence_only
+session_20261019_163835_953305,True,24035,single_run,098bbd077a4647d185fccf5891adcf8b,"{""<empty>"": 24034, ""user_exit"": 1}",86.19999980926514,7,7,unreviewed_evidence_only
+session_20261020_092857_539658,True,10127,single_run,d7694e6d3eae41f6986542cf157c0bfc,"{""<empty>"": 10127}",82.7110002040863,3,3,unreviewed_evidence_only
+session_20261020_095212_942873,True,1229,single_run,542dcdcbb4db47f89ba369de8e30e82f,"{""<empty>"": 1228, ""user_exit"": 1}",7.759000062942505,0,0,unreviewed_evidence_only
+session_20261020_095225_074273,True,26059,single_run,0d1abbf010104e429027b661b4d0ba05,"{""<empty>"": 26059}",210.74499988555908,0,0,unreviewed_evidence_only
+session_20261020_100423_350121,True,14758,single_run,423445ed25fb4e4c8dbdef9e5193ee4c,"{""<empty>"": 14757, ""edge_exit"": 1}",117.36399984359741,0,0,unreviewed_evidence_only
+session_20261020_100624_879840,True,18953,single_run,dcdcca1ad62348c4b3352cdb389a2f46,"{""<empty>"": 18952, ""user_exit"": 1}",151.53900003433228,0,0,unreviewed_evidence_only
+session_20261020_145740_792957,True,1929,single_run,c8844adef23247debfaed314e246311f,"{""<empty>"": 1928, ""user_exit"": 1}",32.77799987792969,1,1,unreviewed_evidence_only

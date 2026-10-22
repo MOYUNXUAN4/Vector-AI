@@ -1,0 +1,17 @@
+{
+  "source_path": "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\Player.log",
+  "snapshot_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\p02_warning_effects\\client_luna\\Player.log.snapshot",
+  "source_sha256": "ff14afc5d5f9822cc6df5a0bd94d5ff8e59aedf8d3999123d8e3e3a37dd1b9c6",
+  "snapshot_sha256": "ff14afc5d5f9822cc6df5a0bd94d5ff8e59aedf8d3999123d8e3e3a37dd1b9c6",
+  "physical_line_numbering": "1-based, from original Player.log snapshot",
+  "clock_policy": "No conversion to Unity time or epoch; duration only within a client local_monotonic_s clock domain.",
+  "runs": {
+    "358796c34dff4bc1bd095becdcaec003": "first_run_sensitivity_unknown_non055",
+    "510db1f687b34b2193ce0113d70e7262": "run_2",
+    "9cde97e123d240268311b479d55a83eb": "run_3",
+    "8e4f5a963d0f4ec48e382cf129ab0eb8": "run_4"
+  },
+  "event_line_count": 144,
+  "episode_count": 55,
+  "orphan_revoke_count": 0
+}

@@ -1,0 +1,20 @@
+﻿evidence_field,value
+session,session_20261019_105734_310716
+directory,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_105734_310716
+raw_path,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_105734_310716\raw.csv
+raw_present,True
+raw_rows,3489
+cohort_evidence,user_confirmed_participant
+status,ok
+source_counts,"{""unity"": 566, ""wii"": 2923}"
+run_ids,"[""b6f039d1c47a45e89c8f9dd9dd8967a9""]"
+run_attribution,single_run
+run_state_counts,"{""<empty>"": 2923, ""ended"": 1, ""running"": 565}"
+session_outcome_counts,"{""<empty>"": 3488, ""user_exit"": 1}"
+terminal_row,"{""source"": ""wii"", ""source_timestamp"": ""2026-10-19T02:59:12.7651997Z"", ""sequence"": ""2825"", ""run_id"": """", ""run_state"": """", ""session_outcome"": """", ""session_end_backend_timestamp"": """"}"
+sequence,"{""unity"": {""start"": 1, ""end"": 566, ""unique_start"": 1, ""unique_end"": 566, ""count"": 566, ""unique_count"": 566, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}, ""wii"": {""start"": 54390, ""end"": 2825, ""unique_start"": 1, ""unique_end"": 54487, ""count"": 2923, ""unique_count"": 2923, ""missing_ranges"": [], ""reset_or_backstep_count"": 1, ""reset_or_backstep_transitions"": [{""previous"": 54487, ""current"": 1}]}}"
+unity_terminal_row,"{""source_timestamp"": ""1792378664.191"", ""sequence"": ""566"", ""run_id"": ""b6f039d1c47a45e89c8f9dd9dd8967a9"", ""run_state"": ""ended"", ""session_outcome"": ""user_exit"", ""session_end_backend_timestamp"": ""1792378664.191""}"
+unity_source,"{""rows"": 566, ""timestamp_valid_rows"": 566, ""missing_timestamp_rows"": 0, ""adjacent_pairs_blocked_by_missing_timestamp"": 0, ""nonpositive_adjacent_dt_count"": 0, ""start"": 1792378654.305, ""end"": 1792378664.191, ""duration_seconds"": 9.885999917984009, ""gap_count_gt_0_1s"": 1, ""gap_count_gt_0_4s"": 1, ""max_gap_seconds"": 0.41299986839294434, ""gap_values_gt_0_1s"": [0.41299986839294434], ""intervals_with_missing_timestamp"": 0}"
+distributions_by_source,"{""unity"": {""calibration_mode"": {""True"": 566}, ""selected_session_layers"": {""3"": 566}, ""selected_difficulty"": {""3"": 566}, ""difficulty"": {""3"": 566}}, ""wii"": {""wii_board_loaded"": {""<empty>"": 7, ""False"": 1789, ""True"": 1127}, ""wii_center_applied"": {""<empty>"": 4, ""False"": 2045, ""True"": 874}, ""wii_control_valid"": {""False"": 7, ""True"": 2916}}}"
+recommendation,"{""recommendation"": ""user_confirmed_equipment_anomaly_review_exclusion"", ""evidence"": ""battery_dislodged"", ""reason"": ""User-confirmed battery dislodgement; retain raw evidence; exclude only this run from normal behavior/model performance evaluation pending primary decision."", ""source_report"": ""C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261019\\p01_review\\user_annotations.json""}"
+source_files_unchanged,True

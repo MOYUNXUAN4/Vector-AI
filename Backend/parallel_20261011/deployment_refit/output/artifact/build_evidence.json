@@ -1,0 +1,65 @@
+{
+  "experimental_only": true,
+  "performance_validated": false,
+  "approval_scope": "experimental runtime only; final runtime remains default-off",
+  "provenance_declarations": {
+    "artifact_role": "deployment_refit",
+    "training_dataset_ids": [
+      "TEST1009"
+    ],
+    "development_session_ids": [
+      "session_20261009_094954_427313",
+      "session_20261009_095015_750430",
+      "session_20261009_095206_853253",
+      "session_20261009_095252_106312",
+      "session_20261009_095344_428679",
+      "session_20261009_095359_807711",
+      "session_20261009_095414_328195",
+      "session_20261009_095449_567461",
+      "session_20261009_095519_650185",
+      "session_20261009_095714_730473",
+      "session_20261009_095755_667634",
+      "session_20261009_095811_191578",
+      "session_20261009_095831_124251",
+      "session_20261009_095851_422061",
+      "session_20261009_095919_317341",
+      "session_20261009_095958_956202",
+      "session_20261009_100037_026082",
+      "session_20261009_100049_811540",
+      "session_20261009_100107_863016",
+      "session_20261009_100126_047517",
+      "session_20261009_100149_862095",
+      "session_20261009_100218_355901",
+      "session_20261009_100259_607957",
+      "session_20261009_100317_201063",
+      "session_20261009_100345_605997",
+      "session_20261009_100414_008338",
+      "session_20261009_100436_586122",
+      "session_20261009_100507_965698",
+      "session_20261009_100534_530672",
+      "session_20261009_100545_738309"
+    ],
+    "threshold_selection_scope": "development_grouped_oof",
+    "independent_test_used": false
+  },
+  "provenance_limitation": "These fields are caller declarations. This exporter validates completeness and required values only; it does not prove training history, dataset identity, threshold selection, or test-set isolation.",
+  "dependency_provenance": {
+    "backend_copy": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261010\\backend",
+    "files": {
+      "model_artifact.py": {
+        "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261010\\backend\\model_artifact.py",
+        "sha256": "0c1ab15a9700ef0c2e9bc4375956ffdd3f92b20133e57a894430fdc7a8049598"
+      },
+      "causal_features.py": {
+        "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261010\\backend\\causal_features.py",
+        "sha256": "0a23404af9fa96ded73fb53629ba9fa7379a6153b706c6ef5a9513f22be48168"
+      },
+      "alarm_policy.py": {
+        "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261010\\backend\\alarm_policy.py",
+        "sha256": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f"
+      }
+    }
+  },
+  "model_sha256": "01addaa225b0400cea73069adbb070ffb54d8209f87e4bcb75781a01a0536068",
+  "manifest_sha256": "b75cac3173496171a9e2c17906938fc5bdac22243ff7f8ce5cee75b96900d29e"
+}

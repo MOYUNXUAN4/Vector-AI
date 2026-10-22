@@ -1,0 +1,13 @@
+{
+  "evidence\\clock_offset_report.json": "2c409683f1f5b8af132e94fbf2d4b6c8f804f7b0236bfa4f159876e5ab141163",
+  "evidence\\clock_offset_report.md": "b16b2b404481a15a92182e8b0b0ba872fbce9f9967742ead2a8559b618d79684",
+  "evidence\\demo_events.csv": "79d79de5607234fa6943ad5e15dff3ef4be15a69860678302b5be5f01bc3ccba",
+  "evidence\\demo_events_remapped.csv": "982bbf764dab8ad452bd701582e03d09014f9bb95fdf41654f9b7b6b64b82b25",
+  "patched\\tests\\test_clock_alignment.py": "3f32b2fd5569ee1141e1814fa9b09f36fb2f5659936b3917bb1ac875cbdf7968",
+  "patched\\tools\\clock_alignment.py": "eeaf4f6ffd8206b1775a8ddde0bdad1d2340f39ba6467fac104b165ef5d1f888",
+  "patched\\tools\\clock_offset_audit.py": "89add043cd894a671b8065432176d39989beaede4450069f90bc23bb8154440c",
+  "patched\\unity\\FrameClockProbe.cs": "ddfa7928d4aa3e5b78304cf460dbe1efdf2abf16b33628bf0c57907d40c4581c",
+  "patched\\unity\\README.md": "acffcadf2e05737de6e92b882200f29ee4b37c7498b3ce86d5523167120dfc12",
+  "REVIEW_P0_V2.md": "adf4b1e2f6a477ec26927deea43a1cd950895a111220010230c3364f4306c727",
+  "verify_p0_v2.py": "32f11b23a0c7c951e578e235c23fa8ebaa2d1ef97ab497c239a363fb0c2aa2f9"
+}

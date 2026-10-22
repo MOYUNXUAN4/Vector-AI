@@ -1,0 +1,51 @@
+{
+  "cases": 7,
+  "sessions": 7,
+  "raw_rows": 129,
+  "orange_decisions": 34,
+  "patterns": {
+    "score_drop_after_active": 4,
+    "inactive_low_score": 1,
+    "inactive_with_late_confirmation_pending": 1,
+    "initial_confirmation_then_active": 1
+  },
+  "raw_inward_samples": 0,
+  "raw_clearance_increases": 0,
+  "joint_recovery_at_inactive_count": 0,
+  "native_yellow_all_cases": true,
+  "source_identity_flags_all_cases": true,
+  "outcomes_descriptive_only": {
+    "calibration_completed": 5,
+    "edge_exit": 2
+  },
+  "actual_display_gap_seconds": null,
+  "sources_unchanged": true,
+  "source_sha_before": {
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\postq_handoff_primary\\postq_segment_decision_coverage.csv": "912c3170a896675290901d9b1fc7d42bd11e9e949078c4bf188d9d9102be9ad8",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\postq_handoff_primary\\raw_source_brackets.csv": "30f857b113e1edba1ad2e8a080e7e35772bc0d338c160703af5d2b6f6e9a67da",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\dev_withdrawal_primary\\locked24_trace.csv": "aaf45bccf26e5d6f89bccc5689be5ad77752e0cb234d780c2058b74341979dd1",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\dev_withdrawal_primary\\tte_trace.csv": "aa96a2b21dfd0b86e6f2f4224a97bca9be801acc6c3524b1bc480f0a8df5d218",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261014\\command055_fit_luna\\session_manifest.csv": "c87f4c88810bae0ff12848d57f253aa61ff66fd7c3ed610c613678d1c42cca3b",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115410_625314\\raw.csv": "8a3683184cb834af1750bdd1e5651d2b842874d0c803f331f62750bad02549a8",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115812_235308\\raw.csv": "63fde32b92cb59e652613f709f3410fab7f361739acfc9db634dc6038417c5c6",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115849_624251\\raw.csv": "bfa9f55d8c2876b6946eece96b006a17103bd1d17dcb949757e89e423cf774c3",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115951_599203\\raw.csv": "2c7390889d44e93e597f89cf4627db2a0036fc5bd9f764c85a6f1d19cebf6c67",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_120120_775125\\raw.csv": "c57a026c062e2b5eff6b050dbbe5bfb381e42e31f10f637990bbfb7857cbb87c",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_121242_642180\\raw.csv": "7a480b23adddf5dcaf5b3333c39d40a0e7c9e3f9d8ffb1dc6b2bfafef48bffed",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_121310_761279\\raw.csv": "0a1df7197aba42a2a39f214217f9cb6be0733b37da29e27943b5ecceb6068a0f"
+  },
+  "source_sha_after": {
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\postq_handoff_primary\\postq_segment_decision_coverage.csv": "912c3170a896675290901d9b1fc7d42bd11e9e949078c4bf188d9d9102be9ad8",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\postq_handoff_primary\\raw_source_brackets.csv": "30f857b113e1edba1ad2e8a080e7e35772bc0d338c160703af5d2b6f6e9a67da",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\dev_withdrawal_primary\\locked24_trace.csv": "aaf45bccf26e5d6f89bccc5689be5ad77752e0cb234d780c2058b74341979dd1",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\dev_withdrawal_primary\\tte_trace.csv": "aa96a2b21dfd0b86e6f2f4224a97bca9be801acc6c3524b1bc480f0a8df5d218",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261014\\command055_fit_luna\\session_manifest.csv": "c87f4c88810bae0ff12848d57f253aa61ff66fd7c3ed610c613678d1c42cca3b",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115410_625314\\raw.csv": "8a3683184cb834af1750bdd1e5651d2b842874d0c803f331f62750bad02549a8",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115812_235308\\raw.csv": "63fde32b92cb59e652613f709f3410fab7f361739acfc9db634dc6038417c5c6",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115849_624251\\raw.csv": "bfa9f55d8c2876b6946eece96b006a17103bd1d17dcb949757e89e423cf774c3",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_115951_599203\\raw.csv": "2c7390889d44e93e597f89cf4627db2a0036fc5bd9f764c85a6f1d19cebf6c67",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_120120_775125\\raw.csv": "c57a026c062e2b5eff6b050dbbe5bfb381e42e31f10f637990bbfb7857cbb87c",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_121242_642180\\raw.csv": "7a480b23adddf5dcaf5b3333c39d40a0e7c9e3f9d8ffb1dc6b2bfafef48bffed",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\INPUT055_CHECK\\session_20261014_121310_761279\\raw.csv": "0a1df7197aba42a2a39f214217f9cb6be0733b37da29e27943b5ecceb6068a0f"
+  }
+}

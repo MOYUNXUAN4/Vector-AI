@@ -1,0 +1,263 @@
+{
+  "cohort": "31-session original development INPUT055_CHECK",
+  "n_sessions": 31,
+  "decision_rows": 7553,
+  "active_decisions": 699,
+  "episode_count": 80,
+  "observed_next_decision_withdrawals": 77,
+  "boundary_censored_episode_count": 3,
+  "withdrawal_mechanisms": {
+    "domain_q_nonpositive": 49,
+    "normal_raw_off": 28
+  },
+  "withdrawal_policy_reasons": {
+    "invalid_input": 49,
+    "raw_off": 28
+  },
+  "withdrawal_movement_classes": {
+    "inward": 12,
+    "outward_other": 39,
+    "outward_slower_than_previous": 26
+  },
+  "normal_raw_off_future_0_4s_descriptive_noncause": {
+    "count": 28,
+    "complete_horizon_count": 23,
+    "incomplete_or_censored_count": 5,
+    "any_later_active_count": 2,
+    "any_saved_joint_recovery_flag_count": 16,
+    "any_q_nonpositive_count": 0,
+    "usage": "bounded future description only; excluded from withdrawal mechanism and all labels"
+  },
+  "saved_status_exposure_seconds": {
+    "already_inside": {
+      "eval_seconds": 27.35699963569641,
+      "active_seconds": 0.31599998474121094
+    },
+    "controller_active": {
+      "eval_seconds": 2.7130002975463867,
+      "active_seconds": 0.0
+    },
+    "observed_nonentry": {
+      "eval_seconds": 348.3730013370514,
+      "active_seconds": 8.06000018119812
+    },
+    "positive": {
+      "eval_seconds": 30.214999675750732,
+      "active_seconds": 26.283999919891357
+    },
+    "unknown": {
+      "eval_seconds": 45.09399890899658,
+      "active_seconds": 7.680000066757202
+    }
+  },
+  "fixed_tte": {
+    "threshold": 0.5,
+    "horizon_seconds": 0.75,
+    "q_definition": "directional_edge_distance - 2 * ball_radius",
+    "require_q_positive": true,
+    "require_velocity_positive": true
+  },
+  "policy": {
+    "confirmation_points": 2,
+    "max_decision_gap_seconds": 0.1,
+    "immediate_raw_off": true,
+    "joint_recovery_from_saved_input": true,
+    "policy_canceled_by_joint_recovery_count": 0
+  },
+  "reference": {
+    "path": "parallel_20261014\\control055_check_primary\\proximity_tte_primary.json",
+    "available": true,
+    "saved_aggregate_only": true,
+    "event_count": 48,
+    "event_hits": 40,
+    "episodes": 80,
+    "negative_active_seconds": 8.06000018119812,
+    "total_active_seconds": 42.34000015258789
+  },
+  "input_source_sha256_before": {
+    "parallel_20261014\\command055_fit_luna\\ordered_features.csv": "1d26cc868ae7fce83ba53ba5f844362694a7f9d4fed07d98dd0ab5f68c2c1193",
+    "parallel_20261014\\command055_fit_luna\\session_manifest.csv": "c87f4c88810bae0ff12848d57f253aa61ff66fd7c3ed610c613678d1c42cca3b",
+    "parallel_20261014\\risk_windows_luna\\window_feasibility.csv": "f0bda4405e6f91c7140a618ee0b8579da827204b8f76bb33ceeb34b4d7bd45f4",
+    "parallel_20261014\\control055_check_primary\\benchmark_proximity_tte.py": "9238b98a1a432ba5e4b3d4e82f8928037a5cca1bdced0a468f1ec0f2d2500a4a",
+    "parallel_20261014\\control055_check_primary\\proximity_independent_scorer.py": "297d34e447cd713ec1a7840eebbae2c00e5ab9db249582f76015b1993e4cc659",
+    "parallel_20261013\\s055_locked_replay_luna\\replay.py": "0e08d39e8162790936e1234ea032ad75071add41e50ba35464ed53b3b7efe2e4",
+    "parallel_20261010\\backend\\alarm_policy.py": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f",
+    "parallel_20261014\\control055_check_primary\\proximity_tte_primary.json": "ce205b12881de24ab45ef08cf3e2adf2850cbb447859bb0695f9585faf0d2bcf"
+  },
+  "input_source_sha256_after": {
+    "parallel_20261014\\command055_fit_luna\\ordered_features.csv": "1d26cc868ae7fce83ba53ba5f844362694a7f9d4fed07d98dd0ab5f68c2c1193",
+    "parallel_20261014\\command055_fit_luna\\session_manifest.csv": "c87f4c88810bae0ff12848d57f253aa61ff66fd7c3ed610c613678d1c42cca3b",
+    "parallel_20261014\\risk_windows_luna\\window_feasibility.csv": "f0bda4405e6f91c7140a618ee0b8579da827204b8f76bb33ceeb34b4d7bd45f4",
+    "parallel_20261014\\control055_check_primary\\benchmark_proximity_tte.py": "9238b98a1a432ba5e4b3d4e82f8928037a5cca1bdced0a468f1ec0f2d2500a4a",
+    "parallel_20261014\\control055_check_primary\\proximity_independent_scorer.py": "297d34e447cd713ec1a7840eebbae2c00e5ab9db249582f76015b1993e4cc659",
+    "parallel_20261013\\s055_locked_replay_luna\\replay.py": "0e08d39e8162790936e1234ea032ad75071add41e50ba35464ed53b3b7efe2e4",
+    "parallel_20261010\\backend\\alarm_policy.py": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f",
+    "parallel_20261014\\control055_check_primary\\proximity_tte_primary.json": "ce205b12881de24ab45ef08cf3e2adf2850cbb447859bb0695f9585faf0d2bcf"
+  },
+  "input_sources_unchanged": true,
+  "raw_sources_sha256": {
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115410_625314\\raw.csv": {
+      "manifest_sha256": "8a3683184cb834af1750bdd1e5651d2b842874d0c803f331f62750bad02549a8",
+      "actual_sha256": "8a3683184cb834af1750bdd1e5651d2b842874d0c803f331f62750bad02549a8",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115440_173424\\raw.csv": {
+      "manifest_sha256": "eb65be95cc084b52dddbaca9c8cc4205ab4603134c6bdd9412bbf9f8df15a353",
+      "actual_sha256": "eb65be95cc084b52dddbaca9c8cc4205ab4603134c6bdd9412bbf9f8df15a353",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115514_650564\\raw.csv": {
+      "manifest_sha256": "ad51d9eebcf2b71c14dac5c2dc9bae9f863caef88210c57405e3cfa47a412ba0",
+      "actual_sha256": "ad51d9eebcf2b71c14dac5c2dc9bae9f863caef88210c57405e3cfa47a412ba0",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115542_913421\\raw.csv": {
+      "manifest_sha256": "d63a823275239f76091863b49bc0827a38a282df52cc477242db3ce40f40ef9c",
+      "actual_sha256": "d63a823275239f76091863b49bc0827a38a282df52cc477242db3ce40f40ef9c",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115616_724050\\raw.csv": {
+      "manifest_sha256": "99c61e92da67a6927d28e656c1c0f2af3cb7abf92ad050da07f5b0d6986ca7ec",
+      "actual_sha256": "99c61e92da67a6927d28e656c1c0f2af3cb7abf92ad050da07f5b0d6986ca7ec",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115638_463992\\raw.csv": {
+      "manifest_sha256": "092d5e8ff624ffb4e882a161ac45268f76b97eb88665377d3fa29bab4d069f31",
+      "actual_sha256": "092d5e8ff624ffb4e882a161ac45268f76b97eb88665377d3fa29bab4d069f31",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115707_276084\\raw.csv": {
+      "manifest_sha256": "af9e7146044507faf15a63ef59af938ce5b181f7fdc2431db9ea13d8c936585f",
+      "actual_sha256": "af9e7146044507faf15a63ef59af938ce5b181f7fdc2431db9ea13d8c936585f",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115742_429565\\raw.csv": {
+      "manifest_sha256": "49fca2f8330a9f7503510e546b42c51bc3dc6945af2399b7551aef64022e0539",
+      "actual_sha256": "49fca2f8330a9f7503510e546b42c51bc3dc6945af2399b7551aef64022e0539",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115812_235308\\raw.csv": {
+      "manifest_sha256": "63fde32b92cb59e652613f709f3410fab7f361739acfc9db634dc6038417c5c6",
+      "actual_sha256": "63fde32b92cb59e652613f709f3410fab7f361739acfc9db634dc6038417c5c6",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115849_624251\\raw.csv": {
+      "manifest_sha256": "bfa9f55d8c2876b6946eece96b006a17103bd1d17dcb949757e89e423cf774c3",
+      "actual_sha256": "bfa9f55d8c2876b6946eece96b006a17103bd1d17dcb949757e89e423cf774c3",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115916_521622\\raw.csv": {
+      "manifest_sha256": "8c0f556d9666561182e288dbdf956a8bf9dbbdf892074d06736de1f26121af2d",
+      "actual_sha256": "8c0f556d9666561182e288dbdf956a8bf9dbbdf892074d06736de1f26121af2d",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_115951_599203\\raw.csv": {
+      "manifest_sha256": "2c7390889d44e93e597f89cf4627db2a0036fc5bd9f764c85a6f1d19cebf6c67",
+      "actual_sha256": "2c7390889d44e93e597f89cf4627db2a0036fc5bd9f764c85a6f1d19cebf6c67",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120028_282828\\raw.csv": {
+      "manifest_sha256": "aff82e8ab0283804fb7a603177ecb30c6798b8f49df7ee6373035b2c4db27fc4",
+      "actual_sha256": "aff82e8ab0283804fb7a603177ecb30c6798b8f49df7ee6373035b2c4db27fc4",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120057_910985\\raw.csv": {
+      "manifest_sha256": "2461e38269c4a09a9ac860ff31d92d677e5cc12c9dd595e760aff0ac1c2775e0",
+      "actual_sha256": "2461e38269c4a09a9ac860ff31d92d677e5cc12c9dd595e760aff0ac1c2775e0",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120120_775125\\raw.csv": {
+      "manifest_sha256": "c57a026c062e2b5eff6b050dbbe5bfb381e42e31f10f637990bbfb7857cbb87c",
+      "actual_sha256": "c57a026c062e2b5eff6b050dbbe5bfb381e42e31f10f637990bbfb7857cbb87c",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120201_963064\\raw.csv": {
+      "manifest_sha256": "c668c6d967a4cccefbcd14372dbaa793127f7946b5da1cfee0691c266df241f0",
+      "actual_sha256": "c668c6d967a4cccefbcd14372dbaa793127f7946b5da1cfee0691c266df241f0",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120217_672985\\raw.csv": {
+      "manifest_sha256": "40b7245f728b4705b8374ce0211571e812376d82065f627c622add50dcf5b9fb",
+      "actual_sha256": "40b7245f728b4705b8374ce0211571e812376d82065f627c622add50dcf5b9fb",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_120239_789700\\raw.csv": {
+      "manifest_sha256": "8fa5fb75bed1700d651e08d0c8d4d3787f56b5cd38599672294d3570ed8eafe3",
+      "actual_sha256": "8fa5fb75bed1700d651e08d0c8d4d3787f56b5cd38599672294d3570ed8eafe3",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121000_527101\\raw.csv": {
+      "manifest_sha256": "01c500ae22d70424f2d2bf6f02579c6b76ecc84f6d95c3a0413892d6f555c7d1",
+      "actual_sha256": "01c500ae22d70424f2d2bf6f02579c6b76ecc84f6d95c3a0413892d6f555c7d1",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121021_792530\\raw.csv": {
+      "manifest_sha256": "a6ae8eb21e27826e8fc3ae77f710bd59d47b9ace387f89cb43bc0204927eb5e6",
+      "actual_sha256": "a6ae8eb21e27826e8fc3ae77f710bd59d47b9ace387f89cb43bc0204927eb5e6",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121042_107551\\raw.csv": {
+      "manifest_sha256": "0292daa9ff535fe87a976ffa09c746627a5d3ca7cc7154a1456a280df4f65f27",
+      "actual_sha256": "0292daa9ff535fe87a976ffa09c746627a5d3ca7cc7154a1456a280df4f65f27",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121057_332316\\raw.csv": {
+      "manifest_sha256": "a08281853876d9ca07c37333a01ca7d980b834e85a2126fd1739ba0dc9cdc7e5",
+      "actual_sha256": "a08281853876d9ca07c37333a01ca7d980b834e85a2126fd1739ba0dc9cdc7e5",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121113_180989\\raw.csv": {
+      "manifest_sha256": "09d2de064383a00fee35c7d935e7462e186d11e7feecd734b03e7f2937829ac0",
+      "actual_sha256": "09d2de064383a00fee35c7d935e7462e186d11e7feecd734b03e7f2937829ac0",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121129_004407\\raw.csv": {
+      "manifest_sha256": "ecbd753bc443decfd8d5019c633e609d2189868a339e062917d1114e4b90658b",
+      "actual_sha256": "ecbd753bc443decfd8d5019c633e609d2189868a339e062917d1114e4b90658b",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121142_416725\\raw.csv": {
+      "manifest_sha256": "eed6aaf48e66f29fa677401b48bb4c273df22071f92d40489aff453c65533e85",
+      "actual_sha256": "eed6aaf48e66f29fa677401b48bb4c273df22071f92d40489aff453c65533e85",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121155_139943\\raw.csv": {
+      "manifest_sha256": "6fb0de02a83bfb560715b59d407d19ab62d1121429e3bae3346bbe75b6b5fa74",
+      "actual_sha256": "6fb0de02a83bfb560715b59d407d19ab62d1121429e3bae3346bbe75b6b5fa74",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121207_719590\\raw.csv": {
+      "manifest_sha256": "8efcb80fffaa5017511099f324262371f4c2cd8298b73e274b47aaed71aec8e4",
+      "actual_sha256": "8efcb80fffaa5017511099f324262371f4c2cd8298b73e274b47aaed71aec8e4",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121226_768134\\raw.csv": {
+      "manifest_sha256": "d1f6a051fcc88fac5b0b95210088c60afd1e551e28b905b0c2a3fbb93047968c",
+      "actual_sha256": "d1f6a051fcc88fac5b0b95210088c60afd1e551e28b905b0c2a3fbb93047968c",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121242_642180\\raw.csv": {
+      "manifest_sha256": "7a480b23adddf5dcaf5b3333c39d40a0e7c9e3f9d8ffb1dc6b2bfafef48bffed",
+      "actual_sha256": "7a480b23adddf5dcaf5b3333c39d40a0e7c9e3f9d8ffb1dc6b2bfafef48bffed",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121257_881529\\raw.csv": {
+      "manifest_sha256": "75543a6c73b4d3aff12a9a8457ee6b63d799c18210c552c8993e5633e14342ee",
+      "actual_sha256": "75543a6c73b4d3aff12a9a8457ee6b63d799c18210c552c8993e5633e14342ee",
+      "match": true
+    },
+    "telemetry_logs\\INPUT055_CHECK\\session_20261014_121310_761279\\raw.csv": {
+      "manifest_sha256": "0a1df7197aba42a2a39f214217f9cb6be0733b37da29e27943b5ecceb6068a0f",
+      "actual_sha256": "0a1df7197aba42a2a39f214217f9cb6be0733b37da29e27943b5ecceb6068a0f",
+      "match": true
+    }
+  },
+  "all_manifest_raw_hashes_match": true,
+  "limitations": [
+    "Replay describes saved decisions and does not reconstruct Unity/network/display timing.",
+    "Raw CSV does not include Unity display age; no age values are fabricated.",
+    "Inward velocity is descriptive only; genuine recovery is recorded only when saved joint_recovery is true.",
+    "Saved unknown and other exposure labels remain unchanged; completion is not used to infer human recovery.",
+    "This is descriptive replay, not a model, threshold, lead, F1, or hold experiment."
+  ]
+}

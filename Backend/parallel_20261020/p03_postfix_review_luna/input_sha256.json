@@ -1,0 +1,73 @@
+{
+  "audit_scope": "Nine requested session raw.csv snapshots and proximity_shadow.jsonl records matching exact Unity run_id values",
+  "algorithm": "SHA-256",
+  "snapshot_stability": {
+    "csv_byte_size_unchanged_during_read": true,
+    "hashes_match_before_after": true
+  },
+  "scale_gate_followup": {
+    "join_keys": ["run_id", "input_sequence=sequence", "input_source_timestamp=source_timestamp (microsecond precision)"],
+    "unity_rows_total": 15093,
+    "shadow_records_total": 15093,
+    "one_to_one_three_key_source_packet_matches": 15084,
+    "ended_terminal_annotations": 9,
+    "ended_annotations_repeat_prior_N_minus_1_source_key": 9,
+    "raw_unity_terminal_rows_at_sequence_N_without_shadow_packet_key": 9,
+    "terminal_annotations_are_not_source_samples": true,
+    "counts_by_run": [
+      {"session":"20261020_214022_086000","unity_rows":2119,"shadow_records":2119,"unique_source_packet_matches":2118,"ended_annotations":1},
+      {"session":"20261020_214100_600233","unity_rows":456,"shadow_records":456,"unique_source_packet_matches":455,"ended_annotations":1},
+      {"session":"20261020_214112_191029","unity_rows":2014,"shadow_records":2014,"unique_source_packet_matches":2013,"ended_annotations":1},
+      {"session":"20261020_214149_759405","unity_rows":1063,"shadow_records":1063,"unique_source_packet_matches":1062,"ended_annotations":1},
+      {"session":"20261020_214210_571969","unity_rows":1875,"shadow_records":1875,"unique_source_packet_matches":1874,"ended_annotations":1},
+      {"session":"20261020_214244_551605","unity_rows":2014,"shadow_records":2014,"unique_source_packet_matches":2013,"ended_annotations":1},
+      {"session":"20261020_214320_667777","unity_rows":1927,"shadow_records":1927,"unique_source_packet_matches":1926,"ended_annotations":1},
+      {"session":"20261020_214354_584139","unity_rows":2445,"shadow_records":2445,"unique_source_packet_matches":2444,"ended_annotations":1},
+      {"session":"20261020_214437_062477","unity_rows":1180,"shadow_records":1180,"unique_source_packet_matches":1179,"ended_annotations":1}
+    ],
+    "unsupported_reason_scope": "Every unsupported_or_calibration_phase sample is a contiguous initial prefix at platform_level=1, selected_session_layers=5, and platform_scale=15.884458541870117. After first 0<platform_scale<=2 sample (scale about 0.85), unsupported reason count is zero for all nine runs.",
+    "code_path": {
+      "receiver": "UDPRecevier.py imports ProximityShadow from parallel_20261014/proximity_shadow_backend_luna/proximity_shadow.py",
+      "adapter": "parallel_20261010/backend/runtime_adapter.py",
+      "predicate": "finite(platform_scale) and 0 < platform_scale <= 2 (line 47)",
+      "reason_return": "if not gameplay_phase_valid: return ..., unsupported_or_calibration_phase (line 58)",
+      "assessment": "Strong direct evidence that the initial reason is the platform-scale gate: all offending raw rows have valid selected layer 1 of 5 but scale 15.8844585; zero such reasons occur at scale<=2. Not a persistent gameplay-scale failure."
+    },
+    "runs": [
+      {"session":"20261020_214022_086000","run_id":"6c85d23f1b984ec78fffae07c46dca70","unsupported_seq":[1,299],"unsupported_relative_source_time_s":[0.0,4.983],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":300,"first_scale_le_2_relative_time_s":5.0,"first_causal_available_seq":331,"first_causal_available_relative_time_s":5.519,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214100_600233","run_id":"4521987dfdc34380ae0d20d9d0e232bd","unsupported_seq":[1,302],"unsupported_relative_source_time_s":[0.0,5.006],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":303,"first_scale_le_2_relative_time_s":5.026,"first_causal_available_seq":333,"first_causal_available_relative_time_s":5.527,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214112_191029","run_id":"1a893ee7e97f4e8b86450665aa830167","unsupported_seq":[1,301],"unsupported_relative_source_time_s":[0.0,4.998],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":302,"first_scale_le_2_relative_time_s":5.018,"first_causal_available_seq":332,"first_causal_available_relative_time_s":5.519,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214149_759405","run_id":"19534b8d13dc4274863daabdd9dc0e05","unsupported_seq":[1,301],"unsupported_relative_source_time_s":[0.0,4.998],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":302,"first_scale_le_2_relative_time_s":5.012,"first_causal_available_seq":332,"first_causal_available_relative_time_s":5.518,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214210_571969","run_id":"e8e6e4276c9947cf9b68a14f929139e7","unsupported_seq":[1,302],"unsupported_relative_source_time_s":[0.0,4.998],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":303,"first_scale_le_2_relative_time_s":5.012,"first_causal_available_seq":333,"first_causal_available_relative_time_s":5.518,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214244_551605","run_id":"47823c251f904955be573d9c446875ff","unsupported_seq":[1,301],"unsupported_relative_source_time_s":[0.0,4.984],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":302,"first_scale_le_2_relative_time_s":5.005,"first_causal_available_seq":332,"first_causal_available_relative_time_s":5.505,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214320_667777","run_id":"9b554aafb07f42e6829eea9abe97a2ac","unsupported_seq":[1,302],"unsupported_relative_source_time_s":[0.0,4.998],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":303,"first_scale_le_2_relative_time_s":5.019,"first_causal_available_seq":333,"first_causal_available_relative_time_s":5.519,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214354_584139","run_id":"aa9c12a7604d4d468df13244c1118b05","unsupported_seq":[1,302],"unsupported_relative_source_time_s":[0.0,5.007],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":303,"first_scale_le_2_relative_time_s":5.019,"first_causal_available_seq":409,"first_causal_available_relative_time_s":6.79,"unsupported_at_scale_le_2":0},
+      {"session":"20261020_214437_062477","run_id":"b3fa6018951a4a98ae34dc3253f5109e","unsupported_seq":[1,302],"unsupported_relative_source_time_s":[0.0,5.006],"unsupported_scale_min_max_mode":15.884458541870117,"first_scale_le_2_seq":303,"first_scale_le_2_relative_time_s":5.02,"first_causal_available_seq":333,"first_causal_available_relative_time_s":5.52,"unsupported_at_scale_le_2":0}
+    ],
+    "external_context_relayed_by_primary_agent": "User confirmed these are the same P03 participant's nine continuing sessions and reported seeing the banner at sensitivity 0.55; this is not CSV-derived evidence."
+  },
+  "before": {
+    "telemetry_logs/P03/session_20261020_214022_086000/raw.csv": "05AF9D4AFA4DE0257FFE71E3806636D732FDC34636E6B87D63760D7C2BFD8675",
+    "telemetry_logs/P03/session_20261020_214100_600233/raw.csv": "4184D92F4662B3A92577CE2B6863A6A704F5AD3111606583F1389902D92C74FA",
+    "telemetry_logs/P03/session_20261020_214112_191029/raw.csv": "429D38D1835B431729DC76F05E191B918FD90F763AA554CC3C5DA17AF50376F1",
+    "telemetry_logs/P03/session_20261020_214149_759405/raw.csv": "389A3EC17BFB6441139AA6BFE8F2C0E8DD3A9A35C8D29AAA0CF84860A56CC484",
+    "telemetry_logs/P03/session_20261020_214210_571969/raw.csv": "3C29C1D4DCBF7CC2D03328EE801DC187A5A85016EA0A273D959F8AB937BA709C",
+    "telemetry_logs/P03/session_20261020_214244_551605/raw.csv": "CD90E3C9F418EE2CDB19A624C5E17F3CC0C0C6CD230306D65BC71E109EAE0FAC",
+    "telemetry_logs/P03/session_20261020_214320_667777/raw.csv": "E661C93D3BAB42F576910513C136859B8F5507B1F7C69678A8C2F6E121C8E58E",
+    "telemetry_logs/P03/session_20261020_214354_584139/raw.csv": "16254841D7D196B3E19AC79702720D5B1F288C6C47B1B44E6B578714F55C34C9",
+    "telemetry_logs/P03/session_20261020_214437_062477/raw.csv": "64F0EFF0DCE9121772FDED006EFD446F656CCBA8DA08DA0F1303F9C31F0F39BD",
+    "telemetry_logs/proximity_shadow.jsonl": "338C39277058460F5B87327F02207511B898C4C6A59FB6EBF69B487AC3F52111"
+  },
+  "after": {
+    "telemetry_logs/P03/session_20261020_214022_086000/raw.csv": "05AF9D4AFA4DE0257FFE71E3806636D732FDC34636E6B87D63760D7C2BFD8675",
+    "telemetry_logs/P03/session_20261020_214100_600233/raw.csv": "4184D92F4662B3A92577CE2B6863A6A704F5AD3111606583F1389902D92C74FA",
+    "telemetry_logs/P03/session_20261020_214112_191029/raw.csv": "429D38D1835B431729DC76F05E191B918FD90F763AA554CC3C5DA17AF50376F1",
+    "telemetry_logs/P03/session_20261020_214149_759405/raw.csv": "389A3EC17BFB6441139AA6BFE8F2C0E8DD3A9A35C8D29AAA0CF84860A56CC484",
+    "telemetry_logs/P03/session_20261020_214210_571969/raw.csv": "3C29C1D4DCBF7CC2D03328EE801DC187A5A85016EA0A273D959F8AB937BA709C",
+    "telemetry_logs/P03/session_20261020_214244_551605/raw.csv": "CD90E3C9F418EE2CDB19A624C5E17F3CC0C0C6CD230306D65BC71E109EAE0FAC",
+    "telemetry_logs/P03/session_20261020_214320_667777/raw.csv": "E661C93D3BAB42F576910513C136859B8F5507B1F7C69678A8C2F6E121C8E58E",
+    "telemetry_logs/P03/session_20261020_214354_584139/raw.csv": "16254841D7D196B3E19AC79702720D5B1F288C6C47B1B44E6B578714F55C34C9",
+    "telemetry_logs/P03/session_20261020_214437_062477/raw.csv": "64F0EFF0DCE9121772FDED006EFD446F656CCBA8DA08DA0F1303F9C31F0F39BD",
+    "telemetry_logs/proximity_shadow.jsonl": "338C39277058460F5B87327F02207511B898C4C6A59FB6EBF69B487AC3F52111"
+  }
+}

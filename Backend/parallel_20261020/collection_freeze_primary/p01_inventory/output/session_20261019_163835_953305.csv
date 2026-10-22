@@ -1,0 +1,20 @@
+﻿evidence_field,value
+session,session_20261019_163835_953305
+directory,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_163835_953305
+raw_path,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_163835_953305\raw.csv
+raw_present,True
+raw_rows,24035
+cohort_evidence,unknown
+status,ok
+source_counts,"{""unity"": 4654, ""wii"": 19381}"
+run_ids,"[""098bbd077a4647d185fccf5891adcf8b""]"
+run_attribution,single_run
+run_state_counts,"{""<empty>"": 19381, ""ended"": 1, ""running"": 4653}"
+session_outcome_counts,"{""<empty>"": 24034, ""user_exit"": 1}"
+terminal_row,"{""source"": ""wii"", ""source_timestamp"": ""2026-10-19T08:43:49.2011192Z"", ""sequence"": ""327865"", ""run_id"": """", ""run_state"": """", ""session_outcome"": """", ""session_end_backend_timestamp"": """"}"
+sequence,"{""wii"": {""start"": 308485, ""end"": 327865, ""unique_start"": 308485, ""unique_end"": 327865, ""count"": 19381, ""unique_count"": 19381, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}, ""unity"": {""start"": 1, ""end"": 4654, ""unique_start"": 1, ""unique_end"": 4654, ""count"": 4654, ""unique_count"": 4654, ""missing_ranges"": [], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}}"
+unity_terminal_row,"{""source_timestamp"": ""1792399202.159"", ""sequence"": ""4654"", ""run_id"": ""098bbd077a4647d185fccf5891adcf8b"", ""run_state"": ""ended"", ""session_outcome"": ""user_exit"", ""session_end_backend_timestamp"": ""1792399202.158""}"
+unity_source,"{""rows"": 4654, ""timestamp_valid_rows"": 4654, ""missing_timestamp_rows"": 0, ""adjacent_pairs_blocked_by_missing_timestamp"": 0, ""nonpositive_adjacent_dt_count"": 0, ""start"": 1792399115.959, ""end"": 1792399202.159, ""duration_seconds"": 86.19999980926514, ""gap_count_gt_0_1s"": 7, ""gap_count_gt_0_4s"": 7, ""max_gap_seconds"": 2.943000078201294, ""gap_values_gt_0_1s"": [0.554999828338623, 2.943000078201294, 0.4810001850128174, 0.504000186920166, 0.49699997901916504, 0.8279998302459717, 1.6060001850128174], ""intervals_with_missing_timestamp"": 0}"
+distributions_by_source,"{""unity"": {""calibration_mode"": {""True"": 4654}, ""selected_session_layers"": {""3"": 4654}, ""selected_difficulty"": {""3"": 4654}, ""difficulty"": {""3"": 4654}}, ""wii"": {""wii_board_loaded"": {""False"": 19381}, ""wii_center_applied"": {""False"": 19381}, ""wii_control_valid"": {""True"": 19381}}}"
+recommendation,
+source_files_unchanged,True

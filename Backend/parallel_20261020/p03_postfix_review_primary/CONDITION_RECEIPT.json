@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "participant_id": "P03",
+  "record_date": "2026-10-20",
+  "fix_version": "PILOT055_D3_L5_OLD_UI_COMPAT5_R1_20261020",
+  "session_ids": [
+    "session_20261020_214022_086000", "session_20261020_214100_600233",
+    "session_20261020_214112_191029", "session_20261020_214149_759405",
+    "session_20261020_214210_571969", "session_20261020_214244_551605",
+    "session_20261020_214320_667777", "session_20261020_214354_584139",
+    "session_20261020_214437_062477"
+  ],
+  "participant_identity_source": "User explicitly confirmed same P03 participant continued these nine runs.",
+  "user_reported_sensitivity": 0.55,
+  "sensitivity_source": "User declaration; exact effective value absent from CSV.",
+  "difficulty_csv_confirmed": 3,
+  "selected_layers_csv_confirmed": 5,
+  "intended_experimental_warning_condition": "on",
+  "actual_client_warning_activation_verified": true,
+  "user_reported_experimental_banners_seen": true,
+  "runs_with_client_active": {"orange_model": 4, "purple_tte": 9, "red_geometry": 4},
+  "pixel_recording_collected": false,
+  "condition_disposition": "postfix_functioning_warning_on_observed_pending_event_level_qc",
+  "same_condition_as_previous_six_failed_runs": false,
+  "automatic_training_inclusion": false,
+  "automatic_full_model_performance_acceptance": false,
+  "historical_records_rewritten": false,
+  "notes": "Retain all nine for the post-fix observed warning-on cohort, subject to event/window quality checks. Previous six sessions retain intended-on but actual-unavailable condition. Same participant repeated exposure is not randomized on/off comparison.",
+  "evidence": ["client_result.json", "../p03_postfix_review_luna/REPORT.md", "../p03_postfix_review_luna/input_sha256.json", "../../parallel_20261016/pilot_readiness/preflight_receipts/preflight_406512b1e8fc489a82defc314afe1d74.json"]
+}

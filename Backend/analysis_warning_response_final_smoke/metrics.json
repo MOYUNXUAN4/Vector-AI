@@ -1,0 +1,233 @@
+{
+  "protocol": {
+    "min_inward_speed": -0.1,
+    "min_inward_samples": 2,
+    "min_safe_duration_s": 0.3,
+    "post_fall_rows_excluded": true
+  },
+  "input": "telemetry_logs\\TEST931\\session_20260930_164101_081778\\raw.csv",
+  "manual_csv": null,
+  "files_discovered": 1,
+  "files_read": 1,
+  "failed_files": [],
+  "sessions": 1,
+  "episodes": 10,
+  "episodes_by_type": {
+    "attention": 8,
+    "strong": 2
+  },
+  "outcomes": {
+    "false_alarm": 6,
+    "fall_after_warning": 3,
+    "recovered": 1
+  },
+  "outcome_subtypes": {
+    "safe_normal": 6,
+    "fall_causal": 3,
+    "near_miss_recovered": 1
+  },
+  "review_required_episodes": 2,
+  "review_flags": {
+    "post_fall_rows_excluded": 2
+  },
+  "source_selection": {
+    "unity": 1
+  },
+  "field_availability": {
+    "attention_episode_end_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "attention_episode_enter_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "attention_episode_exit_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "attention_episode_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "attention_episode_start_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "attention_state": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "backend_timestamp": {
+      "rows": 3359,
+      "present_rows": 3359,
+      "fraction": 1.0
+    },
+    "ball_radial_velocity": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "condition": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "directional_edge_distance": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "edge_warning_distance_threshold": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "edge_warning_state": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "experiment_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "fall_event": {
+      "rows": 3359,
+      "present_rows": 3359,
+      "fraction": 1.0
+    },
+    "fall_event_time": {
+      "rows": 3359,
+      "present_rows": 1,
+      "fraction": 0.00029770765108663293
+    },
+    "layer_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "platform_level": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "prediction_state": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "response_condition": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "response_experiment_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "response_layer_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "response_trial_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "run_id": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "run_state": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "session_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "session_outcome": {
+      "rows": 3359,
+      "present_rows": 1,
+      "fraction": 0.00029770765108663293
+    },
+    "source": {
+      "rows": 3359,
+      "present_rows": 3359,
+      "fraction": 1.0
+    },
+    "target_edge_radial_velocity": {
+      "rows": 3359,
+      "present_rows": 1435,
+      "fraction": 0.42721047930931827
+    },
+    "trial_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "trial_scenario": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "visible_warning_state": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_active": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_episode_end_backend_timestamp": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_episode_end_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_episode_id": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_episode_start_backend_timestamp": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_episode_start_time": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_source": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    },
+    "warning_type": {
+      "rows": 3359,
+      "present_rows": 0,
+      "fraction": 0.0
+    }
+  }
+}

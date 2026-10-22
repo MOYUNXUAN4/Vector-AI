@@ -1,0 +1,15 @@
+# P02 warning-effects descriptive audit
+
+No training, threshold choice, policy edits, frozen-data reuse or performance acceptance. First run (358796...) is separate: user explicitly reported sensitivity was not 0.55; exact value unknown. Later runs were manually adjusted per user; no runtime numeric sensitivity is stored in CSV. Do not infer values from present registry/Inspector settings. Experimental cues were present, so no causal intervention comparison is available.
+
+Channels: orange model and purple proximity client logs are the accepted-state evidence. Repeated ACTIVE renewal records do not start another episode until REVOKED. Geometry lines have source sequence but no monotonic timestamp; their duration is unknown. Ordinary CSV attention/yellow fields are separate baselines, not experimental model states. No arbitrary 0.5s merging or duration exclusion. Shortness summaries are descriptive, not selection gates.
+
+Durations are client receive-to-clear proxies: ACTIVE uses UDP receive monotonic time, REVOKED uses clear-call monotonic time. They are not frame-verified screen exposure and may include processing delay. Zero unobserved exposure must not be fabricated. Completed-session cue burden is not a verified recovery-clip burden or causal effectiveness.
+
+Anchors: (a) q=directional_edge_distance-2*ball_radius crossing from positive to nonpositive in adjacent valid/owned same run/layer/platform/version samples, with consecutive source sequence and <=0.1s positive epoch gap; represented by [last positive source timestamp, first nonpositive source timestamp], no interpolation; (b) explicit edge_contact_backend_timestamp; (c) explicit fall_event_backend_timestamp. (a) is the existing proximity rule's domain boundary, not a newly validated final-fall training label. The bracket is at packet source-time resolution, not a certified collider-capture-time interval. Keep these anchors distinct.
+
+Purple input-onset lead uses the exact same-run input_sequence in CSV and backend shadow JSONL. It is input/source-level lead, NOT displayed-warning lead. Do not count an onset from another layer/platform/version. Use the final qualifying onset in the final same-context approach, rather than an arbitrarily early warning elsewhere in the run. Pairing is reported explicitly, not used to tune anything.
+
+There is no logged direct epoch/Stopwatch clock pair for model ACTIVE lines. Consequently exact orange display lead and guaranteed >=0.4s client display coverage are unavailable. Same-run orange-minus-purple monotonic onset differences can be reported directly, without converting clock domains. Do not fit a global clock offset to make results look aligned.
+
+Observation group: first run separate; later two completed and one fall run described individually. A single fall is not population recall, and two completions cannot establish a general false-alarm rate. Model remains deployed 24-feature LightGBM plus separate TTE rule, not a fused deployed predictor. No new collection requested solely to finish this audit.

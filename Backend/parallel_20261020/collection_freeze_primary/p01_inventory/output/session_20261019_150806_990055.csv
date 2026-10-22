@@ -1,0 +1,20 @@
+﻿evidence_field,value
+session,session_20261019_150806_990055
+directory,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_150806_990055
+raw_path,C:\Users\QIYUXUAN\Desktop\fyp_Backend (3)\fyp_Backend\telemetry_logs\P01\session_20261019_150806_990055\raw.csv
+raw_present,True
+raw_rows,2949
+cohort_evidence,unknown
+status,ok
+source_counts,"{""unity"": 1259, ""wii"": 1690}"
+run_ids,"[""16072c96af72434cb8cb57df8ab10a37""]"
+run_attribution,single_run
+run_state_counts,"{""<empty>"": 1690, ""ended"": 1, ""running"": 1258}"
+session_outcome_counts,"{""<empty>"": 2948, ""edge_exit"": 1}"
+terminal_row,"{""source"": ""wii"", ""source_timestamp"": ""2026-10-19T07:08:34.9334421Z"", ""sequence"": ""36695"", ""run_id"": """", ""run_state"": """", ""session_outcome"": """", ""session_end_backend_timestamp"": """"}"
+sequence,"{""wii"": {""start"": 34998, ""end"": 36695, ""unique_start"": 34998, ""unique_end"": 36695, ""count"": 1690, ""unique_count"": 1690, ""missing_ranges"": [{""previous"": 35743, ""current"": 35745, ""missing_start"": 35744, ""missing_end"": 35744}, {""previous"": 35748, ""current"": 35753, ""missing_start"": 35749, ""missing_end"": 35752}, {""previous"": 35759, ""current"": 35763, ""missing_start"": 35760, ""missing_end"": 35762}], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}, ""unity"": {""start"": 1, ""end"": 1267, ""unique_start"": 1, ""unique_end"": 1267, ""count"": 1259, ""unique_count"": 1259, ""missing_ranges"": [{""previous"": 699, ""current"": 702, ""missing_start"": 700, ""missing_end"": 701}, {""previous"": 705, ""current"": 710, ""missing_start"": 706, ""missing_end"": 709}, {""previous"": 716, ""current"": 719, ""missing_start"": 717, ""missing_end"": 718}], ""reset_or_backstep_count"": 0, ""reset_or_backstep_transitions"": []}}"
+unity_terminal_row,"{""source_timestamp"": ""1792393709.27"", ""sequence"": ""1267"", ""run_id"": ""16072c96af72434cb8cb57df8ab10a37"", ""run_state"": ""ended"", ""session_outcome"": ""edge_exit"", ""session_end_backend_timestamp"": ""1792393709.268""}"
+unity_source,"{""rows"": 1259, ""timestamp_valid_rows"": 1259, ""missing_timestamp_rows"": 0, ""adjacent_pairs_blocked_by_missing_timestamp"": 0, ""nonpositive_adjacent_dt_count"": 0, ""start"": 1792393686.996, ""end"": 1792393709.27, ""duration_seconds"": 22.2739999294281, ""gap_count_gt_0_1s"": 4, ""gap_count_gt_0_4s"": 0, ""max_gap_seconds"": 0.15200018882751465, ""gap_values_gt_0_1s"": [0.14400005340576172, 0.13700008392333984, 0.15200018882751465, 0.1380000114440918], ""intervals_with_missing_timestamp"": 0}"
+distributions_by_source,"{""unity"": {""calibration_mode"": {""True"": 1259}, ""selected_session_layers"": {""3"": 1259}, ""selected_difficulty"": {""3"": 1259}, ""difficulty"": {""3"": 1259}}, ""wii"": {""wii_board_loaded"": {""False"": 1620, ""True"": 70}, ""wii_center_applied"": {""False"": 1690}, ""wii_control_valid"": {""True"": 1690}}}"
+recommendation,"{""recommendation"": ""timing_review_flag"", ""evidence"": ""timing_review"", ""reason"": ""Report records Unity source-time continuity gaps >0.1 s; timing evidence is a technical quality flag, not participant identity or automatic exclusion."", ""source_report"": ""C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261019\\p01_new_gap_review\\result_v2.json""}"
+source_files_unchanged,True

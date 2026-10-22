@@ -1,0 +1,1443 @@
+{
+    "RunId": "e7021800e4244130b0b08d47948991f3",
+    "UnityRunGuid": "08294700-dc60-4eff-b06f-04ecb61de222",
+    "Status": "passed",
+    "Mode": "edit",
+    "CurrentTest": "",
+    "StartedAtTicks": 639280750663917967,
+    "FinishedAtTicks": 639280750725074004,
+    "DurationMs": 5211,
+    "Total": 178,
+    "Passed": 178,
+    "Failed": 0,
+    "Skipped": 0,
+    "Inconclusive": 0,
+    "Error": "",
+    "Failures": [],
+    "Results": [
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.BothChannelsAcceptSameUpdateSequenceAndDuplicateOrReorderedPacketsAreIgnored",
+            "ResultState": "Passed",
+            "DurationMs": 61,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=18687.792483 run_id=run-current prediction_sequence=40 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=400 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.CurrentRunUnknownIdentityCannotActivate",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.DisposedIntermediateExtractionScopeDoesNotHideLiveAncestor",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.DistinctGeometryFailureFieldsEachKeepTheirOwnDiagnosticEvidence",
+            "ResultState": "Passed",
+            "DurationMs": 14,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18687.8930196,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":86,\"raw_json_is_valid_json_value\":true,\"deserialized\":86},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"required_field_missing\",\"condition\":\"field is required by the existing geometry-warning protocol\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":false,\"raw_json\":null,\"raw_json_is_valid_json_value\":null,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":86,\\\"input_source_timestamp\\\":8.6,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18687.8988954,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":86,\"raw_json_is_valid_json_value\":true,\"deserialized\":86},\"warning_update_sequence\":{\"present\":true,\"raw_json\":2,\"raw_json_is_valid_json_value\":true,\"deserialized\":2},\"failed_checks\":[{\"name\":\"input_source_timestamp.matches_deserialized\",\"condition\":\"raw number equals deserialized value\",\"fields\":[\"input_source_timestamp\"],\"field_evidence\":[{\"field\":\"input_source_timestamp\",\"evidence\":{\"present\":true,\"raw_json\":8.61,\"raw_json_is_valid_json_value\":true,\"deserialized\":8.6}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":86,\\\"input_source_timestamp\\\":8.61,\\\"warning_update_sequence\\\":2,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.DuplicateReplyIsIgnoredAndNewSequenceForSamePredictionDoesNotRenew",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=2.000000 run_id=run-current prediction_sequence=20 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryAgeExactlyAtPointThreeSecondsIsAccepted",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=90 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryClearAndUnknownRevokeOnlyGeometry(\"CLEAR\")",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=20 reason=synthetic_geometry_rule\r\n[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=18688.060355 run_id=run-current prediction_sequence=21 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=20 reason=geometry_clear\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryClearAndUnknownRevokeOnlyGeometry(\"UNKNOWN\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=20 reason=synthetic_geometry_rule\r\n[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=18688.086400 run_id=run-current prediction_sequence=21 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=20 reason=geometry_unknown\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryClearDoesNotRevokeSeparateModelStrong",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=18688.113235 run_id=run-current prediction_sequence=11 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalActivatesIndependentlyWhenModelWarningIsUnknown",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=100 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalAgeOverLeaseDiagnosticPreservesRejection",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.157116,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":84,\"raw_json_is_valid_json_value\":true,\"deserialized\":84},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.max_0_3_seconds\",\"condition\":\"<= 0.3 seconds\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":0.31,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.31}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":84,\\\"input_source_timestamp\\\":8.4,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.31}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalInvalidNumberDiagnosticPreservesRejection",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.1808457,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":82,\"raw_json_is_valid_json_value\":true,\"deserialized\":82},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"NaN\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":82,\\\"input_source_timestamp\\\":8.2,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":\\\"NaN\\\"}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalMissingFieldDiagnosticPreservesRejection",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.2032915,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":81,\"raw_json_is_valid_json_value\":true,\"deserialized\":81},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"required_field_missing\",\"condition\":\"field is required by the existing geometry-warning protocol\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":false,\"raw_json\":null,\"raw_json_is_valid_json_value\":null,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":81,\\\"input_source_timestamp\\\":8.1,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalNumericMismatchDiagnosticPreservesRejection",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.2248159,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":83,\"raw_json_is_valid_json_value\":true,\"deserialized\":83},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"input_source_timestamp.matches_deserialized\",\"condition\":\"raw number equals deserialized value\",\"fields\":[\"input_source_timestamp\"],\"field_evidence\":[{\"field\":\"input_source_timestamp\",\"evidence\":{\"present\":true,\"raw_json\":8.31,\"raw_json_is_valid_json_value\":true,\"deserialized\":8.3}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":83,\\\"input_source_timestamp\\\":8.31,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalUsesStrictRawAgeWhenJsonUtilityDoubleDiffersByOneUlp(\"sample_age_seconds\")",
+            "ResultState": "Passed",
+            "DurationMs": 11,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=89 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalUsesStrictRawAgeWhenJsonUtilityDoubleDiffersByOneUlp(\"query_age_seconds\")",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=89 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryCriticalUsesStrictRawAgeWhenJsonUtilityDoubleDiffersByOneUlp(\"geometry_age_seconds\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=89 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryDisconnectLeaseExpiresAtTotalAgeOverPointThreeSeconds",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=30 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=30 reason=geometry_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryLeaseRemainsActiveBelowAndExpiresAbovePointThreeSeconds",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=92 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=92 reason=geometry_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryMalformedSequenceAndAgeFailClosedWithoutBreakingRealtimeValues",
+            "ResultState": "Passed",
+            "DurationMs": 13,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=70 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":7.1,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":71,\"raw_json_is_valid_json_value\":true,\"deserialized\":71},\"warning_update_sequence\":{\"present\":true,\"raw_json\":2.5,\"raw_json_is_valid_json_value\":true,\"deserialized\":2},\"failed_checks\":[{\"name\":\"warning_update_sequence.positive_integer\",\"condition\":\"present, unique JSON integer > 0\",\"fields\":[\"warning_update_sequence\"],\"field_evidence\":[{\"field\":\"warning_update_sequence\",\"evidence\":{\"present\":true,\"raw_json\":2.5,\"raw_json_is_valid_json_value\":true,\"deserialized\":2}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":71,\\\"input_source_timestamp\\\":7.1,\\\"warning_update_sequence\\\":2.5,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=70 reason=geometry_warning_sequence_missing_or_invalid\r\n[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.3902971,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":72,\"raw_json_is_valid_json_value\":true,\"deserialized\":72},\"warning_update_sequence\":{\"present\":true,\"raw_json\":2,\"raw_json_is_valid_json_value\":true,\"deserialized\":2},\"failed_checks\":[{\"name\":\"geometry_age_seconds.nonnegative_json_number\",\"condition\":\">= 0\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":-0.01,\"raw_json_is_valid_json_value\":true,\"deserialized\":-0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":72,\\\"input_source_timestamp\\\":7.2,\\\"warning_update_sequence\\\":2,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":-0.01}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryOldRunAndLayerCannotActivateOrClearCurrentLease",
+            "ResultState": "Passed",
+            "DurationMs": 8,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=60 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=60 reason=layer_transition\r\n[ExperimentalGeometryWarning] active run=run-current layer=2 platform=123 input_sequence=64 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.GeometryWarningRequiresAvailableCurrentPlatformTelemetryIdentity",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.IdenticalGeometryFailureIsSuppressedAfterFirstFullEvidenceAndCounted",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":18688.4679467,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":87,\"raw_json_is_valid_json_value\":true,\"deserialized\":87},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"required_field_missing\",\"condition\":\"field is required by the existing geometry-warning protocol\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":false,\"raw_json\":null,\"raw_json_is_valid_json_value\":null,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":87,\\\"input_source_timestamp\\\":8.7,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n[ExperimentalGeometryWarningValidation] repeated_failure_suppressed run_id=run-current layer=1 platform_instance_id=123 geometry_version_id=platform-123-g1 failure_signature=run-current|1|123|platform-123-g1|required_field_missing:field is required by the existing geometry-warning protocol:query_age_seconds suppressed_repeated_count=1 newly_suppressed_count=1\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.IncreasingReplySequenceCannotRenewIdenticalStaleInputSample",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=50 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=50 reason=geometry_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"sample_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"sample_age_seconds.nonnegative_json_number\",\"condition\":\">= 0\",\"fields\":[\"sample_age_seconds\"],\"field_evidence\":[{\"field\":\"sample_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":-0.01,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":-0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"query_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"query_age_seconds.nonnegative_json_number\",\"condition\":\">= 0\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":-0.01,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":-0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"geometry_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.nonnegative_json_number\",\"condition\":\">= 0\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":-0.01,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":-0.01}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"sample_age_seconds\",\"string\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"sample_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"sample_age_seconds\"],\"field_evidence\":[{\"field\":\"sample_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"0.02\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":\\\"0.02\\\",\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"query_age_seconds\",\"string\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"query_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"0.02\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":\\\"0.02\\\",\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"geometry_age_seconds\",\"string\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"0.02\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":\\\"0.02\\\"}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"sample_age_seconds\",\"NaN\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"sample_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"sample_age_seconds\"],\"field_evidence\":[{\"field\":\"sample_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"NaN\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":\\\"NaN\\\",\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"query_age_seconds\",\"NaN\")",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"query_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"NaN\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":\\\"NaN\\\",\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"geometry_age_seconds\",\"NaN\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"NaN\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":\\\"NaN\\\"}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"sample_age_seconds\",\"Infinity\")",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"sample_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"sample_age_seconds\"],\"field_evidence\":[{\"field\":\"sample_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"Infinity\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":\\\"Infinity\\\",\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"query_age_seconds\",\"Infinity\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"query_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"Infinity\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":\\\"Infinity\\\",\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"geometry_age_seconds\",\"Infinity\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":\"Infinity\",\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":\\\"Infinity\\\"}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"sample_age_seconds\",\"1e309\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"sample_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"sample_age_seconds\"],\"field_evidence\":[{\"field\":\"sample_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":1e309,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":1e309,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"query_age_seconds\",\"1e309\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"query_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"query_age_seconds\"],\"field_evidence\":[{\"field\":\"query_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":1e309,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.01}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":1e309,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidGeometryAgeCannotActivate(\"geometry_age_seconds\",\"1e309\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":8,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":80,\"raw_json_is_valid_json_value\":true,\"deserialized\":80},\"warning_update_sequence\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"geometry_age_seconds.finite_json_number\",\"condition\":\"finite JSON number\",\"fields\":[\"geometry_age_seconds\"],\"field_evidence\":[{\"field\":\"geometry_age_seconds\",\"evidence\":{\"present\":true,\"raw_json\":1e309,\"raw_json_is_valid_json_value\":true,\"deserialized\":0.02}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":80,\\\"input_source_timestamp\\\":8,\\\"warning_update_sequence\\\":1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":1e309}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"sample_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 11,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18688.917489 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18688.923135 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"query_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18688.949213 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18688.951746 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"geometry_age_seconds\",\"-0.01\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18688.977053 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18688.979422 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"geometry_age_seconds\",\"0.31\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.005095 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.007072 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"q\",\"0\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.029796 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.031396 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"q\",\"-0.1\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.056097 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.058261 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"outward_velocity\",\"\\\"NaN\\\"\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.084487 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.086683 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"horizon_seconds\",\"0.7500000001\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.111951 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.113971 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"input_sequence\",\"1.5\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.137094 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.138807 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"input_sequence\",\"-1\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.161794 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.164124 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"input_sequence\",\"9223372036854775808\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.188276 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.189811 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"input_source_timestamp\",\"0\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.212198 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.214129 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityNumericFieldsFailClosed(\"input_source_timestamp\",\"1e309\")",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.254671 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.257117 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=60 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"zero\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.292390 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.294267 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"fraction\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.317629 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.319559 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"negative\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.344290 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.345735 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"string\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.369705 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.371827 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"overflow\")",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.395887 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.398235 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.InvalidProximityWarningSequenceFailsClosed(\"duplicate\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.423657 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.425325 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.LayerZeroFaultRevokesAndCannotActivate",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=5.000000 run_id=run-current prediction_sequence=50 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.451448 run_id=run-current prediction_sequence=50 reason=confirmed revoke_reason=warning_layer_unknown_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MatchingProximityClearAndUnknownRevokeOnlyProximity(\"CLEAR\")",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.486140 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=10 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.488545 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=10 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=backend_clear\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MatchingProximityClearAndUnknownRevokeOnlyProximity(\"UNKNOWN\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.515148 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=10 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.517226 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=10 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=backend_unknown\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"missing\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.555818 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"zero\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.607378 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"fraction\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.632571 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"negative\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.659891 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"string\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.691088 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"overflow\")",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.718915 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingOrInvalidWarningUpdateSequenceFailsClosed(\"leading_zero\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=6.000000 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.745465 run_id=run-current prediction_sequence=60 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingProximityUpdateSequenceFailsClosedForCurrentIdentity",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18689.772663 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18689.774553 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=70 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=warning_update_sequence_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.MissingWarningObjectCannotRevokeWithoutRunIdentity",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=7.000000 run_id=run-current prediction_sequence=70 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NegativePlatformIdClearRevokesGeometryWarning",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=-234 input_sequence=46 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=-234 input_sequence=46 reason=geometry_clear\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NegativePlatformIdSynchronizesAndActivatesCriticalGeometryWarning",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=-234 input_sequence=45 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NegativePlatformIdWarningStillExpiresByTotalGeometryAge",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=-234 input_sequence=52 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=-234 input_sequence=52 reason=geometry_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NegativeWarningUpdateSequenceRemainsInvalidForGeometryWarning",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarningValidation] rejected {\"local_receive_monotonic_seconds\":4.4,\"run_id\":{\"present\":true,\"raw_json\":\"run-current\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"run-current\"},\"layer\":{\"present\":true,\"raw_json\":1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"platform_instance_id\":{\"present\":true,\"raw_json\":123,\"raw_json_is_valid_json_value\":true,\"deserialized\":123},\"geometry_version_id\":{\"present\":true,\"raw_json\":\"platform-123-g1\",\"raw_json_is_valid_json_value\":true,\"deserialized\":\"platform-123-g1\"},\"input_sequence\":{\"present\":true,\"raw_json\":44,\"raw_json_is_valid_json_value\":true,\"deserialized\":44},\"warning_update_sequence\":{\"present\":true,\"raw_json\":-1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1},\"failed_checks\":[{\"name\":\"warning_update_sequence.positive_integer\",\"condition\":\"present, unique JSON integer > 0\",\"fields\":[\"warning_update_sequence\"],\"field_evidence\":[{\"field\":\"warning_update_sequence\",\"evidence\":{\"present\":true,\"raw_json\":-1,\"raw_json_is_valid_json_value\":true,\"deserialized\":1}}]}],\"geometry_warning_raw\":\"{\\\"schema_version\\\":1,\\\"experimental\\\":true,\\\"enabled\\\":true,\\\"source\\\":\\\"geometry_rule\\\",\\\"policy_id\\\":\\\"outer_clearance_nonpositive_v1\\\",\\\"run_id\\\":\\\"run-current\\\",\\\"layer\\\":1,\\\"platform_instance_id\\\":123,\\\"geometry_version_id\\\":\\\"platform-123-g1\\\",\\\"input_sequence\\\":44,\\\"input_source_timestamp\\\":4.4,\\\"warning_update_sequence\\\":-1,\\\"clearance\\\":-0.01,\\\"clearance_valid\\\":true,\\\"state\\\":\\\"CRITICAL\\\",\\\"valid\\\":true,\\\"reason\\\":\\\"synthetic_geometry_rule\\\",\\\"sample_age_seconds\\\":0.01,\\\"query_age_seconds\\\":0.01,\\\"geometry_age_seconds\\\":0.02}\"}\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NewerSafeStatusRevokesCurrentPredictionImmediately",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=2.500000 run_id=run-current prediction_sequence=25 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18689.963568 run_id=run-current prediction_sequence=25 reason=confirmed revoke_reason=backend_safe\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NewRunResetsGeometryWatermarkAndClearsOldDisplay",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=100 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=100 reason=run_started\r\n[ExperimentalGeometryWarning] active run=run-next layer=1 platform=123 input_sequence=1 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.NewRunResetsWarningReplyWatermark",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=4.000000 run_id=run-current prediction_sequence=40 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18690.019809 run_id=run-current prediction_sequence=40 reason=confirmed revoke_reason=run_started\r\n[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=4.100000 run_id=run-next prediction_sequence=1 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.OldPlatformOrVersionCannotActivateOrClearNegativePlatformWarning",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=-234 input_sequence=50 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.OldRunIsInertAndLayerTransitionPreservesWatermark",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=3.000000 run_id=run-current prediction_sequence=30 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18690.074659 run_id=run-current prediction_sequence=30 reason=confirmed revoke_reason=layer_transition\r\n[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=3.200000 run_id=run-current prediction_sequence=31 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.OrdinaryRealtimeStillAppliesWhenGeometryObjectIsMalformedOrMissing",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.PrimitiveRangeParsingPreservesUntrimmedCursor(\"1   ,\",True,4)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.PrimitiveRangeParsingPreservesUntrimmedCursor(\" 1 ,\",True,3)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.PrimitiveRangeParsingPreservesUntrimmedCursor(\"true  }\",True,6)",
+            "ResultState": "Passed",
+            "DurationMs": 1,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.PrimitiveRangeParsingPreservesUntrimmedCursor(\"1.  ,\",False,4)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityAgeSumAcceptsToleranceAndRejectsMismatchBeyondTolerance",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18691.223274 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=27 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.225306 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=27 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_warning_invalid_or_incomplete\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityApproachAcceptsNegativePlatformIdAndUsesIndependentWatermark",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.250719 run_id=run-current layer=1 platform=-234 version=platform--234-g1 input_sequence=1 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityDisableAndRunEndClearOnlyItsIndependentState",
+            "ResultState": "Passed",
+            "DurationMs": 8,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.278431 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=90 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.279755 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=90 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=feature_disabled\r\n[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.281019 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=91 warning_update_sequence=2 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.282337 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=91 warning_update_sequence=2 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=test_run_end\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityDuplicateAndReorderedRepliesDoNotChangeLease",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.305902 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=40 warning_update_sequence=10 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityExactLeaseBoundaryIsAcceptedAtReceiveInstant",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18691.332985 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=26 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityMalformedApproachRawFlagDoesNotRevokeCurrentWarning",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.361524 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=57 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityMismatchedPlatformOrVersionCannotActivateOrClear",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.390519 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=31 warning_update_sequence=2 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityNewRunResetsItsIndependentWatermarkAndRevokedInputBarrier",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.413655 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=75 warning_update_sequence=100 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.415058 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=75 warning_update_sequence=100 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=run_started\r\n[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.416137 run_id=run-next layer=1 platform=123 version=platform-123-g1 input_sequence=1 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityOldRunLayerAndPlatformCannotRevokeCurrentWarning",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.438706 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=20 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.439935 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=20 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=layer_transition\r\n[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.441722 run_id=run-current layer=2 platform=123 version=platform-123-g1 input_sequence=24 warning_update_sequence=3 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityPositiveTinyQAndEquivalentExactHorizonAreAccepted",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.465989 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=29 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityProtocolMismatchInStatusCannotClearCurrentWarning(\"source\",\"\\\"other_source\\\"\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.499366 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=58 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityProtocolMismatchInStatusCannotClearCurrentWarning(\"policy_id\",\"\\\"other_policy\\\"\")",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.522298 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=58 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityProtocolMismatchInStatusCannotClearCurrentWarning(\"schema_version\",\"2\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.545101 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=58 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityProtocolMismatchInStatusCannotClearCurrentWarning(\"experimental\",\"false\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.570015 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=58 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityProtocolMismatchInStatusCannotClearCurrentWarning(\"enabled\",\"false\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.592620 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=58 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityRealtimeAndOtherWarningChannelsRemainIndependent",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=18690.617799 run_id=run-current prediction_sequence=1 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=101 reason=synthetic_geometry_rule\r\n[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.617799 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=102 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityRejectsFreshnessThatExpiresBeforeMainThreadProcessing",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityRequiresExactProtocolAndBooleanFlagsForApproach",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityTelemetryPlatformSwitchImmediatelyRevokesActiveWarning",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.691366 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=25 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.692382 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=25 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_context_changed\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityUnsupportedStateCannotRevokeCurrentWarning",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.715532 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=37 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ProximityWarningUpdateAndInputSequencesAcceptPositiveInt64Maximum",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.738531 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=9223372036854775807 warning_update_sequence=9223372036854775807 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RawJsonFieldRangeComparisonPreservesOutcomes(\"{\\\"warning\\\":{\\\"value\\\":1}}\",True,\"1\")",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RawJsonFieldRangeComparisonPreservesOutcomes(\"{\\\"warning\\\":{\\\"value\\\":1,\\\"value\\\":2}}\",False,\"2\")",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RawJsonFieldRangeComparisonPreservesOutcomes(\"{\\\"warning\\\":{\\\"val\\\\u0075e\\\":1}}\",False,\"\")",
+            "ResultState": "Passed",
+            "DurationMs": 1,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RawJsonFieldRangeComparisonPreservesOutcomes(\"{\\\"warning\\\":{\\\"value\\\":[1,{\\\"x\\\":2}]}}\",True,\"[1,{\\\"x\\\":2}]\")",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RawJsonFieldRangeComparisonPreservesOutcomes(\"{\\\"warning\\\":{\\\"value\\\":[1,{\\\"x\\\":2]}}}\",False,\"\")",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RealPrecisionGeometrySampleDoesNotRenewLeaseOnRepeatedReplyAndExpiresDuringSilence",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=91 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=123 input_sequence=91 reason=geometry_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RealtimeExtractionScopeUnwindsWhenReceiverLoggingThrows",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RealtimeValuesStillApplyWhenCurrentRunWarningSequenceIsInvalid",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=9.000000 run_id=run-current prediction_sequence=90 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18690.945835 run_id=run-current prediction_sequence=90 reason=confirmed revoke_reason=warning_update_sequence_missing_or_invalid\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.RepeatedProximityInputCannotRenewLeaseOrReigniteAfterRevocation",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=18690.972978 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=50 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_approach_accepted\r\n[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=18690.975099 run_id=run-current layer=1 platform=123 version=platform-123-g1 input_sequence=50 warning_update_sequence=1 backend_state=APPROACH reason=synthetic_tte_rule revoke_reason=proximity_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.SynchronizingNewNegativePlatformContextRevokesOldGeometryWarning",
+            "ResultState": "Passed",
+            "DurationMs": 6,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=-234 input_sequence=54 reason=synthetic_geometry_rule\r\n[ExperimentalGeometryWarning] revoked run=run-current layer=1 platform=-234 input_sequence=54 reason=geometry_context_changed\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.TotalSilenceExpiresWarningByMonotonicLease",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=8.000000 run_id=run-current prediction_sequence=80 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18691.032314 run_id=run-current prediction_sequence=80 reason=confirmed revoke_reason=prediction_age_exceeded_0_3s\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.ValidGeometryCriticalStillActivatesWithoutFailureDiagnostic",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalGeometryWarning] active run=run-current layer=1 platform=123 input_sequence=85 reason=synthetic_geometry_rule\r\n"
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningExtractionScopeCachesFailuresAndLeavesEmptyOutput",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningExtractionScopeCachesOnlyForTheSameRawStringReference",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningExtractionScopeIsThreadLocal",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningExtractionScopesRestoreNestedContextAndClearAfterException",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":1}}\",True,1L)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":1,\\\"warning_update_sequence\\\":2}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_\\\\u0073equence\\\":1}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":01}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":1.0}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":1e}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":9223372036854775807}}\",True,long.MaxValue)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":9223372036854775808}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\":1,\\\"extra\\\":[1,{\\\"x\\\":2]}}}\",False,0L)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningSequenceRangeParsingPreservesStrictOutcomes(\"{\\\"warning\\\":{\\\"warning_update_sequence\\\": 1 }}\",True,1L)",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UdpFrontendReceiverWarningTests.WarningUpdateSequenceOrdersRevocationAndBlocksSamePredictionRevival",
+            "ResultState": "Passed",
+            "DurationMs": 8,
+            "Message": "",
+            "StackTrace": "",
+            "Output": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=1.000000 run_id=run-current prediction_sequence=5 reason=confirmed revoke_reason=strong_prediction_accepted\r\n[ExperimentalModelWarning] state=REVOKED local_monotonic_s=18691.503686 run_id=run-current prediction_sequence=5 reason=confirmed revoke_reason=backend_unknown\r\n[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=1.150000 run_id=run-current prediction_sequence=6 reason=confirmed revoke_reason=strong_prediction_accepted\r\n"
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask0",
+            "ResultState": "Passed",
+            "DurationMs": 15,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask1",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask2",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask3",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask4",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask5",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask6",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask7",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask8",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask9",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask10",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask11",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask12",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask13",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask14",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context0_Mask15",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask0",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask1",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask2",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask3",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask4",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask5",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask6",
+            "ResultState": "Passed",
+            "DurationMs": 2,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask7",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask8",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask9",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask10",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask11",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask12",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask13",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask14",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.UnifiedSources_Context1_Mask15",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ChangedBoundPlayerDoesNotKeepOldEdgeFlag",
+            "ResultState": "Passed",
+            "DurationMs": 7,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.DisabledLocalPlayerDoesNotSupplyAnActiveSource",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.EndedRunDoesNotDisplayRisk",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ExistingLayerResetClearsLocalSource",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.FirstNullProximityTextCreatesLabelAndStableTextReusesContent",
+            "ResultState": "Passed",
+            "DurationMs": 5,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.LocalEdgeWorksWithoutReceiverOrDebugHud",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.MissingBoundPlayerDoesNotBorrowAnotherPlayer",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ModalStateSuppressesUnifiedOnly(\"isPaused\")",
+            "ResultState": "Passed",
+            "DurationMs": 3,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ModalStateSuppressesUnifiedOnly(\"isReportVisible\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ModalStateSuppressesUnifiedOnly(\"isGameOverVisible\")",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ModelRevocationCannotLeaveProbabilityInLocalOnlySnapshot",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.NewOptionIsSerializedAndDefaultOff",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.ReceiverFeatureGatesAreNotBypassed",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        },
+        {
+            "FullName": "UnifiedRiskPresentationTests.SourceRelayIsStatelessAndNoSourceMeansEmptyImmediately",
+            "ResultState": "Passed",
+            "DurationMs": 4,
+            "Message": "",
+            "StackTrace": "",
+            "Output": ""
+        }
+    ]
+}

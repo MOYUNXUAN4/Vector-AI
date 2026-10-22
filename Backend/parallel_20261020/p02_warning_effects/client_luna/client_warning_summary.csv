@@ -1,0 +1,13 @@
+﻿run_id,run_note,channel,episode_count,accepted_duration_total_s,max_episode_duration_s,short_episode_count_lt_0_5s,censored_episode_count,duration_episode_count,duration_note
+358796c34dff4bc1bd095becdcaec003,first_run_sensitivity_unknown_non055,model,3,0.220968,0.082092,3,0,3,receive-to-clear proxy; not rendered screen exposure
+358796c34dff4bc1bd095becdcaec003,first_run_sensitivity_unknown_non055,proximity,23,7.074965,0.810585,16,0,23,receive-to-clear proxy; not rendered screen exposure
+358796c34dff4bc1bd095becdcaec003,first_run_sensitivity_unknown_non055,geometry,0,,,0,0,0,not measurable: geometry client lines have no local_monotonic_s
+510db1f687b34b2193ce0113d70e7262,run_2,model,1,0.116766,0.116766,1,0,1,receive-to-clear proxy; not rendered screen exposure
+510db1f687b34b2193ce0113d70e7262,run_2,proximity,2,0.493998,0.255726,2,0,2,receive-to-clear proxy; not rendered screen exposure
+510db1f687b34b2193ce0113d70e7262,run_2,geometry,0,,,0,0,0,not measurable: geometry client lines have no local_monotonic_s
+9cde97e123d240268311b479d55a83eb,run_3,model,7,2.113566,0.522769,6,0,7,receive-to-clear proxy; not rendered screen exposure
+9cde97e123d240268311b479d55a83eb,run_3,proximity,10,5.198378,0.79077,4,0,10,receive-to-clear proxy; not rendered screen exposure
+9cde97e123d240268311b479d55a83eb,run_3,geometry,1,,,0,0,0,not measurable: geometry client lines have no local_monotonic_s
+8e4f5a963d0f4ec48e382cf129ab0eb8,run_4,model,2,0.583599,0.3232,2,0,2,receive-to-clear proxy; not rendered screen exposure
+8e4f5a963d0f4ec48e382cf129ab0eb8,run_4,proximity,6,2.283503,0.814301,4,0,6,receive-to-clear proxy; not rendered screen exposure
+8e4f5a963d0f4ec48e382cf129ab0eb8,run_4,geometry,0,,,0,0,0,not measurable: geometry client lines have no local_monotonic_s

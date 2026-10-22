@@ -1,0 +1,5 @@
+﻿dataset,sessions,fall_sessions,nonfall_sessions,hard_negative_sessions,cop_x_sessions_with_any_finite,cop_z_sessions_with_any_finite,cop_velocity_x_sessions_with_any_finite,cop_velocity_z_sessions_with_any_finite,cop_speed_sessions_with_any_finite,cop_x_mean_finite_rate,cop_z_mean_finite_rate,cop_velocity_x_mean_finite_rate,cop_velocity_z_mean_finite_rate,cop_speed_mean_finite_rate
+TEST9282,39,14,25,5,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+TEST929,30,10,20,4,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+TEST930,30,15,15,4,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+TEST931,48,19,29,7,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0

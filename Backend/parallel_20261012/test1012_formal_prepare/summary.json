@@ -1,0 +1,35 @@
+{
+  "dataset": "TEST1012",
+  "sensitivity_current_user_config": 0.55,
+  "sensitivity_prior_user_config": 0.66,
+  "ai_and_geometry_experimental_banners": "on",
+  "original_yellow_attention_unchanged": true,
+  "sessions": 15,
+  "outcomes": {
+    "calibration_completed": 8,
+    "edge_exit": 7
+  },
+  "normalized_outcomes": {
+    "complete": 8,
+    "edge_exit": 7
+  },
+  "edge_exit_denominator_including_all_layers": 7,
+  "edge_exits_with_formal_terminal_anchor": 7,
+  "edge_exits_with_unknown_anchor": 0,
+  "feature_rows": 3849,
+  "sessions_with_features": 15,
+  "feature_columns": 24,
+  "feature_segments": 34,
+  "event_anchor_rows": 30,
+  "event_anchor_available_rows": 14,
+  "recovery_points": 1461,
+  "invalid_or_excluded_snapshot_records": 355,
+  "snapshot_gap_records": 22,
+  "exact_run_associations": 15,
+  "jsonl_inventory_files": 17,
+  "all_source_hashes_unchanged": true,
+  "models_trained": false,
+  "thresholds_selected": false,
+  "calibration_mode_false_claimed": false,
+  "layer4_used_as_gameplay": false
+}

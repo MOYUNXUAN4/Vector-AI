@@ -1,0 +1,12 @@
+{
+  "decision_keys_matched": 7553,
+  "active_policy_reason_raw_q_identical": true,
+  "observed_withdrawal_keys_and_mechanisms_identical": 77,
+  "future_rows_independently_checked": 28,
+  "followup_counts": {
+    "future_0_4s_complete": 23,
+    "future_0_4s_any_active": 2,
+    "future_0_4s_any_saved_joint_recovery": 16,
+    "future_0_4s_any_q_nonpositive": 0
+  }
+}

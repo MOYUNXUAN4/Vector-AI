@@ -1,0 +1,1854 @@
+{
+  "scope": "P03 nine post-fix exact-run accepted/revoked client states, not episode/performance counts",
+  "source_sha256_before": {
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214022_086000\\raw.csv": "05af9d4afa4de0257ffe71e3806636d732fdc34636e6b87d63760d7c2bfd8675",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214100_600233\\raw.csv": "4184d92f4662b3a92577ce2b6863a6a704f5ad3111606583f1389902d92c74fa",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214112_191029\\raw.csv": "429d38d1835b431729dc76f05e191b918fd90f763aa554cc3c5da17af50376f1",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214149_759405\\raw.csv": "389a3ec17bfb6441139aa6bfe8f2c0e8dd3a9a35c8d29aaa0cf84860a56cc484",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214210_571969\\raw.csv": "3c29c1d4dcbf7cc2d03328ee801dc187a5a85016ea0a273d959f8ab937ba709c",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214244_551605\\raw.csv": "cd90e3c9f418ee2cdb19a624c5e17f3cc0c0c6cd230306d65bc71e109eae0fac",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214320_667777\\raw.csv": "e661c93d3bab42f576910513c136859b8f5507b1f7c69678a8c2f6e121c8e58e",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214354_584139\\raw.csv": "16254841d7d196b3e19ac79702720d5b1f288c6c47b1b44e6b578714f55c34c9",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214437_062477\\raw.csv": "64f0eff0dce9121772fded006efd446f656ccba8da08da0f1303f9c31f0f39bd",
+    "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\Player.log": "da7f99f99a64e981f9a476bf8f650c50ecddec4d7d638b6d3a91d0f969c82770"
+  },
+  "source_sha256_after": {
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214022_086000\\raw.csv": "05af9d4afa4de0257ffe71e3806636d732fdc34636e6b87d63760d7c2bfd8675",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214100_600233\\raw.csv": "4184d92f4662b3a92577ce2b6863a6a704f5ad3111606583f1389902d92c74fa",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214112_191029\\raw.csv": "429d38d1835b431729dc76f05e191b918fd90f763aa554cc3c5da17af50376f1",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214149_759405\\raw.csv": "389a3ec17bfb6441139aa6bfe8f2c0e8dd3a9a35c8d29aaa0cf84860a56cc484",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214210_571969\\raw.csv": "3c29c1d4dcbf7cc2d03328ee801dc187a5a85016ea0a273d959f8ab937ba709c",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214244_551605\\raw.csv": "cd90e3c9f418ee2cdb19a624c5e17f3cc0c0c6cd230306d65bc71e109eae0fac",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214320_667777\\raw.csv": "e661c93d3bab42f576910513c136859b8f5507b1f7c69678a8c2f6e121c8e58e",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214354_584139\\raw.csv": "16254841d7d196b3e19ac79702720d5b1f288c6c47b1b44e6b578714f55c34c9",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P03\\session_20261020_214437_062477\\raw.csv": "64f0eff0dce9121772fded006efd446f656ccba8da08da0f1303f9c31f0f39bd",
+    "C:\\Users\\QIYUXUAN\\AppData\\LocalLow\\QI YUXUAN\\VectorAI\\Player.log": "da7f99f99a64e981f9a476bf8f650c50ecddec4d7d638b6d3a91d0f969c82770"
+  },
+  "sources_unchanged": true,
+  "session_count": 9,
+  "sessions": [
+    {
+      "session_id": "session_20261020_214022_086000",
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {
+          "ACTIVE": 17,
+          "REVOKED": 2
+        },
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 4,
+          "REVOKED": 4
+        },
+        "ExperimentalGeometryWarning": {}
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214100_600233",
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {},
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        },
+        "ExperimentalGeometryWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        }
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214112_191029",
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {},
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 4,
+          "REVOKED": 4
+        },
+        "ExperimentalGeometryWarning": {}
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214149_759405",
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {
+          "ACTIVE": 5,
+          "REVOKED": 1
+        },
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 2,
+          "REVOKED": 2
+        },
+        "ExperimentalGeometryWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        }
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214210_571969",
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {},
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        },
+        "ExperimentalGeometryWarning": {}
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214244_551605",
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {},
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 2,
+          "REVOKED": 2
+        },
+        "ExperimentalGeometryWarning": {}
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214320_667777",
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {},
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 2,
+          "REVOKED": 2
+        },
+        "ExperimentalGeometryWarning": {}
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214354_584139",
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {
+          "ACTIVE": 7,
+          "REVOKED": 1
+        },
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 3,
+          "REVOKED": 3
+        },
+        "ExperimentalGeometryWarning": {
+          "ACTIVE": 2,
+          "REVOKED": 2
+        }
+      },
+      "geometry_validation_rejections": 0
+    },
+    {
+      "session_id": "session_20261020_214437_062477",
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "start_session_player_P03": true,
+      "client_state_log_counts": {
+        "ExperimentalModelWarning": {
+          "ACTIVE": 5,
+          "REVOKED": 1
+        },
+        "ExperimentalProximityWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        },
+        "ExperimentalGeometryWarning": {
+          "ACTIVE": 1,
+          "REVOKED": 1
+        }
+      },
+      "geometry_validation_rejections": 0
+    }
+  ],
+  "starts": [
+    {
+      "line": 165,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=6c85d23f1b984ec78fffae07c46dca70"
+    },
+    {
+      "line": 594,
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=4521987dfdc34380ae0d20d9d0e232bd"
+    },
+    {
+      "line": 710,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=1a893ee7e97f4e8b86450665aa830167"
+    },
+    {
+      "line": 871,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=19534b8d13dc4274863daabdd9dc0e05"
+    },
+    {
+      "line": 1100,
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=e8e6e4276c9947cf9b68a14f929139e7"
+    },
+    {
+      "line": 1173,
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=47823c251f904955be573d9c446875ff"
+    },
+    {
+      "line": 1276,
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=9b554aafb07f42e6829eea9abe97a2ac"
+    },
+    {
+      "line": 1379,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=aa9c12a7604d4d468df13244c1118b05"
+    },
+    {
+      "line": 1678,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "text": "[UDP] Sent start_session to 5005, player=P03, run_id=b3fa6018951a4a98ae34dc3253f5109e"
+    }
+  ],
+  "state_records": [
+    {
+      "line": 181,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.147232",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "1",
+        "platform": "-3286",
+        "version": "-3286-g1",
+        "input_sequence": "368",
+        "warning_update_sequence": "368",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=33.147232 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=1 platform=-3286 version=-3286-g1 input_sequence=368 warning_update_sequence=368 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 195,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.447281",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "16",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.447281 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=16 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 209,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.517250",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "17",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.517250 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=17 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 223,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.581677",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "18",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.581677 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=18 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 237,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.649710",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "19",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.649710 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=19 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 251,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.705523",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "20",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.705523 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=20 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 265,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.768416",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "21",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.768416 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=21 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 279,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "33.805178",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "1",
+        "platform": "-3286",
+        "version": "-3286-g1",
+        "input_sequence": "406",
+        "warning_update_sequence": "406",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=33.805178 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=1 platform=-3286 version=-3286-g1 input_sequence=406 warning_update_sequence=406 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 294,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.838514",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "22",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.838514 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=22 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 308,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.900929",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "23",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.900929 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=23 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 322,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "33.969857",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "24",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=33.969857 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=24 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 336,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "34.033061",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "25",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=34.033061 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=25 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 350,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "34.103788",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "25",
+        "reason": "confirmed",
+        "revoke_reason": "backend_safe"
+      },
+      "text": "[ExperimentalModelWarning] state=REVOKED local_monotonic_s=34.103788 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=25 reason=confirmed revoke_reason=backend_safe"
+    },
+    {
+      "line": 365,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "43.573603",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "2",
+        "platform": "-3310",
+        "version": "-3310-g1",
+        "input_sequence": "994",
+        "warning_update_sequence": "994",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=43.573603 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=2 platform=-3310 version=-3310-g1 input_sequence=994 warning_update_sequence=994 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 379,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "43.833054",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "174",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=43.833054 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=174 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 393,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "43.893813",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "175",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=43.893813 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=175 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 407,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "43.950999",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "176",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=43.950999 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=176 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 421,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "44.019977",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "177",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=44.019977 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=177 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 435,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "44.082682",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "178",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=44.082682 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=178 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 449,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "44.096586",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "2",
+        "platform": "-3310",
+        "version": "-3310-g1",
+        "input_sequence": "1024",
+        "warning_update_sequence": "1024",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=44.096586 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=2 platform=-3310 version=-3310-g1 input_sequence=1024 warning_update_sequence=1024 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 464,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "44.143884",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "179",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=44.143884 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=179 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 478,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "44.200552",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "180",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=44.200552 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=180 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 492,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalModelWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "44.263371",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "prediction_sequence": "180",
+        "reason": "confirmed",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalModelWarning] state=REVOKED local_monotonic_s=44.263371 run_id=6c85d23f1b984ec78fffae07c46dca70 prediction_sequence=180 reason=confirmed revoke_reason=layer_transition"
+    },
+    {
+      "line": 508,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "52.061820",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "3",
+        "platform": "-3336",
+        "version": "-3336-g1",
+        "input_sequence": "1503",
+        "warning_update_sequence": "1503",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=52.061820 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=3 platform=-3336 version=-3336-g1 input_sequence=1503 warning_update_sequence=1503 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 522,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "52.124675",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "3",
+        "platform": "-3336",
+        "version": "-3336-g1",
+        "input_sequence": "1505",
+        "warning_update_sequence": "1505",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=52.124675 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=3 platform=-3336 version=-3336-g1 input_sequence=1505 warning_update_sequence=1505 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 537,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "52.499756",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "3",
+        "platform": "-3336",
+        "version": "-3336-g1",
+        "input_sequence": "1529",
+        "warning_update_sequence": "1529",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=52.499756 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=3 platform=-3336 version=-3336-g1 input_sequence=1529 warning_update_sequence=1529 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 551,
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "session_id": "session_20261020_214022_086000",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "52.575871",
+        "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+        "layer": "3",
+        "platform": "-3336",
+        "version": "-3336-g1",
+        "input_sequence": "1532",
+        "warning_update_sequence": "1532",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=52.575871 run_id=6c85d23f1b984ec78fffae07c46dca70 layer=3 platform=-3336 version=-3336-g1 input_sequence=1532 warning_update_sequence=1532 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 610,
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "session_id": "session_20261020_214100_600233",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "72.219549",
+        "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+        "layer": "1",
+        "platform": "-3452",
+        "version": "-3452-g1",
+        "input_sequence": "403",
+        "warning_update_sequence": "403",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=72.219549 run_id=4521987dfdc34380ae0d20d9d0e232bd layer=1 platform=-3452 version=-3452-g1 input_sequence=403 warning_update_sequence=403 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 624,
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "session_id": "session_20261020_214100_600233",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "72.728995",
+        "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+        "layer": "1",
+        "platform": "-3452",
+        "version": "-3452-g1",
+        "input_sequence": "434",
+        "warning_update_sequence": "434",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=72.728995 run_id=4521987dfdc34380ae0d20d9d0e232bd layer=1 platform=-3452 version=-3452-g1 input_sequence=434 warning_update_sequence=434 backend_state=APPROACH reason=available revoke_reason=layer_transition"
+    },
+    {
+      "line": 640,
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "session_id": "session_20261020_214100_600233",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "run": "4521987dfdc34380ae0d20d9d0e232bd",
+        "layer": "2",
+        "platform": "-3476",
+        "input_sequence": "445",
+        "reason": "clearance_nonpositive"
+      },
+      "text": "[ExperimentalGeometryWarning] active run=4521987dfdc34380ae0d20d9d0e232bd layer=2 platform=-3476 input_sequence=445 reason=clearance_nonpositive"
+    },
+    {
+      "line": 666,
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "session_id": "session_20261020_214100_600233",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "REVOKED",
+      "fields": {
+        "run": "4521987dfdc34380ae0d20d9d0e232bd",
+        "layer": "2",
+        "platform": "-3476",
+        "input_sequence": "454",
+        "reason": "run_ended:edge_exit"
+      },
+      "text": "[ExperimentalGeometryWarning] revoked run=4521987dfdc34380ae0d20d9d0e232bd layer=2 platform=-3476 input_sequence=454 reason=run_ended:edge_exit"
+    },
+    {
+      "line": 726,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "87.437381",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "1",
+        "platform": "-3620",
+        "version": "-3620-g1",
+        "input_sequence": "620",
+        "warning_update_sequence": "620",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=87.437381 run_id=1a893ee7e97f4e8b86450665aa830167 layer=1 platform=-3620 version=-3620-g1 input_sequence=620 warning_update_sequence=620 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 740,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "87.743752",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "1",
+        "platform": "-3620",
+        "version": "-3620-g1",
+        "input_sequence": "638",
+        "warning_update_sequence": "638",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=87.743752 run_id=1a893ee7e97f4e8b86450665aa830167 layer=1 platform=-3620 version=-3620-g1 input_sequence=638 warning_update_sequence=638 backend_state=APPROACH reason=available revoke_reason=layer_transition"
+    },
+    {
+      "line": 756,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "93.435596",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "2",
+        "platform": "-3646",
+        "version": "-3646-g1",
+        "input_sequence": "980",
+        "warning_update_sequence": "980",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=93.435596 run_id=1a893ee7e97f4e8b86450665aa830167 layer=2 platform=-3646 version=-3646-g1 input_sequence=980 warning_update_sequence=980 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 770,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "93.499753",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "2",
+        "platform": "-3646",
+        "version": "-3646-g1",
+        "input_sequence": "982",
+        "warning_update_sequence": "982",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=93.499753 run_id=1a893ee7e97f4e8b86450665aa830167 layer=2 platform=-3646 version=-3646-g1 input_sequence=982 warning_update_sequence=982 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 785,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "98.939746",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "3",
+        "platform": "-3672",
+        "version": "-3672-g1",
+        "input_sequence": "1310",
+        "warning_update_sequence": "1310",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=98.939746 run_id=1a893ee7e97f4e8b86450665aa830167 layer=3 platform=-3672 version=-3672-g1 input_sequence=1310 warning_update_sequence=1310 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 799,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "99.763254",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "3",
+        "platform": "-3672",
+        "version": "-3672-g1",
+        "input_sequence": "1359",
+        "warning_update_sequence": "1359",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=99.763254 run_id=1a893ee7e97f4e8b86450665aa830167 layer=3 platform=-3672 version=-3672-g1 input_sequence=1359 warning_update_sequence=1359 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 814,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "105.932294",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "4",
+        "platform": "-3698",
+        "version": "-3698-g1",
+        "input_sequence": "1730",
+        "warning_update_sequence": "1730",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=105.932294 run_id=1a893ee7e97f4e8b86450665aa830167 layer=4 platform=-3698 version=-3698-g1 input_sequence=1730 warning_update_sequence=1730 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 828,
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "session_id": "session_20261020_214112_191029",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "106.049745",
+        "run_id": "1a893ee7e97f4e8b86450665aa830167",
+        "layer": "4",
+        "platform": "-3698",
+        "version": "-3698-g1",
+        "input_sequence": "1735",
+        "warning_update_sequence": "1735",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=106.049745 run_id=1a893ee7e97f4e8b86450665aa830167 layer=4 platform=-3698 version=-3698-g1 input_sequence=1735 warning_update_sequence=1735 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 887,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "128.806917",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "2",
+        "platform": "-3814",
+        "version": "-3814-g1",
+        "input_sequence": "848",
+        "warning_update_sequence": "848",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=128.806917 run_id=19534b8d13dc4274863daabdd9dc0e05 layer=2 platform=-3814 version=-3814-g1 input_sequence=848 warning_update_sequence=848 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 901,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "129.068474",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "134",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=129.068474 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=134 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 915,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "129.129868",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "135",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=129.129868 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=135 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 929,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "129.191808",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "136",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=129.191808 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=136 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 943,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "129.261724",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "137",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=129.261724 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=137 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 957,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "129.319169",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "138",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=129.319169 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=138 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 971,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalModelWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "129.394971",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "prediction_sequence": "138",
+        "reason": "confirmed",
+        "revoke_reason": "backend_safe"
+      },
+      "text": "[ExperimentalModelWarning] state=REVOKED local_monotonic_s=129.394971 run_id=19534b8d13dc4274863daabdd9dc0e05 prediction_sequence=138 reason=confirmed revoke_reason=backend_safe"
+    },
+    {
+      "line": 986,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "129.464940",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "2",
+        "platform": "-3814",
+        "version": "-3814-g1",
+        "input_sequence": "886",
+        "warning_update_sequence": "886",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=129.464940 run_id=19534b8d13dc4274863daabdd9dc0e05 layer=2 platform=-3814 version=-3814-g1 input_sequence=886 warning_update_sequence=886 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 1001,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "130.436889",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "2",
+        "platform": "-3814",
+        "version": "-3814-g1",
+        "input_sequence": "946",
+        "warning_update_sequence": "946",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=130.436889 run_id=19534b8d13dc4274863daabdd9dc0e05 layer=2 platform=-3814 version=-3814-g1 input_sequence=946 warning_update_sequence=946 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1015,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "130.916118",
+        "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "2",
+        "platform": "-3814",
+        "version": "-3814-g1",
+        "input_sequence": "974",
+        "warning_update_sequence": "974",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=130.916118 run_id=19534b8d13dc4274863daabdd9dc0e05 layer=2 platform=-3814 version=-3814-g1 input_sequence=974 warning_update_sequence=974 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 1030,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "run": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "3",
+        "platform": "-3840",
+        "input_sequence": "1036",
+        "reason": "clearance_nonpositive"
+      },
+      "text": "[ExperimentalGeometryWarning] active run=19534b8d13dc4274863daabdd9dc0e05 layer=3 platform=-3840 input_sequence=1036 reason=clearance_nonpositive"
+    },
+    {
+      "line": 1056,
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "session_id": "session_20261020_214149_759405",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "REVOKED",
+      "fields": {
+        "run": "19534b8d13dc4274863daabdd9dc0e05",
+        "layer": "3",
+        "platform": "-3840",
+        "input_sequence": "1062",
+        "reason": "run_ended:edge_exit"
+      },
+      "text": "[ExperimentalGeometryWarning] revoked run=19534b8d13dc4274863daabdd9dc0e05 layer=3 platform=-3840 input_sequence=1062 reason=run_ended:edge_exit"
+    },
+    {
+      "line": 1116,
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "session_id": "session_20261020_214210_571969",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "160.379747",
+        "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+        "layer": "4",
+        "platform": "-4030",
+        "version": "-4030-g1",
+        "input_sequence": "1495",
+        "warning_update_sequence": "1495",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=160.379747 run_id=e8e6e4276c9947cf9b68a14f929139e7 layer=4 platform=-4030 version=-4030-g1 input_sequence=1495 warning_update_sequence=1495 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1130,
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "session_id": "session_20261020_214210_571969",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "161.006516",
+        "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+        "layer": "4",
+        "platform": "-4030",
+        "version": "-4030-g1",
+        "input_sequence": "1530",
+        "warning_update_sequence": "1530",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=161.006516 run_id=e8e6e4276c9947cf9b68a14f929139e7 layer=4 platform=-4030 version=-4030-g1 input_sequence=1530 warning_update_sequence=1530 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 1189,
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "session_id": "session_20261020_214244_551605",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "189.464773",
+        "run_id": "47823c251f904955be573d9c446875ff",
+        "layer": "3",
+        "platform": "-4170",
+        "version": "-4170-g1",
+        "input_sequence": "1201",
+        "warning_update_sequence": "1201",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=189.464773 run_id=47823c251f904955be573d9c446875ff layer=3 platform=-4170 version=-4170-g1 input_sequence=1201 warning_update_sequence=1201 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1203,
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "session_id": "session_20261020_214244_551605",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "190.041277",
+        "run_id": "47823c251f904955be573d9c446875ff",
+        "layer": "3",
+        "platform": "-4170",
+        "version": "-4170-g1",
+        "input_sequence": "1236",
+        "warning_update_sequence": "1236",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=190.041277 run_id=47823c251f904955be573d9c446875ff layer=3 platform=-4170 version=-4170-g1 input_sequence=1236 warning_update_sequence=1236 backend_state=APPROACH reason=available revoke_reason=layer_transition"
+    },
+    {
+      "line": 1219,
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "session_id": "session_20261020_214244_551605",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "194.276986",
+        "run_id": "47823c251f904955be573d9c446875ff",
+        "layer": "4",
+        "platform": "-4196",
+        "version": "-4196-g1",
+        "input_sequence": "1490",
+        "warning_update_sequence": "1490",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=194.276986 run_id=47823c251f904955be573d9c446875ff layer=4 platform=-4196 version=-4196-g1 input_sequence=1490 warning_update_sequence=1490 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1233,
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "session_id": "session_20261020_214244_551605",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "194.339897",
+        "run_id": "47823c251f904955be573d9c446875ff",
+        "layer": "4",
+        "platform": "-4196",
+        "version": "-4196-g1",
+        "input_sequence": "1492",
+        "warning_update_sequence": "1492",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=194.339897 run_id=47823c251f904955be573d9c446875ff layer=4 platform=-4196 version=-4196-g1 input_sequence=1492 warning_update_sequence=1492 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 1292,
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "session_id": "session_20261020_214320_667777",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "217.367087",
+        "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+        "layer": "1",
+        "platform": "-4288",
+        "version": "-4288-g1",
+        "input_sequence": "708",
+        "warning_update_sequence": "708",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=217.367087 run_id=9b554aafb07f42e6829eea9abe97a2ac layer=1 platform=-4288 version=-4288-g1 input_sequence=708 warning_update_sequence=708 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1306,
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "session_id": "session_20261020_214320_667777",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "218.047780",
+        "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+        "layer": "1",
+        "platform": "-4288",
+        "version": "-4288-g1",
+        "input_sequence": "748",
+        "warning_update_sequence": "748",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=218.047780 run_id=9b554aafb07f42e6829eea9abe97a2ac layer=1 platform=-4288 version=-4288-g1 input_sequence=748 warning_update_sequence=748 backend_state=APPROACH reason=available revoke_reason=layer_transition"
+    },
+    {
+      "line": 1322,
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "session_id": "session_20261020_214320_667777",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "227.896508",
+        "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+        "layer": "3",
+        "platform": "-4338",
+        "version": "-4338-g1",
+        "input_sequence": "1340",
+        "warning_update_sequence": "1340",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=227.896508 run_id=9b554aafb07f42e6829eea9abe97a2ac layer=3 platform=-4338 version=-4338-g1 input_sequence=1340 warning_update_sequence=1340 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1336,
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "session_id": "session_20261020_214320_667777",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "228.103433",
+        "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+        "layer": "3",
+        "platform": "-4338",
+        "version": "-4338-g1",
+        "input_sequence": "1351",
+        "warning_update_sequence": "1351",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=228.103433 run_id=9b554aafb07f42e6829eea9abe97a2ac layer=3 platform=-4338 version=-4338-g1 input_sequence=1351 warning_update_sequence=1351 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 1395,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "run": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "1",
+        "platform": "-4456",
+        "input_sequence": "303",
+        "reason": "clearance_nonpositive"
+      },
+      "text": "[ExperimentalGeometryWarning] active run=aa9c12a7604d4d468df13244c1118b05 layer=1 platform=-4456 input_sequence=303 reason=clearance_nonpositive"
+    },
+    {
+      "line": 1408,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "REVOKED",
+      "fields": {
+        "run": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "1",
+        "platform": "-4456",
+        "input_sequence": "393",
+        "reason": "geometry_clear"
+      },
+      "text": "[ExperimentalGeometryWarning] revoked run=aa9c12a7604d4d468df13244c1118b05 layer=1 platform=-4456 input_sequence=393 reason=geometry_clear"
+    },
+    {
+      "line": 1422,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "248.651332",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "1",
+        "platform": "-4456",
+        "version": "-4456-g1",
+        "input_sequence": "550",
+        "warning_update_sequence": "550",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=248.651332 run_id=aa9c12a7604d4d468df13244c1118b05 layer=1 platform=-4456 version=-4456-g1 input_sequence=550 warning_update_sequence=550 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1436,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "249.075684",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "1",
+        "platform": "-4456",
+        "version": "-4456-g1",
+        "input_sequence": "574",
+        "warning_update_sequence": "574",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_clear"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=249.075684 run_id=aa9c12a7604d4d468df13244c1118b05 layer=1 platform=-4456 version=-4456-g1 input_sequence=574 warning_update_sequence=574 backend_state=APPROACH reason=available revoke_reason=backend_clear"
+    },
+    {
+      "line": 1451,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "259.731670",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "version": "-4504-g1",
+        "input_sequence": "1213",
+        "warning_update_sequence": "1213",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=259.731670 run_id=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 version=-4504-g1 input_sequence=1213 warning_update_sequence=1213 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1465,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "259.826084",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "207",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=259.826084 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=207 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1479,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "259.887426",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "208",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=259.887426 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=208 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1493,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "259.934806",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "209",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=259.934806 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=209 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1507,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "259.971534",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "version": "-4504-g1",
+        "input_sequence": "1229",
+        "warning_update_sequence": "1229",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=259.971534 run_id=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 version=-4504-g1 input_sequence=1229 warning_update_sequence=1229 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 1522,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "259.992476",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "210",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=259.992476 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=210 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1536,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "260.053583",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "211",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=260.053583 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=211 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1550,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "260.110532",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "212",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=260.110532 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=212 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1564,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "260.185745",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "213",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=260.185745 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=213 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1578,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalModelWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "260.207439",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "prediction_sequence": "213",
+        "reason": "confirmed",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalModelWarning] state=REVOKED local_monotonic_s=260.207439 run_id=aa9c12a7604d4d468df13244c1118b05 prediction_sequence=213 reason=confirmed revoke_reason=backend_unknown"
+    },
+    {
+      "line": 1593,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "run": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "input_sequence": "1244",
+        "reason": "clearance_nonpositive"
+      },
+      "text": "[ExperimentalGeometryWarning] active run=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 input_sequence=1244 reason=clearance_nonpositive"
+    },
+    {
+      "line": 1606,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "REVOKED",
+      "fields": {
+        "run": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "input_sequence": "1306",
+        "reason": "geometry_clear"
+      },
+      "text": "[ExperimentalGeometryWarning] revoked run=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 input_sequence=1306 reason=geometry_clear"
+    },
+    {
+      "line": 1620,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "267.777805",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "version": "-4504-g1",
+        "input_sequence": "1698",
+        "warning_update_sequence": "1698",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=267.777805 run_id=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 version=-4504-g1 input_sequence=1698 warning_update_sequence=1698 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1634,
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "session_id": "session_20261020_214354_584139",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "268.166481",
+        "run_id": "aa9c12a7604d4d468df13244c1118b05",
+        "layer": "3",
+        "platform": "-4504",
+        "version": "-4504-g1",
+        "input_sequence": "1721",
+        "warning_update_sequence": "1721",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "layer_transition"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=268.166481 run_id=aa9c12a7604d4d468df13244c1118b05 layer=3 platform=-4504 version=-4504-g1 input_sequence=1721 warning_update_sequence=1721 backend_state=APPROACH reason=available revoke_reason=layer_transition"
+    },
+    {
+      "line": 1694,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalProximityWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "299.777888",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "layer": "3",
+        "platform": "-4672",
+        "version": "-4672-g1",
+        "input_sequence": "1069",
+        "warning_update_sequence": "1069",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "proximity_approach_accepted"
+      },
+      "text": "[ExperimentalProximityWarning] state=ACTIVE local_monotonic_s=299.777888 run_id=b3fa6018951a4a98ae34dc3253f5109e layer=3 platform=-4672 version=-4672-g1 input_sequence=1069 warning_update_sequence=1069 backend_state=APPROACH reason=available revoke_reason=proximity_approach_accepted"
+    },
+    {
+      "line": 1708,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "300.168696",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "188",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=300.168696 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=188 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1722,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "300.224220",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "189",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=300.224220 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=189 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1736,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "300.293901",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "190",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=300.293901 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=190 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1750,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "300.356732",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "191",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=300.356732 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=191 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1764,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "state": "ACTIVE",
+        "local_monotonic_s": "300.412475",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "192",
+        "reason": "confirmed",
+        "revoke_reason": "strong_prediction_accepted"
+      },
+      "text": "[ExperimentalModelWarning] state=ACTIVE local_monotonic_s=300.412475 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=192 reason=confirmed revoke_reason=strong_prediction_accepted"
+    },
+    {
+      "line": 1778,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalModelWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "300.478309",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "prediction_sequence": "192",
+        "reason": "confirmed",
+        "revoke_reason": "backend_safe"
+      },
+      "text": "[ExperimentalModelWarning] state=REVOKED local_monotonic_s=300.478309 run_id=b3fa6018951a4a98ae34dc3253f5109e prediction_sequence=192 reason=confirmed revoke_reason=backend_safe"
+    },
+    {
+      "line": 1793,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalProximityWarning",
+      "state": "REVOKED",
+      "fields": {
+        "state": "REVOKED",
+        "local_monotonic_s": "300.492921",
+        "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+        "layer": "3",
+        "platform": "-4672",
+        "version": "-4672-g1",
+        "input_sequence": "1111",
+        "warning_update_sequence": "1111",
+        "backend_state": "APPROACH",
+        "reason": "available",
+        "revoke_reason": "backend_unknown"
+      },
+      "text": "[ExperimentalProximityWarning] state=REVOKED local_monotonic_s=300.492921 run_id=b3fa6018951a4a98ae34dc3253f5109e layer=3 platform=-4672 version=-4672-g1 input_sequence=1111 warning_update_sequence=1111 backend_state=APPROACH reason=available revoke_reason=backend_unknown"
+    },
+    {
+      "line": 1808,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "ACTIVE",
+      "fields": {
+        "run": "b3fa6018951a4a98ae34dc3253f5109e",
+        "layer": "3",
+        "platform": "-4672",
+        "input_sequence": "1136",
+        "reason": "clearance_nonpositive"
+      },
+      "text": "[ExperimentalGeometryWarning] active run=b3fa6018951a4a98ae34dc3253f5109e layer=3 platform=-4672 input_sequence=1136 reason=clearance_nonpositive"
+    },
+    {
+      "line": 1834,
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "session_id": "session_20261020_214437_062477",
+      "channel": "ExperimentalGeometryWarning",
+      "state": "REVOKED",
+      "fields": {
+        "run": "b3fa6018951a4a98ae34dc3253f5109e",
+        "layer": "3",
+        "platform": "-4672",
+        "input_sequence": "1178",
+        "reason": "run_ended:edge_exit"
+      },
+      "text": "[ExperimentalGeometryWarning] revoked run=b3fa6018951a4a98ae34dc3253f5109e layer=3 platform=-4672 input_sequence=1178 reason=run_ended:edge_exit"
+    }
+  ],
+  "exact_run_geometry_validation_rejections": [],
+  "user_confirmed_same_participant": true,
+  "user_reported_experimental_banners_seen": true,
+  "user_declared_sensitivity": 0.55,
+  "sensitivity_measured_in_csv": false,
+  "pixel_render_evidence_collected": false,
+  "limitations": [
+    "Model ACTIVE may repeat for consecutive prediction sequences; do not count as episodes.",
+    "No source/monotonic/Unity clock subtraction or causal intervention claim."
+  ]
+}

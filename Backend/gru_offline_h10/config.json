@@ -1,0 +1,140 @@
+{
+  "arguments": {
+    "train_manifests": null,
+    "heldout_manifests": null,
+    "random_session_split": false,
+    "data_root": null,
+    "out_dir": "gru_offline_h10",
+    "test_fraction": 0.2,
+    "include_conflicted": false,
+    "horizon_seconds": 1.0,
+    "window_seconds": 1.0,
+    "stride_seconds": 0.25,
+    "sequence_length": 60,
+    "epochs": 8,
+    "batch_size": 256,
+    "hidden_size": 32,
+    "layers": 1,
+    "dropout": 0.0,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "threshold": 0.5,
+    "device": "cpu",
+    "seed": 20261001
+  },
+  "feature_names": [
+    "ball_pos_x",
+    "ball_pos_z",
+    "ball_velocity_x",
+    "ball_velocity_z",
+    "ball_radial_distance",
+    "ball_radial_velocity",
+    "target_edge_distance",
+    "target_edge_radial_velocity",
+    "directional_edge_distance",
+    "target_hole_distance",
+    "target_hole_approach_velocity",
+    "platform_tilt",
+    "platform_level",
+    "difficulty",
+    "platform_radius",
+    "ball_radius",
+    "edge_warning_margin",
+    "edge_warning_radius"
+  ],
+  "train_only_scaler": {
+    "median": [
+      0.20721527934074402,
+      -1.170244812965393,
+      -1.3260934572656424e-08,
+      0.0,
+      2.7930545806884766,
+      0.1207284927368164,
+      5.200229167938232,
+      0.1207284927368164,
+      5.200229167938232,
+      3.4795775413513184,
+      0.0,
+      0.0,
+      1.0,
+      3.0,
+      7.942231178283691,
+      0.5,
+      1.0,
+      6.942231178283691
+    ],
+    "scale_iqr_or_std": [
+      2.050471067428589,
+      2.647718906402588,
+      4.787258148193359,
+      4.88189697265625,
+      2.532667636871338,
+      3.8517537117004395,
+      2.812673807144165,
+      3.8517537117004395,
+      2.812673807144165,
+      3.2707343101501465,
+      3.555784225463867,
+      1.0,
+      1.0,
+      3.0,
+      1.7409214973449707,
+      2.3663540460461263e-08,
+      4.7327080920922526e-08,
+      1.7409214973449707
+    ]
+  },
+  "split_notes": {
+    "train_sessions": 117,
+    "heldout_sessions": 30,
+    "train_fall_sessions": 48,
+    "heldout_fall_sessions": 10,
+    "train_windows": 12209,
+    "heldout_windows": 3788,
+    "manifest_notes": [
+      {
+        "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST9282\\analysis_reduced_sensitivity_20260928_primary_review\\session_manifest.csv",
+        "training_scope": true,
+        "manifest_rows": 42,
+        "selected_rows": 39,
+        "sessions_loaded": 39,
+        "missing_or_unreadable": [],
+        "filtered_rows": 3
+      },
+      {
+        "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST930\\analysis_20260929_review\\session_manifest.csv",
+        "training_scope": true,
+        "manifest_rows": 30,
+        "selected_rows": 30,
+        "sessions_loaded": 30,
+        "missing_or_unreadable": [],
+        "filtered_rows": 0
+      },
+      {
+        "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST931\\analysis_20261001_luna\\session_manifest.csv",
+        "training_scope": true,
+        "manifest_rows": 53,
+        "selected_rows": 48,
+        "sessions_loaded": 48,
+        "missing_or_unreadable": [],
+        "filtered_rows": 5
+      },
+      {
+        "manifest": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\TEST929\\analysis_20260929_luna\\session_manifest.csv",
+        "training_scope": false,
+        "manifest_rows": 30,
+        "selected_rows": 30,
+        "sessions_loaded": 30,
+        "missing_or_unreadable": [],
+        "filtered_rows": 0
+      }
+    ],
+    "tte_parameters": {
+      "horizon_s": 0.3,
+      "persistence_s": 0.2,
+      "min_outward_velocity": 0.05,
+      "inward_cancel_window_s": 0.0
+    },
+    "torch_import_error": null
+  }
+}

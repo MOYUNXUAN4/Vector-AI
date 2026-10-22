@@ -1,0 +1,265 @@
+{
+  "Schema": 1,
+  "VersionTargetID": "PILOT055_D3_L5_OLD_UI_COMPAT5_R1_20261020",
+  "Status": "STATIC_PINNED_RUNTIME_CHECK_PENDING",
+  "StaticInspectionOnly": true,
+  "RuntimeVerified": false,
+  "CollectionReleaseApproved": false,
+  "Target": {
+    "game_entry": "standalone_VectorAI.exe",
+    "declared_sensitivity_target": 0.55,
+    "difficulty": 3,
+    "session_layers": 5,
+    "layer_choice_source": "Latest direct user reply: 那就5层吧也没有关系; supersedes earlier 6-layer and 10-layer replies.",
+    "presentation": "original_separate_colored_banners",
+    "unified_ui_enabled": false,
+    "orange_ai_enabled": true,
+    "red_geometry_enabled": true,
+    "purple_tte_enabled": true,
+    "original_yellow_attention": "unchanged",
+    "runtime_verified": false
+  },
+  "Blockers": [
+    "operator_runtime_configuration_receipt_not_completed"
+  ],
+  "GameExecutable": "C:\\Users\\QIYUXUAN\\Desktop\\VectorAI_Normal_Game\\6F1E9B5F-1F20-4BB7-BCB4-6E8B23795054\\VectorAI.exe",
+  "BackendLauncher": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\Start_Pilot_10P_Experimental.cmd",
+  "BuildID": "6F1E9B5F-1F20-4BB7-BCB4-6E8B23795054",
+  "BuildFlags": "Development; no AutoRunPlayer; no ConnectWithProfiler; no DeepProfilingSupport",
+  "SupportedLayersFromBinary": [
+    1,
+    3,
+    5,
+    10,
+    25
+  ],
+  "LayerRequestSilentlyMapsTo": 5,
+  "BinaryContainsUnifiedUIField": false,
+  "PlayerHashChecks": [
+    {
+      "Path": "VectorAI.exe",
+      "ExpectedSHA256": "c7e054edf3cd28b374e29139288d6d3cb0077a75f677ebd0dea5ebdd91c53607",
+      "ObservedSHA256": "c7e054edf3cd28b374e29139288d6d3cb0077a75f677ebd0dea5ebdd91c53607",
+      "Match": true
+    },
+    {
+      "Path": "UnityPlayer.dll",
+      "ExpectedSHA256": "aaceafd390ea6835ca3e687599a4ca8e02f8692c48ea1eac3661086f2da129a2",
+      "ObservedSHA256": "aaceafd390ea6835ca3e687599a4ca8e02f8692c48ea1eac3661086f2da129a2",
+      "Match": true
+    },
+    {
+      "Path": "VectorAI_Data/Managed/Assembly-CSharp.dll",
+      "ExpectedSHA256": "0b3d2236161fc422d0f887d0e16fd354fd4bd8753882213647fec731e45e95b7",
+      "ObservedSHA256": "0b3d2236161fc422d0f887d0e16fd354fd4bd8753882213647fec731e45e95b7",
+      "Match": true
+    },
+    {
+      "Path": "VectorAI_Data/globalgamemanagers",
+      "ExpectedSHA256": "6c82d59d128cd8a125e8eea3b04196cd5192c7057030eb4e6ef23b780fc2fe39",
+      "ObservedSHA256": "6c82d59d128cd8a125e8eea3b04196cd5192c7057030eb4e6ef23b780fc2fe39",
+      "Match": true
+    },
+    {
+      "Path": "VectorAI_Data/boot.config",
+      "ExpectedSHA256": "a6e7ac66bca0b96f7ff2770feb3eaa63bc96844e31888a4ac53b6d08657b8d38",
+      "ObservedSHA256": "a6e7ac66bca0b96f7ff2770feb3eaa63bc96844e31888a4ac53b6d08657b8d38",
+      "Match": true
+    }
+  ],
+  "BackendHashChecks": [
+    {
+      "Path": "car_backend.py",
+      "ExpectedSHA256": "873a495b964cef0f370e9cb76b8b061173644520a75f6ae302a80cd63a6575eb",
+      "ObservedSHA256": "873a495b964cef0f370e9cb76b8b061173644520a75f6ae302a80cd63a6575eb",
+      "Match": true
+    },
+    {
+      "Path": "login_server.py",
+      "ExpectedSHA256": "ba9c3232e660c056e2f0d8ccaf195d9d90664ae9b6ac01d4e3c8f4e902f455a9",
+      "ObservedSHA256": "ba9c3232e660c056e2f0d8ccaf195d9d90664ae9b6ac01d4e3c8f4e902f455a9",
+      "Match": true
+    },
+    {
+      "Path": "master_server.py",
+      "ExpectedSHA256": "6ac2b57a5e9fcd4f34a609dd83649388481f055f9a0c514a3db1ba493e0e4c81",
+      "ObservedSHA256": "6ac2b57a5e9fcd4f34a609dd83649388481f055f9a0c514a3db1ba493e0e4c81",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/alarm_policy.py",
+      "ExpectedSHA256": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f",
+      "ObservedSHA256": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/causal_features.py",
+      "ExpectedSHA256": "0a23404af9fa96ded73fb53629ba9fa7379a6153b706c6ef5a9513f22be48168",
+      "ObservedSHA256": "0a23404af9fa96ded73fb53629ba9fa7379a6153b706c6ef5a9513f22be48168",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/model_artifact.py",
+      "ExpectedSHA256": "0c1ab15a9700ef0c2e9bc4375956ffdd3f92b20133e57a894430fdc7a8049598",
+      "ObservedSHA256": "0c1ab15a9700ef0c2e9bc4375956ffdd3f92b20133e57a894430fdc7a8049598",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/runtime_adapter.py",
+      "ExpectedSHA256": "2afc653b2b19f3243c8b32ecbf235b1dae3a7ae98c90fb93d27055d4fcd70d16",
+      "ObservedSHA256": "2afc653b2b19f3243c8b32ecbf235b1dae3a7ae98c90fb93d27055d4fcd70d16",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/stream_guard.py",
+      "ExpectedSHA256": "fa233d59dceb52e3064794f0d2c1412d2ebfb7f14e487bd066e88f5eb830e4c7",
+      "ObservedSHA256": "fa233d59dceb52e3064794f0d2c1412d2ebfb7f14e487bd066e88f5eb830e4c7",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261010/backend/warning_runtime.py",
+      "ExpectedSHA256": "11e3917f273f3b7e39eabc554e40a4c633271cd416b6e1760f9447ff01e40f08",
+      "ObservedSHA256": "11e3917f273f3b7e39eabc554e40a4c633271cd416b6e1760f9447ff01e40f08",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261011/deployment_refit/output/artifact/manifest.json",
+      "ExpectedSHA256": "b75cac3173496171a9e2c17906938fc5bdac22243ff7f8ce5cee75b96900d29e",
+      "ObservedSHA256": "b75cac3173496171a9e2c17906938fc5bdac22243ff7f8ce5cee75b96900d29e",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261011/deployment_refit/output/artifact/model.txt",
+      "ExpectedSHA256": "01addaa225b0400cea73069adbb070ffb54d8209f87e4bcb75781a01a0536068",
+      "ObservedSHA256": "01addaa225b0400cea73069adbb070ffb54d8209f87e4bcb75781a01a0536068",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261011/realtime_integration/bridge.py",
+      "ExpectedSHA256": "d6549abfcacefba5a1599daff08ddb276afa48c315425558c5daba41fb147874",
+      "ObservedSHA256": "d6549abfcacefba5a1599daff08ddb276afa48c315425558c5daba41fb147874",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261011/realtime_integration/geometry_danger.py",
+      "ExpectedSHA256": "5c6cac6198d79a6b7d743bad452d1dd32b6f0e57044c1bbcb5ed4a7d58aa207e",
+      "ObservedSHA256": "5c6cac6198d79a6b7d743bad452d1dd32b6f0e57044c1bbcb5ed4a7d58aa207e",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261014/proximity_shadow_backend_luna/proximity_shadow.py",
+      "ExpectedSHA256": "ae3f37be9444e327aab41fc155867015e5ec09c2cfb90f5daaef4a2095c820e2",
+      "ObservedSHA256": "ae3f37be9444e327aab41fc155867015e5ec09c2cfb90f5daaef4a2095c820e2",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261015/proximity_reply_luna/proximity_reply.py",
+      "ExpectedSHA256": "e45dbdfb9b9bc3e3e02da566d5e8270871f796bcec7dd3c9039e62b0e2b47eaa",
+      "ObservedSHA256": "e45dbdfb9b9bc3e3e02da566d5e8270871f796bcec7dd3c9039e62b0e2b47eaa",
+      "Match": true
+    },
+    {
+      "Path": "runningball_ai.py",
+      "ExpectedSHA256": "2185ada5bbb41b981ca6af9e4691ac50de45d14481d1caebbce29e634ec81839",
+      "ObservedSHA256": "2185ada5bbb41b981ca6af9e4691ac50de45d14481d1caebbce29e634ec81839",
+      "Match": true
+    },
+    {
+      "Path": "Start_Master_Shadow_Only_Latency_Test.cmd",
+      "ExpectedSHA256": "ae5eb7acd286433e95f5e89f240b1a80ae12691abca7db1a1e6458d85d600342",
+      "ObservedSHA256": "ae5eb7acd286433e95f5e89f240b1a80ae12691abca7db1a1e6458d85d600342",
+      "Match": true
+    },
+    {
+      "Path": "Start_Master_With_Model.cmd",
+      "ExpectedSHA256": "44ea542b1d3787d3e451c3d5f51b44c73a67ae12e26190c02657445cbd551d7d",
+      "ObservedSHA256": "44ea542b1d3787d3e451c3d5f51b44c73a67ae12e26190c02657445cbd551d7d",
+      "Match": true
+    },
+    {
+      "Path": "Start_Master_With_Proximity_Experiment.cmd",
+      "ExpectedSHA256": "b0b50488ad6e7bc0ea8009f1ba5ae87b5636ef5621116b0114bdc67d88041fdf",
+      "ObservedSHA256": "b0b50488ad6e7bc0ea8009f1ba5ae87b5636ef5621116b0114bdc67d88041fdf",
+      "Match": true
+    },
+    {
+      "Path": "Start_Master_With_Proximity_Shadow.cmd",
+      "ExpectedSHA256": "2c2d5a8ac4905c53e2f0bfb47f3c253ad47d4adc03b013d9b9e3969556b09629",
+      "ObservedSHA256": "2c2d5a8ac4905c53e2f0bfb47f3c253ad47d4adc03b013d9b9e3969556b09629",
+      "Match": true
+    },
+    {
+      "Path": "timesync_logger.py",
+      "ExpectedSHA256": "cb6ca898642b11055470f9be39df24fce5b7e06f85bd4142e92e191d2c86c2af",
+      "ObservedSHA256": "cb6ca898642b11055470f9be39df24fce5b7e06f85bd4142e92e191d2c86c2af",
+      "Match": true
+    },
+    {
+      "Path": "UDPRecevier.py",
+      "ExpectedSHA256": "3f307f28fc0a9649321f03564ccdaae124b1903f077eb3633c0aeb5c3e27b9f3",
+      "ObservedSHA256": "3f307f28fc0a9649321f03564ccdaae124b1903f077eb3633c0aeb5c3e27b9f3",
+      "Match": true
+    },
+    {
+      "Path": "parallel_20261016/pilot_readiness/tools/preflight.py",
+      "ExpectedSHA256": "caa6d5750e206aae8216491f9064ffcc32e1d34d35a2a577a56f83052f499bb9",
+      "ObservedSHA256": "caa6d5750e206aae8216491f9064ffcc32e1d34d35a2a577a56f83052f499bb9",
+      "Match": true
+    },
+    {
+      "Path": "Start_Pilot_10P_Experimental.cmd",
+      "ExpectedSHA256": "6f10a6e4f9553f3c5496e45801a67241e9ddf0ba29b78a8d7d128fe4f2d547dd",
+      "ObservedSHA256": "6f10a6e4f9553f3c5496e45801a67241e9ddf0ba29b78a8d7d128fe4f2d547dd",
+      "Match": true
+    }
+  ],
+  "Model": {
+    "Features": 24,
+    "ConfirmationPoints": 2,
+    "Threshold": 0.65,
+    "ID": "test1009-strong-deployment-refit-20261011",
+    "DeploymentDescription": "Existing LightGBM plus independent TTE rule, NOT a fused deployed predictor",
+    "HorizonSeconds": 0.75
+  },
+  "SourceSceneMatchesBuildReceipt": true,
+  "SavedSceneFields": {
+    "enableExperimentalModelWarning": "1",
+    "enableExperimentalGeometryWarning": "1",
+    "enableExperimentalProximityWarning": "1",
+    "sendRate": "60",
+    "enableGeometryDiagnostics": "1",
+    "geometryDiagnosticSampleInterval": "0.5",
+    "enableHighFrequencyLightDiagnostics": "1",
+    "highFrequencyLightSampleInterval": "0.05",
+    "enableEventDrivenFullGeometryDiagnostics": "1",
+    "enableFixedCadenceFullGeometryDiagnostics": "1",
+    "eventDrivenFullGeometryMinInterval": "0.1",
+    "fixedFullGeometrySampleInterval": "0.1",
+    "fullGeometryBudgetMilliseconds": "1"
+  },
+  "SavedSceneFieldsAreNotLiveRuntimeVerification": true,
+  "SensitivityRegistryObservations": [
+    {
+      "Location": "Software\\Unity\\UnityEditor\\QI YUXUAN\\VectorAI",
+      "ValueName": "Sensitivity.Falling_h2992246113",
+      "StoredBits": "4603136516120641536",
+      "DecodedDouble": 0.5508145689964294,
+      "Interpretation": "Read-only persisted setting observation, NOT a historical or live-run measurement."
+    },
+    {
+      "Location": "Software\\QI YUXUAN\\VectorAI",
+      "ValueName": "Sensitivity.Falling_h2992246113",
+      "StoredBits": "4603094486644424704",
+      "DecodedDouble": 0.5461483597755432,
+      "Interpretation": "Read-only persisted setting observation, NOT a historical or live-run measurement."
+    }
+  ],
+  "RegistryOrSceneSettingsWritten": false,
+  "ModelOrLauncherChanged": false,
+  "InputHashes": {
+    "PlayerManifest": "0A000D8B63B72C43D1612EC0F8FFD6DDC7912A96DF1B59BAD8350A0EE1BCBD64",
+    "PlayerBuildReceipt": "BB2DD76D8828880325AA1DCF9FCD71CCC56E9B2E56EDEA29DC7C5E92E8F190AF",
+    "Annotations": "C764A50F0D09C4BD383F41F4F42B15EDBA8C998FF98036D0595268ECB7CEAFE6",
+    "BackendLock": "9C831A3523E1CDDDA1EA7A84E955FB58556962E4FED9E6CB70E142B22E56BAB2"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "groups": {
+    "calibration_completed": {
+      "sessions": 6,
+      "channels": {
+        "orange_model": {
+          "sessions_with_activation": 2,
+          "episodes": 3,
+          "closed_accepted_state_duration_s": 1.4681790000000001,
+          "unknown_duration_episodes": 0
+        },
+        "purple_tte": {
+          "sessions_with_activation": 6,
+          "episodes": 16,
+          "closed_accepted_state_duration_s": 5.83808,
+          "unknown_duration_episodes": 0
+        },
+        "red_geometry": {
+          "sessions_with_activation": 1,
+          "episodes": 2,
+          "closed_accepted_state_duration_s": null,
+          "unknown_duration_episodes": 2
+        }
+      }
+    },
+    "edge_exit": {
+      "sessions": 3,
+      "channels": {
+        "orange_model": {
+          "sessions_with_activation": 2,
+          "episodes": 2,
+          "closed_accepted_state_duration_s": 0.63611,
+          "unknown_duration_episodes": 0
+        },
+        "purple_tte": {
+          "sessions_with_activation": 3,
+          "episodes": 4,
+          "closed_accepted_state_duration_s": 2.361731,
+          "unknown_duration_episodes": 0
+        },
+        "red_geometry": {
+          "sessions_with_activation": 3,
+          "episodes": 3,
+          "closed_accepted_state_duration_s": null,
+          "unknown_duration_episodes": 3
+        }
+      }
+    }
+  },
+  "falls": [
+    {
+      "source_event_epoch": 1792503668.159,
+      "first_observation_csv_line": 933,
+      "context": [
+        "4521987dfdc34380ae0d20d9d0e232bd",
+        "2",
+        "-3476",
+        "-3476-g1"
+      ],
+      "context_observed_lifetime_before_fall_s": 0.33500003814697266,
+      "purple_source_onset": null,
+      "red_source_onset": {
+        "input_sequence": "445",
+        "csv_line": 911,
+        "source_timestamp": 1792503667.991,
+        "fall_commit_minus_onset_source_s": 0.1679999828338623,
+        "client_log_line": 640,
+        "version_explicit_in_client_log": false
+      },
+      "orange_source_lead": null,
+      "orange_source_lead_reason": "client log has no input sequence or source time",
+      "native_yellow_source_onset": {
+        "left_sequence": "439",
+        "right_sequence": "440",
+        "fall_commit_minus_onset_source_interval_s": [
+          0.2519998550415039,
+          0.2649998664855957
+        ]
+      },
+      "native_blue_source_onset": null
+    },
+    {
+      "source_event_epoch": 1792503727.448,
+      "first_observation_csv_line": 2188,
+      "context": [
+        "19534b8d13dc4274863daabdd9dc0e05",
+        "3",
+        "-3840",
+        "-3840-g1"
+      ],
+      "context_observed_lifetime_before_fall_s": 1.2569999694824219,
+      "purple_source_onset": null,
+      "red_source_onset": {
+        "input_sequence": "1036",
+        "csv_line": 2133,
+        "source_timestamp": 1792503727.007,
+        "fall_commit_minus_onset_source_s": 0.44099998474121094,
+        "client_log_line": 1030,
+        "version_explicit_in_client_log": false
+      },
+      "orange_source_lead": null,
+      "orange_source_lead_reason": "client log has no input sequence or source time",
+      "native_yellow_source_onset": null,
+      "native_blue_source_onset": null
+    },
+    {
+      "source_event_epoch": 1792503896.688,
+      "first_observation_csv_line": 2423,
+      "context": [
+        "b3fa6018951a4a98ae34dc3253f5109e",
+        "3",
+        "-4672",
+        "-4672-g1"
+      ],
+      "context_observed_lifetime_before_fall_s": 2.421999931335449,
+      "purple_source_onset": {
+        "input_sequence": "1069",
+        "csv_line": 2194,
+        "source_timestamp": 1792503894.849,
+        "fall_commit_minus_onset_source_s": 1.8389999866485596,
+        "client_log_line": 1694,
+        "version_explicit_in_client_log": true
+      },
+      "red_source_onset": {
+        "input_sequence": "1136",
+        "csv_line": 2332,
+        "source_timestamp": 1792503895.96,
+        "fall_commit_minus_onset_source_s": 0.7279999256134033,
+        "client_log_line": 1808,
+        "version_explicit_in_client_log": false
+      },
+      "orange_source_lead": null,
+      "orange_source_lead_reason": "client log has no input sequence or source time",
+      "native_yellow_source_onset": {
+        "left_sequence": "1111",
+        "right_sequence": "1112",
+        "fall_commit_minus_onset_source_interval_s": [
+          1.124000072479248,
+          1.1449999809265137
+        ]
+      },
+      "native_blue_source_onset": {
+        "left_sequence": "1038",
+        "right_sequence": "1039",
+        "fall_commit_minus_onset_source_interval_s": [
+          2.3389999866485596,
+          2.359999895095825
+        ]
+      }
+    }
+  ]
+}

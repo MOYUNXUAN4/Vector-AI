@@ -1,0 +1,62 @@
+{
+  "path": "../../telemetry_logs/P03/session_20261020_214354_584139//raw.csv",
+  "unity_rows": 2445,
+  "latency_median_ms": 5.458,
+  "latency_max_ms": 89.507,
+  "segment_count": 1,
+  "segment_median_spread_ms": 0.0,
+  "max_inter_segment_step_ms": 0.0,
+  "max_within_segment_persistent_step_ms": 1.683,
+  "max_within_segment_spike_ms": 84.049,
+  "step_block": 100,
+  "max_adjacent_step_ms": 1.683,
+  "step_detected": false,
+  "domain_ok": true,
+  "segments": [
+    {
+      "index": 0,
+      "rows": 2445,
+      "csv_line_first": 2,
+      "csv_line_last": 5003,
+      "duration_s": 40.694,
+      "median_ms": 5.458,
+      "p95_ms": 15.573,
+      "std_ms": 5.028,
+      "max_single_packet_ms": 89.507,
+      "spike_above_median_ms": 84.049,
+      "max_gap_inside_ms": 29.0,
+      "persistent_step_ms": 1.683,
+      "persistent_step_index": 400,
+      "step_block": 100
+    }
+  ],
+  "unity_dual_clock_stats": {
+    "geometry_clock_domain": "relative",
+    "origin_offset_s": 1792503612.922,
+    "origin_offset_note": "arbitrary origin distance between a Unix-epoch clock and a relative clock; not an alignment error",
+    "paired_samples": 2445,
+    "total_samples": 2445,
+    "detrended_spread_ms": 11.392,
+    "detrended_std_ms": 1.534,
+    "detrended_gradual_drift_ms": -2.655,
+    "detrended_persistent_step_ms": 2.502,
+    "detrended_step_index": 225,
+    "step_block": 100,
+    "discrete_jump_count": 0,
+    "discrete_jumps": [],
+    "cumulative_jump_ms": 0,
+    "global_offset_verdict": "sufficient",
+    "global_offset_reason": "no jump, spread 11.4 ms and drift -2.7 ms within 20.0 ms",
+    "global_offset_coverage": 1.0,
+    "global_offset_rules": {
+      "max_spread_ms": 20.0,
+      "max_gradual_drift_ms": 20.0,
+      "min_coverage": 0.9,
+      "min_samples": 200,
+      "discrete_jump_threshold_ms": 50.0,
+      "note": "predeclared; 'sufficient' is only claimed when every rule passes"
+    },
+    "single_global_offset_sufficient": true
+  },
+  "scope": "backend receive latency + source/geometry pair; not Unity Time.time alignment"
+}

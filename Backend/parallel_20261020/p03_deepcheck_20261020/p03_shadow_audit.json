@@ -1,0 +1,341 @@
+{
+ "session_20261020_204207_908174": {
+  "run_id": "31a01c3b932e40b186f88beb06bdc513",
+  "records": 2030,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 2030
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 2030
+  },
+  "shadow_seq": [
+   1,
+   2030
+  ]
+ },
+ "session_20261020_204245_310354": {
+  "run_id": "c967d0e27c2347959f38d295ea738887",
+  "records": 1935,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 1935
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 1935
+  },
+  "shadow_seq": [
+   2031,
+   3965
+  ]
+ },
+ "session_20261020_204323_779285": {
+  "run_id": "1b3beda2a3f047b9af4b5a3dedc75644",
+  "records": 779,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 779
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 779
+  },
+  "shadow_seq": [
+   3966,
+   4744
+  ]
+ },
+ "session_20261020_204340_783591": {
+  "run_id": "4ffbc7c05beb42599c5183fab2ba4329",
+  "records": 2461,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 2461
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 2461
+  },
+  "shadow_seq": [
+   4745,
+   7205
+  ]
+ },
+ "session_20261020_204429_025778": {
+  "run_id": "dae0729f4cb240d2bd5188279c724c68",
+  "records": 2258,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 2258
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 2258
+  },
+  "shadow_seq": [
+   7206,
+   9463
+  ]
+ },
+ "session_20261020_204511_543162": {
+  "run_id": "23eb44ad157a42aabbac1d70e6c2163f",
+  "records": 2117,
+  "active": 0,
+  "causal_available": 0,
+  "valid": 0,
+  "active_distinct_input_sequences": 0,
+  "first_active_input_source_timestamp": null,
+  "states": {
+   "UNKNOWN": 2117
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 2117
+  },
+  "shadow_seq": [
+   9464,
+   11580
+  ]
+ },
+ "session_20261020_214022_086000": {
+  "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+  "records": 2119,
+  "active": 79,
+  "causal_available": 1593,
+  "valid": 1593,
+  "active_distinct_input_sequences": 79,
+  "first_active_input_source_timestamp": 1792503628.22,
+  "states": {
+   "UNKNOWN": 526,
+   "SAFE": 1514,
+   "STRONG": 79
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 299,
+   "insufficient_0_5s_history": 151,
+   "available": 1593,
+   "outside_proximity_domain": 75,
+   "ended": 1
+  },
+  "shadow_seq": [
+   1,
+   2119
+  ]
+ },
+ "session_20261020_214100_600233": {
+  "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+  "records": 456,
+  "active": 32,
+  "causal_available": 102,
+  "valid": 102,
+  "active_distinct_input_sequences": 32,
+  "first_active_input_source_timestamp": 1792503667.289,
+  "states": {
+   "UNKNOWN": 354,
+   "SAFE": 70,
+   "STRONG": 32
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 302,
+   "insufficient_0_5s_history": 51,
+   "available": 102,
+   "ended": 1
+  },
+  "shadow_seq": [
+   2120,
+   2575
+  ]
+ },
+ "session_20261020_214112_191029": {
+  "run_id": "1a893ee7e97f4e8b86450665aa830167",
+  "records": 2014,
+  "active": 81,
+  "causal_available": 1541,
+  "valid": 1541,
+  "active_distinct_input_sequences": 81,
+  "first_active_input_source_timestamp": 1792503682.504,
+  "states": {
+   "UNKNOWN": 473,
+   "SAFE": 1460,
+   "STRONG": 81
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 301,
+   "insufficient_0_5s_history": 151,
+   "available": 1541,
+   "outside_proximity_domain": 20,
+   "ended": 1
+  },
+  "shadow_seq": [
+   2576,
+   4589
+  ]
+ },
+ "session_20261020_214149_759405": {
+  "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+  "records": 1063,
+  "active": 68,
+  "causal_available": 613,
+  "valid": 613,
+  "active_distinct_input_sequences": 68,
+  "first_active_input_source_timestamp": 1792503723.872,
+  "states": {
+   "UNKNOWN": 450,
+   "SAFE": 545,
+   "STRONG": 68
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 301,
+   "insufficient_0_5s_history": 90,
+   "available": 613,
+   "outside_proximity_domain": 58,
+   "ended": 1
+  },
+  "shadow_seq": [
+   4590,
+   5652
+  ]
+ },
+ "session_20261020_214210_571969": {
+  "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+  "records": 1875,
+  "active": 36,
+  "causal_available": 1422,
+  "valid": 1422,
+  "active_distinct_input_sequences": 36,
+  "first_active_input_source_timestamp": 1792503755.443,
+  "states": {
+   "UNKNOWN": 453,
+   "SAFE": 1386,
+   "STRONG": 36
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 302,
+   "insufficient_0_5s_history": 150,
+   "available": 1422,
+   "ended": 1
+  },
+  "shadow_seq": [
+   5653,
+   7527
+  ]
+ },
+ "session_20261020_214244_551605": {
+  "run_id": "47823c251f904955be573d9c446875ff",
+  "records": 2014,
+  "active": 39,
+  "causal_available": 1561,
+  "valid": 1561,
+  "active_distinct_input_sequences": 39,
+  "first_active_input_source_timestamp": 1792503784.531,
+  "states": {
+   "UNKNOWN": 453,
+   "SAFE": 1522,
+   "STRONG": 39
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 301,
+   "insufficient_0_5s_history": 151,
+   "available": 1561,
+   "ended": 1
+  },
+  "shadow_seq": [
+   7528,
+   9541
+  ]
+ },
+ "session_20261020_214320_667777": {
+  "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+  "records": 1927,
+  "active": 54,
+  "causal_available": 1473,
+  "valid": 1473,
+  "active_distinct_input_sequences": 54,
+  "first_active_input_source_timestamp": 1792503812.433,
+  "states": {
+   "UNKNOWN": 454,
+   "SAFE": 1419,
+   "STRONG": 54
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 302,
+   "insufficient_0_5s_history": 151,
+   "available": 1473,
+   "ended": 1
+  },
+  "shadow_seq": [
+   9542,
+   11468
+  ]
+ },
+ "session_20261020_214354_584139": {
+  "run_id": "aa9c12a7604d4d468df13244c1118b05",
+  "records": 2445,
+  "active": 67,
+  "causal_available": 1810,
+  "valid": 1810,
+  "active_distinct_input_sequences": 67,
+  "first_active_input_source_timestamp": 1792503843.717,
+  "states": {
+   "UNKNOWN": 635,
+   "SAFE": 1743,
+   "STRONG": 67
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 302,
+   "insufficient_0_5s_history": 151,
+   "outside_proximity_domain": 181,
+   "available": 1810,
+   "ended": 1
+  },
+  "shadow_seq": [
+   11469,
+   13913
+  ]
+ },
+ "session_20261020_214437_062477": {
+  "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+  "records": 1180,
+  "active": 43,
+  "causal_available": 717,
+  "valid": 717,
+  "active_distinct_input_sequences": 43,
+  "first_active_input_source_timestamp": 1792503894.849,
+  "states": {
+   "UNKNOWN": 463,
+   "SAFE": 674,
+   "STRONG": 43
+  },
+  "reasons": {
+   "unsupported_or_calibration_phase": 302,
+   "insufficient_0_5s_history": 92,
+   "available": 717,
+   "outside_proximity_domain": 68,
+   "ended": 1
+  },
+  "shadow_seq": [
+   13914,
+   15093
+  ]
+ },
+ "_meta": {
+  "bad_json_lines": 0,
+  "shadow_file": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\proximity_shadow.jsonl"
+ }
+}

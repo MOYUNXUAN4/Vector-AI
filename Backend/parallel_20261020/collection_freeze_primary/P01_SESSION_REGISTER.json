@@ -1,0 +1,2164 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-10-20",
+  "scope": "Purpose/identity register, not model acceptance or complete valid-window labels",
+  "source_root": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01",
+  "session_count": 28,
+  "participant_count_confirmed": 1,
+  "role_counts": {
+    "participant_retained_pending_qc": 9,
+    "participant_equipment_excluded": 1,
+    "operator_technical_test": 18
+  },
+  "input_sha256": {
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\collection_freeze_primary\\session_annotations.json": "c764a50f0d09c4bd383f41f4f42b15edba8c998ff98036d0595268ecb7ceafe6",
+    "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\parallel_20261020\\collection_freeze_primary\\p01_inventory\\output\\inventory.json": "b2f73b8cd715bd2e9e63df04572ec70232048b328ff3df588f03e0dba8590c9a"
+  },
+  "raw_files_rehashed_unchanged": true,
+  "raw_files_moved_or_deleted": false,
+  "records": [
+    {
+      "session_id": "session_20261019_105632_058608",
+      "run_ids": [
+        "31870bd7101e45a29d78d179f82e06f0"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105632_058608\\raw.csv",
+      "raw_sha256": "bea008eedc3ae1253b48faec2cf07532e1679ed043effd96c95d7220914caff6",
+      "raw_rows": 2734,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378612.512",
+        "sequence": "1193",
+        "run_id": "31870bd7101e45a29d78d179f82e06f0",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1792378612.511"
+      },
+      "unity_continuity": {
+        "rows": 1193,
+        "timestamp_valid_rows": 1193,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378592.063,
+        "end": 1792378612.512,
+        "duration_seconds": 20.449000120162964,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.5099999904632568,
+        "gap_values_gt_0_1s": [
+          0.5099999904632568
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1193
+          },
+          "selected_session_layers": {
+            "3": 1193
+          },
+          "selected_difficulty": {
+            "3": 1193
+          },
+          "difficulty": {
+            "3": 1193
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 139,
+            "True": 1402
+          },
+          "wii_center_applied": {
+            "False": 139,
+            "True": 1402
+          },
+          "wii_control_valid": {
+            "True": 1541
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_105656_285619",
+      "run_ids": [
+        "dc424922ab7a4438809dd72a4b308bb7"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105656_285619\\raw.csv",
+      "raw_sha256": "7ed67cbdfbb5f4c72988ec4fb5ac63d2391c7488d41f0230a8efa8deb6eb1946",
+      "raw_rows": 1724,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378628.341",
+        "sequence": "725",
+        "run_id": "dc424922ab7a4438809dd72a4b308bb7",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792378628.34"
+      },
+      "unity_continuity": {
+        "rows": 725,
+        "timestamp_valid_rows": 725,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378616.282,
+        "end": 1792378628.341,
+        "duration_seconds": 12.059000015258789,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.024000167846679688,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 725
+          },
+          "selected_session_layers": {
+            "3": 725
+          },
+          "selected_difficulty": {
+            "3": 725
+          },
+          "difficulty": {
+            "3": 725
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 66,
+            "True": 933
+          },
+          "wii_center_applied": {
+            "False": 66,
+            "True": 933
+          },
+          "wii_control_valid": {
+            "True": 999
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_105712_007803",
+      "run_ids": [
+        "f848f2248b7443d7b740b5b2eda42bc4"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105712_007803\\raw.csv",
+      "raw_sha256": "667478e03cbd24f195cf79a900c8dc6f43e55f5f6e18383147eb76d11c43f1ec",
+      "raw_rows": 2241,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378646.23",
+        "sequence": "828",
+        "run_id": "f848f2248b7443d7b740b5b2eda42bc4",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792378646.23"
+      },
+      "unity_continuity": {
+        "rows": 828,
+        "timestamp_valid_rows": 828,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 1,
+        "start": 1792378632.004,
+        "end": 1792378646.23,
+        "duration_seconds": 14.2260000705719,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.4939999580383301,
+        "gap_values_gt_0_1s": [
+          0.4939999580383301
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 828
+          },
+          "selected_session_layers": {
+            "3": 828
+          },
+          "selected_difficulty": {
+            "3": 828
+          },
+          "difficulty": {
+            "3": 828
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 563,
+            "True": 850
+          },
+          "wii_center_applied": {
+            "False": 563,
+            "True": 850
+          },
+          "wii_control_valid": {
+            "True": 1413
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_105734_310716",
+      "run_ids": [
+        "b6f039d1c47a45e89c8f9dd9dd8967a9"
+      ],
+      "role": "participant_equipment_excluded",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105734_310716\\raw.csv",
+      "raw_sha256": "1f9d817c1fef1b9f5810ff6d0c7aebc3e5e5a489decd5f383c295b4bc4446831",
+      "raw_rows": 3489,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": {
+        "reason": "battery_dislodged_user_confirmed",
+        "evidence": "parallel_20261019/p01_review/REPORT.md"
+      },
+      "unity_terminal_row": {
+        "source_timestamp": "1792378664.191",
+        "sequence": "566",
+        "run_id": "b6f039d1c47a45e89c8f9dd9dd8967a9",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792378664.191"
+      },
+      "unity_continuity": {
+        "rows": 566,
+        "timestamp_valid_rows": 566,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378654.305,
+        "end": 1792378664.191,
+        "duration_seconds": 9.885999917984009,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.41299986839294434,
+        "gap_values_gt_0_1s": [
+          0.41299986839294434
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 566
+          },
+          "selected_session_layers": {
+            "3": 566
+          },
+          "selected_difficulty": {
+            "3": 566
+          },
+          "difficulty": {
+            "3": 566
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "<empty>": 7,
+            "False": 1789,
+            "True": 1127
+          },
+          "wii_center_applied": {
+            "<empty>": 4,
+            "False": 2045,
+            "True": 874
+          },
+          "wii_control_valid": {
+            "False": 7,
+            "True": 2916
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "equipment_excluded"
+    },
+    {
+      "session_id": "session_20261019_105912_781089",
+      "run_ids": [
+        "0d93af38d29a499487b66b0c9a6e2199"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105912_781089\\raw.csv",
+      "raw_sha256": "38efd5a00f53123ea4bfb2959462b3a27dcbd4aa3312b87e9f59af6c7e9906b7",
+      "raw_rows": 871,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378757.188",
+        "sequence": "266",
+        "run_id": "0d93af38d29a499487b66b0c9a6e2199",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792378757.187"
+      },
+      "unity_continuity": {
+        "rows": 266,
+        "timestamp_valid_rows": 266,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378752.784,
+        "end": 1792378757.188,
+        "duration_seconds": 4.4040000438690186,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.03400015830993652,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 266
+          },
+          "selected_session_layers": {
+            "3": 266
+          },
+          "selected_difficulty": {
+            "3": 266
+          },
+          "difficulty": {
+            "3": 266
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "True": 605
+          },
+          "wii_center_applied": {
+            "True": 605
+          },
+          "wii_control_valid": {
+            "True": 605
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_105922_291656",
+      "run_ids": [
+        "b0e336b2239b4a8b99d47cf72ef0b5d7"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105922_291656\\raw.csv",
+      "raw_sha256": "c3d3a4de42a203dddedb8161d78cef57d2e7eeba3f284a9738642c75685d51f0",
+      "raw_rows": 3319,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378787.526",
+        "sequence": "1489",
+        "run_id": "b0e336b2239b4a8b99d47cf72ef0b5d7",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1792378787.526"
+      },
+      "unity_continuity": {
+        "rows": 1489,
+        "timestamp_valid_rows": 1489,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378762.288,
+        "end": 1792378787.526,
+        "duration_seconds": 25.23799991607666,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.4980001449584961,
+        "gap_values_gt_0_1s": [
+          0.4980001449584961
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1489
+          },
+          "selected_session_layers": {
+            "3": 1489
+          },
+          "selected_difficulty": {
+            "3": 1489
+          },
+          "difficulty": {
+            "3": 1489
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "True": 1830
+          },
+          "wii_center_applied": {
+            "True": 1830
+          },
+          "wii_control_valid": {
+            "True": 1830
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_105951_117357",
+      "run_ids": [
+        "5c364258088d4dd2adfdb15e6830f185"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105951_117357\\raw.csv",
+      "raw_sha256": "5c578a374e2e6ed009d9d78c12ea1efa6dfba69b14eda4c23769110888a19733",
+      "raw_rows": 3586,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378816.949",
+        "sequence": "1524",
+        "run_id": "5c364258088d4dd2adfdb15e6830f185",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1792378816.948"
+      },
+      "unity_continuity": {
+        "rows": 1524,
+        "timestamp_valid_rows": 1524,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378791.113,
+        "end": 1792378816.949,
+        "duration_seconds": 25.835999965667725,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.49200010299682617,
+        "gap_values_gt_0_1s": [
+          0.49200010299682617
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1524
+          },
+          "selected_session_layers": {
+            "3": 1524
+          },
+          "selected_difficulty": {
+            "3": 1524
+          },
+          "difficulty": {
+            "3": 1524
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "True": 2062
+          },
+          "wii_center_applied": {
+            "True": 2062
+          },
+          "wii_control_valid": {
+            "True": 2062
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_110023_567130",
+      "run_ids": [
+        "bbe4be8d4fbb4e74b192b0570c12707e"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110023_567130\\raw.csv",
+      "raw_sha256": "0dbfadd2f3ec35a4d3344f04d79e018e5a2c78ff603c528813400d2479739967",
+      "raw_rows": 3684,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378851.609",
+        "sequence": "1655",
+        "run_id": "bbe4be8d4fbb4e74b192b0570c12707e",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1792378851.607"
+      },
+      "unity_continuity": {
+        "rows": 1655,
+        "timestamp_valid_rows": 1655,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378823.563,
+        "end": 1792378851.609,
+        "duration_seconds": 28.046000003814697,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.5149998664855957,
+        "gap_values_gt_0_1s": [
+          0.5149998664855957
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1655
+          },
+          "selected_session_layers": {
+            "3": 1655
+          },
+          "selected_difficulty": {
+            "3": 1655
+          },
+          "difficulty": {
+            "3": 1655
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "True": 2029
+          },
+          "wii_center_applied": {
+            "True": 2029
+          },
+          "wii_control_valid": {
+            "True": 2029
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_110055_533132",
+      "run_ids": [
+        "70bdae08f81a4d1480b9f2b2ccd61125"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110055_533132\\raw.csv",
+      "raw_sha256": "673fe9180470728821dcb9c670ee2ee1fd17202c1bc45f578ba159d27fd35bed",
+      "raw_rows": 1174,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378862.816",
+        "sequence": "439",
+        "run_id": "70bdae08f81a4d1480b9f2b2ccd61125",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792378862.815"
+      },
+      "unity_continuity": {
+        "rows": 439,
+        "timestamp_valid_rows": 439,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792378855.529,
+        "end": 1792378862.816,
+        "duration_seconds": 7.286999940872192,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.023999929428100586,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 439
+          },
+          "selected_session_layers": {
+            "3": 439
+          },
+          "selected_difficulty": {
+            "3": 439
+          },
+          "difficulty": {
+            "3": 439
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "True": 735
+          },
+          "wii_center_applied": {
+            "True": 735
+          },
+          "wii_control_valid": {
+            "True": 735
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_110107_096491",
+      "run_ids": [
+        "3074f1b0189744ad92cc26e1bec71fe0"
+      ],
+      "role": "participant_retained_pending_qc",
+      "participant_id": "P01",
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110107_096491\\raw.csv",
+      "raw_sha256": "24c0c99de265c123f4e8ccfe946ea556c3b1e3d9c5a4990fdb615009c01c9426",
+      "raw_rows": 10660,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792378892.003",
+        "sequence": "1468",
+        "run_id": "3074f1b0189744ad92cc26e1bec71fe0",
+        "run_state": "ended",
+        "session_outcome": "calibration_completed",
+        "session_end_backend_timestamp": "1792378892.003"
+      },
+      "unity_continuity": {
+        "rows": 1468,
+        "timestamp_valid_rows": 1468,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 1,
+        "start": 1792378867.092,
+        "end": 1792378892.003,
+        "duration_seconds": 24.91100001335144,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.5060000419616699,
+        "gap_values_gt_0_1s": [
+          0.5060000419616699
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1468
+          },
+          "selected_session_layers": {
+            "3": 1468
+          },
+          "selected_difficulty": {
+            "3": 1468
+          },
+          "difficulty": {
+            "3": 1468
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 7511,
+            "True": 1681
+          },
+          "wii_center_applied": {
+            "False": 7511,
+            "True": 1681
+          },
+          "wii_control_valid": {
+            "True": 9192
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": {
+        "declared_sensitivity": 0.55,
+        "difficulty": 3,
+        "session_layers": 3,
+        "orange_red_purple_enabled_user_confirmed": true,
+        "original_hints_unchanged_user_confirmed": true,
+        "source": "parallel_20261019/p01_review/REPORT.md",
+        "effective_sensitivity_not_recorded_in_csv": true,
+        "practice_formal_task_roles": "unknown"
+      },
+      "qc_disposition": "pending_segment_and_task_role_review"
+    },
+    {
+      "session_id": "session_20261019_150806_990055",
+      "run_ids": [
+        "16072c96af72434cb8cb57df8ab10a37"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_150806_990055\\raw.csv",
+      "raw_sha256": "44e48f89ccfa64f893f8d688e771cecd43d62bcc681694c038e390db6fc03955",
+      "raw_rows": 2949,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792393709.27",
+        "sequence": "1267",
+        "run_id": "16072c96af72434cb8cb57df8ab10a37",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792393709.268"
+      },
+      "unity_continuity": {
+        "rows": 1259,
+        "timestamp_valid_rows": 1259,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792393686.996,
+        "end": 1792393709.27,
+        "duration_seconds": 22.2739999294281,
+        "gap_count_gt_0_1s": 4,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.15200018882751465,
+        "gap_values_gt_0_1s": [
+          0.14400005340576172,
+          0.13700008392333984,
+          0.15200018882751465,
+          0.1380000114440918
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1259
+          },
+          "selected_session_layers": {
+            "3": 1259
+          },
+          "selected_difficulty": {
+            "3": 1259
+          },
+          "difficulty": {
+            "3": 1259
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 1620,
+            "True": 70
+          },
+          "wii_center_applied": {
+            "False": 1690
+          },
+          "wii_control_valid": {
+            "True": 1690
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_150834_945026",
+      "run_ids": [
+        "8bcb677b6db3475c8ab0925bac5646b7"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_150834_945026\\raw.csv",
+      "raw_sha256": "3f45bc82a948d18ce7954f2c83db6b4ab48303c32aba5f8710997000f35054a9",
+      "raw_rows": 13571,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792393829.534",
+        "sequence": "6515",
+        "run_id": "8bcb677b6db3475c8ab0925bac5646b7",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792393829.533"
+      },
+      "unity_continuity": {
+        "rows": 6347,
+        "timestamp_valid_rows": 6347,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792393714.941,
+        "end": 1792393829.534,
+        "duration_seconds": 114.59299993515015,
+        "gap_count_gt_0_1s": 25,
+        "gap_count_gt_0_4s": 5,
+        "max_gap_seconds": 0.878000020980835,
+        "gap_values_gt_0_1s": [
+          0.12999987602233887,
+          0.14400005340576172,
+          0.6669998168945312,
+          0.11600017547607422,
+          0.10899996757507324,
+          0.10199999809265137,
+          0.12899994850158691,
+          0.10099983215332031,
+          0.13499999046325684,
+          0.10000014305114746,
+          0.12400007247924805,
+          0.1100001335144043,
+          0.7419998645782471,
+          0.15199995040893555,
+          0.10899996757507324,
+          0.10100007057189941,
+          0.11800003051757812,
+          0.10499978065490723,
+          0.11899995803833008,
+          0.8439998626708984,
+          0.878000020980835,
+          0.2200000286102295,
+          0.11700010299682617,
+          0.15799999237060547,
+          0.7239999771118164
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 6347
+          },
+          "selected_session_layers": {
+            "3": 6347
+          },
+          "selected_difficulty": {
+            "3": 6347
+          },
+          "difficulty": {
+            "3": 6347
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 7224
+          },
+          "wii_center_applied": {
+            "False": 7224
+          },
+          "wii_control_valid": {
+            "True": 7224
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_151034_541581",
+      "run_ids": [
+        "9245f6df3cc54a2ea9fdfa490a8bb3d5"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_151034_541581\\raw.csv",
+      "raw_sha256": "f3a2075d9edc3b309503d1122c167d419d2ba90305b293296f3577cb41c7b700",
+      "raw_rows": 5107,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792393881.945",
+        "sequence": "2545",
+        "run_id": "9245f6df3cc54a2ea9fdfa490a8bb3d5",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan"
+      },
+      "unity_continuity": {
+        "rows": 2393,
+        "timestamp_valid_rows": 2393,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792393834.537,
+        "end": 1792393881.945,
+        "duration_seconds": 47.407999992370605,
+        "gap_count_gt_0_1s": 23,
+        "gap_count_gt_0_4s": 2,
+        "max_gap_seconds": 0.8510000705718994,
+        "gap_values_gt_0_1s": [
+          0.10300016403198242,
+          0.1400001049041748,
+          0.16199994087219238,
+          0.15700006484985352,
+          0.1230001449584961,
+          0.18199992179870605,
+          0.1230001449584961,
+          0.10100007057189941,
+          0.11599993705749512,
+          0.10400009155273438,
+          0.12399983406066895,
+          0.13399982452392578,
+          0.17799997329711914,
+          0.10400009155273438,
+          0.7050001621246338,
+          0.21499991416931152,
+          0.1230001449584961,
+          0.10399985313415527,
+          0.8510000705718994,
+          0.10700011253356934,
+          0.10400009155273438,
+          0.11800003051757812,
+          0.10799980163574219
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 2393
+          },
+          "selected_session_layers": {
+            "3": 2393
+          },
+          "selected_difficulty": {
+            "3": 2393
+          },
+          "difficulty": {
+            "3": 2393
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 2714
+          },
+          "wii_center_applied": {
+            "False": 2714
+          },
+          "wii_control_valid": {
+            "True": 2714
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_151734_571261",
+      "run_ids": [
+        "ac6b73c60fb54f2a92773ce1e3dba3bd"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_151734_571261\\raw.csv",
+      "raw_sha256": "edd0f5ebd11e479ec9d18a262dad8126b439f7a7ac9759c27b567a441dcd4078",
+      "raw_rows": 12944,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792394360.805",
+        "sequence": "6199",
+        "run_id": "ac6b73c60fb54f2a92773ce1e3dba3bd",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan"
+      },
+      "unity_continuity": {
+        "rows": 6181,
+        "timestamp_valid_rows": 6181,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792394254.575,
+        "end": 1792394360.805,
+        "duration_seconds": 106.23000001907349,
+        "gap_count_gt_0_1s": 7,
+        "gap_count_gt_0_4s": 5,
+        "max_gap_seconds": 0.7559998035430908,
+        "gap_values_gt_0_1s": [
+          0.5220000743865967,
+          0.560999870300293,
+          0.5169999599456787,
+          0.5310001373291016,
+          0.11899995803833008,
+          0.7559998035430908,
+          0.13100004196166992
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 6181
+          },
+          "selected_session_layers": {
+            "3": 6181
+          },
+          "selected_difficulty": {
+            "3": 6181
+          },
+          "difficulty": {
+            "3": 6181
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 6763
+          },
+          "wii_center_applied": {
+            "False": 6763
+          },
+          "wii_control_valid": {
+            "True": 6763
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_152252_747676",
+      "run_ids": [
+        "80fd811bd52a463281135b47935490b0"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_152252_747676\\raw.csv",
+      "raw_sha256": "fb386e2fc4a936b356662c84e73fdaa9df97a8b45f0a91e473d9e95302e30a37",
+      "raw_rows": 8088,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792394639.521",
+        "sequence": "3847",
+        "run_id": "80fd811bd52a463281135b47935490b0",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792394639.519"
+      },
+      "unity_continuity": {
+        "rows": 3824,
+        "timestamp_valid_rows": 3824,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792394572.753,
+        "end": 1792394639.521,
+        "duration_seconds": 66.76799988746643,
+        "gap_count_gt_0_1s": 5,
+        "gap_count_gt_0_4s": 3,
+        "max_gap_seconds": 0.7699999809265137,
+        "gap_values_gt_0_1s": [
+          0.12599992752075195,
+          0.6400001049041748,
+          0.6769998073577881,
+          0.10400009155273438,
+          0.7699999809265137
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 3824
+          },
+          "selected_session_layers": {
+            "3": 3824
+          },
+          "selected_difficulty": {
+            "3": 3824
+          },
+          "difficulty": {
+            "3": 3824
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 4264
+          },
+          "wii_center_applied": {
+            "False": 4264
+          },
+          "wii_control_valid": {
+            "True": 4264
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_153509_548346",
+      "run_ids": [
+        "ff95db15108d47719db3252c52c71c03"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_153509_548346\\raw.csv",
+      "raw_sha256": "1546f1cdd2b44c9bdde10a49d4696f1c95a74a16f8238e7655b4bc782a55c9f0",
+      "raw_rows": 20351,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792395374.258",
+        "sequence": "3758",
+        "run_id": "ff95db15108d47719db3252c52c71c03",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792395374.257"
+      },
+      "unity_continuity": {
+        "rows": 3758,
+        "timestamp_valid_rows": 3758,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792395309.556,
+        "end": 1792395374.258,
+        "duration_seconds": 64.70199990272522,
+        "gap_count_gt_0_1s": 6,
+        "gap_count_gt_0_4s": 2,
+        "max_gap_seconds": 0.5310001373291016,
+        "gap_values_gt_0_1s": [
+          0.5310001373291016,
+          0.20099997520446777,
+          0.1230001449584961,
+          0.4939999580383301,
+          0.11899995803833008,
+          0.10500001907348633
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 3758
+          },
+          "selected_session_layers": {
+            "3": 3758
+          },
+          "selected_difficulty": {
+            "3": 3758
+          },
+          "difficulty": {
+            "3": 3758
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 16593
+          },
+          "wii_center_applied": {
+            "False": 16593
+          },
+          "wii_control_valid": {
+            "True": 16593
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_154922_281603",
+      "run_ids": [
+        "9204c7d8ac7047a2b29ea3293c13e805"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_154922_281603\\raw.csv",
+      "raw_sha256": "e8985f58da5c60254c815c90f136f2fd21c10cd414b7ab6ce1badfd977ea0383",
+      "raw_rows": 52509,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792396253.322",
+        "sequence": "4577",
+        "run_id": "9204c7d8ac7047a2b29ea3293c13e805",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792396253.32"
+      },
+      "unity_continuity": {
+        "rows": 4577,
+        "timestamp_valid_rows": 4577,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792396162.287,
+        "end": 1792396253.322,
+        "duration_seconds": 91.03500008583069,
+        "gap_count_gt_0_1s": 3,
+        "gap_count_gt_0_4s": 2,
+        "max_gap_seconds": 0.4609999656677246,
+        "gap_values_gt_0_1s": [
+          0.4609999656677246,
+          0.44900012016296387,
+          0.11599993705749512
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4577
+          },
+          "selected_session_layers": {
+            "3": 4577
+          },
+          "selected_difficulty": {
+            "3": 4577
+          },
+          "difficulty": {
+            "3": 4577
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 47932
+          },
+          "wii_center_applied": {
+            "False": 47932
+          },
+          "wii_control_valid": {
+            "True": 47932
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_160159_651804",
+      "run_ids": [
+        "1d625d390d81482d971d39c819fceaed"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_160159_651804\\raw.csv",
+      "raw_sha256": "5332057539c05264f34cbd9798cf6320b063acd917b16a2d45b1f51ae512ed23",
+      "raw_rows": 56234,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792397007.898",
+        "sequence": "4954",
+        "run_id": "1d625d390d81482d971d39c819fceaed",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792397007.897"
+      },
+      "unity_continuity": {
+        "rows": 4954,
+        "timestamp_valid_rows": 4954,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792396919.658,
+        "end": 1792397007.898,
+        "duration_seconds": 88.24000000953674,
+        "gap_count_gt_0_1s": 4,
+        "gap_count_gt_0_4s": 4,
+        "max_gap_seconds": 0.6210000514984131,
+        "gap_values_gt_0_1s": [
+          0.6210000514984131,
+          0.4330000877380371,
+          0.47699999809265137,
+          0.4460000991821289
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4954
+          },
+          "selected_session_layers": {
+            "3": 4954
+          },
+          "selected_difficulty": {
+            "3": 4954
+          },
+          "difficulty": {
+            "3": 4954
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 51280
+          },
+          "wii_center_applied": {
+            "False": 51280
+          },
+          "wii_control_valid": {
+            "True": 51280
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_161529_760840",
+      "run_ids": [
+        "4441601ae0784db38e613f0b69b85877"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_161529_760840\\raw.csv",
+      "raw_sha256": "41d18577433006b9a0f2ebb7e1cbecbec3f107f64648e520657f07ad560428c7",
+      "raw_rows": 14593,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792397845.483",
+        "sequence": "6774",
+        "run_id": "4441601ae0784db38e613f0b69b85877",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792397845.482"
+      },
+      "unity_continuity": {
+        "rows": 6774,
+        "timestamp_valid_rows": 6774,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792397729.765,
+        "end": 1792397845.483,
+        "duration_seconds": 115.71799993515015,
+        "gap_count_gt_0_1s": 6,
+        "gap_count_gt_0_4s": 6,
+        "max_gap_seconds": 0.5109999179840088,
+        "gap_values_gt_0_1s": [
+          0.5109999179840088,
+          0.4869999885559082,
+          0.5029997825622559,
+          0.48399996757507324,
+          0.48800015449523926,
+          0.5080001354217529
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 6774
+          },
+          "selected_session_layers": {
+            "3": 6774
+          },
+          "selected_difficulty": {
+            "3": 6774
+          },
+          "difficulty": {
+            "3": 6774
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 7819
+          },
+          "wii_center_applied": {
+            "False": 7819
+          },
+          "wii_control_valid": {
+            "True": 7819
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_161733_153717",
+      "run_ids": [
+        "1af5b5214f23433990c0249753e89dd9"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_161733_153717\\raw.csv",
+      "raw_sha256": "8e1793e031159d7840e5a800c2f82ad54047620a62defa7abb56208bcddd9b58",
+      "raw_rows": 9840,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792397933.964",
+        "sequence": "4735",
+        "run_id": "1af5b5214f23433990c0249753e89dd9",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan"
+      },
+      "unity_continuity": {
+        "rows": 4735,
+        "timestamp_valid_rows": 4735,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792397853.15,
+        "end": 1792397933.964,
+        "duration_seconds": 80.81399989128113,
+        "gap_count_gt_0_1s": 4,
+        "gap_count_gt_0_4s": 4,
+        "max_gap_seconds": 0.559999942779541,
+        "gap_values_gt_0_1s": [
+          0.559999942779541,
+          0.49500012397766113,
+          0.5139999389648438,
+          0.505000114440918
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4735
+          },
+          "selected_session_layers": {
+            "3": 4735
+          },
+          "selected_difficulty": {
+            "3": 4735
+          },
+          "difficulty": {
+            "3": 4735
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 5105
+          },
+          "wii_center_applied": {
+            "False": 5105
+          },
+          "wii_control_valid": {
+            "True": 5105
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_162520_538240",
+      "run_ids": [
+        "8c22553947de4739b4f9c45e7abcf0b6"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_162520_538240\\raw.csv",
+      "raw_sha256": "ae98e3bc5482e861b397baea54ac822c94631de21969c14c1f6933e73f3fa9b0",
+      "raw_rows": 55200,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792398409.646",
+        "sequence": "4948",
+        "run_id": "8c22553947de4739b4f9c45e7abcf0b6",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792398409.645"
+      },
+      "unity_continuity": {
+        "rows": 4948,
+        "timestamp_valid_rows": 4948,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792398320.543,
+        "end": 1792398409.646,
+        "duration_seconds": 89.1029999256134,
+        "gap_count_gt_0_1s": 5,
+        "gap_count_gt_0_4s": 5,
+        "max_gap_seconds": 2.183000087738037,
+        "gap_values_gt_0_1s": [
+          0.47499990463256836,
+          2.183000087738037,
+          0.6069998741149902,
+          0.5049998760223389,
+          0.5240001678466797
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4948
+          },
+          "selected_session_layers": {
+            "3": 4948
+          },
+          "selected_difficulty": {
+            "3": 4948
+          },
+          "difficulty": {
+            "3": 4948
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 50252
+          },
+          "wii_center_applied": {
+            "False": 50252
+          },
+          "wii_control_valid": {
+            "True": 50252
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261019_163835_953305",
+      "run_ids": [
+        "098bbd077a4647d185fccf5891adcf8b"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_163835_953305\\raw.csv",
+      "raw_sha256": "808a269d5d3e24e67567793cba929ebab1d2390aa30d49d0bea7eb1770639de1",
+      "raw_rows": 24035,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792399202.159",
+        "sequence": "4654",
+        "run_id": "098bbd077a4647d185fccf5891adcf8b",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792399202.158"
+      },
+      "unity_continuity": {
+        "rows": 4654,
+        "timestamp_valid_rows": 4654,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792399115.959,
+        "end": 1792399202.159,
+        "duration_seconds": 86.19999980926514,
+        "gap_count_gt_0_1s": 7,
+        "gap_count_gt_0_4s": 7,
+        "max_gap_seconds": 2.943000078201294,
+        "gap_values_gt_0_1s": [
+          0.554999828338623,
+          2.943000078201294,
+          0.4810001850128174,
+          0.504000186920166,
+          0.49699997901916504,
+          0.8279998302459717,
+          1.6060001850128174
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4654
+          },
+          "selected_session_layers": {
+            "3": 4654
+          },
+          "selected_difficulty": {
+            "3": 4654
+          },
+          "difficulty": {
+            "3": 4654
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 19381
+          },
+          "wii_center_applied": {
+            "False": 19381
+          },
+          "wii_control_valid": {
+            "True": 19381
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_092857_539658",
+      "run_ids": [
+        "d7694e6d3eae41f6986542cf157c0bfc"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_092857_539658\\raw.csv",
+      "raw_sha256": "138ebc4339150247580ac483557d27ef56b9f60248830fbd8a9d416433ed6fee",
+      "raw_rows": 10127,
+      "input_mode_evidence": {
+        "mode": "unloaded_board_test",
+        "evidence": "parallel_20261020/retest_092857/REPORT.md and user-confirmed unloaded test context"
+      },
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792459820.255",
+        "sequence": "4868",
+        "run_id": "d7694e6d3eae41f6986542cf157c0bfc",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan"
+      },
+      "unity_continuity": {
+        "rows": 4868,
+        "timestamp_valid_rows": 4868,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792459737.544,
+        "end": 1792459820.255,
+        "duration_seconds": 82.7110002040863,
+        "gap_count_gt_0_1s": 3,
+        "gap_count_gt_0_4s": 3,
+        "max_gap_seconds": 0.5499999523162842,
+        "gap_values_gt_0_1s": [
+          0.4760000705718994,
+          0.5360000133514404,
+          0.5499999523162842
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 4868
+          },
+          "selected_session_layers": {
+            "3": 4868
+          },
+          "selected_difficulty": {
+            "3": 4868
+          },
+          "difficulty": {
+            "3": 4868
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 5259
+          },
+          "wii_center_applied": {
+            "False": 5259
+          },
+          "wii_control_valid": {
+            "True": 5259
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_095212_942873",
+      "run_ids": [
+        "542dcdcbb4db47f89ba369de8e30e82f"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_095212_942873\\raw.csv",
+      "raw_sha256": "f1f0e6fd7dacd65956182f3444a1a3940078abbfbe83a41528b65c823907580c",
+      "raw_rows": 1229,
+      "input_mode_evidence": {
+        "mode": "unloaded_board_test",
+        "evidence": "parallel_20261020/retest_0952/REPORT.md"
+      },
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792461140.706",
+        "sequence": "466",
+        "run_id": "542dcdcbb4db47f89ba369de8e30e82f",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792461140.705"
+      },
+      "unity_continuity": {
+        "rows": 466,
+        "timestamp_valid_rows": 466,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792461132.947,
+        "end": 1792461140.706,
+        "duration_seconds": 7.759000062942505,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.053999900817871094,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 466
+          },
+          "selected_session_layers": {
+            "25": 466
+          },
+          "selected_difficulty": {
+            "Auto": 466
+          },
+          "difficulty": {
+            "1": 466
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 763
+          },
+          "wii_center_applied": {
+            "False": 763
+          },
+          "wii_control_valid": {
+            "True": 763
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_095225_074273",
+      "run_ids": [
+        "0d1abbf010104e429027b661b4d0ba05"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_095225_074273\\raw.csv",
+      "raw_sha256": "38b67e63eab11e654657b3414d3162654e204da3ea251c0cdf38c129c749a9c3",
+      "raw_rows": 26059,
+      "input_mode_evidence": {
+        "mode": "unloaded_board_test",
+        "evidence": "parallel_20261020/retest_0952/REPORT.md"
+      },
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792461355.814",
+        "sequence": "12649",
+        "run_id": "0d1abbf010104e429027b661b4d0ba05",
+        "run_state": "running",
+        "session_outcome": "",
+        "session_end_backend_timestamp": "nan"
+      },
+      "unity_continuity": {
+        "rows": 12649,
+        "timestamp_valid_rows": 12649,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792461145.069,
+        "end": 1792461355.814,
+        "duration_seconds": 210.74499988555908,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.04200005531311035,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 12649
+          },
+          "selected_session_layers": {
+            "3": 12649
+          },
+          "selected_difficulty": {
+            "3": 12649
+          },
+          "difficulty": {
+            "3": 12649
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 13410
+          },
+          "wii_center_applied": {
+            "False": 13410
+          },
+          "wii_control_valid": {
+            "True": 13410
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_100423_350121",
+      "run_ids": [
+        "423445ed25fb4e4c8dbdef9e5193ee4c"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_100423_350121\\raw.csv",
+      "raw_sha256": "6e2e018c019a7d55112a4f8daae319478438bbd45938c6579877d8d3429bf9b2",
+      "raw_rows": 14758,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792461980.718",
+        "sequence": "7043",
+        "run_id": "423445ed25fb4e4c8dbdef9e5193ee4c",
+        "run_state": "ended",
+        "session_outcome": "edge_exit",
+        "session_end_backend_timestamp": "1792461980.717"
+      },
+      "unity_continuity": {
+        "rows": 7043,
+        "timestamp_valid_rows": 7043,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792461863.354,
+        "end": 1792461980.718,
+        "duration_seconds": 117.36399984359741,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.04999995231628418,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 7043
+          },
+          "selected_session_layers": {
+            "3": 7043
+          },
+          "selected_difficulty": {
+            "3": 7043
+          },
+          "difficulty": {
+            "3": 7043
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 7715
+          },
+          "wii_center_applied": {
+            "False": 7715
+          },
+          "wii_control_valid": {
+            "True": 7715
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_100624_879840",
+      "run_ids": [
+        "dcdcca1ad62348c4b3352cdb389a2f46"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_100624_879840\\raw.csv",
+      "raw_sha256": "1ac0b1fbc12c413b99a7709a81e58f1624aeeb7ae2eb87642ef71d24565e00a2",
+      "raw_rows": 18953,
+      "input_mode_evidence": null,
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792462136.414",
+        "sequence": "9097",
+        "run_id": "dcdcca1ad62348c4b3352cdb389a2f46",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792462136.413"
+      },
+      "unity_continuity": {
+        "rows": 9097,
+        "timestamp_valid_rows": 9097,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792461984.875,
+        "end": 1792462136.414,
+        "duration_seconds": 151.53900003433228,
+        "gap_count_gt_0_1s": 0,
+        "gap_count_gt_0_4s": 0,
+        "max_gap_seconds": 0.03000020980834961,
+        "gap_values_gt_0_1s": [],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 9097
+          },
+          "selected_session_layers": {
+            "3": 9097
+          },
+          "selected_difficulty": {
+            "3": 9097
+          },
+          "difficulty": {
+            "3": 9097
+          }
+        },
+        "wii": {
+          "wii_board_loaded": {
+            "False": 9856
+          },
+          "wii_center_applied": {
+            "False": 9856
+          },
+          "wii_control_valid": {
+            "True": 9856
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    },
+    {
+      "session_id": "session_20261020_145740_792957",
+      "run_ids": [
+        "c8844adef23247debfaed314e246311f"
+      ],
+      "role": "operator_technical_test",
+      "participant_id": null,
+      "raw_path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261020_145740_792957\\raw.csv",
+      "raw_sha256": "cc654034f9e0cbcb288a0b4207585df5619363be59fc9938d275d61a26fc5efb",
+      "raw_rows": 1929,
+      "input_mode_evidence": {
+        "mode": "keyboard",
+        "evidence": "User explicitly confirmed latest session is keyboard UI testing on 2026-10-20."
+      },
+      "input_mode_if_not_explicit": "unknown",
+      "equipment_exclusion": null,
+      "unity_terminal_row": {
+        "source_timestamp": "1792479493.576",
+        "sequence": "1929",
+        "run_id": "c8844adef23247debfaed314e246311f",
+        "run_state": "ended",
+        "session_outcome": "user_exit",
+        "session_end_backend_timestamp": "1792479493.574"
+      },
+      "unity_continuity": {
+        "rows": 1929,
+        "timestamp_valid_rows": 1929,
+        "missing_timestamp_rows": 0,
+        "adjacent_pairs_blocked_by_missing_timestamp": 0,
+        "nonpositive_adjacent_dt_count": 0,
+        "start": 1792479460.798,
+        "end": 1792479493.576,
+        "duration_seconds": 32.77799987792969,
+        "gap_count_gt_0_1s": 1,
+        "gap_count_gt_0_4s": 1,
+        "max_gap_seconds": 0.5630002021789551,
+        "gap_values_gt_0_1s": [
+          0.5630002021789551
+        ],
+        "intervals_with_missing_timestamp": 0
+      },
+      "configuration_distributions_by_source": {
+        "unity": {
+          "calibration_mode": {
+            "True": 1929
+          },
+          "selected_session_layers": {
+            "3": 1929
+          },
+          "selected_difficulty": {
+            "3": 1929
+          },
+          "difficulty": {
+            "3": 1929
+          }
+        }
+      },
+      "automatic_training_inclusion": false,
+      "automatic_performance_inclusion": false,
+      "historical_condition": null,
+      "qc_disposition": "technical_only"
+    }
+  ]
+}

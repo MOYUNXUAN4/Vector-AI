@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "description": "Static launch gate pins 22 existing runtime/launcher/deployment files plus the new preflight and wrapper. This lock intentionally does not hash itself. Not a runtime acceptance receipt.",
+  "sha256": {
+    "car_backend.py": "873a495b964cef0f370e9cb76b8b061173644520a75f6ae302a80cd63a6575eb",
+    "login_server.py": "ba9c3232e660c056e2f0d8ccaf195d9d90664ae9b6ac01d4e3c8f4e902f455a9",
+    "master_server.py": "6ac2b57a5e9fcd4f34a609dd83649388481f055f9a0c514a3db1ba493e0e4c81",
+    "parallel_20261010/backend/alarm_policy.py": "f9964fb612b2093cbf9b3c36917828652a6760b54a44632ae018ecd758f6f25f",
+    "parallel_20261010/backend/causal_features.py": "0a23404af9fa96ded73fb53629ba9fa7379a6153b706c6ef5a9513f22be48168",
+    "parallel_20261010/backend/model_artifact.py": "0c1ab15a9700ef0c2e9bc4375956ffdd3f92b20133e57a894430fdc7a8049598",
+    "parallel_20261010/backend/runtime_adapter.py": "0c4f638ac84b9aa1e1bddbf2b031a3fda497fe363cba808e2beee76444dfe7ff",
+    "parallel_20261010/backend/stream_guard.py": "fa233d59dceb52e3064794f0d2c1412d2ebfb7f14e487bd066e88f5eb830e4c7",
+    "parallel_20261010/backend/warning_runtime.py": "11e3917f273f3b7e39eabc554e40a4c633271cd416b6e1760f9447ff01e40f08",
+    "parallel_20261011/deployment_refit/output/artifact/manifest.json": "b75cac3173496171a9e2c17906938fc5bdac22243ff7f8ce5cee75b96900d29e",
+    "parallel_20261011/deployment_refit/output/artifact/model.txt": "01addaa225b0400cea73069adbb070ffb54d8209f87e4bcb75781a01a0536068",
+    "parallel_20261011/realtime_integration/bridge.py": "d6549abfcacefba5a1599daff08ddb276afa48c315425558c5daba41fb147874",
+    "parallel_20261011/realtime_integration/geometry_danger.py": "5c6cac6198d79a6b7d743bad452d1dd32b6f0e57044c1bbcb5ed4a7d58aa207e",
+    "parallel_20261014/proximity_shadow_backend_luna/proximity_shadow.py": "ae3f37be9444e327aab41fc155867015e5ec09c2cfb90f5daaef4a2095c820e2",
+    "parallel_20261015/proximity_reply_luna/proximity_reply.py": "e45dbdfb9b9bc3e3e02da566d5e8270871f796bcec7dd3c9039e62b0e2b47eaa",
+    "runningball_ai.py": "2185ada5bbb41b981ca6af9e4691ac50de45d14481d1caebbce29e634ec81839",
+    "Start_Master_Shadow_Only_Latency_Test.cmd": "ae5eb7acd286433e95f5e89f240b1a80ae12691abca7db1a1e6458d85d600342",
+    "Start_Master_With_Model.cmd": "44ea542b1d3787d3e451c3d5f51b44c73a67ae12e26190c02657445cbd551d7d",
+    "Start_Master_With_Proximity_Experiment.cmd": "b0b50488ad6e7bc0ea8009f1ba5ae87b5636ef5621116b0114bdc67d88041fdf",
+    "Start_Master_With_Proximity_Shadow.cmd": "2c2d5a8ac4905c53e2f0bfb47f3c253ad47d4adc03b013d9b9e3969556b09629",
+    "timesync_logger.py": "cb6ca898642b11055470f9be39df24fce5b7e06f85bd4142e92e191d2c86c2af",
+    "UDPRecevier.py": "3f307f28fc0a9649321f03564ccdaae124b1903f077eb3633c0aeb5c3e27b9f3",
+    "parallel_20261016/pilot_readiness/tools/preflight.py": "caa6d5750e206aae8216491f9064ffcc32e1d34d35a2a577a56f83052f499bb9",
+    "Start_Pilot_10P_Experimental.cmd": "6f10a6e4f9553f3c5496e45801a67241e9ddf0ba29b78a8d7d128fe4f2d547dd"
+  }
+}

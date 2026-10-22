@@ -1,0 +1,655 @@
+{
+  "generated_at_epoch": 1792380563.576,
+  "files": [
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105632_058608\\raw.csv",
+      "runs": [
+        {
+          "run_id": "31870bd7101e45a29d78d179f82e06f0",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.162053,
+          "max_segment_drift_seconds": 0.018723,
+          "rows_with_geometry": 1193,
+          "components": {
+            "steps": 1,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 4,
+          "last_csv_line": 2494,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 4,
+              "last_csv_line": 1932,
+              "rows": 936,
+              "offset_median": 1792378572.552754,
+              "offset_min": 1792378572.551027,
+              "offset_max": 1792378572.56975,
+              "drift_seconds": 0.018723,
+              "start_unity": 19.49325,
+              "end_unity": 35.191879,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1965,
+              "last_csv_line": 2494,
+              "rows": 257,
+              "offset_median": 1792378572.708868,
+              "offset_min": 1792378572.707234,
+              "offset_max": 1792378572.71308,
+              "drift_seconds": 0.005846,
+              "start_unity": 35.54092,
+              "end_unity": 39.799728,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1965,
+              "epoch": 1792378608.254,
+              "unity": 35.54092,
+              "delta_seconds": 0.160959
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1932,
+              "start_unity": 35.191879,
+              "end_unity": 35.54092,
+              "start_epoch": 1792378607.744,
+              "end_epoch": 1792378608.254,
+              "seconds": 0.51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105656_285619\\raw.csv",
+      "runs": [
+        {
+          "run_id": "dc424922ab7a4438809dd72a4b308bb7",
+          "verdict": "CLEAN",
+          "offset_range_seconds": 0.004213,
+          "max_segment_drift_seconds": 0.004213,
+          "rows_with_geometry": 725,
+          "components": {
+            "steps": 0,
+            "gaps": 0,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 1491,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 1491,
+              "rows": 725,
+              "offset_median": 1792378573.597437,
+              "offset_min": 1792378573.595759,
+              "offset_max": 1792378573.599972,
+              "drift_seconds": 0.004213,
+              "start_unity": 42.682289,
+              "end_unity": 54.741676,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [],
+          "gaps": []
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105712_007803\\raw.csv",
+      "runs": [
+        {
+          "run_id": "f848f2248b7443d7b740b5b2eda42bc4",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.156591,
+          "max_segment_drift_seconds": 0.004666,
+          "rows_with_geometry": 828,
+          "components": {
+            "steps": 1,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 1733,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 1645,
+              "rows": 799,
+              "offset_median": 1792378574.54218,
+              "offset_min": 1792378574.540773,
+              "offset_max": 1792378574.544321,
+              "drift_seconds": 0.003547,
+              "start_unity": 57.459816,
+              "end_unity": 70.753448,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1678,
+              "last_csv_line": 1733,
+              "rows": 29,
+              "offset_median": 1792378574.693543,
+              "offset_min": 1792378574.692698,
+              "offset_max": 1792378574.697364,
+              "drift_seconds": 0.004666,
+              "start_unity": 71.092636,
+              "end_unity": 71.536255,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1678,
+              "epoch": 1792378645.79,
+              "unity": 71.092636,
+              "delta_seconds": 0.154812
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1645,
+              "start_unity": 70.753448,
+              "end_unity": 71.092636,
+              "start_epoch": 1792378645.296,
+              "end_epoch": 1792378645.79,
+              "seconds": 0.494
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105734_310716\\raw.csv",
+      "runs": [
+        {
+          "run_id": "b6f039d1c47a45e89c8f9dd9dd8967a9",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.127878,
+          "max_segment_drift_seconds": 0.006745,
+          "rows_with_geometry": 566,
+          "components": {
+            "steps": 2,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 1
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 665,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 157,
+              "rows": 75,
+              "offset_median": 1792378578.883331,
+              "offset_min": 1792378578.882412,
+              "offset_max": 1792378578.884521,
+              "drift_seconds": 0.002109,
+              "start_unity": 75.420479,
+              "end_unity": 76.693848,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 174,
+              "last_csv_line": 664,
+              "rows": 490,
+              "offset_median": 1792378578.95213,
+              "offset_min": 1792378578.950545,
+              "offset_max": 1792378578.95729,
+              "drift_seconds": 0.006745,
+              "start_unity": 77.036163,
+              "end_unity": 85.18071,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 2,
+              "first_csv_line": 665,
+              "last_csv_line": 665,
+              "rows": 1,
+              "offset_median": 1792378579.01029,
+              "offset_min": 1792378579.01029,
+              "offset_max": 1792378579.01029,
+              "drift_seconds": 0.0,
+              "start_unity": 85.18071,
+              "end_unity": 85.18071,
+              "transient": true,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 174,
+              "epoch": 1792378655.991,
+              "unity": 77.036163,
+              "delta_seconds": 0.070684
+            },
+            {
+              "after_csv_line": 665,
+              "epoch": 1792378664.191,
+              "unity": 85.18071,
+              "delta_seconds": 0.053
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 157,
+              "start_unity": 76.693848,
+              "end_unity": 77.036163,
+              "start_epoch": 1792378655.578,
+              "end_epoch": 1792378655.991,
+              "seconds": 0.413
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105912_781089\\raw.csv",
+      "runs": [
+        {
+          "run_id": "0d93af38d29a499487b66b0c9a6e2199",
+          "verdict": "CLEAN",
+          "offset_range_seconds": 0.014347,
+          "max_segment_drift_seconds": 0.014347,
+          "rows_with_geometry": 266,
+          "components": {
+            "steps": 0,
+            "gaps": 0,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 4,
+          "last_csv_line": 548,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 4,
+              "last_csv_line": 548,
+              "rows": 266,
+              "offset_median": 1792378748.907974,
+              "offset_min": 1792378748.906701,
+              "offset_max": 1792378748.921048,
+              "drift_seconds": 0.014347,
+              "start_unity": 3.862952,
+              "end_unity": 8.277038,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [],
+          "gaps": []
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105922_291656\\raw.csv",
+      "runs": [
+        {
+          "run_id": "b0e336b2239b4a8b99d47cf72ef0b5d7",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.484111,
+          "max_segment_drift_seconds": 0.00535,
+          "rows_with_geometry": 1489,
+          "components": {
+            "steps": 2,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 1
+          },
+          "first_csv_line": 3,
+          "last_csv_line": 3093,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 3,
+              "last_csv_line": 1900,
+              "rows": 920,
+              "offset_median": 1792378751.153816,
+              "offset_min": 1792378751.152074,
+              "offset_max": 1792378751.157424,
+              "drift_seconds": 0.00535,
+              "start_unity": 11.132381,
+              "end_unity": 26.439611,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1933,
+              "last_csv_line": 1933,
+              "rows": 1,
+              "offset_median": 1792378751.636185,
+              "offset_min": 1792378751.636185,
+              "offset_max": 1792378751.636185,
+              "drift_seconds": 0.0,
+              "start_unity": 26.454815,
+              "end_unity": 26.454815,
+              "transient": true,
+              "drifting": false
+            },
+            {
+              "index": 2,
+              "first_csv_line": 1934,
+              "last_csv_line": 3093,
+              "rows": 568,
+              "offset_median": 1792378751.308018,
+              "offset_min": 1792378751.306485,
+              "offset_max": 1792378751.310851,
+              "drift_seconds": 0.004366,
+              "start_unity": 26.788149,
+              "end_unity": 36.217133,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1933,
+              "epoch": 1792378778.091,
+              "unity": 26.454815,
+              "delta_seconds": 0.482797
+            },
+            {
+              "after_csv_line": 1934,
+              "epoch": 1792378778.099,
+              "unity": 26.788149,
+              "delta_seconds": -0.325334
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1900,
+              "start_unity": 26.439611,
+              "end_unity": 26.454815,
+              "start_epoch": 1792378777.593,
+              "end_epoch": 1792378778.091,
+              "seconds": 0.498
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_105951_117357\\raw.csv",
+      "runs": [
+        {
+          "run_id": "5c364258088d4dd2adfdb15e6830f185",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.160428,
+          "max_segment_drift_seconds": 0.00543,
+          "rows_with_geometry": 1524,
+          "components": {
+            "steps": 1,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 3167,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 1924,
+              "rows": 934,
+              "offset_median": 1792378752.205658,
+              "offset_min": 1792378752.204104,
+              "offset_max": 1792378752.208555,
+              "drift_seconds": 0.004452,
+              "start_unity": 38.905403,
+              "end_unity": 54.453136,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1956,
+              "last_csv_line": 3167,
+              "rows": 590,
+              "offset_median": 1792378752.360688,
+              "offset_min": 1792378752.359101,
+              "offset_max": 1792378752.364532,
+              "drift_seconds": 0.00543,
+              "start_unity": 54.786469,
+              "end_unity": 64.587906,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1956,
+              "epoch": 1792378807.151,
+              "unity": 54.786469,
+              "delta_seconds": 0.158668
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1924,
+              "start_unity": 54.453136,
+              "end_unity": 54.786469,
+              "start_epoch": 1792378806.659,
+              "end_epoch": 1792378807.151,
+              "seconds": 0.492
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110023_567130\\raw.csv",
+      "runs": [
+        {
+          "run_id": "bbe4be8d4fbb4e74b192b0570c12707e",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.501642,
+          "max_segment_drift_seconds": 0.00544,
+          "rows_with_geometry": 1655,
+          "components": {
+            "steps": 2,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 1
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 3437,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 1735,
+              "rows": 842,
+              "offset_median": 1792378755.042357,
+              "offset_min": 1792378755.040653,
+              "offset_max": 1792378755.044888,
+              "drift_seconds": 0.004235,
+              "start_unity": 68.518898,
+              "end_unity": 82.535484,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1769,
+              "last_csv_line": 1769,
+              "rows": 1,
+              "offset_median": 1792378755.542295,
+              "offset_min": 1792378755.542295,
+              "offset_max": 1792378755.542295,
+              "drift_seconds": 0.0,
+              "start_unity": 82.550705,
+              "end_unity": 82.550705,
+              "transient": true,
+              "drifting": false
+            },
+            {
+              "index": 2,
+              "first_csv_line": 1770,
+              "last_csv_line": 3437,
+              "rows": 812,
+              "offset_median": 1792378755.213191,
+              "offset_min": 1792378755.211527,
+              "offset_max": 1792378755.216967,
+              "drift_seconds": 0.00544,
+              "start_unity": 82.884033,
+              "end_unity": 96.394783,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1769,
+              "epoch": 1792378838.093,
+              "unity": 82.550705,
+              "delta_seconds": 0.499779
+            },
+            {
+              "after_csv_line": 1770,
+              "epoch": 1792378838.101,
+              "unity": 82.884033,
+              "delta_seconds": -0.325328
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1735,
+              "start_unity": 82.535484,
+              "end_unity": 82.550705,
+              "start_epoch": 1792378837.578,
+              "end_epoch": 1792378838.093,
+              "seconds": 0.515
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110055_533132\\raw.csv",
+      "runs": [
+        {
+          "run_id": "70bdae08f81a4d1480b9f2b2ccd61125",
+          "verdict": "CLEAN",
+          "offset_range_seconds": 0.003766,
+          "max_segment_drift_seconds": 0.003766,
+          "rows_with_geometry": 439,
+          "components": {
+            "steps": 0,
+            "gaps": 0,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 3,
+          "last_csv_line": 903,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 3,
+              "last_csv_line": 903,
+              "rows": 439,
+              "offset_median": 1792378757.047817,
+              "offset_min": 1792378757.046255,
+              "offset_max": 1792378757.050021,
+              "drift_seconds": 0.003766,
+              "start_unity": 98.479729,
+              "end_unity": 105.766396,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [],
+          "gaps": []
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\QIYUXUAN\\Desktop\\fyp_Backend (3)\\fyp_Backend\\telemetry_logs\\P01\\session_20261019_110107_096491\\raw.csv",
+      "runs": [
+        {
+          "run_id": "3074f1b0189744ad92cc26e1bec71fe0",
+          "verdict": "STEPPED",
+          "offset_range_seconds": 0.1671,
+          "max_segment_drift_seconds": 0.004432,
+          "rows_with_geometry": 1468,
+          "components": {
+            "steps": 1,
+            "gaps": 1,
+            "drifting_segments": 0,
+            "transient_segments": 0
+          },
+          "first_csv_line": 2,
+          "last_csv_line": 3052,
+          "segments": [
+            {
+              "index": 0,
+              "first_csv_line": 2,
+              "last_csv_line": 1903,
+              "rows": 925,
+              "offset_median": 1792378758.001974,
+              "offset_min": 1792378758.000277,
+              "offset_max": 1792378758.004709,
+              "drift_seconds": 0.004432,
+              "start_unity": 109.088203,
+              "end_unity": 124.484062,
+              "transient": false,
+              "drifting": false
+            },
+            {
+              "index": 1,
+              "first_csv_line": 1936,
+              "last_csv_line": 3052,
+              "rows": 543,
+              "offset_median": 1792378758.164978,
+              "offset_min": 1792378758.163444,
+              "offset_max": 1792378758.167377,
+              "drift_seconds": 0.003933,
+              "start_unity": 124.824623,
+              "end_unity": 133.836288,
+              "transient": false,
+              "drifting": false
+            }
+          ],
+          "steps": [
+            {
+              "after_csv_line": 1936,
+              "epoch": 1792378882.992,
+              "unity": 124.824623,
+              "delta_seconds": 0.165439
+            }
+          ],
+          "gaps": [
+            {
+              "after_csv_line": 1903,
+              "start_unity": 124.484062,
+              "end_unity": 124.824623,
+              "start_epoch": 1792378882.486,
+              "end_epoch": 1792378882.992,
+              "seconds": 0.506
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

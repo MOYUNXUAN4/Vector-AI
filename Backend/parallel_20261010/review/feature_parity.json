@@ -1,0 +1,291 @@
+{
+  "scope": "TEST1009 development only; raw CSV read-only; no model or alarm evaluation",
+  "sessions": 30,
+  "feature_rows_expected": 6898,
+  "feature_rows_matched": 6898,
+  "feature_columns": 24,
+  "feature_cells_compared": 165552,
+  "mismatch_count": 0,
+  "mismatches_first_20": [],
+  "absolute_error_max_by_feature": {
+    "directional_edge_distance": 8.881784197001252e-16,
+    "normalized_edge_distance": 1.1102230246251565e-16,
+    "clearance": 8.881784197001252e-16,
+    "radial_outward_velocity": 8.881784197001252e-16,
+    "ball_xz_speed": 8.881784197001252e-16,
+    "platform_tilt": 0.0,
+    "difficulty": 0.0,
+    "ball_radius": 0.0,
+    "platform_radius": 0.0,
+    "distance_mean_0_5s": 8.881784197001252e-16,
+    "distance_max_0_5s": 8.881784197001252e-16,
+    "distance_min_0_5s": 8.881784197001252e-16,
+    "velocity_mean_0_5s": 8.881784197001252e-16,
+    "velocity_max_0_5s": 8.881784197001252e-16,
+    "velocity_min_0_5s": 8.881784197001252e-16,
+    "outward_acceleration": 2.842170943040401e-14,
+    "acceleration_mean_0_5s": 1.7763568394002505e-15,
+    "acceleration_std_0_5s": 7.105427357601002e-15,
+    "acceleration_max_0_5s": 2.842170943040401e-14,
+    "velocity_vector_consistency": 2.220446049250313e-16,
+    "mean_velocity_alignment_current_radial": 1.1102230246251565e-16,
+    "outward_fraction_0_5s": 1.1102230246251565e-16,
+    "inward_fraction_0_5s": 1.1102230246251565e-16,
+    "inward_displacement_0_2s": 1.1102230246251565e-16
+  },
+  "tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-10
+  },
+  "eligible_raw_calibration_mode_counts": {
+    "true": 28061
+  },
+  "raw_files_unchanged": true,
+  "sessions_detail": [
+    {
+      "session_id": "session_20261009_094954_427313",
+      "expected_decisions": 192,
+      "matched": 192,
+      "missing_decisions": 0,
+      "raw_sha256": "10afc2040e722a34481dd52b3f328f85ee9090bfcc6d56190b2ddfaa106731a3",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095015_750430",
+      "expected_decisions": 256,
+      "matched": 256,
+      "missing_decisions": 0,
+      "raw_sha256": "96df74916af5b759cc45f55dd9b1b17c5cd79d2890999a8cf0d335645a421fe3",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095206_853253",
+      "expected_decisions": 529,
+      "matched": 529,
+      "missing_decisions": 0,
+      "raw_sha256": "097176c88edc59c57a0685db73803e3e154d4976ca43673dd553228c4db58cd9",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095252_106312",
+      "expected_decisions": 397,
+      "matched": 397,
+      "missing_decisions": 0,
+      "raw_sha256": "bd12fde92c92fff81875c845d8cf2a8f73b5de8e59497fd45e1b05cb32e85714",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095344_428679",
+      "expected_decisions": 98,
+      "matched": 98,
+      "missing_decisions": 0,
+      "raw_sha256": "244516bd0867ba9b61e14f4fad94e44c6df8c7d731bfa5c76837696997912e9b",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095359_807711",
+      "expected_decisions": 46,
+      "matched": 46,
+      "missing_decisions": 0,
+      "raw_sha256": "1d1fc4a25ddb2d698023b3a598ccb6750665d4b78b98e6aadc435f31a06cd9c8",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095414_328195",
+      "expected_decisions": 232,
+      "matched": 232,
+      "missing_decisions": 0,
+      "raw_sha256": "bf3361e69e01372d90b6a987f222f636b99108b50b2b183110c3aeccb7f658d8",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095449_567461",
+      "expected_decisions": 246,
+      "matched": 246,
+      "missing_decisions": 0,
+      "raw_sha256": "70caf35066dd02730f37e1a44194af6ea724bb4ad218644fa471982000bcd82e",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095519_650185",
+      "expected_decisions": 421,
+      "matched": 421,
+      "missing_decisions": 0,
+      "raw_sha256": "2867fc7142c462962c39a61d92e503522ac22bf25dd0977d07693d6a56f9c5dc",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095714_730473",
+      "expected_decisions": 436,
+      "matched": 436,
+      "missing_decisions": 0,
+      "raw_sha256": "23f0eda6bdbd9539be79383ac667fd9cee8dd93a54b7d0a7a1e21b665ed7d711",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095755_667634",
+      "expected_decisions": 70,
+      "matched": 70,
+      "missing_decisions": 0,
+      "raw_sha256": "34a92edda8fbb3bb40ac6bb525a94fa50148f65bdee995c2f60e7ecc1fe49e8b",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095811_191578",
+      "expected_decisions": 116,
+      "matched": 116,
+      "missing_decisions": 0,
+      "raw_sha256": "95a36fb49f54bb31a563343470989f5a4af5b9374fab6829d8f5600c2ed8ac72",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095831_124251",
+      "expected_decisions": 171,
+      "matched": 171,
+      "missing_decisions": 0,
+      "raw_sha256": "78a4fb1ce47dd8227aae019caa7cce38483eb56500ed83af3ba0395a29bbd63f",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095851_422061",
+      "expected_decisions": 247,
+      "matched": 247,
+      "missing_decisions": 0,
+      "raw_sha256": "7e26ebae1f851e0a0d6cc9e8fdc1c1bb56fbee63fc8cd1eb48cc6f17bb3e9a25",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095919_317341",
+      "expected_decisions": 462,
+      "matched": 462,
+      "missing_decisions": 0,
+      "raw_sha256": "2542983868bc69398259238b08cb6595703317b2d0f7834e4da9598a64296e2b",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_095958_956202",
+      "expected_decisions": 412,
+      "matched": 412,
+      "missing_decisions": 0,
+      "raw_sha256": "bd452a18641fef55326cd06139d26230eaf516051bc3b4647ed0b7051dbbf03d",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100037_026082",
+      "expected_decisions": 64,
+      "matched": 64,
+      "missing_decisions": 0,
+      "raw_sha256": "c31f18bf2ac0b6ea638f6dbd812a96e4ce214b14c9cc28b18c8c33987972a42f",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100049_811540",
+      "expected_decisions": 66,
+      "matched": 66,
+      "missing_decisions": 0,
+      "raw_sha256": "373f471cb9050bea7a16bfe26fa7f6954501dfa5498d4a68f558de7465024b64",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100107_863016",
+      "expected_decisions": 141,
+      "matched": 141,
+      "missing_decisions": 0,
+      "raw_sha256": "cb5e2b21678ca4e2b086a983c2ad598806c8305efb3d48567476cabb397650cb",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100126_047517",
+      "expected_decisions": 168,
+      "matched": 168,
+      "missing_decisions": 0,
+      "raw_sha256": "329fec082d69c1172db35b6c682a646925465d1754a0a5936cb0723ed0e33a0e",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100149_862095",
+      "expected_decisions": 313,
+      "matched": 313,
+      "missing_decisions": 0,
+      "raw_sha256": "f5c5bd693922d1970203dca147ddef60a2283a86a893322edbb0902c2cf50172",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100218_355901",
+      "expected_decisions": 394,
+      "matched": 394,
+      "missing_decisions": 0,
+      "raw_sha256": "c6f8a44399280ad10c6085ef859e62fb0c9ccca642974c8cf905518d7af28fe4",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100259_607957",
+      "expected_decisions": 113,
+      "matched": 113,
+      "missing_decisions": 0,
+      "raw_sha256": "f6557afd79877d8394d97cfdad513bf34bfdffdfa6650cdbeac42ea1065ab624",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100317_201063",
+      "expected_decisions": 110,
+      "matched": 110,
+      "missing_decisions": 0,
+      "raw_sha256": "aba87b06c366defecf4a7693bb1f00e90a2076a7ef889c30990475065756ac27",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100345_605997",
+      "expected_decisions": 273,
+      "matched": 273,
+      "missing_decisions": 0,
+      "raw_sha256": "3069e13c0ef55b37d48c55c9d198c14eb4590f6a5f51354cb5e98920ab85eb37",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100414_008338",
+      "expected_decisions": 191,
+      "matched": 191,
+      "missing_decisions": 0,
+      "raw_sha256": "32c2a96aa0b3f3cca7605217ec5714446e6a17b01398d97f0d37c652795a0c4d",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100436_586122",
+      "expected_decisions": 365,
+      "matched": 365,
+      "missing_decisions": 0,
+      "raw_sha256": "387a22686c21e6ad38411e3c89be86c1432d805992c5391518eb27e7ab3eea9c",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100507_965698",
+      "expected_decisions": 280,
+      "matched": 280,
+      "missing_decisions": 0,
+      "raw_sha256": "9da9e43b9dfc60b596c7566e477926d3f0dad8412f7efdfb2f8efacb33f292d4",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100534_530672",
+      "expected_decisions": 42,
+      "matched": 42,
+      "missing_decisions": 0,
+      "raw_sha256": "513c40a39605cfc6dffc41beb3459ecdd4f95a5a1bb014e317a5446963c98c10",
+      "raw_unchanged": true
+    },
+    {
+      "session_id": "session_20261009_100545_738309",
+      "expected_decisions": 47,
+      "matched": 47,
+      "missing_decisions": 0,
+      "raw_sha256": "a98809e7f9a029c3e524125b0d3f3d6e2860fde25d72656060b479c1ef9108e7",
+      "raw_unchanged": true
+    }
+  ],
+  "limitations": [
+    "This tests the causal feature kernel and original decision spacing, not live sockets or Unity.",
+    "Eligibility mirrors training; StreamGuard/packet adapter stricter exclusions need separate checks.",
+    "calibration_mode is session configuration, not a sufficient calibration-phase flag in this cohort."
+  ]
+}

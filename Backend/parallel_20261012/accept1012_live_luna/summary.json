@@ -1,0 +1,86 @@
+{
+  "audit_method": {
+    "log_join": "Exact run_id match on individual [ExperimentalModelWarning] lines in Editor.log; stack traces excluded.",
+    "raw_status_field": "For RECEIVED, raw SAFE/STRONG/UNKNOWN is in revoke_reason.",
+    "episode_rule": "First ACTIVE opens an episode; later ACTIVE updates it; first REVOKED closes it.",
+    "visual_observation": "User saw an independent banner without identifying its run; no run has visual observation assigned."
+  },
+  "editor_log_snapshot": {
+    "read_before": {
+      "size_bytes": 1076977,
+      "mtime_utc": "2026-10-12T02:22:55.855605+00:00",
+      "sha256": "80ba7103cf3de28d3f850062b26a2017222ed4c9febd3a75c9c93ad532de6c2a"
+    },
+    "read_after": {
+      "size_bytes": 1076977,
+      "mtime_utc": "2026-10-12T02:22:55.855605+00:00",
+      "sha256": "80ba7103cf3de28d3f850062b26a2017222ed4c9febd3a75c9c93ad532de6c2a"
+    },
+    "changed_during_read": false,
+    "observed_change_between_initial_inspection_and_final_read": "Initial inspection: 1076944 bytes, mtime 2026-10-12T02:21:55.865203+00:00, SHA-256 92e272c7c6fe30e5fa169145741d2e4671f67ef1fe5d0f0578c185cffd64de37. The log grew before the final stable read; this summary uses the final snapshot."
+  },
+  "sessions": [
+    {
+      "session_id": "session_20261012_101911_080981",
+      "raw_row_count": 3417,
+      "raw_csv_snapshot": {"sha256_before_read": "e57ce6e418072ea0546ef90b78a6bd58154deb07063af24151d0249982f5a9ef", "sha256_after_read": "e57ce6e418072ea0546ef90b78a6bd58154deb07063af24151d0249982f5a9ef", "changed_during_read": false, "bytes_analyzed": 2425142},
+      "source_counts": {"wii": 1865, "unity": 1552},
+      "run_id": "baf20b87408d4ef7b9195e3f55a1c7d7",
+      "source_spans": {
+        "unity": {"rows": 1552, "timestamp_field": "source_timestamp", "first_in_file": "1791771551.084", "last_in_file": "1791771577.002"},
+        "wii": {"rows": 1865, "timestamp_field": "source_timestamp", "first_in_file": "2026-10-12T02:19:11.0862571Z", "last_in_file": "2026-10-12T02:19:40.3379723Z"}
+      },
+      "selected_difficulty_values": ["3"], "commanded_difficulty_values": ["3"], "active_platform_difficulty_values": ["3"], "difficulty_values": ["3"], "platform_difficulty_values": ["3"], "selected_session_layers_values": ["3"],
+      "identity_values": {"response_experiment_id": ["response_experiment"], "experiment_id": ["response_experiment"], "response_condition": ["two_level"], "trial_scenario": ["normal"], "trial_valid": ["True"], "response_trial_id": ["11aa54484bee46ae965a61e68d122901"], "trial_id": ["11aa54484bee46ae965a61e68d122901"], "response_layer_id": ["1", "2", "3", "4"], "layer_id": ["1", "2", "3", "4"]},
+      "terminal_unity_row": {"backend_timestamp": "1791771577.016257", "source_timestamp": "1791771577.002", "sequence": "1552", "run_id": "baf20b87408d4ef7b9195e3f55a1c7d7", "run_state": "ended", "session_outcome": "calibration_completed", "session_end_backend_timestamp": "1791771577.0", "passed_count": "3", "prediction_state": "SAFE", "visible_warning_state": "SAFE", "warning_episode_id": "3", "warning_episode_end_time": "33.11576461791992", "warning_episode_end_backend_timestamp": "1791771573.759"},
+      "raw_last_row": {"backend_timestamp": "1791771580.338367", "source": "wii", "source_timestamp": "2026-10-12T02:19:40.3379723Z", "sequence": "122815", "fall_event": "False"},
+      "unity_sequence_audit": {"count": 1552, "first": 1, "last": 1552, "missing_gaps": [], "duplicate_adjacent": [], "decreases_or_reversals": []},
+      "geometry": {"rows_with_geometry_identity": 1552, "geometry_query_valid_values": {"True": 1552}, "geometry_ownership_valid_values": {"True": 1552}, "query_false_count": 0, "ownership_false_count": 0, "identity_mismatch_count": 0, "raw_identity_values": [["-14540", "-14540-g1", "-14540", "-14540-g1"], ["-14560", "-14560-g1", "-14560", "-14560-g1"], ["-14586", "-14586-g1", "-14586", "-14586-g1"], ["-14610", "-14610-g1", "-14610", "-14610-g1"]], "raw_geometry_source_timestamp_span": {"first_in_file": "10.425019264221191", "last_in_file": "36.35670852661133", "unique_value_count": 1551}},
+      "model_warning_log": {"matched_line_count": 346, "state_counts": {"RECEIVED": 319, "ACTIVE": 23, "REVOKED": 4}, "received_raw_status_counts_from_revoke_reason": {"SAFE": 291, "STRONG": 23, "UNKNOWN": 5}, "active_episodes": [
+        {"first_active_local_monotonic_s": "2254.007083", "first_active_prediction_sequence": "97", "activation_received": {"line_number": 3269, "local_monotonic_s": "2254.007083", "prediction_sequence": "97", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2254.390160", "last_active_prediction_sequence": "104", "active_line_count": 8, "revoked_local_monotonic_s": "2254.462595", "revoked_prediction_sequence": "104", "revoke_reason": "backend_safe", "same_sequence_unknown_received_preceded_revoke": false},
+        {"first_active_local_monotonic_s": "2256.208762", "first_active_prediction_sequence": "134", "activation_received": {"line_number": 3905, "local_monotonic_s": "2256.208762", "prediction_sequence": "134", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2256.576246", "last_active_prediction_sequence": "140", "active_line_count": 7, "revoked_local_monotonic_s": "2256.642184", "revoked_prediction_sequence": "140", "revoke_reason": "backend_safe", "same_sequence_unknown_received_preceded_revoke": false},
+        {"first_active_local_monotonic_s": "2258.457963", "first_active_prediction_sequence": "170", "activation_received": {"line_number": 4514, "local_monotonic_s": "2258.457963", "prediction_sequence": "170", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2258.581162", "last_active_prediction_sequence": "172", "active_line_count": 3, "revoked_local_monotonic_s": "2258.643305", "revoked_prediction_sequence": "172", "revoke_reason": "backend_safe", "same_sequence_unknown_received_preceded_revoke": false},
+        {"first_active_local_monotonic_s": "2263.588929", "first_active_prediction_sequence": "247", "activation_received": {"line_number": 5659, "local_monotonic_s": "2263.588929", "prediction_sequence": "247", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2263.823371", "last_active_prediction_sequence": "251", "active_line_count": 5, "revoked_local_monotonic_s": "2263.891350", "revoked_prediction_sequence": "251", "revoke_reason": "backend_safe", "same_sequence_unknown_received_preceded_revoke": false}
+      ], "unmatched_orphan_revokes": 0, "first_matched_log_line": 1883, "last_matched_log_line": 6690}
+    },
+    {
+      "session_id": "session_20261012_101940_356172",
+      "raw_csv_snapshot": {"sha256_before_read": "84f9721bc131c5552c38a38211a8c4d2815f1e735f641868c80e4aef3aec3fb5", "sha256_after_read": "84f9721bc131c5552c38a38211a8c4d2815f1e735f641868c80e4aef3aec3fb5", "changed_during_read": false, "bytes_analyzed": 1568229},
+      "raw_row_count": 2302, "source_counts": {"wii": 1284, "unity": 1018}, "run_id": "923614ec5f6e4626b91779bb6c7c51d9",
+      "source_spans": {"unity": {"rows": 1018, "timestamp_field": "source_timestamp", "first_in_file": "1791771580.352", "last_in_file": "1791771597.332"}, "wii": {"rows": 1284, "timestamp_field": "source_timestamp", "first_in_file": "2026-10-12T02:19:40.3537397Z", "last_in_file": "2026-10-12T02:20:00.4436643Z"}},
+      "selected_difficulty_values": ["3"], "commanded_difficulty_values": ["3"], "active_platform_difficulty_values": ["3"], "difficulty_values": ["3"], "platform_difficulty_values": ["3"], "selected_session_layers_values": ["3"],
+      "identity_values": {"response_experiment_id": ["response_experiment"], "experiment_id": ["response_experiment"], "response_condition": ["two_level"], "trial_scenario": ["normal"], "trial_valid": ["True"], "response_trial_id": ["ffdc1dd4df204cfd99031f135602d36d"], "trial_id": ["ffdc1dd4df204cfd99031f135602d36d"], "response_layer_id": ["1", "2", "3", "4"], "layer_id": ["1", "2", "3", "4"]},
+      "terminal_unity_row": {"backend_timestamp": "1791771597.349521", "source_timestamp": "1791771597.332", "sequence": "1018", "run_id": "923614ec5f6e4626b91779bb6c7c51d9", "run_state": "ended", "session_outcome": "calibration_completed", "session_end_backend_timestamp": "1791771597.331", "passed_count": "3", "prediction_state": "SAFE", "visible_warning_state": "SAFE", "warning_episode_id": "0", "warning_episode_end_time": "nan", "warning_episode_end_backend_timestamp": "nan"},
+      "raw_last_row": {"backend_timestamp": "1791771600.444070", "source": "wii", "source_timestamp": "2026-10-12T02:20:00.4436643Z", "sequence": "124099", "fall_event": "False"},
+      "unity_sequence_audit": {"count": 1018, "first": 1, "last": 1018, "missing_gaps": [], "duplicate_adjacent": [], "decreases_or_reversals": []},
+      "geometry": {"rows_with_geometry_identity": 1018, "geometry_query_valid_values": {"True": 1018}, "geometry_ownership_valid_values": {"True": 1018}, "query_false_count": 0, "ownership_false_count": 0, "identity_mismatch_count": 0, "raw_identity_values": [["-14706", "-14706-g1", "-14706", "-14706-g1"], ["-14726", "-14726-g1", "-14726", "-14726-g1"], ["-14750", "-14750-g1", "-14750", "-14750-g1"], ["-14774", "-14774-g1", "-14774", "-14774-g1"]], "raw_geometry_source_timestamp_span": {"first_in_file": "38.15498352050781", "last_in_file": "55.135826110839844", "unique_value_count": 1017}},
+      "model_warning_log": {"matched_line_count": 179, "state_counts": {"RECEIVED": 179, "ACTIVE": 0, "REVOKED": 0}, "received_raw_status_counts_from_revoke_reason": {"SAFE": 175, "UNKNOWN": 4}, "active_episodes": [], "unmatched_orphan_revokes": 0, "first_matched_log_line": 6754, "last_matched_log_line": 9246}
+    },
+    {
+      "session_id": "session_20261012_102000_453011",
+      "raw_csv_snapshot": {"sha256_before_read": "edfcd8686031c2acdae222aa42552016bd17fda290215c75d748dff8907094e9", "sha256_after_read": "edfcd8686031c2acdae222aa42552016bd17fda290215c75d748dff8907094e9", "changed_during_read": false, "bytes_analyzed": 819220},
+      "raw_row_count": 1413, "source_counts": {"unity": 507, "wii": 906}, "run_id": "48febfab66de4e2b9ff75d49ae99835c",
+      "source_spans": {"unity": {"rows": 507, "timestamp_field": "source_timestamp", "first_in_file": "1791771600.449", "last_in_file": "1791771608.871"}, "wii": {"rows": 906, "timestamp_field": "source_timestamp", "first_in_file": "2026-10-12T02:20:00.4584395Z", "last_in_file": "2026-10-12T02:20:14.8067453Z"}},
+      "selected_difficulty_values": ["3"], "commanded_difficulty_values": ["3"], "active_platform_difficulty_values": ["3"], "difficulty_values": ["3"], "platform_difficulty_values": ["3"], "selected_session_layers_values": ["3"],
+      "identity_values": {"response_experiment_id": ["response_experiment"], "experiment_id": ["response_experiment"], "response_condition": ["two_level"], "trial_scenario": ["normal"], "trial_valid": ["True"], "response_trial_id": ["39b44179842649a799ed613fced49cce"], "trial_id": ["39b44179842649a799ed613fced49cce"], "response_layer_id": ["1"], "layer_id": ["1"]},
+      "terminal_unity_row": {"backend_timestamp": "1791771608.880056", "source_timestamp": "1791771608.871", "sequence": "507", "run_id": "48febfab66de4e2b9ff75d49ae99835c", "run_state": "ended", "session_outcome": "edge_exit", "session_end_backend_timestamp": "1791771608.87", "passed_count": "0", "prediction_state": "FALL", "visible_warning_state": "FALL", "warning_episode_id": "1", "warning_episode_end_time": "65.69405364990234", "warning_episode_end_backend_timestamp": "1791771608.87"},
+      "raw_last_row": {"backend_timestamp": "1791771614.807107", "source": "wii", "source_timestamp": "2026-10-12T02:20:14.8067453Z", "sequence": "125005", "fall_event": "False"},
+      "unity_sequence_audit": {"count": 507, "first": 1, "last": 507, "missing_gaps": [], "duplicate_adjacent": [], "decreases_or_reversals": []},
+      "geometry": {"rows_with_geometry_identity": 507, "geometry_query_valid_values": {"True": 507}, "geometry_ownership_valid_values": {"True": 507}, "query_false_count": 0, "ownership_false_count": 0, "identity_mismatch_count": 0, "raw_identity_values": [["-14870", "-14870-g1", "-14870", "-14870-g1"], ["-14890", "-14890-g1", "-14890", "-14890-g1"]], "raw_geometry_source_timestamp_span": {"first_in_file": "57.2715950012207", "last_in_file": "65.69405364990234", "unique_value_count": 507}},
+      "model_warning_log": {"matched_line_count": 51, "state_counts": {"RECEIVED": 49, "ACTIVE": 1, "REVOKED": 1}, "received_raw_status_counts_from_revoke_reason": {"SAFE": 45, "STRONG": 1, "UNKNOWN": 3}, "active_episodes": [{"first_active_local_monotonic_s": "2299.394423", "first_active_prediction_sequence": "41", "activation_received": {"line_number": 9898, "local_monotonic_s": "2299.394423", "prediction_sequence": "41", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2299.394423", "last_active_prediction_sequence": "41", "active_line_count": 1, "revoked_local_monotonic_s": "2299.458185", "revoked_prediction_sequence": "41", "revoke_reason": "backend_safe", "same_sequence_unknown_received_preceded_revoke": false}], "unmatched_orphan_revokes": 0, "first_matched_log_line": 9310, "last_matched_log_line": 10009}
+    },
+    {
+      "session_id": "session_20261012_102014_820513",
+      "raw_csv_snapshot": {"sha256_before_read": "9f57fec39bd9718c8da465bc532871ebd12f42e09a876139c2511ac97b407946", "sha256_after_read": "9f57fec39bd9718c8da465bc532871ebd12f42e09a876139c2511ac97b407946", "changed_during_read": false, "bytes_analyzed": 1526189},
+      "raw_row_count": 2295, "source_counts": {"unity": 969, "wii": 1326}, "run_id": "0a8d375d04a44075a614d7ea1b3e7a23",
+      "source_spans": {"unity": {"rows": 969, "timestamp_field": "source_timestamp", "first_in_file": "1791771614.817", "last_in_file": "1791771631.01"}, "wii": {"rows": 1326, "timestamp_field": "source_timestamp", "first_in_file": "2026-10-12T02:20:14.8221727Z", "last_in_file": "2026-10-12T02:20:35.6564926Z"}},
+      "selected_difficulty_values": ["3"], "commanded_difficulty_values": ["3"], "active_platform_difficulty_values": ["3"], "difficulty_values": ["3"], "platform_difficulty_values": ["3"], "selected_session_layers_values": ["3"],
+      "identity_values": {"response_experiment_id": ["response_experiment"], "experiment_id": ["response_experiment"], "response_condition": ["two_level"], "trial_scenario": ["normal"], "trial_valid": ["True"], "response_trial_id": ["f7b16d3f22a94439be52563541255c3d"], "trial_id": ["f7b16d3f22a94439be52563541255c3d"], "response_layer_id": ["1"], "layer_id": ["1"]},
+      "terminal_unity_row": {"backend_timestamp": "1791771631.013563", "source_timestamp": "1791771631.01", "sequence": "969", "run_id": "0a8d375d04a44075a614d7ea1b3e7a23", "run_state": "ended", "session_outcome": "edge_exit", "session_end_backend_timestamp": "1791771631.01", "passed_count": "0", "prediction_state": "FALL", "visible_warning_state": "FALL", "warning_episode_id": "1", "warning_episode_end_time": "86.85002136230469", "warning_episode_end_backend_timestamp": "1791771631.01"},
+      "raw_last_row": {"backend_timestamp": "1791771635.656869", "source": "wii", "source_timestamp": "2026-10-12T02:20:35.6564926Z", "sequence": "126331", "fall_event": "False"},
+      "unity_sequence_audit": {"count": 969, "first": 1, "last": 969, "missing_gaps": [], "duplicate_adjacent": [], "decreases_or_reversals": []},
+      "geometry": {"rows_with_geometry_identity": 969, "geometry_query_valid_values": {"True": 969}, "geometry_ownership_valid_values": {"True": 969}, "query_false_count": 0, "ownership_false_count": 0, "identity_mismatch_count": 0, "raw_identity_values": [["-15034", "-15034-g1", "-15034", "-15034-g1"], ["-15054", "-15054-g1", "-15054", "-15054-g1"]], "raw_geometry_source_timestamp_span": {"first_in_file": "70.6536865234375", "last_in_file": "86.85002136230469", "unique_value_count": 969}},
+      "model_warning_log": {"matched_line_count": 182, "state_counts": {"RECEIVED": 176, "ACTIVE": 5, "REVOKED": 1}, "received_raw_status_counts_from_revoke_reason": {"SAFE": 168, "STRONG": 5, "UNKNOWN": 3}, "active_episodes": [{"first_active_local_monotonic_s": "2321.492303", "first_active_prediction_sequence": "169", "activation_received": {"line_number": 12466, "local_monotonic_s": "2321.492303", "prediction_sequence": "169", "reason": "confirmed", "revoke_reason": "STRONG"}, "last_active_local_monotonic_s": "2321.710320", "last_active_prediction_sequence": "173", "active_line_count": 5, "revoked_local_monotonic_s": "2321.766522", "revoked_prediction_sequence": "173", "revoke_reason": "backend_unknown", "same_sequence_unknown_received_preceded_revoke": true}], "unmatched_orphan_revokes": 0, "first_matched_log_line": 10086, "last_matched_log_line": 12615}
+    }
+  ]
+}

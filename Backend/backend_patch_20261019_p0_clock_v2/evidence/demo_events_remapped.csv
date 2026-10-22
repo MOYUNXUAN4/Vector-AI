@@ -1,0 +1,5 @@
+event_id,unity_time,epoch_time,unity_end,mapped_epoch,mapped_unity,segment_index,ambiguous,reasons,coverage_status
+E1,30.0,,,1792378602.551888,30.000000,0,false,ok,lead_available
+E2,36.0,,,1792378608.709147,36.000000,1,true,uncertain_interval,n_a_ambiguous
+E3,35.540,,35.545,,35.540000,-1,true,"in_gap,near_segment_boundary,interval_crosses_step,interval_crosses_gap,session_offset_range_exceeds_tolerance,uncertain_interval",n_a_ambiguous
+E4,,1792378608.0,,1792378608.000000,,-1,true,in_gap,n_a_ambiguous

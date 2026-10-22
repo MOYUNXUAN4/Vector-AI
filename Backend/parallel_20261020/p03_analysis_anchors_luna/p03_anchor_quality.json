@@ -1,0 +1,2829 @@
+{
+  "scope": "P03 post-fix nine sessions in CONDITION_RECEIPT only; source/geometry/event anchors, no model loading, no F1, no label edits",
+  "session_ids_from_receipt": [
+    "session_20261020_214022_086000",
+    "session_20261020_214100_600233",
+    "session_20261020_214112_191029",
+    "session_20261020_214149_759405",
+    "session_20261020_214210_571969",
+    "session_20261020_214244_551605",
+    "session_20261020_214320_667777",
+    "session_20261020_214354_584139",
+    "session_20261020_214437_062477"
+  ],
+  "fix_version": "PILOT055_D3_L5_OLD_UI_COMPAT5_R1_20261020",
+  "source_sha256": {
+    "session_20261020_214022_086000": {
+      "before": "05af9d4afa4de0257ffe71e3806636d732fdc34636e6b87d63760d7c2bfd8675",
+      "after": "05af9d4afa4de0257ffe71e3806636d732fdc34636e6b87d63760d7c2bfd8675",
+      "stable": true
+    },
+    "session_20261020_214100_600233": {
+      "before": "4184d92f4662b3a92577ce2b6863a6a704f5ad3111606583f1389902d92c74fa",
+      "after": "4184d92f4662b3a92577ce2b6863a6a704f5ad3111606583f1389902d92c74fa",
+      "stable": true
+    },
+    "session_20261020_214112_191029": {
+      "before": "429d38d1835b431729dc76f05e191b918fd90f763aa554cc3c5da17af50376f1",
+      "after": "429d38d1835b431729dc76f05e191b918fd90f763aa554cc3c5da17af50376f1",
+      "stable": true
+    },
+    "session_20261020_214149_759405": {
+      "before": "389a3ec17bfb6441139aa6bfe8f2c0e8dd3a9a35c8d29aaa0cf84860a56cc484",
+      "after": "389a3ec17bfb6441139aa6bfe8f2c0e8dd3a9a35c8d29aaa0cf84860a56cc484",
+      "stable": true
+    },
+    "session_20261020_214210_571969": {
+      "before": "3c29c1d4dcbf7cc2d03328ee801dc187a5a85016ea0a273d959f8ab937ba709c",
+      "after": "3c29c1d4dcbf7cc2d03328ee801dc187a5a85016ea0a273d959f8ab937ba709c",
+      "stable": true
+    },
+    "session_20261020_214244_551605": {
+      "before": "cd90e3c9f418ee2cdb19a624c5e17f3cc0c0c6cd230306d65bc71e109eae0fac",
+      "after": "cd90e3c9f418ee2cdb19a624c5e17f3cc0c0c6cd230306d65bc71e109eae0fac",
+      "stable": true
+    },
+    "session_20261020_214320_667777": {
+      "before": "e661c93d3bab42f576910513c136859b8f5507b1f7c69678a8c2f6e121c8e58e",
+      "after": "e661c93d3bab42f576910513c136859b8f5507b1f7c69678a8c2f6e121c8e58e",
+      "stable": true
+    },
+    "session_20261020_214354_584139": {
+      "before": "16254841d7d196b3e19ac79702720d5b1f288c6c47b1b44e6b578714f55c34c9",
+      "after": "16254841d7d196b3e19ac79702720d5b1f288c6c47b1b44e6b578714f55c34c9",
+      "stable": true
+    },
+    "session_20261020_214437_062477": {
+      "before": "64f0eff0dce9121772fded006efd446f656ccba8da08da0f1303f9c31f0f39bd",
+      "after": "64f0eff0dce9121772fded006efd446f656ccba8da08da0f1303f9c31f0f39bd",
+      "stable": true
+    }
+  },
+  "shared_proximity_shadow_sha256": "338c39277058460f5b87327f02207511b898c4c6a59fb6ebf69b487ac3f52111",
+  "all_source_hashes_stable": true,
+  "clock_policy": "Source timestamps preserved in their native representation. No global clock offset is applied. Unity source epoch timestamps and Wii UTC source timestamps are compared only for conditional runtime overlap. geometry_source_timestamp is not subtracted from Unix epoch source_timestamp. C# FallEventBackendTimestamp is assigned from DateTimeOffset.UtcNow Unix time and compared with Unity source_timestamp UTC epoch; backend receive time is not substituted.",
+  "sessions": [
+    {
+      "session_id": "session_20261020_214022_086000",
+      "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+      "rows_total": 4543,
+      "unity_rows": 2119,
+      "wii_rows": 2424,
+      "unity_sequence_range": [
+        1,
+        2119
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503622.091,
+        1792503657.392
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 299,
+        "sequence_ranges": [
+          [
+            1,
+            299
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8499999642372131,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 696,
+          "sequence_ranges": [
+            [
+              1,
+              696
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 696,
+            "geometry_query_valid": 696,
+            "geometry_ownership_valid": 696,
+            "all_three_valid": 696,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 696,
+            "version_vs_active": 696
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            15.712875366210938,
+            27.326723098754883
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 339,
+          "sequence_ranges": [
+            [
+              697,
+              1035
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 339,
+            "geometry_query_valid": 339,
+            "geometry_ownership_valid": 339,
+            "all_three_valid": 339,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 339,
+            "version_vs_active": 339
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            27.347536087036133,
+            32.97922134399414
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 543,
+          "sequence_ranges": [
+            [
+              1036,
+              1578
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 543,
+            "geometry_query_valid": 543,
+            "geometry_ownership_valid": 543,
+            "all_three_valid": 543,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 543,
+            "version_vs_active": 543
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            32.993099212646484,
+            42.029579162597656
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 287,
+          "sequence_ranges": [
+            [
+              1579,
+              1865
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 287,
+            "geometry_query_valid": 287,
+            "geometry_ownership_valid": 287,
+            "all_three_valid": 287,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 287,
+            "version_vs_active": 287
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            42.043453216552734,
+            46.81209945678711
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 253,
+          "sequence_ranges": [
+            [
+              1866,
+              2118
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 253,
+            "geometry_query_valid": 253,
+            "geometry_ownership_valid": 253,
+            "all_three_valid": 253,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 253,
+            "version_vs_active": 253
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            46.82597351074219,
+            51.02869415283203
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              2119,
+              2119
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            51.02869415283203,
+            51.02869415283203
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:40:22.087334Z",
+          "2026-10-20T13:41:00.589737Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 2218,
+        "unity_run_overlap_epoch_s": [
+          1792503622.10264,
+          1792503657.382133
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 2218,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 2218,
+              "true": 2218,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 2218,
+              "true": 2218,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 2218,
+              "true": 2218,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 206,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 206,
+                "true": 206,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 206,
+                "true": 206,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 206,
+                "true": 206,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 835,
+            "sequence": 406,
+            "source_timestamp": "1792503628.853",
+            "q": 0.022247791290283203,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 838,
+            "sequence": 407,
+            "source_timestamp": "1792503628.88",
+            "q": -0.010472297668457031,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+            "platform_level": "1",
+            "layer_id": "1",
+            "platform_instance_id": "-3286",
+            "geometry_version_id": "-3286-g1"
+          },
+          "bracket_source_dt_s": 0.02700018882751465
+        },
+        {
+          "lastpositive": {
+            "csv_line": 2095,
+            "sequence": 1024,
+            "source_timestamp": "1792503639.15",
+            "q": 0.03438234329223633,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2097,
+            "sequence": 1025,
+            "source_timestamp": "1792503639.172",
+            "q": -0.027031898498535156,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "6c85d23f1b984ec78fffae07c46dca70",
+            "platform_level": "2",
+            "layer_id": "2",
+            "platform_instance_id": "-3310",
+            "geometry_version_id": "-3310-g1"
+          },
+          "bracket_source_dt_s": 0.021999835968017578
+        }
+      ],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214100_600233",
+      "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+      "rows_total": 1186,
+      "unity_rows": 456,
+      "wii_rows": 730,
+      "unity_sequence_range": [
+        1,
+        456
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503660.596,
+        1792503668.16
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 302,
+        "sequence_ranges": [
+          [
+            1,
+            302
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8500001430511475,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 434,
+          "sequence_ranges": [
+            [
+              1,
+              434
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 434,
+            "geometry_query_valid": 434,
+            "geometry_ownership_valid": 434,
+            "all_three_valid": 434,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 434,
+            "version_vs_active": 434
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            53.34531784057617,
+            60.55158996582031
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 22,
+          "sequence_ranges": [
+            [
+              435,
+              456
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 22,
+            "geometry_query_valid": 22,
+            "geometry_ownership_valid": 22,
+            "all_three_valid": 22,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 22,
+            "version_vs_active": 22
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            60.57240295410156,
+            60.903709411621094
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:41:00.604913Z",
+          "2026-10-20T13:41:12.178533Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 476,
+        "unity_run_overlap_epoch_s": [
+          1792503660.604913,
+          1792503668.156115
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 476,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 476,
+              "true": 476,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 476,
+              "true": 476,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 476,
+              "true": 476,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 254,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 254,
+                "true": 254,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 254,
+                "true": 254,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 254,
+                "true": 254,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 899,
+            "sequence": 439,
+            "source_timestamp": "1792503667.894",
+            "q": 0.01610565185546875,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 901,
+            "sequence": 440,
+            "source_timestamp": "1792503667.907",
+            "q": -0.06177377700805664,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+            "platform_level": "2",
+            "layer_id": "2",
+            "platform_instance_id": "-3476",
+            "geometry_version_id": "-3476-g1"
+          },
+          "bracket_source_dt_s": 0.013000011444091797
+        }
+      ],
+      "finalfall_rows": [
+        {
+          "csv_line": 933,
+          "sequence": 456,
+          "fall_event_backend_timestamp": "1792503668.159",
+          "source_timestamp": "1792503668.16",
+          "platform_level": "2",
+          "layer_id": "2",
+          "platform_instance_id": "-3476",
+          "geometry_version_id": "-3476-g1",
+          "q": -1.4535768032073975,
+          "edge_contact_backend_timestamp": "1792503667.991",
+          "support_lost_backend_timestamp": "1792503668.159",
+          "nearest_same_context_q_cross_bracket_before_or_at_fall_utc_source_time": {
+            "lastpositive": {
+              "csv_line": 899,
+              "sequence": 439,
+              "source_timestamp": "1792503667.894",
+              "q": 0.01610565185546875,
+              "fall_event": false,
+              "fall_event_backend_timestamp": "nan",
+              "edge_contact_backend_timestamp": "nan"
+            },
+            "firstnonpositive": {
+              "csv_line": 901,
+              "sequence": 440,
+              "source_timestamp": "1792503667.907",
+              "q": -0.06177377700805664,
+              "fall_event": false,
+              "fall_event_backend_timestamp": "nan",
+              "edge_contact_backend_timestamp": "nan"
+            },
+            "context": {
+              "run_id": "4521987dfdc34380ae0d20d9d0e232bd",
+              "platform_level": "2",
+              "layer_id": "2",
+              "platform_instance_id": "-3476",
+              "geometry_version_id": "-3476-g1"
+            },
+            "bracket_source_dt_s": 0.013000011444091797
+          }
+        }
+      ],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214112_191029",
+      "run_id": "1a893ee7e97f4e8b86450665aa830167",
+      "rows_total": 4406,
+      "unity_rows": 2014,
+      "wii_rows": 2392,
+      "unity_sequence_range": [
+        1,
+        2014
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503672.187,
+        1792503705.736
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 301,
+        "sequence_ranges": [
+          [
+            1,
+            301
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8499999046325684,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 639,
+          "sequence_ranges": [
+            [
+              1,
+              639
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 639,
+            "geometry_query_valid": 639,
+            "geometry_ownership_valid": 639,
+            "all_three_valid": 639,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 639,
+            "version_vs_active": 639
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            63.577884674072266,
+            74.21597290039062
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 384,
+          "sequence_ranges": [
+            [
+              640,
+              1023
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 384,
+            "geometry_query_valid": 384,
+            "geometry_ownership_valid": 384,
+            "all_three_valid": 384,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 384,
+            "version_vs_active": 384
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            74.22985076904297,
+            80.61267852783203
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 341,
+          "sequence_ranges": [
+            [
+              1024,
+              1364
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 341,
+            "geometry_query_valid": 341,
+            "geometry_ownership_valid": 341,
+            "all_three_valid": 341,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 341,
+            "version_vs_active": 341
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            80.63349151611328,
+            86.2999038696289
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 412,
+          "sequence_ranges": [
+            [
+              1365,
+              1776
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 412,
+            "geometry_query_valid": 412,
+            "geometry_ownership_valid": 412,
+            "all_three_valid": 412,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 412,
+            "version_vs_active": 412
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            86.3170394897461,
+            93.16822052001953
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 237,
+          "sequence_ranges": [
+            [
+              1777,
+              2013
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 237,
+            "geometry_query_valid": 237,
+            "geometry_ownership_valid": 237,
+            "all_three_valid": 237,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 237,
+            "version_vs_active": 237
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            93.1825942993164,
+            97.11717224121094
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              2014,
+              2014
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            97.12413024902344,
+            97.12413024902344
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:41:12.194164Z",
+          "2026-10-20T13:41:49.748784Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 2134,
+        "unity_run_overlap_epoch_s": [
+          1792503672.194164,
+          1792503705.721864
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 2134,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 2134,
+              "true": 2134,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 2134,
+              "true": 2134,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 2134,
+              "true": 2134,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 258,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 258,
+                "true": 258,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 258,
+                "true": 258,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 258,
+                "true": 258,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 2802,
+            "sequence": 1359,
+            "source_timestamp": "1792503694.824",
+            "q": 0.010524749755859375,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2804,
+            "sequence": 1360,
+            "source_timestamp": "1792503694.837",
+            "q": -0.001003265380859375,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "1a893ee7e97f4e8b86450665aa830167",
+            "platform_level": "3",
+            "layer_id": "3",
+            "platform_instance_id": "-3672",
+            "geometry_version_id": "-3672-g1"
+          },
+          "bracket_source_dt_s": 0.013000011444091797
+        }
+      ],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214149_759405",
+      "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+      "rows_total": 2386,
+      "unity_rows": 1063,
+      "wii_rows": 1323,
+      "unity_sequence_range": [
+        1,
+        1063
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503709.756,
+        1792503727.449
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 301,
+        "sequence_ranges": [
+          [
+            1,
+            301
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8500000238418579,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 695,
+          "sequence_ranges": [
+            [
+              1,
+              695
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 695,
+            "geometry_query_valid": 695,
+            "geometry_ownership_valid": 695,
+            "all_three_valid": 695,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 695,
+            "version_vs_active": 695
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            100.18570709228516,
+            111.75528717041016
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 291,
+          "sequence_ranges": [
+            [
+              696,
+              986
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 291,
+            "geometry_query_valid": 291,
+            "geometry_ownership_valid": 291,
+            "all_three_valid": 291,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 291,
+            "version_vs_active": 291
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            111.76915740966797,
+            116.60460662841797
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 77,
+          "sequence_ranges": [
+            [
+              987,
+              1063
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 77,
+            "geometry_query_valid": 77,
+            "geometry_ownership_valid": 77,
+            "all_three_valid": 77,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 77,
+            "version_vs_active": 77
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            116.62541961669922,
+            117.88345336914062
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:41:49.764559Z",
+          "2026-10-20T13:42:10.552722Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 1124,
+        "unity_run_overlap_epoch_s": [
+          1792503709.764559,
+          1792503727.435525
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 1124,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 1124,
+              "true": 1124,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 1124,
+              "true": 1124,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 1124,
+              "true": 1124,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 199,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 199,
+                "true": 199,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 199,
+                "true": 199,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 199,
+                "true": 199,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 2005,
+            "sequence": 974,
+            "source_timestamp": "1792503725.969",
+            "q": 0.0016641616821289062,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2007,
+            "sequence": 975,
+            "source_timestamp": "1792503725.99",
+            "q": -0.004198551177978516,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "19534b8d13dc4274863daabdd9dc0e05",
+            "platform_level": "2",
+            "layer_id": "2",
+            "platform_instance_id": "-3814",
+            "geometry_version_id": "-3814-g1"
+          },
+          "bracket_source_dt_s": 0.020999908447265625
+        }
+      ],
+      "finalfall_rows": [
+        {
+          "csv_line": 2188,
+          "sequence": 1063,
+          "fall_event_backend_timestamp": "1792503727.448",
+          "source_timestamp": "1792503727.449",
+          "platform_level": "3",
+          "layer_id": "3",
+          "platform_instance_id": "-3840",
+          "geometry_version_id": "-3840-g1",
+          "q": -1.4525823593139648,
+          "edge_contact_backend_timestamp": "1792503727.004",
+          "support_lost_backend_timestamp": "1792503727.448",
+          "nearest_same_context_q_cross_bracket_before_or_at_fall_utc_source_time": null
+        }
+      ],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214210_571969",
+      "run_id": "e8e6e4276c9947cf9b68a14f929139e7",
+      "rows_total": 4023,
+      "unity_rows": 1875,
+      "wii_rows": 2148,
+      "unity_sequence_range": [
+        1,
+        1875
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503730.568,
+        1792503761.781
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 302,
+        "sequence_ranges": [
+          [
+            1,
+            302
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8500000238418579,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 493,
+          "sequence_ranges": [
+            [
+              1,
+              493
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 493,
+            "geometry_query_valid": 493,
+            "geometry_ownership_valid": 493,
+            "all_three_valid": 493,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 493,
+            "version_vs_active": 493
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            120.08910369873047,
+            128.27320861816406
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 293,
+          "sequence_ranges": [
+            [
+              494,
+              786
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 293,
+            "geometry_query_valid": 293,
+            "geometry_ownership_valid": 293,
+            "all_three_valid": 293,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 293,
+            "version_vs_active": 293
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            128.2940216064453,
+            133.1548309326172
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 423,
+          "sequence_ranges": [
+            [
+              787,
+              1209
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 423,
+            "geometry_query_valid": 423,
+            "geometry_ownership_valid": 423,
+            "all_three_valid": 423,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 423,
+            "version_vs_active": 423
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            133.17564392089844,
+            140.20460510253906
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 332,
+          "sequence_ranges": [
+            [
+              1210,
+              1541
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 332,
+            "geometry_query_valid": 332,
+            "geometry_ownership_valid": 332,
+            "all_three_valid": 332,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 332,
+            "version_vs_active": 332
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            140.22540283203125,
+            145.75137329101562
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 333,
+          "sequence_ranges": [
+            [
+              1542,
+              1874
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 333,
+            "geometry_query_valid": 333,
+            "geometry_ownership_valid": 333,
+            "all_three_valid": 333,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 333,
+            "version_vs_active": 333
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            145.77218627929688,
+            151.30044555664062
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              1875,
+              1875
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            151.307373046875,
+            151.307373046875
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:42:10.568322Z",
+          "2026-10-20T13:42:44.537000Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 1972,
+        "unity_run_overlap_epoch_s": [
+          1792503730.568322,
+          1792503761.769167
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 1972,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 1972,
+              "true": 1972,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 1972,
+              "true": 1972,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 1972,
+              "true": 1972,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 176,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 176,
+                "true": 176,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 176,
+                "true": 176,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 176,
+                "true": 176,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214244_551605",
+      "run_id": "47823c251f904955be573d9c446875ff",
+      "rows_total": 4304,
+      "unity_rows": 2014,
+      "wii_rows": 2290,
+      "unity_sequence_range": [
+        1,
+        2014
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503764.547,
+        1792503798.073
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 301,
+        "sequence_ranges": [
+          [
+            1,
+            301
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8500000238418579,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 766,
+          "sequence_ranges": [
+            [
+              1,
+              766
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 766,
+            "geometry_query_valid": 766,
+            "geometry_ownership_valid": 766,
+            "all_three_valid": 766,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 766,
+            "version_vs_active": 766
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            153.2181854248047,
+            165.95846557617188
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 176,
+          "sequence_ranges": [
+            [
+              767,
+              942
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 176,
+            "geometry_query_valid": 176,
+            "geometry_ownership_valid": 176,
+            "all_three_valid": 176,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 176,
+            "version_vs_active": 176
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            165.9723358154297,
+            168.88848876953125
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 294,
+          "sequence_ranges": [
+            [
+              943,
+              1236
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 294,
+            "geometry_query_valid": 294,
+            "geometry_ownership_valid": 294,
+            "all_three_valid": 294,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 294,
+            "version_vs_active": 294
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            168.9093017578125,
+            173.79135131835938
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 385,
+          "sequence_ranges": [
+            [
+              1237,
+              1621
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 385,
+            "geometry_query_valid": 385,
+            "geometry_ownership_valid": 385,
+            "all_three_valid": 385,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 385,
+            "version_vs_active": 385
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            173.8052215576172,
+            180.20114135742188
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 392,
+          "sequence_ranges": [
+            [
+              1622,
+              2013
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 392,
+            "geometry_query_valid": 392,
+            "geometry_ownership_valid": 392,
+            "all_three_valid": 392,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 392,
+            "version_vs_active": 392
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            180.22193908691406,
+            186.74034118652344
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              2014,
+              2014
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            186.74728393554688,
+            186.74728393554688
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:42:44.552592Z",
+          "2026-10-20T13:43:20.656752Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 2125,
+        "unity_run_overlap_epoch_s": [
+          1792503764.552592,
+          1792503798.067595
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 2125,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 2125,
+              "true": 2125,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 2125,
+              "true": 2125,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 2125,
+              "true": 2125,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 165,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 165,
+                "true": 165,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 165,
+                "true": 165,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 165,
+                "true": 165,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 2550,
+            "sequence": 1238,
+            "source_timestamp": "1792503785.142",
+            "q": 0.03624677658081055,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2552,
+            "sequence": 1239,
+            "source_timestamp": "1792503785.162",
+            "q": -0.0006513595581054688,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "47823c251f904955be573d9c446875ff",
+            "platform_level": "4",
+            "layer_id": "4",
+            "platform_instance_id": "-4196",
+            "geometry_version_id": "-4196-g1"
+          },
+          "bracket_source_dt_s": 0.019999980926513672
+        }
+      ],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214320_667777",
+      "run_id": "9b554aafb07f42e6829eea9abe97a2ac",
+      "rows_total": 4070,
+      "unity_rows": 1927,
+      "wii_rows": 2143,
+      "unity_sequence_range": [
+        1,
+        1927
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503800.664,
+        1792503832.725
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 302,
+        "sequence_ranges": [
+          [
+            1,
+            302
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8500000238418579,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 749,
+          "sequence_ranges": [
+            [
+              1,
+              749
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 749,
+            "geometry_query_valid": 749,
+            "geometry_ownership_valid": 749,
+            "all_three_valid": 749,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 749,
+            "version_vs_active": 749
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            188.52410888671875,
+            200.97816467285156
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 341,
+          "sequence_ranges": [
+            [
+              750,
+              1090
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 341,
+            "geometry_query_valid": 341,
+            "geometry_ownership_valid": 341,
+            "all_three_valid": 341,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 341,
+            "version_vs_active": 341
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            200.9989776611328,
+            206.66001892089844
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 286,
+          "sequence_ranges": [
+            [
+              1091,
+              1376
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 286,
+            "geometry_query_valid": 286,
+            "geometry_ownership_valid": 286,
+            "all_three_valid": 286,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 286,
+            "version_vs_active": 286
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            206.6808319091797,
+            211.42355346679688
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 291,
+          "sequence_ranges": [
+            [
+              1377,
+              1667
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 291,
+            "geometry_query_valid": 291,
+            "geometry_ownership_valid": 291,
+            "all_three_valid": 291,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 291,
+            "version_vs_active": 291
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            211.44436645507812,
+            216.27723693847656
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 259,
+          "sequence_ranges": [
+            [
+              1668,
+              1926
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 259,
+            "geometry_query_valid": 259,
+            "geometry_ownership_valid": 259,
+            "all_three_valid": 259,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 259,
+            "version_vs_active": 259
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            216.29110717773438,
+            220.58987426757812
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              1927,
+              1927
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            220.58987426757812,
+            220.58987426757812
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:43:20.671642Z",
+          "2026-10-20T13:43:54.574960Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 2026,
+        "unity_run_overlap_epoch_s": [
+          1792503800.671642,
+          1792503832.713382
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 2026,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 2026,
+              "true": 2026,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 2026,
+              "true": 2026,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 2026,
+              "true": 2026,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 117,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 117,
+                "true": 117,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 117,
+                "true": 117,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 117,
+                "true": 117,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214354_584139",
+      "run_id": "aa9c12a7604d4d468df13244c1118b05",
+      "rows_total": 5114,
+      "unity_rows": 2445,
+      "wii_rows": 2669,
+      "unity_sequence_range": [
+        1,
+        2445
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503834.58,
+        1792503875.274
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 302,
+        "sequence_ranges": [
+          [
+            1,
+            302
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8499999642372131,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 890,
+          "sequence_ranges": [
+            [
+              1,
+              890
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 890,
+            "geometry_query_valid": 890,
+            "geometry_ownership_valid": 890,
+            "all_three_valid": 890,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 890,
+            "version_vs_active": 890
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            221.6582489013672,
+            236.4551239013672
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 170,
+          "sequence_ranges": [
+            [
+              891,
+              1060
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 170,
+            "geometry_query_valid": 170,
+            "geometry_ownership_valid": 170,
+            "all_three_valid": 170,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 170,
+            "version_vs_active": 170
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            236.47593688964844,
+            239.28941345214844
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 662,
+          "sequence_ranges": [
+            [
+              1061,
+              1722
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 662,
+            "geometry_query_valid": 662,
+            "geometry_ownership_valid": 662,
+            "all_three_valid": 662,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 662,
+            "version_vs_active": 662
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            239.3102264404297,
+            250.32351684570312
+          ]
+        },
+        {
+          "platform_level": "4",
+          "layer_id": "4",
+          "rows": 275,
+          "sequence_ranges": [
+            [
+              1723,
+              1997
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 275,
+            "geometry_query_valid": 275,
+            "geometry_ownership_valid": 275,
+            "all_three_valid": 275,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 275,
+            "version_vs_active": 275
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            250.3391876220703,
+            254.90689086914062
+          ]
+        },
+        {
+          "platform_level": "5",
+          "layer_id": "5",
+          "rows": 447,
+          "sequence_ranges": [
+            [
+              1998,
+              2444
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 447,
+            "geometry_query_valid": 447,
+            "geometry_ownership_valid": 447,
+            "all_three_valid": 447,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 447,
+            "version_vs_active": 447
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            254.9207763671875,
+            262.35009765625
+          ]
+        },
+        {
+          "platform_level": "6",
+          "layer_id": "6",
+          "rows": 1,
+          "sequence_ranges": [
+            [
+              2445,
+              2445
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 1,
+            "geometry_query_valid": 1,
+            "geometry_ownership_valid": 1,
+            "all_three_valid": 1,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 1,
+            "version_vs_active": 1
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            262.35009765625,
+            262.35009765625
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:43:54.590252Z",
+          "2026-10-20T13:44:37.044856Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 2557,
+        "unity_run_overlap_epoch_s": [
+          1792503834.590252,
+          1792503875.259599
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 2557,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 2557,
+              "true": 2557,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 2557,
+              "true": 2557,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 2557,
+              "true": 2557,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 112,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 112,
+                "true": 112,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 112,
+                "true": 112,
+                "false": 0,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 112,
+                "true": 112,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 2508,
+            "sequence": 1229,
+            "source_timestamp": "1792503855.03",
+            "q": 0.015873432159423828,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2509,
+            "sequence": 1230,
+            "source_timestamp": "1792503855.043",
+            "q": -0.014112472534179688,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "aa9c12a7604d4d468df13244c1118b05",
+            "platform_level": "3",
+            "layer_id": "3",
+            "platform_instance_id": "-4504",
+            "geometry_version_id": "-4504-g1"
+          },
+          "bracket_source_dt_s": 0.013000011444091797
+        }
+      ],
+      "finalfall_rows": [],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    },
+    {
+      "session_id": "session_20261020_214437_062477",
+      "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+      "rows_total": 3069,
+      "unity_rows": 1180,
+      "wii_rows": 1889,
+      "unity_sequence_range": [
+        1,
+        1180
+      ],
+      "unity_source_timestamp_range_epoch": [
+        1792503877.058,
+        1792503896.689
+      ],
+      "unity_seq_or_source_gap_pairs_over_100ms_or_nonmonotonic": [],
+      "scale_gt_2_preparation_segment": {
+        "row_count": 302,
+        "sequence_ranges": [
+          [
+            1,
+            302
+          ]
+        ],
+        "platform_level_values": [
+          "1"
+        ],
+        "platform_scale_min_max": [
+          15.884458541870117,
+          15.884458541870117
+        ],
+        "note": "Preparation observations are reported separately and not folded into gameplay summaries."
+      },
+      "platform_scale_min_max_all_unity": [
+        0.8499999046325684,
+        15.884458541870117
+      ],
+      "run_layer_contexts": [
+        {
+          "platform_level": "1",
+          "layer_id": "1",
+          "rows": 584,
+          "sequence_ranges": [
+            [
+              1,
+              584
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 584,
+            "geometry_query_valid": 584,
+            "geometry_ownership_valid": 584,
+            "all_three_valid": 584,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 584,
+            "version_vs_active": 584
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            263.4532775878906,
+            273.1572265625
+          ]
+        },
+        {
+          "platform_level": "2",
+          "layer_id": "2",
+          "rows": 449,
+          "sequence_ranges": [
+            [
+              585,
+              1033
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 449,
+            "geometry_query_valid": 449,
+            "geometry_ownership_valid": 449,
+            "all_three_valid": 449,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 449,
+            "version_vs_active": 449
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            273.17803955078125,
+            280.63897705078125
+          ]
+        },
+        {
+          "platform_level": "3",
+          "layer_id": "3",
+          "rows": 147,
+          "sequence_ranges": [
+            [
+              1034,
+              1180
+            ]
+          ],
+          "geometry_flag_true_counts": {
+            "directional_edge_valid": 147,
+            "geometry_query_valid": 147,
+            "geometry_ownership_valid": 147,
+            "all_three_valid": 147,
+            "directional_edge_valid_false": 0,
+            "directional_edge_valid_missing": 0,
+            "geometry_query_valid_false": 0,
+            "geometry_query_valid_missing": 0,
+            "geometry_ownership_valid_false": 0,
+            "geometry_ownership_valid_missing": 0
+          },
+          "identity_pairs_match_counts": {
+            "platform_instance_vs_active": 147,
+            "version_vs_active": 147
+          },
+          "query_age": {
+            "status": "unavailable: no Unity-time field co-domain with geometry_source_timestamp was found; source_timestamp is Unix epoch while geometry_source_timestamp is Unity-relative"
+          },
+          "geometry_source_timestamp_range": [
+            280.6597900390625,
+            283.07989501953125
+          ]
+        }
+      ],
+      "wii_observation_during_unity_runtime": {
+        "interpretation": "conditional time overlap only; not evidence of exact control application",
+        "wii_source_timestamp_utc_range": [
+          "2026-10-20T13:44:37.059620Z",
+          "2026-10-20T13:45:06.930585Z"
+        ],
+        "records_with_source_time_inside_unity_epoch_span": 1242,
+        "unity_run_overlap_epoch_s": [
+          1792503877.05962,
+          1792503896.680968
+        ],
+        "actual_wii_fields_overlap_only": {
+          "records": 1242,
+          "field_counts": {
+            "wii_board_loaded": {
+              "present": 1242,
+              "true": 1242,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_center_applied": {
+              "present": 1242,
+              "true": 1242,
+              "false": 0,
+              "missing": 0
+            },
+            "wii_control_valid": {
+              "present": 1242,
+              "true": 1242,
+              "false": 0,
+              "missing": 0
+            }
+          }
+        },
+        "actual_wii_fields_outside_or_unavailable_time": {
+          "outside_run_time": {
+            "records": 647,
+            "field_counts": {
+              "wii_board_loaded": {
+                "present": 647,
+                "true": 265,
+                "false": 382,
+                "missing": 0
+              },
+              "wii_center_applied": {
+                "present": 647,
+                "true": 265,
+                "false": 382,
+                "missing": 0
+              },
+              "wii_control_valid": {
+                "present": 647,
+                "true": 647,
+                "false": 0,
+                "missing": 0
+              }
+            }
+          },
+          "missing_or_invalid_source_time_rows": 0
+        },
+        "note": "Wii source_timestamp is UTC; overlap with Unity epoch range is conditional context only, not proof of exact control application."
+      },
+      "q_crossings": [
+        {
+          "lastpositive": {
+            "csv_line": 2280,
+            "sequence": 1111,
+            "source_timestamp": "1792503895.543",
+            "q": 0.010692119598388672,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "firstnonpositive": {
+            "csv_line": 2283,
+            "sequence": 1112,
+            "source_timestamp": "1792503895.564",
+            "q": -0.014995098114013672,
+            "fall_event": false,
+            "fall_event_backend_timestamp": "nan",
+            "edge_contact_backend_timestamp": "nan"
+          },
+          "context": {
+            "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+            "platform_level": "3",
+            "layer_id": "3",
+            "platform_instance_id": "-4672",
+            "geometry_version_id": "-4672-g1"
+          },
+          "bracket_source_dt_s": 0.020999908447265625
+        }
+      ],
+      "finalfall_rows": [
+        {
+          "csv_line": 2423,
+          "sequence": 1180,
+          "fall_event_backend_timestamp": "1792503896.688",
+          "source_timestamp": "1792503896.689",
+          "platform_level": "3",
+          "layer_id": "3",
+          "platform_instance_id": "-4672",
+          "geometry_version_id": "-4672-g1",
+          "q": -1.45768404006958,
+          "edge_contact_backend_timestamp": "1792503895.96",
+          "support_lost_backend_timestamp": "1792503896.688",
+          "nearest_same_context_q_cross_bracket_before_or_at_fall_utc_source_time": {
+            "lastpositive": {
+              "csv_line": 2280,
+              "sequence": 1111,
+              "source_timestamp": "1792503895.543",
+              "q": 0.010692119598388672,
+              "fall_event": false,
+              "fall_event_backend_timestamp": "nan",
+              "edge_contact_backend_timestamp": "nan"
+            },
+            "firstnonpositive": {
+              "csv_line": 2283,
+              "sequence": 1112,
+              "source_timestamp": "1792503895.564",
+              "q": -0.014995098114013672,
+              "fall_event": false,
+              "fall_event_backend_timestamp": "nan",
+              "edge_contact_backend_timestamp": "nan"
+            },
+            "context": {
+              "run_id": "b3fa6018951a4a98ae34dc3253f5109e",
+              "platform_level": "3",
+              "layer_id": "3",
+              "platform_instance_id": "-4672",
+              "geometry_version_id": "-4672-g1"
+            },
+            "bracket_source_dt_s": 0.020999908447265625
+          }
+        }
+      ],
+      "q_interpretation": "q=directional_edge_distance-2*ball_radius is a geometry-derived bracket; q=0 is not asserted as actual fall/edge exit."
+    }
+  ]
+}
