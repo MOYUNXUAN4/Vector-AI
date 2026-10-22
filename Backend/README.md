@@ -154,6 +154,7 @@ Audited against 15 consecutive sessions from participant **P03**:
 
 ## 👨‍💻 Research & Authors
 
-- **Author & Principal Investigator**: MOYUNXUAN4
+- **Author & Principal Investigator**: MOYUNXUAN
+- **Contact Email**: [moyunxuan0@gmail.com](mailto:moyunxuan0@gmail.com)
 - **Academic Context**: Final Year Project (FYP) - Closed-Loop Biofeedback Neurorehabilitation Architecture
 - **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)
