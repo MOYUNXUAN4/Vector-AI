@@ -1,4 +1,4 @@
-# VectorAI Backend & ML Engine
+# Vector AI Backend & ML Engine
 ### *Real-Time UDP Telemetry Ingestion, Wii Balance Board Processing & AI Predictive Fall Intervention*
 
 [![Python](https://img.shields.io/badge/Python-3.10%20--%203.14-blue?logo=python)](https://www.python.org/)
@@ -10,13 +10,13 @@
 
 ## 📌 Overview
 
-The **VectorAI Backend** is the high-performance Python server and machine learning intelligence layer for the VectorAI closed-loop balance rehabilitation system. 
+The **Vector AI Backend** is the high-performance Python server and machine learning intelligence layer for the Vector AI closed-loop balance rehabilitation system. 
 
 It acts as the central coordinator between the **Nintendo Wii Balance Board** physical sensor hardware and the **Unity 6 game engine client**, executing high-frequency signal processing, Center of Pressure (CoP) calibration, single-clock telemetry persistence, and real-time fall risk forecasting with sub-4 millisecond inference latencies.
 
 ```
 +-----------------------------------------------------------------------------------------+
-|                                    VectorAI Architecture                                |
+|                                    Vector AI Architecture                               |
 +-----------------------------------------------------------------------------------------+
 |                                                                                         |
 |  [ Wii Balance Board ]                                          [ Unity 6 Client ]      |
@@ -25,7 +25,7 @@ It acts as the central coordinator between the **Nintendo Wii Balance Board** ph
 |          | Bluetooth HID                                                 | UDP 110 Hz   |
 |          v                                                               v              |
 |  +-----------------------------------------------------------------------------------+  |
-|  |                            VectorAI Backend (Python)                              |  |
+|  |                            Vector AI Backend (Python)                             |  |
 |  |                                                                                   |  |
 |  |   1. UDP Ingest & Demux (UDPRecevier.py)                                          |  |
 |  |      - Ingests Wii load streams & Unity kinematics simultaneously                 |  |
@@ -112,8 +112,8 @@ The repository includes the audited **v8 Scientific Quality Verification Toolkit
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/MOYUNXUAN4/fyp_Backend.git
-   cd fyp_Backend
+   git clone https://github.com/MOYUNXUAN4/Vector-AI.git
+   cd Vector-AI/Backend
    ```
 
 2. **Create Virtual Environment & Install Dependencies**:
@@ -154,5 +154,6 @@ Audited against 15 consecutive sessions from participant **P03**:
 
 ## 👨‍💻 Research & Authors
 
-- **Lead Developer & Researcher**: QI YUXUAN / MOYUNXUAN
+- **Author & Principal Investigator**: QI YUXUAN (QI YUXAUN)
 - **Academic Context**: Final Year Project (FYP) - Closed-Loop Biofeedback Neurorehabilitation Architecture
+- **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)

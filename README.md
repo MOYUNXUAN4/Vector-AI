@@ -1,4 +1,4 @@
-# VectorAI: Closed-Loop Balance Training & Fall Risk Biofeedback System
+# Vector AI: Closed-Loop Balance Training & Fall Risk Biofeedback System
 ### *Full-Stack Neurorehabilitation & Fall Prevention System Powered by Unity 6, Wii Balance Board, and AI Predictive Edge Warning*
 
 [![Unity](https://img.shields.io/badge/Unity-6000.3.9f1%20LTS-black?logo=unity)](https://unity.com/)
@@ -12,15 +12,15 @@
 
 ## 📌 Executive Summary
 
-**VectorAI** is an advanced closed-loop biofeedback rehabilitation and gaming system designed for real-time balance impairment intervention, postural stability training, and fall risk mitigation. 
+**Vector AI** is an advanced closed-loop biofeedback rehabilitation and gaming system designed for real-time balance impairment intervention, postural stability training, and fall risk mitigation. 
 
-By integrating a **Nintendo Wii Balance Board (WBB)** with a custom **Unity 6 physics simulation engine** and an ultra-low-latency **Python machine learning backend (LightGBM/GRU/TTE)**, VectorAI tracks participant Center of Pressure (CoP) at 110 Hz, simulates continuous postural destabilization across dynamically dropping platforms, and delivers proactive, multi-tier biofeedback cues (Visual, Kinematic, and Spatial) before a loss of balance or edge fall occurs.
+By integrating a **Nintendo Wii Balance Board (WBB)** with a custom **Unity 6 physics simulation engine** and an ultra-low-latency **Python machine learning backend (LightGBM/GRU/TTE)**, Vector AI tracks participant Center of Pressure (CoP) at 110 Hz, simulates continuous postural destabilization across dynamically dropping platforms, and delivers proactive, multi-tier biofeedback cues (Visual, Kinematic, and Spatial) before a loss of balance or edge fall occurs.
 
 This repository is organized as a unified full-stack monorepo containing both the **Unity 6 client** and the **Python AI backend & verification engine**.
 
 ```
 +-----------------------------------------------------------------------------------------+
-|                                    VectorAI Architecture                                |
+|                                    Vector AI Architecture                               |
 +-----------------------------------------------------------------------------------------+
 |                                                                                         |
 |       +-----------------------------------------------------------+                     |
@@ -131,7 +131,7 @@ This repository is organized as a unified full-stack monorepo containing both th
 
 ## ⚡ Real-Time Biofeedback & Warning HUD System
 
-VectorAI features a multi-tiered biofeedback warning framework (`UIManager.cs`) designed to alert participants before edge-fall events:
+Vector AI features a multi-tiered biofeedback warning framework (`UIManager.cs`) designed to alert participants before edge-fall events:
 
 ```
 [ SAFE / BALANCED ] ---> [ ATTENTION (Yellow) ] ---> [ PROXIMITY TTE (Purple) ] ---> [ CRITICAL EDGE (Red) ]
@@ -209,6 +209,6 @@ The repository includes a scientific quality assurance pipeline in `Backend/para
 
 ## 👨‍💻 Research & Authors
 
-- **Primary Investigator / Developer**: QI YUXUAN / MOYUNXUAN
+- **Author & Principal Investigator**: QI YUXUAN (QI YUXAUN)
 - **Academic Context**: Final Year Project (FYP) - Biofeedback & Machine Learning Driven Neurorehabilitation System
-- **Repository**: [https://github.com/MOYUNXUAN4/Endless-Driver-Tutorial---EP9](https://github.com/MOYUNXUAN4/Endless-Driver-Tutorial---EP9)
+- **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)
