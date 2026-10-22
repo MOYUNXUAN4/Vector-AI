@@ -232,7 +232,7 @@ The repository includes a scientific quality assurance pipeline in `Backend/para
 
 ## 👨‍💻 Research & Authors
 
-- **Author & Principal Investigator**: QI YUXUAN (QI YUXAUN)
+- **Author & Principal Investigator**: MOYUNXUAN
 - **Academic Context**: Final Year Project (FYP) - Biofeedback & Machine Learning Driven Neurorehabilitation System
 - **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)
 

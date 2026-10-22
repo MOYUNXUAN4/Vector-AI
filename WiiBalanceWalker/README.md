@@ -25,7 +25,7 @@ This module is built upon the open-source **WiiBalanceWalker** project. We grate
 
 Standard WiiBalanceWalker was designed solely as an accessibility tool to map balance board shifts into simulated keystrokes (WASD/Arrow keys) or virtual joystick axis inputs. While functional for casual gaming, it completely lacked the ability to export raw sensor readings, timestamps, or continuous load distributions required for clinical rehabilitation and machine learning.
 
-For the **Vector AI** project, **QI YUXUAN (QI YUXAUN)** fundamentally redesigned and extended the software into a scientific-grade biomechanical data bridge:
+For the **Vector AI** project, **MOYUNXUAN** fundamentally redesigned and extended the software into a scientific-grade biomechanical data bridge:
 
 ### 1. Direct High-Frequency UDP Streaming (`100 Hz / 10 ms`)
 - **Independent Telemetry Thread**: Implemented a dedicated high-precision `System.Threading.Timer` running at 10 ms (~100 Hz) that reads the latest Bluetooth HID balance board snapshot independently from the 20 ms WinForms UI render loop.
@@ -104,6 +104,6 @@ Double-click `Start_WiiBalanceWalker_Verified.cmd` in this directory. It will:
 
 ## 👨‍💻 Research Attribution
 
-- **Custom Telemetry Protocol & Direct UDP Modifications**: QI YUXUAN (QI YUXAUN)
+- **Custom Telemetry Protocol & Direct UDP Modifications**: MOYUNXUAN
 - **Academic Context**: Final Year Project (FYP) - Vector AI Balance Rehabilitation System
 - **Original Base Project**: Shachar Liberman (v0.5) / Richard Perry (v0.4, GreyCube.com)

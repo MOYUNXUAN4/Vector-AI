@@ -154,6 +154,6 @@ Audited against 15 consecutive sessions from participant **P03**:
 
 ## 👨‍💻 Research & Authors
 
-- **Author & Principal Investigator**: QI YUXUAN (QI YUXAUN)
+- **Author & Principal Investigator**: MOYUNXUAN
 - **Academic Context**: Final Year Project (FYP) - Closed-Loop Biofeedback Neurorehabilitation Architecture
 - **Repository**: [https://github.com/MOYUNXUAN4/Vector-AI](https://github.com/MOYUNXUAN4/Vector-AI)
